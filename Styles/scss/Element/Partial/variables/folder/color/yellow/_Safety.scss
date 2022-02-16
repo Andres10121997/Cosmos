@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$safety-yellow-name:    string.quote("safety-yellow");
+
+
+
+$safety-yellow: #f6c700;
+
+$safety-yellow-50:  Lighter($safety-yellow, percentage(4.5, 5));
+$safety-yellow-100: Lighter($safety-yellow, percentage(4, 5));
+$safety-yellow-200: Lighter($safety-yellow, percentage(3, 5));
+$safety-yellow-300: Lighter($safety-yellow, percentage(2, 5));
+$safety-yellow-400: Lighter($safety-yellow, percentage(1, 5));
+$safety-yellow-500: var(selector.append($variable-prefix, $safety-yellow-name));
+$safety-yellow-600: Darker($safety-yellow, percentage(1, 5));
+$safety-yellow-700: Darker($safety-yellow, percentage(2, 5));
+$safety-yellow-800: Darker($safety-yellow, percentage(3, 5));
+$safety-yellow-900: Darker($safety-yellow, percentage(4, 5));
+$safety-yellow-950: Darker($safety-yellow, percentage(4.5, 5));
+
+
+
+$safety-yellows: (
+    "50":   $safety-yellow-50,
+    "100":  $safety-yellow-100,
+    "200":  $safety-yellow-200,
+    "300":  $safety-yellow-300,
+    "400":  $safety-yellow-400,
+    "500":  $safety-yellow-500,
+    "600":  $safety-yellow-600,
+    "700":  $safety-yellow-700,
+    "800":  $safety-yellow-800,
+    "900":  $safety-yellow-900,
+    "950":  $safety-yellow-950
+);

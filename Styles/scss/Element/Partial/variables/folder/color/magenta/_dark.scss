@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$dark-magenta-name: string.quote("dark-magenta");
+
+
+
+$dark-magenta:   #8B008B;
+
+$dark-magenta-50:   Lighter($dark-magenta, percentage(4.5, 5));
+$dark-magenta-100:  Lighter($dark-magenta, percentage(4, 5));
+$dark-magenta-200:  Lighter($dark-magenta, percentage(3, 5));
+$dark-magenta-300:  Lighter($dark-magenta, percentage(2, 5));
+$dark-magenta-400:  Lighter($dark-magenta, percentage(1, 5));
+$dark-magenta-500:  var(selector.append($variable-prefix, $dark-magenta-name));
+$dark-magenta-600:  Darker($dark-magenta, percentage(1, 5));
+$dark-magenta-700:  Darker($dark-magenta, percentage(2, 5));
+$dark-magenta-800:  Darker($dark-magenta, percentage(3, 5));
+$dark-magenta-900:  Darker($dark-magenta, percentage(4, 5));
+$dark-magenta-950:  Darker($dark-magenta, percentage(4.5, 5));
+
+
+
+$dark-magentas: (
+    "50":   $dark-magenta-50,
+    "100":  $dark-magenta-100,
+    "200":  $dark-magenta-200,
+    "300":  $dark-magenta-300,
+    "400":  $dark-magenta-400,
+    "500":  $dark-magenta-500,
+    "600":  $dark-magenta-600,
+    "700":  $dark-magenta-700,
+    "800":  $dark-magenta-800,
+    "900":  $dark-magenta-900,
+    "950":  $dark-magenta-950
+);

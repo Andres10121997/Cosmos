@@ -1,0 +1,35 @@
+﻿$blue-lighter-1:    Lighter($blue, percentage(1, 16));
+$blue-lighter-2:    Lighter($blue, percentage(2, 16));
+$blue-lighter-3:    Lighter($blue, percentage(3, 16));
+$blue-lighter-4:    Lighter($blue, percentage(4, 16));
+$blue-lighter-5:    Lighter($blue, percentage(5, 16));
+$blue-lighter-6:    Lighter($blue, percentage(6, 16));
+$blue-lighter-7:    Lighter($blue, percentage(7, 16));
+$blue-lighter-8:    Lighter($blue, percentage(8, 16));
+$blue-lighter-9:    Lighter($blue, percentage(9, 16));
+$blue-lighter-10:   Lighter($blue, percentage(10, 16));
+$blue-lighter-11:   Lighter($blue, percentage(11, 16));
+$blue-lighter-12:   Lighter($blue, percentage(12, 16));
+$blue-lighter-13:   Lighter($blue, percentage(13, 16));
+$blue-lighter-14:   Lighter($blue, percentage(14, 16));
+$blue-lighter-15:   Lighter($blue, percentage(15, 16));
+
+
+
+$blue-lighters: (
+    "1":    $blue-lighter-1,
+    "2":    $blue-lighter-2,
+    "3":    $blue-lighter-3,
+    "4":    $blue-lighter-4,
+    "5":    $blue-lighter-5,
+    "6":    $blue-lighter-6,
+    "7":    $blue-lighter-7,
+    "8":    $blue-lighter-8,
+    "9":    $blue-lighter-9,
+    "10":   $blue-lighter-10,
+    "11":   $blue-lighter-11,
+    "12":   $blue-lighter-12,
+    "13":   $blue-lighter-13,
+    "14":   $blue-lighter-14,
+    "15":   $blue-lighter-15
+);

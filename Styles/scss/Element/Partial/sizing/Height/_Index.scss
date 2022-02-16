@@ -1,0 +1,23 @@
+﻿@use "sass:selector";
+
+@each $unit, $value in $Unit-index
+{
+    .height-#{$unit}
+    {
+        height: var(selector.append($variable-prefix, $unit)) !important;
+    }
+}
+
+@each $unit, $value in $Unit
+{
+    @each $unit1, $value1 in $value
+    {
+        @each $unit2, $value2 in $value1
+        {
+            .height-#{$unit}-#{$unit1}-#{$unit2}
+            {
+                height: var(selector.append($variable-prefix, selector.append(#{$unit}, -#{$unit1}-#{$unit2}))) !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+﻿%headingReset {
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+}
+
+h1 {
+    @extend %headingReset;
+}
+
+h2 {
+    @extend %headingReset;
+}
+
+h3 {
+    @extend %headingReset;
+}
+
+h4 {
+    @extend %headingReset;
+}
+
+h5 {
+    @extend %headingReset;
+}
+
+h6 {
+    @extend %headingReset;
+}

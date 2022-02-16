@@ -1,0 +1,53 @@
+﻿@use "sass:selector";
+
+@each $unit, $value in $Unit-index
+{
+    .#{$margin-prefix}top-#{$unit}
+    {
+        margin-top: var(selector.append($variable-prefix, $unit)) !important;
+    }
+
+    .#{$margin-prefix}right-#{$unit}
+    {
+        margin-right: var(selector.append($variable-prefix, $unit)) !important;
+    }
+
+    .#{$margin-prefix}bottom-#{$unit}
+    {
+        margin-bottom: var(selector.append($variable-prefix, $unit)) !important;
+    }
+
+    .#{$margin-prefix}left-#{$unit}
+    {
+        margin-left: var(selector.append($variable-prefix, $unit)) !important;
+    }
+}
+
+@each $unit, $value in $Unit
+{
+    @each $unit1, $value1 in $value
+    {
+        @each $unit2, $value2 in $value1
+        {
+            .#{$margin-prefix}top-#{$unit}-#{$unit1}-#{$unit2}
+            {
+                margin-top: var(selector.append($variable-prefix, selector.append(#{$unit}, -#{$unit1}-#{$unit2}))) !important;
+            }
+            
+            .#{$margin-prefix}right-#{$unit}-#{$unit1}-#{$unit2}
+            {
+                margin-right: var(selector.append($variable-prefix, selector.append(#{$unit}, -#{$unit1}-#{$unit2}))) !important;
+            }
+
+            .#{$margin-prefix}bottom-#{$unit}-#{$unit1}-#{$unit2}
+            {
+                margin-bottom: var(selector.append($variable-prefix, selector.append(#{$unit}, -#{$unit1}-#{$unit2}))) !important;
+            }
+            
+            .#{$margin-prefix}left-#{$unit}-#{$unit1}-#{$unit2}
+            {
+                margin-left: var(selector.append($variable-prefix, selector.append(#{$unit}, -#{$unit1}-#{$unit2}))) !important;
+            }
+        }
+    }
+}

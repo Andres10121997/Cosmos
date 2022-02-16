@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$antique-white-name:    string.quote("antique-white");
+
+
+
+$antique-white: #FAEBD7;
+
+$antique-white-50:  Lighter($antique-white, percentage(4.5, 5));
+$antique-white-100: Lighter($antique-white, percentage(4, 5));
+$antique-white-200: Lighter($antique-white, percentage(3, 5));
+$antique-white-300: Lighter($antique-white, percentage(2, 5));
+$antique-white-400: Lighter($antique-white, percentage(1, 5));
+$antique-white-500: var(selector.append($variable-prefix, $antique-white-name));
+$antique-white-600: Darker($antique-white, percentage(1, 5));
+$antique-white-700: Darker($antique-white, percentage(2, 5));
+$antique-white-800: Darker($antique-white, percentage(3, 5));
+$antique-white-900: Darker($antique-white, percentage(4, 5));
+$antique-white-950: Darker($antique-white, percentage(4.5, 5));
+
+
+
+$antique-whites: (
+    "50":   $antique-white-50,
+    "100":  $antique-white-100,
+    "200":  $antique-white-200,
+    "300":  $antique-white-300,
+    "400":  $antique-white-400,
+    "500":  $antique-white-500,
+    "600":  $antique-white-600,
+    "700":  $antique-white-700,
+    "800":  $antique-white-800,
+    "900":  $antique-white-900,
+    "950":  $antique-white-950
+);

@@ -1,0 +1,35 @@
+﻿$light-coral-darker-1:  Darker($light-coral, percentage(1, 16));
+$light-coral-darker-2:  Darker($light-coral, percentage(2, 16));
+$light-coral-darker-3:  Darker($light-coral, percentage(3, 16));
+$light-coral-darker-4:  Darker($light-coral, percentage(4, 16));
+$light-coral-darker-5:  Darker($light-coral, percentage(5, 16));
+$light-coral-darker-6:  Darker($light-coral, percentage(6, 16));
+$light-coral-darker-7:  Darker($light-coral, percentage(7, 16));
+$light-coral-darker-8:  Darker($light-coral, percentage(8, 16));
+$light-coral-darker-9:  Darker($light-coral, percentage(9, 16));
+$light-coral-darker-10: Darker($light-coral, percentage(10, 16));
+$light-coral-darker-11: Darker($light-coral, percentage(11, 16));
+$light-coral-darker-12: Darker($light-coral, percentage(12, 16));
+$light-coral-darker-13: Darker($light-coral, percentage(13, 16));
+$light-coral-darker-14: Darker($light-coral, percentage(14, 16));
+$light-coral-darker-15: Darker($light-coral, percentage(15, 16));
+
+
+
+$light-coral-darkers: (
+    "1":    $light-coral-darker-1,
+    "2":    $light-coral-darker-2,
+    "3":    $light-coral-darker-3,
+    "4":    $light-coral-darker-4,
+    "5":    $light-coral-darker-5,
+    "6":    $light-coral-darker-6,
+    "7":    $light-coral-darker-7,
+    "8":    $light-coral-darker-8,
+    "9":    $light-coral-darker-9,
+    "10":   $light-coral-darker-10,
+    "11":   $light-coral-darker-11,
+    "12":   $light-coral-darker-12,
+    "13":   $light-coral-darker-13,
+    "14":   $light-coral-darker-14,
+    "15":   $light-coral-darker-15
+);

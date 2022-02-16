@@ -1,0 +1,7 @@
+﻿@each $style, $value in $font_style
+{
+    .#{$font-prefix}style-#{$style}
+    {
+        font-style: #{$value} !important;
+    }
+}

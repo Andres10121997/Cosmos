@@ -1,0 +1,37 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$floral-white-name: string.quote("floral-white");
+
+
+
+$floral-white:  #FFFAF0;
+
+
+$floral-white-50:   Lighter($floral-white, percentage(4.5, 5));
+$floral-white-100:  Lighter($floral-white, percentage(4, 5));
+$floral-white-200:  Lighter($floral-white, percentage(3, 5));
+$floral-white-300:  Lighter($floral-white, percentage(2, 5));
+$floral-white-400:  Lighter($floral-white, percentage(1, 5));
+$floral-white-500:  var(selector.append($variable-prefix, $floral-white-name));
+$floral-white-600:  Darker($floral-white, percentage(1, 5));
+$floral-white-700:  Darker($floral-white, percentage(2, 5));
+$floral-white-800:  Darker($floral-white, percentage(3, 5));
+$floral-white-900:  Darker($floral-white, percentage(4, 5));
+$floral-white-950:  Darker($floral-white, percentage(4.5, 5));
+
+
+
+$floral-whites: (
+    "50":   $floral-white-50,
+    "100":  $floral-white-100,
+    "200":  $floral-white-200,
+    "300":  $floral-white-300,
+    "400":  $floral-white-400,
+    "500":  $floral-white-500,
+    "600":  $floral-white-600,
+    "700":  $floral-white-700,
+    "800":  $floral-white-800,
+    "900":  $floral-white-900,
+    "950":  $floral-white-950
+);

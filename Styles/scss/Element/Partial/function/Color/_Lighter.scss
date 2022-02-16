@@ -1,0 +1,4 @@
+﻿@function Lighter($color, $percentage)
+{
+    @return mix($white, $color, $percentage);
+}

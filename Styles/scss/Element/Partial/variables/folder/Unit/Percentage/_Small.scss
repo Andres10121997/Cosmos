@@ -1,0 +1,35 @@
+﻿$percentage-small-1:    percentage(15, 16);
+$percentage-small-2:    percentage(14, 16);
+$percentage-small-3:    percentage(13, 16);
+$percentage-small-4:    percentage(12, 16);
+$percentage-small-5:    percentage(11, 16);
+$percentage-small-6:    percentage(10, 16);
+$percentage-small-7:    percentage(9, 16);
+$percentage-small-8:    percentage(8, 16);
+$percentage-small-9:    percentage(7, 16);
+$percentage-small-10:   percentage(6, 16);
+$percentage-small-11:   percentage(5, 16);
+$percentage-small-12:   percentage(4, 16);
+$percentage-small-13:   percentage(3, 16);
+$percentage-small-14:   percentage(2, 16);
+$percentage-small-15:   percentage(1, 16);
+
+
+
+$percentage-smalls: (
+    "1":    $percentage-small-1,
+    "2":    $percentage-small-2,
+    "3":    $percentage-small-3,
+    "4":    $percentage-small-4,
+    "5":    $percentage-small-5,
+    "6":    $percentage-small-6,
+    "7":    $percentage-small-7,
+    "8":    $percentage-small-8,
+    "9":    $percentage-small-9,
+    "10":   $percentage-small-10,
+    "11":   $percentage-small-11,
+    "12":   $percentage-small-12,
+    "13":   $percentage-small-13,
+    "14":   $percentage-small-14,
+    "15":   $percentage-small-15
+);

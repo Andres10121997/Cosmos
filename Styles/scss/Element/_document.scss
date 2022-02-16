@@ -1,0 +1,6 @@
+﻿*,
+*::before,
+*::after {
+    @include PaddingSize(0);
+    box-sizing: border-box;
+}

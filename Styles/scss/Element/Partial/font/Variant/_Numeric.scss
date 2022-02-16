@@ -1,0 +1,7 @@
+﻿@each $numeric, $value in $font-variant-numeric
+{
+    .#{$font-prefix}variant-numeric-#{$numeric}
+    {
+        font-variant-numeric: #{$value} !important;
+    }
+}

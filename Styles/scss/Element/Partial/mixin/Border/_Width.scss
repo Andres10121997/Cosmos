@@ -1,0 +1,6 @@
+﻿@mixin BorderWidth($topPixel, $rightPixel, $bottomPixel, $leftPixel) {
+    border-top-width: PixelToRem($topPixel);
+    border-right-width: PixelToRem($rightPixel);
+    border-bottom-width: PixelToRem($bottomPixel);
+    border-left-width: PixelToRem($leftPixel);
+}

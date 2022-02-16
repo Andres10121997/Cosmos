@@ -1,0 +1,7 @@
+﻿@each $caps, $value in $font-variant-caps
+{
+    .#{$font-prefix}variant-caps-#{$caps}
+    {
+        font-variant-caps: #{$value} !important;
+    }
+}

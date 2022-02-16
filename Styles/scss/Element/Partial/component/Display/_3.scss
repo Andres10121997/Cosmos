@@ -1,0 +1,4 @@
+﻿.#{$display-prefix}3
+{
+    @include display(calc(UseVariable(rem-big-8) + 3.3vw), 300, 1.2, 4rem);
+}

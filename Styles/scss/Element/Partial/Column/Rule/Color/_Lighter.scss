@@ -1,0 +1,10 @@
+﻿@each $color, $value in $lighter
+{
+    @each $color1, $value1 in $value
+    {
+        .#{$columm-prefix}rule-color-#{$color}-lighter-#{$color1}
+        {
+            column-rule-color: UseVariable(#{$color}-lighter-#{$color1}) !important;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+﻿@use "sass:selector";
+
+@each $color, $value in $ColorUnion
+{
+    @each $color1, $value1 in $value
+    {
+        @each $color2, $value2 in $value1
+        {
+            .#{$text-prefix}#{$color1}-#{$color}-#{$color2}
+            {
+                color: var(selector.append($variable-prefix, #{$color1}-#{$color}-#{$color2}))  !important;
+            }
+        }
+    }
+}

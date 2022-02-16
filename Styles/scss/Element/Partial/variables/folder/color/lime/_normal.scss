@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$lime-name: string.quote("lime");
+
+
+
+$lime: #00FF00;
+
+$lime-50:   Lighter($lime, percentage(4.5, 5));
+$lime-100:  Lighter($lime, percentage(4, 5));
+$lime-200:  Lighter($lime, percentage(3, 5));
+$lime-300:  Lighter($lime, percentage(2, 5));
+$lime-400:  Lighter($lime, percentage(1, 5));
+$lime-500:  var(selector.append($variable-prefix, $lime-name));
+$lime-600:  Darker($lime, percentage(1, 5));
+$lime-700:  Darker($lime, percentage(2, 5));
+$lime-800:  Darker($lime, percentage(3, 5));
+$lime-900:  Darker($lime, percentage(4, 5));
+$lime-950:  Darker($lime, percentage(4.5, 5));
+
+
+
+$limes: (
+    "50":   $lime-50,
+    "100":  $lime-100,
+    "200":  $lime-200,
+    "300":  $lime-300,
+    "400":  $lime-400,
+    "500":  $lime-500,
+    "600":  $lime-600,
+    "700":  $lime-700,
+    "800":  $lime-800,
+    "900":  $lime-900,
+    "950":  $lime-950
+);

@@ -1,0 +1,7 @@
+﻿$font_style-italic:     italic;
+$font_style-not_italic: normal;
+
+$font_style: (
+    "italic":       $font_style-italic,
+    "not_italic":   $font_style-not_italic
+);

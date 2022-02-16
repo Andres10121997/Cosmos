@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$pale-goldenrod-name:   string.quote("pale-goldenrod");
+
+
+
+$pale-goldenrod: #EEE8AA;
+
+$pale-goldenrod-50:     Lighter($pale-goldenrod, percentage(4.5, 5));
+$pale-goldenrod-100:    Lighter($pale-goldenrod, percentage(4, 5));
+$pale-goldenrod-200:    Lighter($pale-goldenrod, percentage(3, 5));
+$pale-goldenrod-300:    Lighter($pale-goldenrod, percentage(2, 5));
+$pale-goldenrod-400:    Lighter($pale-goldenrod, percentage(1, 5));
+$pale-goldenrod-500:    var(selector.append($variable-prefix, $pale-goldenrod-name));
+$pale-goldenrod-600:    Darker($pale-goldenrod, percentage(1, 5));
+$pale-goldenrod-700:    Darker($pale-goldenrod, percentage(2, 5));
+$pale-goldenrod-800:    Darker($pale-goldenrod, percentage(3, 5));
+$pale-goldenrod-900:    Darker($pale-goldenrod, percentage(4, 5));
+$pale-goldenrod-950:    Darker($pale-goldenrod, percentage(4.5, 5));
+
+
+
+$pale-goldenrods: (
+    "50":   $pale-goldenrod-50,
+    "100":  $pale-goldenrod-100,
+    "200":  $pale-goldenrod-200,
+    "300":  $pale-goldenrod-300,
+    "400":  $pale-goldenrod-400,
+    "500":  $pale-goldenrod-500,
+    "600":  $pale-goldenrod-600,
+    "700":  $pale-goldenrod-700,
+    "800":  $pale-goldenrod-800,
+    "900":  $pale-goldenrod-900,
+    "950":  $pale-goldenrod-950
+);

@@ -1,0 +1,7 @@
+﻿@each $fill, $value in $column-fills
+{
+    .#{$columm-prefix}fill-#{$fill}
+    {
+        column-fill: #{$value} !important;
+    }
+}

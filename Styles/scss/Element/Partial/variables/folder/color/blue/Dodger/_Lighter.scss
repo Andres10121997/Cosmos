@@ -1,0 +1,35 @@
+﻿$dodger-blue-lighter-1:     Lighter($dodger-blue, percentage(1, 16));
+$dodger-blue-lighter-2:     Lighter($dodger-blue, percentage(2, 16));
+$dodger-blue-lighter-3:     Lighter($dodger-blue, percentage(3, 16));
+$dodger-blue-lighter-4:     Lighter($dodger-blue, percentage(4, 16));
+$dodger-blue-lighter-5:     Lighter($dodger-blue, percentage(5, 16));
+$dodger-blue-lighter-6:     Lighter($dodger-blue, percentage(6, 16));
+$dodger-blue-lighter-7:     Lighter($dodger-blue, percentage(7, 16));
+$dodger-blue-lighter-8:     Lighter($dodger-blue, percentage(8, 16));
+$dodger-blue-lighter-9:     Lighter($dodger-blue, percentage(9, 16));
+$dodger-blue-lighter-10:    Lighter($dodger-blue, percentage(10, 16));
+$dodger-blue-lighter-11:    Lighter($dodger-blue, percentage(11, 16));
+$dodger-blue-lighter-12:    Lighter($dodger-blue, percentage(12, 16));
+$dodger-blue-lighter-13:    Lighter($dodger-blue, percentage(13, 16));
+$dodger-blue-lighter-14:    Lighter($dodger-blue, percentage(14, 16));
+$dodger-blue-lighter-15:    Lighter($dodger-blue, percentage(15, 16));
+
+
+
+$dodger-blue-lighters: (
+    "1":    $dodger-blue-lighter-1,
+    "2":    $dodger-blue-lighter-2,
+    "3":    $dodger-blue-lighter-3,
+    "4":    $dodger-blue-lighter-4,
+    "5":    $dodger-blue-lighter-5,
+    "6":    $dodger-blue-lighter-6,
+    "7":    $dodger-blue-lighter-7,
+    "8":    $dodger-blue-lighter-8,
+    "9":    $dodger-blue-lighter-9,
+    "10":   $dodger-blue-lighter-10,
+    "11":   $dodger-blue-lighter-11,
+    "12":   $dodger-blue-lighter-12,
+    "13":   $dodger-blue-lighter-13,
+    "14":   $dodger-blue-lighter-14,
+    "15":   $dodger-blue-lighter-15
+);

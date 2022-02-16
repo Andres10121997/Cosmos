@@ -1,0 +1,7 @@
+﻿@each $color, $value in $colors
+{
+    .#{$border-prefix}-color-#{$color}
+    {
+        border-color: UseVariable($color) !important;
+    }
+}

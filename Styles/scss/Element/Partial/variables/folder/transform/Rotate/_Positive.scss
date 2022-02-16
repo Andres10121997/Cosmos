@@ -1,0 +1,23 @@
+﻿$rotate-0:      0deg;
+$rotate-1:      1deg;
+$rotate-2:      2deg;
+$rotate-3:      3deg;
+$rotate-6:      6deg;
+$rotate-12:     12deg;
+$rotate-45:     45deg;
+$rotate-90:     90deg;
+$rotate-100:    100deg;
+$rotate-180:    180deg;
+
+$positive_rotate: (
+    "0":    $rotate-0,
+    "1":    $rotate-1,
+    "2":    $rotate-2,
+    "3":    $rotate-3,
+    "6":    $rotate-6,
+    "12":   $rotate-12,
+    "45":   $rotate-45,
+    "90":   $rotate-90,
+    "100":  $rotate-100,
+    "180":  $rotate-180
+);

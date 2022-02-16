@@ -1,0 +1,7 @@
+﻿@each $visibility, $value in $content-visibilities
+{
+    .content-visibility-#{$visibility}
+    {
+        content-visibility: #{$value};
+    }
+}

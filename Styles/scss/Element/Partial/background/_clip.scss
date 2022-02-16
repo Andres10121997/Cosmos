@@ -1,0 +1,7 @@
+﻿@each $clip, $value in $background_clip
+{
+    .#{$background-prefix}clip-#{$clip}
+    {
+        background-clip: #{$value} !important;
+    }
+}

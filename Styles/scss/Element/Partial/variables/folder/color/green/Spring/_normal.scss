@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$spring-green-name: string.quote("spring-green");
+
+
+
+$spring-green:  #00FF7F;
+
+$spring-green-50:   Lighter($spring-green, percentage(4.5, 5));
+$spring-green-100:  Lighter($spring-green, percentage(4, 5));
+$spring-green-200:  Lighter($spring-green, percentage(3, 5));
+$spring-green-300:  Lighter($spring-green, percentage(2, 5));
+$spring-green-400:  Lighter($spring-green, percentage(1, 5));
+$spring-green-500:  var(selector.append($variable-prefix, $spring-green-name));
+$spring-green-600:  Darker($spring-green, percentage(1, 5));
+$spring-green-700:  Darker($spring-green, percentage(2, 5));
+$spring-green-800:  Darker($spring-green, percentage(3, 5));
+$spring-green-900:  Darker($spring-green, percentage(4, 5));
+$spring-green-950:  Darker($spring-green, percentage(4.5, 5));
+
+
+
+$spring-greens: (
+    "50":   $spring-green-50,
+    "100":  $spring-green-100,
+    "200":  $spring-green-200,
+    "300":  $spring-green-300,
+    "400":  $spring-green-400,
+    "500":  $spring-green-500,
+    "600":  $spring-green-600,
+    "700":  $spring-green-700,
+    "800":  $spring-green-800,
+    "900":  $spring-green-900,
+    "950":  $spring-green-950
+);

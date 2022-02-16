@@ -1,0 +1,6 @@
+﻿@use "sass:math";
+
+@function PixelToEm($value)
+{
+    @return math.div($value, 16) + 0em;
+}

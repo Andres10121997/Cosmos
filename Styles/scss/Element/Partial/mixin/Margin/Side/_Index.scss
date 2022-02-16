@@ -1,0 +1,7 @@
+﻿@mixin MarginSize($size)
+{
+    margin-top: $size;
+    margin-right: $size;
+    margin-bottom: $size;
+    margin-left: $size;
+}

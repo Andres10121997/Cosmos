@@ -1,0 +1,45 @@
+@use "sass:string";
+
+:root
+{
+    @each $color, $value in $colors
+    {
+        #{$variable-prefix}#{$color}: string.to-upper-case(#{$value});
+    }
+    
+    @each $color, $value in $ColorUnion
+    {
+        @each $color1, $value1 in $value
+        {
+            @each $color2, $value2 in $value1
+            {
+                #{$variable-prefix}#{$color1}-#{$color}-#{$color2}: string.to-upper-case(#{$value2});
+            }
+        }
+    }
+
+
+
+    @each $font, $value in $font-family
+    {
+        #{$variable-prefix}#{$font-prefix}#{$family-prefix}#{$font}: #{inspect($value)};
+    }
+
+
+
+    @each $unit, $value in $Unit-index
+    {
+        #{$variable-prefix}#{$unit}: #{$value};
+    }
+
+    @each $unit, $value in $Unit
+    {
+        @each $unit1, $value1 in $value
+        {
+            @each $unit2, $value2 in $value1
+            {
+                #{$variable-prefix}#{$unit}-#{$unit1}-#{$unit2}:    #{$value2};
+            }
+        }
+    }
+}

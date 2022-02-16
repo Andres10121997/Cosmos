@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$safety-orange-name: string.quote("safety-orange");
+
+
+
+$safety-orange: #e97600;
+
+$safety-orange-50:  Lighter($safety-orange, percentage(4.5, 5));
+$safety-orange-100: Lighter($safety-orange, percentage(4, 5));
+$safety-orange-200: Lighter($safety-orange, percentage(3, 5));
+$safety-orange-300: Lighter($safety-orange, percentage(2, 5));
+$safety-orange-400: Lighter($safety-orange, percentage(1, 5));
+$safety-orange-500: var(selector.append($variable-prefix, $safety-orange-name));
+$safety-orange-600: Darker($safety-orange, percentage(1, 5));
+$safety-orange-700: Darker($safety-orange, percentage(2, 5));
+$safety-orange-800: Darker($safety-orange, percentage(3, 5));
+$safety-orange-900: Darker($safety-orange, percentage(4, 5));
+$safety-orange-950: Darker($safety-orange, percentage(4.5, 5));
+
+
+
+$safety-oranges: (
+    "50":   $safety-orange-50,
+    "100":  $safety-orange-100,
+    "200":  $safety-orange-200,
+    "300":  $safety-orange-300,
+    "400":  $safety-orange-400,
+    "500":  $safety-orange-500,
+    "600":  $safety-orange-600,
+    "700":  $safety-orange-700,
+    "800":  $safety-orange-800,
+    "900":  $safety-orange-900,
+    "950":  $safety-orange-950
+);

@@ -1,0 +1,35 @@
+﻿$rosy-brown-darker-1:   Darker($rosy-brown, percentage(1, 16));
+$rosy-brown-darker-2:   Darker($rosy-brown, percentage(2, 16));
+$rosy-brown-darker-3:   Darker($rosy-brown, percentage(3, 16));
+$rosy-brown-darker-4:   Darker($rosy-brown, percentage(4, 16));
+$rosy-brown-darker-5:   Darker($rosy-brown, percentage(5, 16));
+$rosy-brown-darker-6:   Darker($rosy-brown, percentage(6, 16));
+$rosy-brown-darker-7:   Darker($rosy-brown, percentage(7, 16));
+$rosy-brown-darker-8:   Darker($rosy-brown, percentage(8, 16));
+$rosy-brown-darker-9:   Darker($rosy-brown, percentage(9, 16));
+$rosy-brown-darker-10:  Darker($rosy-brown, percentage(10, 16));
+$rosy-brown-darker-11:  Darker($rosy-brown, percentage(11, 16));
+$rosy-brown-darker-12:  Darker($rosy-brown, percentage(12, 16));
+$rosy-brown-darker-13:  Darker($rosy-brown, percentage(13, 16));
+$rosy-brown-darker-14:  Darker($rosy-brown, percentage(14, 16));
+$rosy-brown-darker-15:  Darker($rosy-brown, percentage(15, 16));
+
+
+
+$rosy-brown-darkers: (
+    "1":    $rosy-brown-darker-1,
+    "2":    $rosy-brown-darker-2,
+    "3":    $rosy-brown-darker-3,
+    "4":    $rosy-brown-darker-4,
+    "5":    $rosy-brown-darker-5,
+    "6":    $rosy-brown-darker-6,
+    "7":    $rosy-brown-darker-7,
+    "8":    $rosy-brown-darker-8,
+    "9":    $rosy-brown-darker-9,
+    "10":   $rosy-brown-darker-10,
+    "11":   $rosy-brown-darker-11,
+    "12":   $rosy-brown-darker-12,
+    "13":   $rosy-brown-darker-13,
+    "14":   $rosy-brown-darker-14,
+    "15":   $rosy-brown-darker-15
+);

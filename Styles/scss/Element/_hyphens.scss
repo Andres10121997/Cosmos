@@ -1,0 +1,7 @@
+﻿@each $hyphen, $value in $hyphens
+{
+    .hyphens-#{$hyphen}
+    {
+        hyphens: #{$value};
+    }
+}

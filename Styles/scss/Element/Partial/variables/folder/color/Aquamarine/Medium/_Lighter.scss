@@ -1,0 +1,35 @@
+﻿$medium-aquamarine-lighter-1:   Lighter($medium-aquamarine, percentage(1, 16));
+$medium-aquamarine-lighter-2:   Lighter($medium-aquamarine, percentage(2, 16));
+$medium-aquamarine-lighter-3:   Lighter($medium-aquamarine, percentage(3, 16));
+$medium-aquamarine-lighter-4:   Lighter($medium-aquamarine, percentage(4, 16));
+$medium-aquamarine-lighter-5:   Lighter($medium-aquamarine, percentage(5, 16));
+$medium-aquamarine-lighter-6:   Lighter($medium-aquamarine, percentage(6, 16));
+$medium-aquamarine-lighter-7:   Lighter($medium-aquamarine, percentage(7, 16));
+$medium-aquamarine-lighter-8:   Lighter($medium-aquamarine, percentage(8, 16));
+$medium-aquamarine-lighter-9:   Lighter($medium-aquamarine, percentage(9, 16));
+$medium-aquamarine-lighter-10:  Lighter($medium-aquamarine, percentage(10, 16));
+$medium-aquamarine-lighter-11:  Lighter($medium-aquamarine, percentage(11, 16));
+$medium-aquamarine-lighter-12:  Lighter($medium-aquamarine, percentage(12, 16));
+$medium-aquamarine-lighter-13:  Lighter($medium-aquamarine, percentage(13, 16));
+$medium-aquamarine-lighter-14:  Lighter($medium-aquamarine, percentage(14, 16));
+$medium-aquamarine-lighter-15:  Lighter($medium-aquamarine, percentage(15, 16));
+
+
+
+$medium-aquamarine-lighters: (
+    "1":    $medium-aquamarine-lighter-1,
+    "2":    $medium-aquamarine-lighter-2,
+    "3":    $medium-aquamarine-lighter-3,
+    "4":    $medium-aquamarine-lighter-4,
+    "5":    $medium-aquamarine-lighter-5,
+    "6":    $medium-aquamarine-lighter-6,
+    "7":    $medium-aquamarine-lighter-7,
+    "8":    $medium-aquamarine-lighter-8,
+    "9":    $medium-aquamarine-lighter-9,
+    "10":   $medium-aquamarine-lighter-10,
+    "11":   $medium-aquamarine-lighter-11,
+    "12":   $medium-aquamarine-lighter-12,
+    "13":   $medium-aquamarine-lighter-13,
+    "14":   $medium-aquamarine-lighter-14,
+    "15":   $medium-aquamarine-lighter-15
+);

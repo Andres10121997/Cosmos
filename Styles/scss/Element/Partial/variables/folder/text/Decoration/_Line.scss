@@ -1,0 +1,15 @@
+﻿$text-decoration-line-overline:     overline;
+$text-decoration-line-line_through: line-through;
+$text-decoration-line-underline:    underline;
+$text-decoration-line-none:         none;
+
+
+
+$text-decoration-line: (
+    "overline":     $text-decoration-line-overline,
+    "line-through": $text-decoration-line-line_through,
+    "underline":    $text-decoration-line-underline,
+    "none":         $text-decoration-line-none,
+    "initial":      $initial,
+    "inherit":      $inherit
+);

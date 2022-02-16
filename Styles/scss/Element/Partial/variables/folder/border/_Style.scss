@@ -1,0 +1,25 @@
+﻿$border-dotted: dotted;
+$border-dashed: dashed;
+$border-solid:  solid;
+$border-double: double;
+$border-groove: groove;
+$border-ridge:  ridge;
+$border-inset:  inset;
+$border-outset: outset;
+$border-none:   none;
+$border-hidden: hidden;
+$border-mix:    dotted dashed solid double;
+
+$border-border-style: (
+    "dotted":   $border-dotted,
+    "dashed":   $border-dashed,
+    "solid":    $border-solid,
+    "double":   $border-double,
+    "groove":   $border-groove,
+    "ridge":    $border-ridge,
+    "inset":    $border-inset,
+    "outset":   $border-outset,
+    "none":     $border-none,
+    "hidden":   $border-hidden,
+    "mix":      $border-mix
+);

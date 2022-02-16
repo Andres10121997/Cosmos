@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$highway-green-name: string.quote("highway-green");
+
+
+
+$highway-green: #004d33;
+
+$highway-green-50:  Lighter($highway-green, percentage(4.5, 5));
+$highway-green-100: Lighter($highway-green, percentage(4, 5));
+$highway-green-200: Lighter($highway-green, percentage(3, 5));
+$highway-green-300: Lighter($highway-green, percentage(2, 5));
+$highway-green-400: Lighter($highway-green, percentage(1, 5));
+$highway-green-500: var(selector.append($variable-prefix, $highway-green-name));
+$highway-green-600: Darker($highway-green, percentage(1, 5));
+$highway-green-700: Darker($highway-green, percentage(2, 5));
+$highway-green-800: Darker($highway-green, percentage(3, 5));
+$highway-green-900: Darker($highway-green, percentage(4, 5));
+$highway-green-950: Darker($highway-green, percentage(4.5, 5));
+
+
+
+$highway-greens: (
+    "50":   $highway-green-50,
+    "100":  $highway-green-100,
+    "200":  $highway-green-200,
+    "300":  $highway-green-300,
+    "400":  $highway-green-400,
+    "500":  $highway-green-500,
+    "600":  $highway-green-600,
+    "700":  $highway-green-700,
+    "800":  $highway-green-800,
+    "900":  $highway-green-900,
+    "950":  $highway-green-950
+);

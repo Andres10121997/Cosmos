@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$dark-cyan-name: string.quote("dark-cyan");
+
+
+
+$dark-cyan: #008B8B;
+
+$dark-cyan-50:  Lighter($dark-cyan, percentage(4.5, 5));
+$dark-cyan-100: Lighter($dark-cyan, percentage(4, 5));
+$dark-cyan-200: Lighter($dark-cyan, percentage(3, 5));
+$dark-cyan-300: Lighter($dark-cyan, percentage(2, 5));
+$dark-cyan-400: Lighter($dark-cyan, percentage(1, 5));
+$dark-cyan-500: var(selector.append($variable-prefix, $dark-cyan-name));
+$dark-cyan-600: Darker($dark-cyan, percentage(1, 5));
+$dark-cyan-700: Darker($dark-cyan, percentage(2, 5));
+$dark-cyan-800: Darker($dark-cyan, percentage(3, 5));
+$dark-cyan-900: Darker($dark-cyan, percentage(4, 5));
+$dark-cyan-950: Darker($dark-cyan, percentage(4.5, 5));
+
+
+
+$dark-cyans: (
+    "50":   $dark-cyan-50,
+    "100":  $dark-cyan-100,
+    "200":  $dark-cyan-200,
+    "300":  $dark-cyan-300,
+    "400":  $dark-cyan-400,
+    "500":  $dark-cyan-500,
+    "600":  $dark-cyan-600,
+    "700":  $dark-cyan-700,
+    "800":  $dark-cyan-800,
+    "900":  $dark-cyan-900,
+    "950":  $dark-cyan-950
+);

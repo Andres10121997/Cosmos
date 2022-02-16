@@ -1,0 +1,7 @@
+﻿@each $style, $value in $list_style_type
+{
+    .list-style-type-#{$style}
+    {
+        list-style-type: #{$value};
+    }
+}

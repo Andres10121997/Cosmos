@@ -1,0 +1,6 @@
+﻿@use "sass:selector";
+
+@function UseVariable($Element)
+{
+    @return var(selector.append($variable-prefix, $Element));
+}

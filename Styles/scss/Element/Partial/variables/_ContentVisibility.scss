@@ -1,0 +1,9 @@
+﻿$content-visibility-visible:    visible;
+$content-visibility-hidden:     hidden;
+$content-visibility-auto:       auto;
+
+$content-visibilities: (
+    "visible":  $content-visibility-visible,
+    "hidden":   $content-visibility-hidden,
+    "auto":     $content-visibility-auto
+);

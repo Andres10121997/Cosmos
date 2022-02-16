@@ -1,0 +1,33 @@
+﻿$opacity-0:    0;
+$opacity-5:    0.05;
+$opacity-10:   0.1;
+$opacity-20:   0.2;
+$opacity-25:   0.25;
+$opacity-30:   0.30;
+$opacity-40:   0.40;
+$opacity-50:   0.50;
+$opacity-60:   0.60;
+$opacity-70:   0.70;
+$opacity-75:   0.75;
+$opacity-80:   0.80;
+$opacity-90:   0.90;
+$opacity-95:   0.95;
+$opacity-100:  1;
+
+$opacity: (
+    "0":    $opacity-0,
+    "5":    $opacity-5,
+    "10":   $opacity-10,
+    "20":   $opacity-20,
+    "25":   $opacity-25,
+    "30":   $opacity-30,
+    "40":   $opacity-30,
+    "50":   $opacity-50,
+    "60":   $opacity-60,
+    "70":   $opacity-70,
+    "75":   $opacity-75,
+    "80":   $opacity-80,
+    "90":   $opacity-90,
+    "95":   $opacity-95,
+    "100":  $opacity-100
+);

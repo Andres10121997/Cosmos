@@ -1,0 +1,29 @@
+﻿$column_width_auto: auto;
+$column_width_1:    percentage(1, 12);
+$column_width_2:    percentage(2, 12);
+$column_width_3:    percentage(3, 12);
+$column_width_4:    percentage(4, 12);
+$column_width_5:    percentage(5, 12);
+$column_width_6:    percentage(6, 12);
+$column_width_7:    percentage(7, 12);
+$column_width_8:    percentage(8, 12);
+$column_width_9:    percentage(9, 12);
+$column_width_10:   percentage(10, 12);
+$column_width_11:   percentage(11, 12);
+$column_width_12:   percentage(12, 12);
+
+$column_width: (
+    "auto": $column_width_auto,
+    "1":    $column_width_1,
+    "2":    $column_width_2,
+    "3":    $column_width_3,
+    "4":    $column_width_4,
+    "5":    $column_width_5,
+    "6":    $column_width_6,
+    "7":    $column_width_7,
+    "8":    $column_width_8,
+    "9":    $column_width_9,
+    "10":   $column_width_10,
+    "11":   $column_width_11,
+    "12":   $column_width_12
+);

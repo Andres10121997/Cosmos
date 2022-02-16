@@ -1,0 +1,27 @@
+﻿@each $border-style, $value in $border-border-style
+{
+    .#{$border-prefix}style-#{$border-style}
+    {
+        border-style: #{$value} !important;
+    }
+
+    .#{$border-prefix}top-style-#{$border-style}
+    {
+        border-top-style: #{$value} !important;
+    }
+
+    .#{$border-prefix}right-style-#{$border-style}
+    {
+        border-right-style: #{$value} !important;
+    }
+
+    .#{$border-prefix}bottom-style-#{$border-style}
+    {
+        border-bottom-style: #{$value} !important;
+    }
+
+    .#{$border-prefix}left-style-#{$border-style}
+    {
+        border-left-style: #{$value} !important;
+    }
+}

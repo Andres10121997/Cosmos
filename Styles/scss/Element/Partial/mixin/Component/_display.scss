@@ -1,0 +1,14 @@
+﻿@mixin display($font_size, $font_weight, $line_height, $new_fonr_size)
+{
+    font-size: $font_size;
+    font-weight: $font_weight;
+    line-height: $line_height;
+
+    @media(min-width: 1200px)
+    {
+        &
+        {
+            font-size: $new_fonr_size;
+        }
+    }
+}

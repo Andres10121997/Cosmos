@@ -1,0 +1,21 @@
+﻿$-rotate-180:   -180deg;
+$-rotate-100:   -100deg;
+$-rotate-90:    -90deg;
+$-rotate-45:    -45deg;
+$-rotate-12:    -12deg;
+$-rotate-6:     -6deg;
+$-rotate-3:     -3deg;
+$-rotate-2:     -2deg;
+$-rotate-1:     -1deg;
+
+$negative-rotate: (
+    "180":  $-rotate-180,
+    "100":  $-rotate-100,
+    "90":   $-rotate-90,
+    "45":   $-rotate-45,
+    "12":   $-rotate-12,
+    "6":    $-rotate-6,
+    "3":    $-rotate-3,
+    "2":    $-rotate-2,
+    "1":    $-rotate-1
+);

@@ -1,0 +1,9 @@
+﻿@use "sass:selector";
+
+@each $color, $value in $colors
+{
+    .#{$columm-prefix}rule-color-#{$color}
+    {
+        column-rule-color: UseVariable($color) !important;
+    }
+}

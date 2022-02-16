@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$purple-name:   string.quote("purple");
+
+
+
+$purple: #800080;
+
+$purple-50:     Lighter($purple, percentage(4.5, 5));
+$purple-100:    Lighter($purple, percentage(4, 5));
+$purple-200:    Lighter($purple, percentage(3, 5));
+$purple-300:    Lighter($purple, percentage(2, 5));
+$purple-400:    Lighter($purple, percentage(1, 5));
+$purple-500:    var(selector.append($variable-prefix, $purple-name));
+$purple-600:    Darker($purple, percentage(1, 5));
+$purple-700:    Darker($purple, percentage(2, 5));
+$purple-800:    Darker($purple, percentage(3, 5));
+$purple-900:    Darker($purple, percentage(4, 5));
+$purple-950:    Darker($purple, percentage(4.5, 5));
+
+
+
+$purples: (
+    "50":   $purple-50,
+    "100":  $purple-100,
+    "200":  $purple-200,
+    "300":  $purple-300,
+    "400":  $purple-400,
+    "500":  $purple-500,
+    "600":  $purple-600,
+    "700":  $purple-700,
+    "800":  $purple-800,
+    "900":  $purple-900,
+    "950":  $purple-950
+);

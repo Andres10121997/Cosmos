@@ -1,0 +1,11 @@
+﻿$column-gap-length: length;
+$column-gap-normal: normal;
+
+
+
+$column-gaps: (
+    "length":   $column-gap-length,
+    "normal":   $column-gap-normal,
+    "initial":  $initial,
+    "inherit":  $inherit
+);

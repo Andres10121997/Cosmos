@@ -1,0 +1,9 @@
+﻿$background-fixed:  fixed;
+$background-local:  local;
+$background-scroll: scroll;
+
+$background-attachment: (
+    "fixed":    $background-fixed,
+    "local":    $background-local,
+    "scroll":   $background-scroll
+);

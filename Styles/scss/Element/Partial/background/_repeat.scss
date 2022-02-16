@@ -1,0 +1,7 @@
+﻿@each $repeat, $value in $background_repeat
+{
+    .#{$background-prefix}repeat-#{$repeat}
+    {
+        background-repeat: #{$value} !important;
+    }
+}

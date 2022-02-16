@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$light-gray-name: string.quote("light-gray");
+
+
+
+$light-gray: #D3D3D3;
+
+$light-gray-50:     Lighter($light-gray, percentage(4.5, 5));
+$light-gray-100:    Lighter($light-gray, percentage(4, 5));
+$light-gray-200:    Lighter($light-gray, percentage(3, 5));
+$light-gray-300:    Lighter($light-gray, percentage(2, 5));
+$light-gray-400:    Lighter($light-gray, percentage(1, 5));
+$light-gray-500:    var(selector.append($variable-prefix, $light-gray-name));
+$light-gray-600:    Darker($light-gray, percentage(1, 5));
+$light-gray-700:    Darker($light-gray, percentage(2, 5));
+$light-gray-800:    Darker($light-gray, percentage(3, 5));
+$light-gray-900:    Darker($light-gray, percentage(4, 5));
+$light-gray-950:    Darker($light-gray, percentage(4.5, 5));
+
+
+
+$light-grays: (
+    "50":   $light-gray-50,
+    "100":  $light-gray-100,
+    "200":  $light-gray-200,
+    "300":  $light-gray-300,
+    "400":  $light-gray-400,
+    "500":  $light-gray-500,
+    "600":  $light-gray-600,
+    "700":  $light-gray-700,
+    "800":  $light-gray-800,
+    "900":  $light-gray-900,
+    "950":  $light-gray-950
+);

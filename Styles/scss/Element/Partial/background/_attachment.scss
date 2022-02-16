@@ -1,0 +1,7 @@
+﻿@each $attachment, $value in $background-attachment
+{
+    .#{$background-prefix}attachment-#{$attachment}
+    {
+        background-attachment: #{$value} !important;
+    }
+}

@@ -1,0 +1,11 @@
+﻿$overflow-scroll:   scroll;
+$overflow-hidden:   hidden;
+$overflow-auto:     auto;
+$overflow-visible:  visible;
+
+$overflows: (
+    "scroll":   $overflow-scroll,
+    "hidden":   $overflow-hidden,
+    "auto":     $overflow-auto,
+    "visible":  $overflow-visible
+);

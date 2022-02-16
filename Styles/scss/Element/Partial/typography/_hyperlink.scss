@@ -1,0 +1,22 @@
+﻿a
+{
+    color: var(#{$variable-prefix}blue);
+    text-decoration: underline;
+
+    &:hover
+    {
+        color: var(#{$variable-prefix}blue);
+    }
+
+    &:not([href]):not([class]),
+    &:not([href]):not([class]):hover
+    {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    &:visited
+    {
+        color: var(#{$variable-prefix}purple-700);
+    }
+}

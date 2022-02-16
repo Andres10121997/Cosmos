@@ -1,0 +1,9 @@
+﻿$font-kerning-auto:     auto;
+$font-kerning-normal:   normal;
+$font-kerning-none:     none;
+
+$font-kerning: (
+    "auto":     $font-kerning-auto,
+    "normal":   $font-kerning-normal,
+    "none":     $font-kerning-normal
+);

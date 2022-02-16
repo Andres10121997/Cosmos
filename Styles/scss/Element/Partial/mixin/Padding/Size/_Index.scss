@@ -1,0 +1,7 @@
+﻿@mixin PaddingSize($size)
+{
+    padding-top: $size;
+    padding-right: $size;
+    padding-bottom: $size;
+    padding-left: $size;
+}

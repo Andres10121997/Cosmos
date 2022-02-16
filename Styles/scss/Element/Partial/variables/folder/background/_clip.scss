@@ -1,0 +1,11 @@
+﻿$background_clip-border:    border-box;
+$background_clip-padding:   padding-box;
+$background_clip-content:   content-box;
+$background_clip-text:      text;
+
+$background_clip: (
+    "border":   $background_clip-border,
+    "padding":  $background_clip-padding,
+    "content":  $background_clip-content,
+    "text":     $background_clip-text
+);

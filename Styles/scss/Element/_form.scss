@@ -1,0 +1,9 @@
+﻿.is-valid
+{
+    box-shadow: var(#{$variable-prefix}green);
+}
+
+.is-invalid
+{
+    box-shadow: var(#{$variable-prefix}red)
+}

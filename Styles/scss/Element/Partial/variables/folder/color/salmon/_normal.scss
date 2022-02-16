@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$salmon-name:   string.quote("salmon");
+
+
+
+$salmon:    #FA8072;
+
+$salmon-50:     Lighter($salmon, percentage(4.5, 5));
+$salmon-100:    Lighter($salmon, percentage(4, 5));
+$salmon-200:    Lighter($salmon, percentage(3, 5));
+$salmon-300:    Lighter($salmon, percentage(2, 5));
+$salmon-400:    Lighter($salmon, percentage(1, 5));
+$salmon-500:    var(selector.append($variable-prefix, $salmon-name));
+$salmon-600:    Darker($salmon, percentage(1, 5));
+$salmon-700:    Darker($salmon, percentage(2, 5));
+$salmon-800:    Darker($salmon, percentage(3, 5));
+$salmon-900:    Darker($salmon, percentage(4, 5));
+$salmon-950:    Darker($salmon, percentage(4.5, 5));
+
+
+
+$salmons: (
+    "50":   $salmon-50,
+    "100":  $salmon-100,
+    "200":  $salmon-200,
+    "300":  $salmon-300,
+    "400":  $salmon-400,
+    "500":  $salmon-500,
+    "600":  $salmon-600,
+    "700":  $salmon-700,
+    "800":  $salmon-800,
+    "900":  $salmon-900,
+    "950":  $salmon-950
+);

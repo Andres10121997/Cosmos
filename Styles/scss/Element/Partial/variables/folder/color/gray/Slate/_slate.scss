@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$slate-gray-name:   string.quote("slate-gray");
+
+
+
+$slate-gray: #708090;
+
+$slate-gray-50:     Lighter($slate-gray, percentage(4.5, 5));
+$slate-gray-100:    Lighter($slate-gray, percentage(4, 5));
+$slate-gray-200:    Lighter($slate-gray, percentage(3, 5));
+$slate-gray-300:    Lighter($slate-gray, percentage(2, 5));
+$slate-gray-400:    Lighter($slate-gray, percentage(1, 5));
+$slate-gray-500:    var(selector.append($variable-prefix, $slate-gray-name));
+$slate-gray-600:    Darker($slate-gray, percentage(1, 5));
+$slate-gray-700:    Darker($slate-gray, percentage(2, 5));
+$slate-gray-800:    Darker($slate-gray, percentage(3, 5));
+$slate-gray-900:    Darker($slate-gray, percentage(4, 5));
+$slate-gray-950:    Darker($slate-gray, percentage(4.5, 5));
+
+
+
+$slate-grays: (
+    "50":   $slate-gray-50,
+    "100":  $slate-gray-100,
+    "200":  $slate-gray-200,
+    "300":  $slate-gray-300,
+    "400":  $slate-gray-400,
+    "500":  $slate-gray-500,
+    "600":  $slate-gray-600,
+    "700":  $slate-gray-700,
+    "800":  $slate-gray-800,
+    "900":  $slate-gray-900,
+    "950":  $slate-gray-950
+);

@@ -1,0 +1,11 @@
+﻿$text-uppercase:    uppercase;
+$text-lowercase:    lowercase;
+$text-capitalize:   capitalize;
+$text-normal_case:  none;
+
+$text-transform: (
+    "uppercase":    $text-uppercase,
+    "lowercase":    $text-lowercase,
+    "capitalize":   $text-capitalize,
+    "normal_case":  $text-normal_case
+);

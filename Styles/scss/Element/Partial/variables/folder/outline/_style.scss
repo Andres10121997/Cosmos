@@ -1,0 +1,25 @@
+﻿$outline-style-none:    none;
+$outline-style-hidden:  hidden;
+$outline-style-dotted:  dotted;
+$outline-style-dashed:  dashed;
+$outline-style-solid:   solid;
+$outline-style-double:  double;
+$outline-style-groove:  groove;
+$outline-style-ridge:   ridge;
+$outline-style-inset:   inset;
+$outline-style-outset:  outset;
+
+$outline-style: (
+    "none":     $outline-style-none,
+    "hidden":   $outline-style-hidden,
+    "dotted":   $outline-style-dotted,
+    "dashed":   $outline-style-dashed,
+    "solid":    $outline-style-solid,
+    "double":   $outline-style-double,
+    "groove":   $outline-style-groove,
+    "ridge":    $outline-style-ridge,
+    "inset":    $outline-style-inset,
+    "outset":   $outline-style-outset,
+    "initial":  $initial,
+    "inherit":  $inherit
+);

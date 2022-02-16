@@ -1,0 +1,7 @@
+﻿@each $gap, $value in $column-gaps
+{
+    .#{$columm-prefix}gap-#{$gap}
+    {
+        column-gap: #{$value} !important;
+    }
+}

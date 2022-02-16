@@ -1,0 +1,15 @@
+﻿$background_repeat-repeat:      repeat;
+$background_repeat-no_repeat:   no-repeat;
+$background_repeat-repeat_x:    repeat-x;
+$background_repeat-repeat_y:    repeat-y;
+$background_repeat-round:       round;
+$background_repeat-space:       space;
+
+$background_repeat: (
+    "repeat":       $background_repeat-repeat,
+    "no_repeat":    $background_repeat-no_repeat,
+    "repeat_x":     $background_repeat-repeat_x,
+    "repeat_y":     $background_repeat-repeat_y,
+    "round":        $background_repeat-round,
+    "space":        $background_repeat-space
+);

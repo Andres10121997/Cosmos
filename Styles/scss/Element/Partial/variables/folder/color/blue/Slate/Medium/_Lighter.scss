@@ -1,0 +1,35 @@
+﻿$medium-slate-blue-lighter-1:   Lighter($medium-slate-blue, percentage(1, 16));
+$medium-slate-blue-lighter-2:   Lighter($medium-slate-blue, percentage(2, 16));
+$medium-slate-blue-lighter-3:   Lighter($medium-slate-blue, percentage(3, 16));
+$medium-slate-blue-lighter-4:   Lighter($medium-slate-blue, percentage(4, 16));
+$medium-slate-blue-lighter-5:   Lighter($medium-slate-blue, percentage(5, 16));
+$medium-slate-blue-lighter-6:   Lighter($medium-slate-blue, percentage(6, 16));
+$medium-slate-blue-lighter-7:   Lighter($medium-slate-blue, percentage(7, 16));
+$medium-slate-blue-lighter-8:   Lighter($medium-slate-blue, percentage(8, 16));
+$medium-slate-blue-lighter-9:   Lighter($medium-slate-blue, percentage(9, 16));
+$medium-slate-blue-lighter-10:  Lighter($medium-slate-blue, percentage(10, 16));
+$medium-slate-blue-lighter-11:  Lighter($medium-slate-blue, percentage(11, 16));
+$medium-slate-blue-lighter-12:  Lighter($medium-slate-blue, percentage(12, 16));
+$medium-slate-blue-lighter-13:  Lighter($medium-slate-blue, percentage(13, 16));
+$medium-slate-blue-lighter-14:  Lighter($medium-slate-blue, percentage(14, 16));
+$medium-slate-blue-lighter-15:  Lighter($medium-slate-blue, percentage(15, 16));
+
+
+
+$medium-slate-blue-lighters: (
+    "1":    $medium-slate-blue-lighter-1,
+    "2":    $medium-slate-blue-lighter-2,
+    "3":    $medium-slate-blue-lighter-3,
+    "4":    $medium-slate-blue-lighter-4,
+    "5":    $medium-slate-blue-lighter-5,
+    "6":    $medium-slate-blue-lighter-6,
+    "7":    $medium-slate-blue-lighter-7,
+    "8":    $medium-slate-blue-lighter-8,
+    "9":    $medium-slate-blue-lighter-9,
+    "10":   $medium-slate-blue-lighter-10,
+    "11":   $medium-slate-blue-lighter-11,
+    "12":   $medium-slate-blue-lighter-12,
+    "13":   $medium-slate-blue-lighter-13,
+    "14":   $medium-slate-blue-lighter-14,
+    "15":   $medium-slate-blue-lighter-15
+);

@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$light-slate-gray-name: string.quote("light-slate-gray");
+
+
+
+$light-slate-gray:    #778899;
+
+$light-slate-gray-50:   Lighter($light-slate-gray, percentage(4.5, 5));
+$light-slate-gray-100:  Lighter($light-slate-gray, percentage(4, 5));
+$light-slate-gray-200:  Lighter($light-slate-gray, percentage(3, 5));
+$light-slate-gray-300:  Lighter($light-slate-gray, percentage(2, 5));
+$light-slate-gray-400:  Lighter($light-slate-gray, percentage(1, 5));
+$light-slate-gray-500:  var(selector.append($variable-prefix, $light-slate-gray-name));
+$light-slate-gray-600:  Darker($light-slate-gray, percentage(1, 5));
+$light-slate-gray-700:  Darker($light-slate-gray, percentage(2, 5));
+$light-slate-gray-800:  Darker($light-slate-gray, percentage(3, 5));
+$light-slate-gray-900:  Darker($light-slate-gray, percentage(4, 5));
+$light-slate-gray-950:  Darker($light-slate-gray, percentage(4.5, 5));
+
+
+
+$light-slate-grays: (
+    "50":   $light-slate-gray-50,
+    "100":  $light-slate-gray-100,
+    "200":  $light-slate-gray-200,
+    "300":  $light-slate-gray-300,
+    "400":  $light-slate-gray-400,
+    "500":  $light-slate-gray-500,
+    "600":  $light-slate-gray-600,
+    "700":  $light-slate-gray-700,
+    "800":  $light-slate-gray-800,
+    "900":  $light-slate-gray-900,
+    "950":  $light-slate-gray-950
+);

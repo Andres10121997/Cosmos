@@ -1,0 +1,7 @@
+﻿@each $style, $value in $column-rule-styles
+{
+    .#{$columm-prefix}rule-styles-#{$style}
+    {
+        column-rule-style: #{$value} !important;
+    }
+}

@@ -1,0 +1,35 @@
+﻿$light-coral-lighter-1:     Lighter($light-coral, percentage(1, 16));
+$light-coral-lighter-2:     Lighter($light-coral, percentage(2, 16));
+$light-coral-lighter-3:     Lighter($light-coral, percentage(3, 16));
+$light-coral-lighter-4:     Lighter($light-coral, percentage(4, 16));
+$light-coral-lighter-5:     Lighter($light-coral, percentage(5, 16));
+$light-coral-lighter-6:     Lighter($light-coral, percentage(6, 16));
+$light-coral-lighter-7:     Lighter($light-coral, percentage(7, 16));
+$light-coral-lighter-8:     Lighter($light-coral, percentage(8, 16));
+$light-coral-lighter-9:     Lighter($light-coral, percentage(9, 16));
+$light-coral-lighter-10:    Lighter($light-coral, percentage(10, 16));
+$light-coral-lighter-11:    Lighter($light-coral, percentage(11, 16));
+$light-coral-lighter-12:    Lighter($light-coral, percentage(12, 16));
+$light-coral-lighter-13:    Lighter($light-coral, percentage(13, 16));
+$light-coral-lighter-14:    Lighter($light-coral, percentage(14, 16));
+$light-coral-lighter-15:    Lighter($light-coral, percentage(15, 16));
+
+
+
+$light-coral-lighters: (
+    "1":    $light-coral-lighter-1,
+    "2":    $light-coral-lighter-2,
+    "3":    $light-coral-lighter-3,
+    "4":    $light-coral-lighter-4,
+    "5":    $light-coral-lighter-5,
+    "6":    $light-coral-lighter-6,
+    "7":    $light-coral-lighter-7,
+    "8":    $light-coral-lighter-8,
+    "9":    $light-coral-lighter-9,
+    "10":   $light-coral-lighter-10,
+    "11":   $light-coral-lighter-11,
+    "12":   $light-coral-lighter-12,
+    "13":   $light-coral-lighter-13,
+    "14":   $light-coral-lighter-14,
+    "15":   $light-coral-lighter-15
+);

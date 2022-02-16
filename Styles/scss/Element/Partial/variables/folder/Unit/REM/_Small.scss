@@ -1,0 +1,35 @@
+﻿$rem-small-1:   PixelToRem(15);
+$rem-small-2:   PixelToRem(14);
+$rem-small-3:   PixelToRem(13);
+$rem-small-4:   PixelToRem(12);
+$rem-small-5:   PixelToRem(11);
+$rem-small-6:   PixelToRem(10);
+$rem-small-7:   PixelToRem(9);
+$rem-small-8:   PixelToRem(8);
+$rem-small-9:   PixelToRem(7);
+$rem-small-10:  PixelToRem(6);
+$rem-small-11:  PixelToRem(5);
+$rem-small-12:  PixelToRem(4);
+$rem-small-13:  PixelToRem(3);
+$rem-small-14:  PixelToRem(2);
+$rem-small-15:  PixelToRem(1);
+
+
+
+$rem-smalls: (
+    "1":    $rem-small-1,
+    "2":    $rem-small-2,
+    "3":    $rem-small-3,
+    "4":    $rem-small-4,
+    "5":    $rem-small-5,
+    "6":    $rem-small-6,
+    "7":    $rem-small-7,
+    "8":    $rem-small-8,
+    "9":    $rem-small-9,
+    "10":   $rem-small-10,
+    "11":   $rem-small-11,
+    "12":   $rem-small-12,
+    "13":   $rem-small-13,
+    "14":   $rem-small-14,
+    "15":   $rem-small-15
+);

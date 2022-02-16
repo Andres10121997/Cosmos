@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$dark-khaki-name:   string.quote("dark-khaki");
+
+
+
+$dark-khaki: #BDB76B;
+
+$dark-khaki-50:     Lighter($dark-khaki, percentage(4.5, 5));
+$dark-khaki-100:    Lighter($dark-khaki, percentage(4, 5));
+$dark-khaki-200:    Lighter($dark-khaki, percentage(3, 5));
+$dark-khaki-300:    Lighter($dark-khaki, percentage(2, 5));
+$dark-khaki-400:    Lighter($dark-khaki, percentage(1, 5));
+$dark-khaki-500:    var(selector.append($variable-prefix, $dark-khaki-name));
+$dark-khaki-600:    Darker($dark-khaki, percentage(1, 5));
+$dark-khaki-700:    Darker($dark-khaki, percentage(2, 5));
+$dark-khaki-800:    Darker($dark-khaki, percentage(3, 5));
+$dark-khaki-900:    Darker($dark-khaki, percentage(4, 5));
+$dark-khaki-950:    Darker($dark-khaki, percentage(4.5, 5));
+
+
+
+$dark-khakis: (
+    "50":   $dark-khaki-50,
+    "100":  $dark-khaki-100,
+    "200":  $dark-khaki-200,
+    "300":  $dark-khaki-300,
+    "400":  $dark-khaki-400,
+    "500":  $dark-khaki-500,
+    "600":  $dark-khaki-600,
+    "700":  $dark-khaki-700,
+    "800":  $dark-khaki-800,
+    "900":  $dark-khaki-900,
+    "950":  $dark-khaki-950
+);

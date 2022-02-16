@@ -1,0 +1,15 @@
+﻿@use "sass:selector";
+
+@each $unit, $value in $Unit
+{
+    @each $unit1, $value1 in $value
+    {
+        @each $unit2, $value2 in $value1
+        {
+            .#{$border-prefix}top-right-radius-#{$unit}-#{$unit1}-#{$unit2}
+            {
+                border-top-left-radius: UseVariable(selector.append(#{$unit}, -#{$unit1}-#{$unit2})) !important;
+            }
+        }
+    }
+}

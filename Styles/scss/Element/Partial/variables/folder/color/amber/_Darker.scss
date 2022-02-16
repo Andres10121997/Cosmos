@@ -1,0 +1,35 @@
+﻿$amber-darker-1:    Darker($amber, percentage(1, 16));
+$amber-darker-2:    Darker($amber, percentage(2, 16));
+$amber-darker-3:    Darker($amber, percentage(3, 16));
+$amber-darker-4:    Darker($amber, percentage(4, 16));
+$amber-darker-5:    Darker($amber, percentage(5, 16));
+$amber-darker-6:    Darker($amber, percentage(6, 16));
+$amber-darker-7:    Darker($amber, percentage(7, 16));
+$amber-darker-8:    Darker($amber, percentage(8, 16));
+$amber-darker-9:    Darker($amber, percentage(9, 16));
+$amber-darker-10:   Darker($amber, percentage(10, 16));
+$amber-darker-11:   Darker($amber, percentage(11, 16));
+$amber-darker-12:   Darker($amber, percentage(12, 16));
+$amber-darker-13:   Darker($amber, percentage(13, 16));
+$amber-darker-14:   Darker($amber, percentage(14, 16));
+$amber-darker-15:   Darker($amber, percentage(15, 16));
+
+
+
+$amber-darkers: (
+    "1":    $amber-darker-1,
+    "2":    $amber-darker-2,
+    "3":    $amber-darker-3,
+    "4":    $amber-darker-4,
+    "5":    $amber-darker-5,
+    "6":    $amber-darker-6,
+    "7":    $amber-darker-7,
+    "8":    $amber-darker-8,
+    "9":    $amber-darker-9,
+    "10":   $amber-darker-10,
+    "11":   $amber-darker-11,
+    "12":   $amber-darker-12,
+    "13":   $amber-darker-13,
+    "14":   $amber-darker-14,
+    "15":   $amber-darker-15
+);

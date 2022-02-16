@@ -1,0 +1,7 @@
+﻿@mixin BorderAllStyles($top, $right, $bottom, $left)
+{
+    border-top-style: $top;
+    border-right-style: $right;
+    border-bottom-style: $bottom;
+    border-left-style: $left;
+}

@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$navajo-white-name: string.quote("navajo-white");
+
+
+
+$navajo-white:   #FFDEAD;
+
+$navajo-white-50:   Lighter($navajo-white, percentage(4.5, 5));
+$navajo-white-100:  Lighter($navajo-white, percentage(4, 5));
+$navajo-white-200:  Lighter($navajo-white, percentage(3, 5));
+$navajo-white-300:  Lighter($navajo-white, percentage(2, 5));
+$navajo-white-400:  Lighter($navajo-white, percentage(1, 5));
+$navajo-white-500:  var(selector.append($variable-prefix, $navajo-white-name));
+$navajo-white-600:  Darker($navajo-white, percentage(1, 5));
+$navajo-white-700:  Darker($navajo-white, percentage(2, 5));
+$navajo-white-800:  Darker($navajo-white, percentage(3, 5));
+$navajo-white-900:  Darker($navajo-white, percentage(4, 5));
+$navajo-white-950:  Darker($navajo-white, percentage(4.5, 5));
+
+
+
+$navajo-whites: (
+    "50":   $navajo-white-50,
+    "100":  $navajo-white-100,
+    "200":  $navajo-white-200,
+    "300":  $navajo-white-300,
+    "400":  $navajo-white-400,
+    "500":  $navajo-white-500,
+    "600":  $navajo-white-600,
+    "700":  $navajo-white-700,
+    "800":  $navajo-white-800,
+    "900":  $navajo-white-900,
+    "950":  $navajo-white-950
+);

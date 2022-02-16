@@ -1,0 +1,13 @@
+﻿@each $color, $value in $ColorUnion
+{
+    @each $color1, $value1 in $value
+    {
+        @each $color2, $value2 in $value1
+        {
+            .#{$border-prefix}bottom-color-#{$color1}-#{$color}-#{$color2}
+            {
+                border-bottom-color: UseVariable(#{$color1}-#{$color}-#{$color2}) !important;
+            }
+        }
+    }
+}

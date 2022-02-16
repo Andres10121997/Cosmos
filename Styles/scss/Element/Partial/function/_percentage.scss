@@ -1,0 +1,6 @@
+﻿@use "sass:math";
+
+@function percentage($nominator, $denominator)
+{
+    @return math.percentage(math.div($nominator, $denominator));
+}

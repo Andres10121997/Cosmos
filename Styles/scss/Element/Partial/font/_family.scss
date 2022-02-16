@@ -1,0 +1,9 @@
+﻿@use "sass:selector";
+
+@each $font, $value in $font-family
+{
+    .#{$font-prefix}#{$family-prefix}#{$font}
+    {
+        font-family: var(selector.append($variable-prefix, selector.append($font-prefix, selector.append($family-prefix, $font)))) !important;
+    }
+}

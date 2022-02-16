@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$medium-purple-name:    string.quote("medium-purple");
+
+
+
+$medium-purple: #9370DB;
+
+$medium-purple-50:  Lighter($medium-purple, percentage(4.5, 5));
+$medium-purple-100: Lighter($medium-purple, percentage(4, 5));
+$medium-purple-200: Lighter($medium-purple, percentage(3, 5));
+$medium-purple-300: Lighter($medium-purple, percentage(2, 5));
+$medium-purple-400: Lighter($medium-purple, percentage(1, 5));
+$medium-purple-500: var(selector.append($variable-prefix, $medium-purple-name));
+$medium-purple-600: Darker($medium-purple, percentage(1, 5));
+$medium-purple-700: Darker($medium-purple, percentage(2, 5));
+$medium-purple-800: Darker($medium-purple, percentage(3, 5));
+$medium-purple-900: Darker($medium-purple, percentage(4, 5));
+$medium-purple-950: Darker($medium-purple, percentage(4.5, 5));
+
+
+
+$medium-purples: (
+    "50":   $medium-purple-50,
+    "100":  $medium-purple-100,
+    "200":  $medium-purple-200,
+    "300":  $medium-purple-300,
+    "400":  $medium-purple-400,
+    "500":  $medium-purple-500,
+    "600":  $medium-purple-600,
+    "700":  $medium-purple-700,
+    "800":  $medium-purple-800,
+    "900":  $medium-purple-900,
+    "950":  $medium-purple-950
+);

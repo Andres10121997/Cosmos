@@ -1,0 +1,21 @@
+﻿$background_position-bottom:        bottom;
+$background_position-center:        center;
+$background_position-left:          left;
+$background_position-left_bottom:   left bottom;
+$background_position-left_top:      left top;
+$background_position-right:         right;
+$background_position-right_bottom:  right bottom;
+$background_position-right_top:     right top;
+$background_position-top:           top;
+
+$background_position: (
+    "bottom":       $background_position-bottom,
+    "center":       $background_position-center,
+    "left":         $background_position-left,
+    "left_bottom":  $background_position-left_bottom,
+    "left_top":     $background_position-left_top,
+    "right":        $background_position-right,
+    "right_bottom": $background_position-right_bottom,
+    "right_top":    $background_position-right_top,
+    "top":          $background_position-top
+);

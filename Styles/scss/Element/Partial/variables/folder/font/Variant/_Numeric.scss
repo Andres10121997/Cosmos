@@ -1,0 +1,27 @@
+﻿$font-variant-numeric-normal:               normal;
+$font-variant-numeric-ordinal:              ordinal;
+$font-variant-numeric-slashed_zero:         slashed-zero;
+$font-variant-numeric-lining_nums:          lining-nums;
+$font-variant-numeric-oldstyle_nums:        oldstyle-nums;
+$font-variant-numeric-proportional_nums:    proportional-nums;
+$font-variant-numeric-tabular_nums:         tabular-nums;
+$font-variant-numeric-diagonal_fractions:   diagonal-fractions;
+$font-variant-numeric-stacked_fractions:    stacked-fractions;
+$font-variant-numeric-revert:               revert;
+$font-variant-numeric-unset:                unset;
+
+$font-variant-numeric: (
+    "normal_nums":          $font-variant-numeric-normal,
+    "ordinal":              $font-variant-numeric-ordinal,
+    "slashed_zero":         $font-variant-numeric-slashed_zero,
+    "lining_nums":          $font-variant-numeric-lining_nums,
+    "oldstyle_nums":        $font-variant-numeric-oldstyle_nums,
+    "proportional_nums":    $font-variant-numeric-proportional_nums,
+    "tabular_nums":         $font-variant-numeric-tabular_nums,
+    "diagonal_fractions":   $font-variant-numeric-diagonal_fractions,
+    "stacked_fractions":    $font-variant-numeric-stacked_fractions,
+    "inherit":              $inherit,
+    "initial":              $initial,
+    "revert":               $font-variant-numeric-revert,
+    "unset":                $font-variant-numeric-unset
+);

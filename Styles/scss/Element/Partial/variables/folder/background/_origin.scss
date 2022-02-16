@@ -1,0 +1,9 @@
+﻿$background_origin-border:  border-box;
+$background_origin-padding: padding-box;
+$background_origin-content: content-box;
+
+$background_origin: (
+    "border":   $background_origin-border,
+    "padding":  $background_origin-padding,
+    "content":  $background_origin-content
+);

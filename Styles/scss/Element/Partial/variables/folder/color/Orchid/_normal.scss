@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$orchid-name:   string.quote("orchid");
+
+
+
+$orchid:    #DA70D6;
+
+$orchid-50:     Lighter($orchid, percentage(4.5, 5));
+$orchid-100:    Lighter($orchid, percentage(4, 5));
+$orchid-200:    Lighter($orchid, percentage(3, 5));
+$orchid-300:    Lighter($orchid, percentage(2, 5));
+$orchid-400:    Lighter($orchid, percentage(1, 5));
+$orchid-500:    var(selector.append($variable-prefix, $orchid-name));
+$orchid-600:    Darker($orchid, percentage(1, 5));
+$orchid-700:    Darker($orchid, percentage(2, 5));
+$orchid-800:    Darker($orchid, percentage(3, 5));
+$orchid-900:    Darker($orchid, percentage(4, 5));
+$orchid-950:    Darker($orchid, percentage(4.5, 5));
+
+
+
+$orchids: (
+    "50":   $orchid-50,
+    "100":  $orchid-100,
+    "200":  $orchid-200,
+    "300":  $orchid-300,
+    "400":  $orchid-400,
+    "500":  $orchid-500,
+    "600":  $orchid-600,
+    "700":  $orchid-700,
+    "800":  $orchid-800,
+    "900":  $orchid-900,
+    "950":  $orchid-950
+);

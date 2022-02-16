@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$orange-red-name:   string.quote("orange-red");
+
+
+
+$orange-red:    #FF4500;
+
+$orange-red-50:     Lighter($orange-red, percentage(4.5, 5));
+$orange-red-100:    Lighter($orange-red, percentage(4, 5));
+$orange-red-200:    Lighter($orange-red, percentage(3, 5));
+$orange-red-300:    Lighter($orange-red, percentage(2, 5));
+$orange-red-400:    Lighter($orange-red, percentage(1, 5));
+$orange-red-500:    var(selector.append($variable-prefix, $orange-red-name));
+$orange-red-600:    Darker($orange-red, percentage(1, 5));
+$orange-red-700:    Darker($orange-red, percentage(2, 5));
+$orange-red-800:    Darker($orange-red, percentage(3, 5));
+$orange-red-900:    Darker($orange-red, percentage(4, 5));
+$orange-red-950:    Darker($orange-red, percentage(4.5, 5));
+
+
+
+$orange-reds: (
+    "50":   $orange-red-50,
+    "100":  $orange-red-100,
+    "200":  $orange-red-200,
+    "300":  $orange-red-300,
+    "400":  $orange-red-400,
+    "500":  $orange-red-500,
+    "600":  $orange-red-600,
+    "700":  $orange-red-700,
+    "800":  $orange-red-800,
+    "900":  $orange-red-900,
+    "950":  $orange-red-950
+);

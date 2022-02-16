@@ -1,0 +1,34 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$gold-name: string.quote("gold");
+
+
+
+$gold: #FFD700;
+
+$gold-50:   Lighter($gold, percentage(4.5, 5));
+$gold-100:  Lighter($gold, percentage(4, 5));
+$gold-200:  Lighter($gold, percentage(3, 5));
+$gold-300:  Lighter($gold, percentage(2, 5));
+$gold-400:  Lighter($gold, percentage(1, 5));
+$gold-500:  var(selector.append($variable-prefix, $gold-name));
+$gold-600:  Darker($gold, percentage(1, 5));
+$gold-700:  Darker($gold, percentage(2, 5));
+$gold-800:  Darker($gold, percentage(3, 5));
+$gold-900:  Darker($gold, percentage(4, 5));
+$gold-950:  Darker($gold, percentage(4.5, 5));
+
+$golds: (
+    "50":   $gold-50,
+    "100":  $gold-100,
+    "200":  $gold-200,
+    "300":  $gold-300,
+    "400":  $gold-400,
+    "500":  $gold-500,
+    "600":  $gold-600,
+    "700":  $gold-700,
+    "800":  $gold-800,
+    "900":  $gold-900,
+    "950":  $gold-950
+);

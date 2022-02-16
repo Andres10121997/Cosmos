@@ -1,0 +1,7 @@
+﻿$list_style_position-inside:    inside;
+$list_style_position-outside:   outside;
+
+$list_style_position: (
+    "inside":   $list_style_position-inside,
+    "outside":  $list_style_position-outside
+);

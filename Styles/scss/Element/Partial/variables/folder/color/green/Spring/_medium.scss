@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$medium-spring-green-name:  string.quote("medium-spring-green");
+
+
+
+$medium-spring-green: #00FA9A;
+
+$medium-spring-50:  Lighter($medium-spring-green, percentage(4.5, 5));
+$medium-spring-100: Lighter($medium-spring-green, percentage(4, 5));
+$medium-spring-200: Lighter($medium-spring-green, percentage(3, 5));
+$medium-spring-300: Lighter($medium-spring-green, percentage(2, 5));
+$medium-spring-400: Lighter($medium-spring-green, percentage(1, 5));
+$medium-spring-500: var(selector.append($variable-prefix, $medium-spring-green-name));
+$medium-spring-600: Darker($medium-spring-green, percentage(1, 5));
+$medium-spring-700: Darker($medium-spring-green, percentage(2, 5));
+$medium-spring-800: Darker($medium-spring-green, percentage(3, 5));
+$medium-spring-900: Darker($medium-spring-green, percentage(4, 5));
+$medium-spring-950: Darker($medium-spring-green, percentage(4.5, 5));
+
+
+
+$medium-springs: (
+    "50":   $medium-spring-50,
+    "100":  $medium-spring-100,
+    "200":  $medium-spring-200,
+    "300":  $medium-spring-300,
+    "400":  $medium-spring-400,
+    "500":  $medium-spring-500,
+    "600":  $medium-spring-600,
+    "700":  $medium-spring-700,
+    "800":  $medium-spring-800,
+    "900":  $medium-spring-900,
+    "950":  $medium-spring-950
+);

@@ -1,0 +1,7 @@
+﻿@each $select, $value in $user-select
+{
+    .user-select-#{$select}
+    {
+        user-select: #{$value};
+    }
+}

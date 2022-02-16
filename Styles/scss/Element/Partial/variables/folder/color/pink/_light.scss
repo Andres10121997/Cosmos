@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$light-pink-name:   string.quote("light-pink");
+
+
+
+$light-pink:    #FFB6C1;
+
+$light-pink-50:     Lighter($light-pink, percentage(4.5, 5));
+$light-pink-100:    Lighter($light-pink, percentage(4, 5));
+$light-pink-200:    Lighter($light-pink, percentage(3, 5));
+$light-pink-300:    Lighter($light-pink, percentage(2, 5));
+$light-pink-400:    Lighter($light-pink, percentage(1, 5));
+$light-pink-500:    var(selector.append($variable-prefix, $light-pink-name));
+$light-pink-600:    Darker($light-pink, percentage(1, 5));
+$light-pink-700:    Darker($light-pink, percentage(2, 5));
+$light-pink-800:    Darker($light-pink, percentage(3, 5));
+$light-pink-900:    Darker($light-pink, percentage(4, 5));
+$light-pink-950:    Darker($light-pink, percentage(4.5, 5));
+
+
+
+$light-pinks: (
+    "50":   $light-pink-50,
+    "100":  $light-pink-100,
+    "200":  $light-pink-200,
+    "300":  $light-pink-300,
+    "400":  $light-pink-400,
+    "500":  $light-pink-500,
+    "600":  $light-pink-600,
+    "700":  $light-pink-700,
+    "800":  $light-pink-800,
+    "900":  $light-pink-900,
+    "950":  $light-pink-950
+)

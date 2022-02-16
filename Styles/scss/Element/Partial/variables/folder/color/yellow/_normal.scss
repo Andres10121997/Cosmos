@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$yellow-name:   string.quote("yellow");
+
+
+
+$yellow: #FFFF00;
+
+$yellow-50:     Lighter($yellow, percentage(4.5, 5));
+$yellow-100:    Lighter($yellow, percentage(4, 5));
+$yellow-200:    Lighter($yellow, percentage(3, 5));
+$yellow-300:    Lighter($yellow, percentage(2, 5));
+$yellow-400:    Lighter($yellow, percentage(1, 5));
+$yellow-500:    var(selector.append($variable-prefix, $yellow-name));
+$yellow-600:    Darker($yellow, percentage(1, 5));
+$yellow-700:    Darker($yellow, percentage(2, 5));
+$yellow-800:    Darker($yellow, percentage(3, 5));
+$yellow-900:    Darker($yellow, percentage(4, 5));
+$yellow-950:    Darker($yellow, percentage(4.5, 5));
+
+
+
+$yellows: (
+    "50":   $yellow-50,
+    "100":  $yellow-100,
+    "200":  $yellow-200,
+    "300":  $yellow-300,
+    "400":  $yellow-400,
+    "500":  $yellow-500,
+    "600":  $yellow-600,
+    "700":  $yellow-700,
+    "800":  $yellow-800,
+    "900":  $yellow-900,
+    "950":  $yellow-950
+);

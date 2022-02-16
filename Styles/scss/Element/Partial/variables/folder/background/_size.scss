@@ -1,0 +1,9 @@
+﻿$background_size-auto:  auto;
+$background_size-cover: cover;
+$background_size-size:  contrain;
+
+$background_size: (
+    "auto":     $background_size-auto,
+    "cover":    $background_size-cover,
+    "size":     $background_size-size
+);

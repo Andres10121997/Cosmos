@@ -1,0 +1,11 @@
+﻿$column-fill-balance:   balance;
+$column-fill-auto:      auto;
+
+
+
+$column-fills: (
+    "balance":  $column-fill-balance,
+    "auto":     $column-fill-auto,
+    "initial":  $initial,
+    "inherit":  $inherit
+);

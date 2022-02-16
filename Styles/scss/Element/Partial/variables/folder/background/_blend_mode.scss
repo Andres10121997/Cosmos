@@ -1,0 +1,35 @@
+﻿$background_blend_mode-normal:      normal;
+$background_blend_mode-multiply:    multiply;
+$background_blend_mode-screen:      screen;
+$background_blend_mode-overlay:     overlay;
+$background_blend_mode-darken:      darken;
+$background_blend_mode-lighten:     lighten;
+$background_blend_mode-color_dodge: color-dodge;
+$background_blend_mode-color_burn:  color-burn;
+$background_blend_mode-hard_light:  hard-light;
+$background_blend_mode-soft_light:  soft-light;
+$background_blend_mode-difference:  difference;
+$background_blend_mode-exclusion:   exclusion;
+$background_blend_mode-hue:         hue;
+$background_blend_mode-saturation:  saturation;
+$background_blend_mode-color:       color;
+$background_blend_mode-luminosity:  luminosity;
+
+$background_blend_mode: (
+    "normal":       $background_blend_mode-normal,
+    "multiply":     $background_blend_mode-multiply,
+    "screen":       $background_blend_mode-screen,
+    "overlay":      $background_blend_mode-overlay,
+    "darken":       $background_blend_mode-darken,
+    "lighten":      $background_blend_mode-lighten,
+    "color-dodge":  $background_blend_mode-color_dodge,
+    "color-burn":   $background_blend_mode-color_burn,
+    "hard-light":   $background_blend_mode-hard_light,
+    "soft-light":   $background_blend_mode-soft_light,
+    "difference":   $background_blend_mode-difference,
+    "exclusion":    $background_blend_mode-exclusion,
+    "hue":          $background_blend_mode-hue,
+    "saturation":   $background_blend_mode-saturation,
+    "color":        $background_blend_mode-color,
+    "luminosity":   $background_blend_mode-luminosity
+);

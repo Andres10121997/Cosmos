@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$dim-gray-name: string.quote("dim-gray");
+
+
+
+$dim-gray:  #696969;
+
+$dim-gray-50:   Lighter($dim-gray, percentage(4.5, 5));
+$dim-gray-100:  Lighter($dim-gray, percentage(4, 5));
+$dim-gray-200:  Lighter($dim-gray, percentage(3, 5));
+$dim-gray-300:  Lighter($dim-gray, percentage(2, 5));
+$dim-gray-400:  Lighter($dim-gray, percentage(1, 5));
+$dim-gray-500:  var(selector.append($variable-prefix, $dim-gray-name));
+$dim-gray-600:  Darker($dim-gray, percentage(1, 5));
+$dim-gray-700:  Darker($dim-gray, percentage(2, 5));
+$dim-gray-800:  Darker($dim-gray, percentage(3, 5));
+$dim-gray-900:  Darker($dim-gray, percentage(4, 5));
+$dim-gray-950:  Darker($dim-gray, percentage(4.5, 5));
+
+
+
+$dim-grays: (
+    "50":   $dim-gray-50,
+    "100":  $dim-gray-100,
+    "200":  $dim-gray-200,
+    "300":  $dim-gray-300,
+    "400":  $dim-gray-400,
+    "500":  $dim-gray-500,
+    "600":  $dim-gray-600,
+    "700":  $dim-gray-700,
+    "800":  $dim-gray-800,
+    "900":  $dim-gray-900,
+    "950":  $dim-gray-950
+);

@@ -1,0 +1,7 @@
+﻿@each $width, $value in $outline-width
+{
+    .#{$outline-prefix}width-#{$width}
+    {
+        outline-width: #{$value} !important;
+    }
+}

@@ -1,0 +1,7 @@
+﻿@each $position, $value in $background_position
+{
+    .#{$background-prefix}position-#{$position}
+    {
+        background-position: #{$value} !important;
+    }
+}

@@ -1,0 +1,7 @@
+﻿@each $scale, $value in $scales
+{
+    .scaleY-#{$scale}
+    {
+        transform: scaleY(#{$value}) !important;
+    }
+}

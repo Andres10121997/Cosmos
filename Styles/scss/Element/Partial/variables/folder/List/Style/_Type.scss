@@ -1,0 +1,9 @@
+﻿$list_style_type-none:      none;
+$list_style_type-disc:      disc;
+$list_style_type-decimal:   decimal;
+
+$list_style_type: (
+    "none":     $list_style_type-none,
+    "disc":     $list_style_type-disc,
+    "decimal":  $list_style_type-decimal
+);

@@ -1,0 +1,7 @@
+﻿@each $size, $value in $background_size
+{
+    .#{$background-prefix}size-#{$size}
+    {
+        background-size: #{$value} !important;
+    }
+}

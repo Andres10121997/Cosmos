@@ -1,0 +1,7 @@
+﻿@mixin BorderStyle($style)
+{
+    border-top-style: $style;
+    border-right-style: $style;
+    border-bottom-style: $style;
+    border-left-style: $style;
+}

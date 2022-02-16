@@ -1,0 +1,11 @@
+﻿@use "sass:selector";
+
+.Square
+{
+    width: PixelToRem(100);
+    height: PixelToRem(100);
+
+    @include GeometricFigureBorder;
+
+    background-color: var(selector.append($variable-prefix, $dodger-blue-name));
+}

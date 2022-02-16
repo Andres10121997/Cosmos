@@ -1,0 +1,7 @@
+﻿@each $mix, $value in $mix_blend_mode
+{
+    .mix-blend-mode-#{$mix}
+    {
+        mix-blend-mode: #{$value} !important;
+    }
+}

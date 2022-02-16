@@ -1,0 +1,7 @@
+﻿@each $translate, $value in $translates
+{
+    .translateY-#{$translate}
+    {
+        transform: translateY(#{$value}) !important;
+    }
+}

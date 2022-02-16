@@ -1,0 +1,35 @@
+﻿$rosy-brown-lighter-1:  Lighter($rosy-brown, percentage(1, 16));
+$rosy-brown-lighter-2:  Lighter($rosy-brown, percentage(2, 16));
+$rosy-brown-lighter-3:  Lighter($rosy-brown, percentage(3, 16));
+$rosy-brown-lighter-4:  Lighter($rosy-brown, percentage(4, 16));
+$rosy-brown-lighter-5:  Lighter($rosy-brown, percentage(5, 16));
+$rosy-brown-lighter-6:  Lighter($rosy-brown, percentage(6, 16));
+$rosy-brown-lighter-7:  Lighter($rosy-brown, percentage(7, 16));
+$rosy-brown-lighter-8:  Lighter($rosy-brown, percentage(8, 16));
+$rosy-brown-lighter-9:  Lighter($rosy-brown, percentage(9, 16));
+$rosy-brown-lighter-10: Lighter($rosy-brown, percentage(10, 16));
+$rosy-brown-lighter-11: Lighter($rosy-brown, percentage(11, 16));
+$rosy-brown-lighter-12: Lighter($rosy-brown, percentage(12, 16));
+$rosy-brown-lighter-13: Lighter($rosy-brown, percentage(13, 16));
+$rosy-brown-lighter-14: Lighter($rosy-brown, percentage(14, 16));
+$rosy-brown-lighter-15: Lighter($rosy-brown, percentage(15, 16));
+
+
+
+$rosy-brown-lighters: (
+    "1":    $rosy-brown-lighter-1,
+    "2":    $rosy-brown-lighter-2,
+    "3":    $rosy-brown-lighter-3,
+    "4":    $rosy-brown-lighter-4,
+    "5":    $rosy-brown-lighter-5,
+    "6":    $rosy-brown-lighter-6,
+    "7":    $rosy-brown-lighter-7,
+    "8":    $rosy-brown-lighter-8,
+    "9":    $rosy-brown-lighter-9,
+    "10":   $rosy-brown-lighter-10,
+    "11":   $rosy-brown-lighter-11,
+    "12":   $rosy-brown-lighter-12,
+    "13":   $rosy-brown-lighter-13,
+    "14":   $rosy-brown-lighter-14,
+    "15":   $rosy-brown-lighter-15
+);

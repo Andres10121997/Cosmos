@@ -1,0 +1,7 @@
+﻿@each $rotate, $value in $negative-rotate
+{
+    .-rotate-#{$rotate}
+    {
+        transform: rotate(#{$value}) !important;
+    }
+}

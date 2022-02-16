@@ -1,0 +1,7 @@
+﻿@each $origin, $value in $background_origin
+{
+    .#{$background-prefix}origin-#{$origin}
+    {
+        background-origin: #{$value} !important;
+    }
+}

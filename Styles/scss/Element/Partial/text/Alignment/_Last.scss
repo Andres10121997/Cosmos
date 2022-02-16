@@ -1,0 +1,7 @@
+﻿@each $alignment, $value in $text-alignment-last
+{
+    .#{$text-prefix}align-last-#{$alignment}
+    {
+        text-align-last: #{$value} !important;
+    }
+}

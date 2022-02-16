@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$teal-name: string.quote("teal");
+
+
+
+$teal: #008080;
+
+$teal-50:   Lighter($teal, percentage(4.5, 5));
+$teal-100:  Lighter($teal, percentage(4, 5));
+$teal-200:  Lighter($teal, percentage(3, 5));
+$teal-300:  Lighter($teal, percentage(2, 5));
+$teal-400:  Lighter($teal, percentage(1, 5));
+$teal-500:  var(selector.append($variable-prefix, $teal-name));
+$teal-600:  Darker($teal, percentage(1, 5));
+$teal-700:  Darker($teal, percentage(2, 5));
+$teal-800:  Darker($teal, percentage(3, 5));
+$teal-900:  Darker($teal, percentage(4, 5));
+$teal-950:  Darker($teal, percentage(4.5, 5));
+
+
+
+$teals: (
+    "50":   $teal-50,
+    "100":  $teal-100,
+    "200":  $teal-200,
+    "300":  $teal-300,
+    "400":  $teal-400,
+    "500":  $teal-500,
+    "600":  $teal-600,
+    "700":  $teal-700,
+    "800":  $teal-800,
+    "900":  $teal-900,
+    "950":  $teal-950
+);

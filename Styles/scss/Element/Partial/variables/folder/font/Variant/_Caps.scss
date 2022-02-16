@@ -1,0 +1,23 @@
+﻿$font-variant-caps-normal:          normal;
+$font-variant-caps-small_caps:      small-caps;
+$font-variant-caps-all_small_caps:  all-small-caps;
+$font-variant-caps-petite_caps:     petite-caps;
+$font-variant-caps-all_petite_caps: all-petite-caps;
+$font-variant-caps-unicase:         unicase;
+$font-variant-caps-titling_caps:    titling-caps;
+$font-variant-caps-unset:           unset;
+
+
+
+$font-variant-caps: (
+    "normal":           $font-variant-caps-normal,
+    "small_caps":       $font-variant-caps-small_caps,
+    "all_small_caps":   $font-variant-caps-all_small_caps,
+    "petite_caps":      $font-variant-caps-petite_caps,
+    "all-petite-caps":  $font-variant-caps-all_petite_caps,
+    "unicase":          $font-variant-caps-unicase,
+    "titling_caps":     $font-variant-caps-titling_caps,
+    "initial":          $initial,
+    "inherit":          $inherit,
+    "unset":            $font-variant-caps-unset
+);

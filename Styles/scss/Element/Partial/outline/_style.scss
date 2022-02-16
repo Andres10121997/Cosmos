@@ -1,0 +1,7 @@
+﻿@each $style, $value in $outline-style
+{
+    .#{$outline-prefix}style-#{$style}
+    {
+        outline-style: #{$value} !important;
+    }
+}

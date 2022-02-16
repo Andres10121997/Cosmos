@@ -1,0 +1,7 @@
+﻿@each $unit, $value in $Unit-index
+{
+    .#{$border-prefix}top-left-radius-#{$unit}
+    {
+        border-top-left-radius: UseVariable($unit) !important;
+    }
+}

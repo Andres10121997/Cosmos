@@ -1,0 +1,6 @@
+﻿@mixin BorderColor($color) {
+    border-top-color: $color;
+    border-right-color: $color;
+    border-bottom-color: $color;
+    border-left-color: $color;
+}

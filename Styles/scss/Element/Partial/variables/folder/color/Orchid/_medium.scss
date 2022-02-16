@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$medium-orchid-name:    string.quote("medium-orchid");
+
+
+
+$medium-orchid:  #BA55D3;
+
+$medium-orchid-50:  Lighter($medium-orchid, percentage(4.5, 5));
+$medium-orchid-100: Lighter($medium-orchid, percentage(4, 5));
+$medium-orchid-200: Lighter($medium-orchid, percentage(3, 5));
+$medium-orchid-300: Lighter($medium-orchid, percentage(2, 5));
+$medium-orchid-400: Lighter($medium-orchid, percentage(1, 5));
+$medium-orchid-500: var(selector.append($variable-prefix, $medium-orchid-name));
+$medium-orchid-600: Darker($medium-orchid, percentage(1, 5));
+$medium-orchid-700: Darker($medium-orchid, percentage(2, 5));
+$medium-orchid-800: Darker($medium-orchid, percentage(3, 5));
+$medium-orchid-900: Darker($medium-orchid, percentage(4, 5));
+$medium-orchid-950: Darker($medium-orchid, percentage(4.5, 5));
+
+
+
+$medium-orchids: (
+    "50":   $medium-orchid-50,
+    "100":  $medium-orchid-100,
+    "200":  $medium-orchid-200,
+    "300":  $medium-orchid-300,
+    "400":  $medium-orchid-400,
+    "500":  $medium-orchid-500,
+    "600":  $medium-orchid-600,
+    "700":  $medium-orchid-700,
+    "800":  $medium-orchid-800,
+    "900":  $medium-orchid-900,
+    "950":  $medium-orchid-950
+);

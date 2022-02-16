@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$dark-orchid-name:  string.quote("dark-orchid");
+
+
+
+$dark-orchid:    #9932CC;
+
+$dark-orchid-50:    Lighter($dark-orchid, percentage(4.5, 5));
+$dark-orchid-100:   Lighter($dark-orchid, percentage(4, 5));
+$dark-orchid-200:   Lighter($dark-orchid, percentage(3, 5));
+$dark-orchid-300:   Lighter($dark-orchid, percentage(2, 5));
+$dark-orchid-400:   Lighter($dark-orchid, percentage(1, 5));
+$dark-orchid-500:   var(selector.append($variable-prefix, $dark-orchid-name));
+$dark-orchid-600:   Darker($dark-orchid, percentage(1, 5));
+$dark-orchid-700:   Darker($dark-orchid, percentage(2, 5));
+$dark-orchid-800:   Darker($dark-orchid, percentage(3, 5));
+$dark-orchid-900:   Darker($dark-orchid, percentage(4, 5));
+$dark-orchid-950:   Darker($dark-orchid, percentage(4.5, 5));
+
+
+
+$dark-orchids: (
+    "50":   $dark-orchid-50,
+    "100":  $dark-orchid-100,
+    "200":  $dark-orchid-200,
+    "300":  $dark-orchid-300,
+    "400":  $dark-orchid-400,
+    "500":  $dark-orchid-500,
+    "600":  $dark-orchid-600,
+    "700":  $dark-orchid-700,
+    "800":  $dark-orchid-800,
+    "900":  $dark-orchid-900,
+    "950":  $dark-orchid-950
+);

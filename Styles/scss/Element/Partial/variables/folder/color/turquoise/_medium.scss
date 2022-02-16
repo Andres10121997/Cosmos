@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$medium-turquoise-name: string.quote("medium-turquoise");
+
+
+
+$medium-turquoise:  #48D1CC;
+
+$medium-turquoise-50:   Lighter($medium-turquoise, percentage(4.5, 5));
+$medium-turquoise-100:  Lighter($medium-turquoise, percentage(4, 5));
+$medium-turquoise-200:  Lighter($medium-turquoise, percentage(3, 5));
+$medium-turquoise-300:  Lighter($medium-turquoise, percentage(2, 5));
+$medium-turquoise-400:  Lighter($medium-turquoise, percentage(1, 5));
+$medium-turquoise-500:  var(selector.append($variable-prefix, $medium-turquoise-name));
+$medium-turquoise-600:  Darker($medium-turquoise, percentage(1, 5));
+$medium-turquoise-700:  Darker($medium-turquoise, percentage(2, 5));
+$medium-turquoise-800:  Darker($medium-turquoise, percentage(3, 5));
+$medium-turquoise-900:  Darker($medium-turquoise, percentage(4, 5));
+$medium-turquoise-950:  Darker($medium-turquoise, percentage(4.5, 5));
+
+
+
+$medium-turquoises: (
+    "50":   $medium-turquoise-50,
+    "100":  $medium-turquoise-100,
+    "200":  $medium-turquoise-200,
+    "300":  $medium-turquoise-300,
+    "400":  $medium-turquoise-400,
+    "500":  $medium-turquoise-500,
+    "600":  $medium-turquoise-600,
+    "700":  $medium-turquoise-700,
+    "800":  $medium-turquoise-800,
+    "900":  $medium-turquoise-900,
+    "950":  $medium-turquoise-950
+);

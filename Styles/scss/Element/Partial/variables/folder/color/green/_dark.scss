@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$dark-green-name:   string.quote("dark-green");
+
+
+
+$dark-green:    #006400;
+
+$dark-green-50:     Lighter($dark-green, percentage(4.5, 5));
+$dark-green-100:    Lighter($dark-green, percentage(4, 5));
+$dark-green-200:    Lighter($dark-green, percentage(3, 5));
+$dark-green-300:    Lighter($dark-green, percentage(2, 5));
+$dark-green-400:    Lighter($dark-green, percentage(1, 5));
+$dark-green-500:    var(selector.append($variable-prefix, $dark-green-name));
+$dark-green-600:    Darker($dark-green, percentage(1, 5));
+$dark-green-700:    Darker($dark-green, percentage(2, 5));
+$dark-green-800:    Darker($dark-green, percentage(3, 5));
+$dark-green-900:    Darker($dark-green, percentage(4, 5));
+$dark-green-950:    Darker($dark-green, percentage(4.5, 5));
+
+
+
+$dark-greens: (
+    "50":   $dark-green-50,
+    "100":  $dark-green-100,
+    "200":  $dark-green-200,
+    "300":  $dark-green-300,
+    "400":  $dark-green-400,
+    "500":  $dark-green-500,
+    "600":  $dark-green-600,
+    "700":  $dark-green-700,
+    "800":  $dark-green-800,
+    "900":  $dark-green-900,
+    "950":  $dark-green-950
+);

@@ -1,0 +1,13 @@
+﻿$outline-width-medium:  medium;
+$outline-width-thin:    thin;
+$outline-width-thick:   thick;
+
+
+
+$outline-width: (
+    "medim":    $outline-width-medium,
+    "thin":     $outline-width-thin,
+    "thick":    $outline-width-thick,
+    "initial":  $initial,
+    "inherit":  $inherit
+);

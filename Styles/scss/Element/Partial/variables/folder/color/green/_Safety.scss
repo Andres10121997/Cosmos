@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$safety-green-name: string.quote("safety-green");
+
+
+
+$safety-green:  #007256;
+
+$safety-green-50:   Lighter($safety-green, percentage(4.5, 5));
+$safety-green-100:  Lighter($safety-green, percentage(4, 5));
+$safety-green-200:  Lighter($safety-green, percentage(3, 5));
+$safety-green-300:  Lighter($safety-green, percentage(2, 5));
+$safety-green-400:  Lighter($safety-green, percentage(1, 5));
+$safety-green-500:  var(selector.append($variable-prefix, $safety-green-name));
+$safety-green-600:  Darker($safety-green, percentage(1, 5));
+$safety-green-700:  Darker($safety-green, percentage(2, 5));
+$safety-green-800:  Darker($safety-green, percentage(3, 5));
+$safety-green-900:  Darker($safety-green, percentage(4, 5));
+$safety-green-950:  Darker($safety-green, percentage(4.5, 5));
+
+
+
+$safety-greens: (
+    "50":   $safety-green-50,
+    "100":  $safety-green-100,
+    "200":  $safety-green-200,
+    "300":  $safety-green-300,
+    "400":  $safety-green-400,
+    "500":  $safety-green-500,
+    "600":  $safety-green-600,
+    "700":  $safety-green-700,
+    "800":  $safety-green-800,
+    "900":  $safety-green-900,
+    "950":  $safety-green-950
+);

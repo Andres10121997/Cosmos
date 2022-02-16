@@ -1,0 +1,7 @@
+﻿@each $kerning, $value in $font-kerning
+{
+    .#{$font-prefix}kerning-#{$kerning}
+    {
+        font-kerning: #{$value} !important;
+    }
+}

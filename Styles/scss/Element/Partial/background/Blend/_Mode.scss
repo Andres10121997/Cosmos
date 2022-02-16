@@ -1,0 +1,7 @@
+﻿@each $blend, $value in $background_blend_mode
+{
+    .#{$background-prefix}blend-mode-#{$blend}
+    {
+        background-blend-mode: #{$value} !important;
+    }
+}

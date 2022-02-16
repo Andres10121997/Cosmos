@@ -1,0 +1,12 @@
+﻿@use "sass:selector";
+
+@each $color, $value in $darker
+{
+    @each $color1, $value1 in $value
+    {
+        .#{$columm-prefix}rule-color-#{$color}-darker-#{$color1}
+        {
+            column-rule-color: UseVariable(#{$color}-darker-#{$color1}) !important;
+        }
+    }
+}

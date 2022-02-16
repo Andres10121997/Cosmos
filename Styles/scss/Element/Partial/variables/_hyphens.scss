@@ -1,0 +1,9 @@
+﻿$hyphens-none:      none;
+$hyphens-manual:    manual;
+$hyphens-auto:      auto;
+
+$hyphens: (
+    "none":     $hyphens-none,
+    "manual":   $hyphens-manual,
+    "auto":     $hyphens-auto
+);

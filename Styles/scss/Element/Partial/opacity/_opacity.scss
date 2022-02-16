@@ -1,0 +1,7 @@
+﻿@each $a, $value in $opacity
+{
+    .opacity-#{$a}
+    {
+        opacity: #{$value} !important;
+    }
+}

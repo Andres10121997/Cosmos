@@ -1,0 +1,13 @@
+﻿$text-align-left:       left;
+$text-align-center:     center;
+$text-align-right:      right;
+$text-align-justified:  justify;
+
+$text-alignment: (
+    "left":     $text-align-left,
+    "center":   $text-align-center,
+    "right":    $text-align-right,
+    "justify":  $text-align-justified,
+    "initial":  $initial,
+    "inherit":  $inherit
+);

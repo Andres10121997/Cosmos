@@ -1,0 +1,7 @@
+﻿@each $overflow, $value in $text-overflows
+{
+    .#{$text-prefix}overflow-#{$overflow}
+    {
+        text-overflow: #{$value} !important;
+    }
+}

@@ -1,0 +1,7 @@
+﻿@each $style, $value in $list_style_position
+{
+    .list-style-position-#{$style}
+    {
+        list-style-position: #{$value};
+    }
+}

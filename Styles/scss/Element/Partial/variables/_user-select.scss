@@ -1,0 +1,11 @@
+﻿$user-select-auto:  auto;
+$user-select-none:  none;
+$user-select-text:  text;
+$user-select-all:   all;
+
+$user-select: (
+    "auto": $user-select-auto,
+    "none": $user-select-none,
+    "text": $user-select-text,
+    "all":  $user-select-all
+);

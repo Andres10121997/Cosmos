@@ -1,0 +1,35 @@
+﻿$cadet-blue-lighter-1:  Lighter($cadet-blue, percentage(1, 16));
+$cadet-blue-lighter-2:  Lighter($cadet-blue, percentage(2, 16));
+$cadet-blue-lighter-3:  Lighter($cadet-blue, percentage(3, 16));
+$cadet-blue-lighter-4:  Lighter($cadet-blue, percentage(4, 16));
+$cadet-blue-lighter-5:  Lighter($cadet-blue, percentage(5, 16));
+$cadet-blue-lighter-6:  Lighter($cadet-blue, percentage(6, 16));
+$cadet-blue-lighter-7:  Lighter($cadet-blue, percentage(7, 16));
+$cadet-blue-lighter-8:  Lighter($cadet-blue, percentage(8, 16));
+$cadet-blue-lighter-9:  Lighter($cadet-blue, percentage(9, 16));
+$cadet-blue-lighter-10: Lighter($cadet-blue, percentage(10, 16));
+$cadet-blue-lighter-11: Lighter($cadet-blue, percentage(11, 16));
+$cadet-blue-lighter-12: Lighter($cadet-blue, percentage(12, 16));
+$cadet-blue-lighter-13: Lighter($cadet-blue, percentage(13, 16));
+$cadet-blue-lighter-14: Lighter($cadet-blue, percentage(14, 16));
+$cadet-blue-lighter-15: Lighter($cadet-blue, percentage(15, 16));
+
+
+
+$cadet-blue-lighters: (
+    "1":    $cadet-blue-lighter-1,
+    "2":    $cadet-blue-lighter-2,
+    "3":    $cadet-blue-lighter-3,
+    "4":    $cadet-blue-lighter-4,
+    "5":    $cadet-blue-lighter-5,
+    "6":    $cadet-blue-lighter-6,
+    "7":    $cadet-blue-lighter-7,
+    "8":    $cadet-blue-lighter-8,
+    "9":    $cadet-blue-lighter-9,
+    "10":   $cadet-blue-lighter-10,
+    "11":   $cadet-blue-lighter-11,
+    "12":   $cadet-blue-lighter-12,
+    "13":   $cadet-blue-lighter-13,
+    "14":   $cadet-blue-lighter-14,
+    "15":   $cadet-blue-lighter-15
+);

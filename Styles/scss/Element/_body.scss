@@ -1,0 +1,18 @@
+﻿@use "sass:selector";
+
+body
+{
+    font-family: var(selector.append($variable-prefix, selector.append($font-prefix, selector.append($family-prefix, sans))));
+    font-size: PixelToRem(16);
+    font-weight: $font_weight-normal;
+    line-height: var(selector.append($variable-prefix, rem-big-16));
+    text-align: $text-align-left;
+    
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+
+    background-color: var(selector.append($variable-prefix, $white-name));
+    color: var(selector.append($variable-prefix, $black-name));
+}

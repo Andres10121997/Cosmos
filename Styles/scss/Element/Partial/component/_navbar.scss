@@ -1,0 +1,84 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+.navbar
+{
+    background-color: var(selector.append($variable-prefix, $black-name));
+    top: 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    ul
+    {
+        text-align: $text-align-left;
+        list-style-type: none;
+        list-style-type: none;
+
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+
+        padding-top: PixelToRem(15);
+        padding-right: PixelToRem(15);
+        padding-bottom: PixelToRem(15);
+        padding-left: 0;
+
+        li
+        {
+            font-family: var(selector.append($variable-prefix, selector.append($font-prefix, selector.append($family-prefix, sans))));
+            font-size: PixelToRem(17);
+            display: inline;
+
+            padding-top: 100%;
+            padding-right: 0;
+            padding-bottom: 100%;
+            padding-left: 0;
+
+            .navbar-brand
+            {
+                font-family: var(selector.append($variable-prefix, selector.append($font-prefix, selector.append($family-prefix, serif))));
+                font-weight: bold;
+
+                color: var(selector.append($variable-prefix, $black-name));
+                background-color: var(selector.append($variable-prefix, #{$gray-name}-600));
+
+                cursor: default;
+
+                &:hover
+                {
+                    color: var(selector.append($variable-prefix, $black-name));
+                    background-color: var(selector.append($variable-prefix, #{$gray-name}-600));
+                }
+
+                &:visited
+                {
+                    color: var(selector.append($variable-prefix, $black-name));
+                }
+            }
+        }
+    }
+
+    a
+    {
+        text-align: $text-align-center;
+        text-decoration: none;
+        color: var(selector.append($variable-prefix, $white-name));
+
+        padding-top: 100%;
+        padding-right: PixelToRem(14);
+        padding-bottom: 100%;
+        padding-left: PixelToRem(14);
+
+        &:hover
+        {
+            background-color: var(selector.append($variable-prefix, #{$gray-name}-800));
+        }
+
+        &:visited
+        {
+            color: var(selector.append($variable-prefix, $white-name));
+        }
+    }
+}

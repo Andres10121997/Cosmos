@@ -1,0 +1,15 @@
+﻿$container-none:    100%;
+$container-sm:      540px;
+$container-md:      720px;
+$container-lg:      960px;
+$container-xl:      1140px;
+$container-xxl:     1320px;
+
+$container: (
+    "none": $container-none,
+    "sm":   $container-sm,
+    "md":   $container-md,
+    "lg":   $container-lg,
+    "xl":   $container-xl,
+    "xxl":  $container-xxl
+);

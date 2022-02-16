@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$blue-violet-name:  string.quote("blue-violet");
+
+
+
+$blue-violet:    #8A2BE2;
+
+$blue-violet-50:    Lighter($blue-violet, percentage(4.5, 5));
+$blue-violet-100:   Lighter($blue-violet, percentage(4, 5));
+$blue-violet-200:   Lighter($blue-violet, percentage(3, 5));
+$blue-violet-300:   Lighter($blue-violet, percentage(2, 5));
+$blue-violet-400:   Lighter($blue-violet, percentage(1, 5));
+$blue-violet-500:   var(selector.append($variable-prefix, $blue-violet-name));
+$blue-violet-600:   Darker($blue-violet, percentage(1, 5));
+$blue-violet-700:   Darker($blue-violet, percentage(2, 5));
+$blue-violet-800:   Darker($blue-violet, percentage(3, 5));
+$blue-violet-900:   Darker($blue-violet, percentage(4, 5));
+$blue-violet-950:   Darker($blue-violet, percentage(4.5, 5));
+
+
+
+$blue-violets: (
+    "50":   $blue-violet-50,
+    "100":  $blue-violet-100,
+    "200":  $blue-violet-200,
+    "300":  $blue-violet-300,
+    "400":  $blue-violet-400,
+    "500":  $blue-violet-500,
+    "600":  $blue-violet-600,
+    "700":  $blue-violet-700,
+    "800":  $blue-violet-800,
+    "900":  $blue-violet-900,
+    "950":  $blue-violet-950
+);

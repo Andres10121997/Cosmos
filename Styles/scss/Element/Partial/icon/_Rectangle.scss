@@ -1,0 +1,11 @@
+﻿@use "sass:selector";
+
+.Rectangle
+{
+    width: PixelToRem(250);
+    height: PixelToRem(100);
+
+    @include GeometricFigureBorder;
+
+    background-color: var(selector.append($variable-prefix, $dodger-blue-name));
+}

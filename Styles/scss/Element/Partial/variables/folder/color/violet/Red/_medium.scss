@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$medium-violet-red-name:    string.quote("medium-violet-red");
+
+
+
+$medium-violet-red:   #C71585;
+
+$medium-violet-red-50:  Lighter($medium-violet-red, percentage(4.5, 5));
+$medium-violet-red-100: Lighter($medium-violet-red, percentage(4, 5));
+$medium-violet-red-200: Lighter($medium-violet-red, percentage(3, 5));
+$medium-violet-red-300: Lighter($medium-violet-red, percentage(2, 5));
+$medium-violet-red-400: Lighter($medium-violet-red, percentage(1, 5));
+$medium-violet-red-500: var(selector.append($variable-prefix, $medium-violet-red-name));
+$medium-violet-red-600: Darker($medium-violet-red, percentage(1, 5));
+$medium-violet-red-700: Darker($medium-violet-red, percentage(2, 5));
+$medium-violet-red-800: Darker($medium-violet-red, percentage(3, 5));
+$medium-violet-red-900: Darker($medium-violet-red, percentage(4, 5));
+$medium-violet-red-950: Darker($medium-violet-red, percentage(4.5, 5));
+
+
+
+$medium-violet-reds: (
+    "50":   $medium-violet-red-50,
+    "100":  $medium-violet-red-100,
+    "200":  $medium-violet-red-200,
+    "300":  $medium-violet-red-300,
+    "400":  $medium-violet-red-400,
+    "500":  $medium-violet-red-500,
+    "600":  $medium-violet-red-600,
+    "700":  $medium-violet-red-700,
+    "800":  $medium-violet-red-800,
+    "900":  $medium-violet-red-900,
+    "950":  $medium-violet-red-950
+);

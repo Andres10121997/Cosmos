@@ -1,0 +1,35 @@
+﻿$mix_blend_mode-normal:         normal;
+$mix_blend_mode-multiply:       multiply;
+$mix_blend_mode-screen:         screen;
+$mix_blend_mode-overlay:        overlay;
+$mix_blend_mode-darken:         darken;
+$mix_blend_mode-lighten:        lighten;
+$mix_blend_mode-color_dodge:    color-dodge;
+$mix_blend_mode-color_burn:     color-burn;
+$mix_blend_mode-hard_light:     hard-light;
+$mix_blend_mode-soft_light:     soft-light;
+$mix_blend_mode-difference:     difference;
+$mix_blend_mode-exclusion:      exclusion;
+$mix_blend_mode-hue:            hue;
+$mix_blend_mode-saturation:     saturation;
+$mix_blend_mode-color:          color;
+$mix_blend_mode-luminosity:     luminosity;
+
+$mix_blend_mode: (
+    "normal":       $mix_blend_mode-normal,
+    "multiply":     $mix_blend_mode-multiply,
+    "screen":       $mix_blend_mode-screen,
+    "overlay":      $mix_blend_mode-overlay,
+    "darken":       $mix_blend_mode-darken,
+    "lighten":      $mix_blend_mode-lighten,
+    "color_dodge":  $mix_blend_mode-color_dodge,
+    "color_burn":   $mix_blend_mode-color_burn,
+    "hard_light":   $mix_blend_mode-hard_light,
+    "soft_light":   $mix_blend_mode-soft_light,
+    "difference":   $mix_blend_mode-difference,
+    "exclusion":    $mix_blend_mode-exclusion,
+    "hue":          $mix_blend_mode-hue,
+    "saturation":   $mix_blend_mode-saturation,
+    "color":        $mix_blend_mode-color,
+    "luminosity":   $mix_blend_mode-luminosity
+);

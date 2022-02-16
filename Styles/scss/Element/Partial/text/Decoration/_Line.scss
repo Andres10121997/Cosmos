@@ -1,0 +1,7 @@
+﻿@each $decoration, $value in $text-decoration-line
+{
+    .#{$text-prefix}decoration-#{$decoration}
+    {
+        text-decoration-line: #{$value} !important;
+    }
+}

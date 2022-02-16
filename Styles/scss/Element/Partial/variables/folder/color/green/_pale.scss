@@ -1,0 +1,36 @@
+﻿@use "sass:selector";
+@use "sass:string";
+
+$pale-green-name:   string.quote("pale-green");
+
+
+
+$pale-green:    #98FB98;
+
+$pale-green-50:     Lighter($pale-green, percentage(4.5, 5));
+$pale-green-100:    Lighter($pale-green, percentage(4, 5));
+$pale-green-200:    Lighter($pale-green, percentage(3, 5));
+$pale-green-300:    Lighter($pale-green, percentage(2, 5));
+$pale-green-400:    Lighter($pale-green, percentage(1, 5));
+$pale-green-500:    var(selector.append($variable-prefix, $pale-green-name));
+$pale-green-600:    Darker($pale-green, percentage(1, 5));
+$pale-green-700:    Darker($pale-green, percentage(2, 5));
+$pale-green-800:    Darker($pale-green, percentage(3, 5));
+$pale-green-900:    Darker($pale-green, percentage(4, 5));
+$pale-green-950:    Darker($pale-green, percentage(4.5, 5));
+
+
+
+$pale-greens: (
+    "50":   $pale-green-50,
+    "100":  $pale-green-100,
+    "200":  $pale-green-200,
+    "300":  $pale-green-300,
+    "400":  $pale-green-400,
+    "500":  $pale-green-500,
+    "600":  $pale-green-600,
+    "700":  $pale-green-700,
+    "800":  $pale-green-800,
+    "900":  $pale-green-900,
+    "950":  $pale-green-950
+);
