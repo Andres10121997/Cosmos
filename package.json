@@ -1,0 +1,26 @@
+{
+  "browserslist": [
+    ">= 0%",
+    "android >= 1",
+    "chrome >= 1",
+    "edge >= 1",
+    "Firefox >= 1",
+    "ie >= 1",
+    "ios_saf >= 1",
+    "opera >= 1",
+    "safari >= 1",
+    "samsung >= 1"
+  ],
+  "scripts": {
+    "jsdoc": "npx jsdoc ./Script/JavaScript/Cosmos.js out --destination ./JSDoc/",
+    "sass": "npx sass --watch --style=compressed ./Styles/scss/Styles.scss:./Styles/css/Styles.min.css",
+    "postcss": "npx postcss ./Style/css/Styles.min.css --output ./Style/css/Cosmos.min.css --watch"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "jsdoc": "^3.6.10",
+    "npm-sass": "^3.0.0",
+    "postcss": "^8.4.6",
+    "postcss-cli": "^9.1.0"
+  }
+}
