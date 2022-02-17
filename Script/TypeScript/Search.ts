@@ -9,7 +9,7 @@ class Search
      * @hideconstructor
      * @returns {void}
      */
-    public constructor()
+    constructor()
     {
 
     }

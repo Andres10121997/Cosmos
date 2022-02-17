@@ -10,7 +10,7 @@ class Calculate
      * @hideconstructor
      * @returns {void}
      */
-    public constructor()
+    constructor()
     {
 
     }

@@ -9,7 +9,7 @@ class Normalize
      * @hideconstructor
      * @returns {void}
      */
-    public constructor()
+    constructor()
     {
         
     }

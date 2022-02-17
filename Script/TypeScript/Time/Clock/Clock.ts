@@ -9,7 +9,7 @@ class Clock
      * @hideconstructor
      * @returns {void}
      */
-    public constructor()
+    constructor()
     {
         
     }
