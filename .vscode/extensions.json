@@ -1,11 +1,12 @@
 {
     "recommendations": [
-        "syler.sass-indented",
+        "github.copilot",
+        "zignd.html-css-class-completion",
+        "ms-vscode.vscode-typescript-next",
+        "ritwickdey.live-sass",
         "ritwickdey.liveserver",
         "pkief.material-icon-theme",
-        "ms-vscode.vscode-typescript-next",
-        "GitHub.copilot",
         "esbenp.prettier-vscode",
-        "Zignd.html-css-class-completion"
+        "syler.sass-indented"
     ]
 }

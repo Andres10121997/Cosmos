@@ -1,6 +1,13 @@
 {
     "workbench.iconTheme": "material-icon-theme",
-
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 2 versions"
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
     "liveSassCompile.settings.formats": [
         {
             "format": "compressed",
@@ -8,18 +15,10 @@
             "savePath": "/Style/css"
         }
     ],
-    "liveSassCompile.settings.excludeList": [
-    
-        "**/node_modules/**",
-        ".vscode/**"
-    ],
+    "liveSassCompile.settings.generateMap": true,
     "liveSassCompile.settings.includeItems": [
         "/Style/scss/Styles.scss"
     ],
-    "liveSassCompile.settings.autoprefix": [
-        "> 1%",
-        "last 2 versions"
-    ],
-    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.showOutputWindow": true,
     "liveServer.settings.port": 5501
 }
