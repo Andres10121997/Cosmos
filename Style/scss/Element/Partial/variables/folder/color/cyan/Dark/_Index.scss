@@ -1,0 +1,5 @@
+@use "sass:string";
+
+$dark-cyan-name: string.quote("dark-cyan");
+
+$dark-cyan: #008B8B;

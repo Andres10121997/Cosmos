@@ -118,7 +118,9 @@
 @import "folder/color/aqua/_Lighter.scss";
 
 @import "folder/color/cyan/_normal.scss";
-@import "folder/color/cyan/_dark.scss";
+@import "folder/color/cyan/Dark/Index";
+@import "folder/color/cyan/Dark/Darker";
+@import "folder/color/cyan/Dark/Lighter";
 @import "folder/color/cyan/_light.scss";
 
 @import "folder/color/Aquamarine/Normal/_Index.scss";
