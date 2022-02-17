@@ -1,0 +1,25 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/Style/css"
+        }
+    ],
+    "liveSassCompile.settings.excludeList": [
+    
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
+    "liveSassCompile.settings.includeItems": [
+        "/Style/scss/Styles.scss"
+    ],
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 2 versions"
+    ],
+    "liveSassCompile.settings.generateMap": true,
+    "liveServer.settings.port": 5501
+}

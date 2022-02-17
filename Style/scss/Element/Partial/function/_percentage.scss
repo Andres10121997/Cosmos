@@ -2,7 +2,8 @@
 
 @function percentage($nominator, $denominator)
 {
-    $value: math.percentage(math.div($nominator, $denominator));
+    $division: math.div($nominator, $denominator);
+    $value: math.percentage($division);
     
     @return $value;
 }
