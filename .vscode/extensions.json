@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "ritwickdey.live-sass",
+        "ritwickdey.liveserver",
+        "pkief.material-icon-theme",
+        "ms-vscode.vscode-typescript-next"
+    ],
+    "unwantedRecommendations": []
+}
