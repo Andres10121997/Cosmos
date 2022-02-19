@@ -1,1 +1,2 @@
-node_modeles
+#ignore node_modules
+node_modules
