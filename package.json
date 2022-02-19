@@ -16,7 +16,8 @@
     "sass": "npx sass --watch --style=compressed ./Style/scss/Styles.scss:./Style/css/Styles.min.css",
     "postcss": "npx postcss ./Style/css/Styles.min.css --output ./Style/css/Cosmos.min.css --watch"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "autoprefixer": "^10.4.2",
     "jsdoc": "^3.6.10",
     "npm-sass": "^3.0.0",
