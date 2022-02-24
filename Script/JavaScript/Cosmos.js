@@ -80,6 +80,22 @@ class Search {
         return dict;
     }
 }
+const FirstLastName = {
+    MaxLength: 30,
+    Require: true
+};
+const FirstName = {
+    MaxLength: 30,
+    Require: true
+};
+const SecondLastName = {
+    MaxLength: 30,
+    Require: false
+};
+const SecondName = {
+    MaxLength: 30,
+    Require: false
+};
 /**
  * @function
  * @name CalculateAge
