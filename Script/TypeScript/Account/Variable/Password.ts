@@ -1,9 +1,9 @@
 /**
  * @access public
  * @constant
- * @alias FirstLastName
+ * @alias Password
  */
-const FirstLastName: AccountVariable = {
+const Password: AccountVariable = {
     MaxLength: 30,
     Require: true
 };

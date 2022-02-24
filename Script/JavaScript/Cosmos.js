@@ -80,18 +80,66 @@ class Search {
         return dict;
     }
 }
+;
+/**
+ * @access public
+ * @constant
+ * @alias DateOfBirth
+ */
+const DateOfBirth = {
+    MaxLength: NaN,
+    Require: true
+};
+/**
+ * @access public
+ * @constant
+ * @alias Email
+ */
+const Email = {
+    MaxLength: 30,
+    Require: true
+};
+/**
+ * @access public
+ * @constant
+ * @alias FirstLastName
+ */
 const FirstLastName = {
     MaxLength: 30,
     Require: true
 };
+/**
+ * @access public
+ * @constant
+ * @alias FirstName
+ */
 const FirstName = {
     MaxLength: 30,
     Require: true
 };
+/**
+ * @access public
+ * @constant
+ * @alias Password
+ */
+const Password = {
+    MaxLength: 30,
+    Require: true
+};
+/**
+ * @access public
+ * @constant
+ * @alias SecondLastName
+ */
 const SecondLastName = {
     MaxLength: 30,
     Require: false
 };
+/**
+ * @access public
+ * @constant
+ * @alias SecondName
+ */
 const SecondName = {
     MaxLength: 30,
     Require: false
@@ -481,7 +529,7 @@ class Validation {
     /**
      * @access public
      * @method
-     * @alias IsRegularExpression
+     * @alias Validation.IsRegularExpression
      * @param {RegExp} RegularExpression
      * @returns {boolean}
      */
@@ -587,7 +635,7 @@ class Validation {
     /**
      * @access public
      * @method
-     * @alias DateType
+     * @alias Validation.DateType
      * @param {string} dateType
      * @returns {boolean}
      */
@@ -720,4 +768,3 @@ class RichTextEditor {
     constructor() {
     }
 }
-//# sourceMappingURL=Cosmos.js.map

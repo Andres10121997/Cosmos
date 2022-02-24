@@ -68,7 +68,7 @@ class Validation
     /**
      * @access public
      * @method
-     * @alias IsRegularExpression
+     * @alias Validation.IsRegularExpression
      * @param {RegExp} RegularExpression
      * @returns {boolean}
      */
@@ -208,7 +208,7 @@ class Validation
     /**
      * @access public
      * @method
-     * @alias DateType
+     * @alias Validation.DateType
      * @param {string} dateType
      * @returns {boolean}
      */
