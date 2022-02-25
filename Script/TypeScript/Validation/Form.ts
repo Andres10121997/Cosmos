@@ -109,20 +109,20 @@ function ValidationForm(ElementId: Array<string>,
 
 
     HtmlType.forEach((value: string, i: number): void => {
-        if (value === htmlOption.Select &&
+        if (value === FormType.Select &&
             OValidate.Select(ElementId[i]) === true)
         {
             Count++;
         }
         else
-        if ((value === htmlOption.Input ||
-             value === htmlOption.TextArea) &&
+        if ((value === FormType.Input ||
+             value === FormType.TextArea) &&
             OValidate.Info(ElementId[i], Require[i], MaxLength[i]) === true)
         {
             Count++;
         }
         else
-        if (value === htmlOption.Date &&
+        if (value === FormType.Date &&
             DateType[i] === dateOptions.DateOfBirth &&
             OValidate.DateOfBirth(ElementId[i], MinimumAge) === true)
         {

@@ -5,5 +5,6 @@
  */
 const FirstLastName: IAccountVariable = {
     MaxLength: 30,
-    Require: true
+    Require: true,
+    FormType: FormType.Input
 };

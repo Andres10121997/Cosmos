@@ -5,5 +5,6 @@
  */
 const SecondLastName: IAccountVariable = {
     MaxLength: 30,
-    Require: false
+    Require: false,
+    FormType: FormType.Input
 };

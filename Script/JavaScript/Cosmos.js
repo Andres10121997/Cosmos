@@ -82,69 +82,6 @@ class Search {
 }
 ;
 /**
- * @access public
- * @constant
- * @alias DateOfBirth
- */
-const DateOfBirth = {
-    MaxLength: NaN,
-    Require: true
-};
-/**
- * @access public
- * @constant
- * @alias Email
- */
-const Email = {
-    MaxLength: 30,
-    Require: true
-};
-/**
- * @access public
- * @constant
- * @alias FirstLastName
- */
-const FirstLastName = {
-    MaxLength: 30,
-    Require: true
-};
-/**
- * @access public
- * @constant
- * @alias FirstName
- */
-const FirstName = {
-    MaxLength: 30,
-    Require: true
-};
-/**
- * @access public
- * @constant
- * @alias Password
- */
-const Password = {
-    MaxLength: 30,
-    Require: true
-};
-/**
- * @access public
- * @constant
- * @alias SecondLastName
- */
-const SecondLastName = {
-    MaxLength: 30,
-    Require: false
-};
-/**
- * @access public
- * @constant
- * @alias SecondName
- */
-const SecondName = {
-    MaxLength: 30,
-    Require: false
-};
-/**
  * @function
  * @name CalculateAge
  * @param {Date} DateOfBirth
@@ -455,16 +392,16 @@ function ValidationForm(ElementId, MaxLength, HtmlType, DateType, Require, Minim
         }
     });
     HtmlType.forEach((value, i) => {
-        if (value === htmlOption.Select &&
+        if (value === FormType.Select &&
             OValidate.Select(ElementId[i]) === true) {
             Count++;
         }
-        else if ((value === htmlOption.Input ||
-            value === htmlOption.TextArea) &&
+        else if ((value === FormType.Input ||
+            value === FormType.TextArea) &&
             OValidate.Info(ElementId[i], Require[i], MaxLength[i]) === true) {
             Count++;
         }
-        else if (value === htmlOption.Date &&
+        else if (value === FormType.Date &&
             DateType[i] === dateOptions.DateOfBirth &&
             OValidate.DateOfBirth(ElementId[i], MinimumAge) === true) {
             Count++;
@@ -749,11 +686,81 @@ class Validation {
         }
     }
 }
-const htmlOption = {
+const FormType = {
     Input: `Input`,
     Date: `Date`,
     TextArea: `TextArea`,
     Select: `Select`
+};
+/**
+ * @access public
+ * @constant
+ * @alias DateOfBirth
+ */
+const DateOfBirth = {
+    MaxLength: NaN,
+    Require: true,
+    FormType: FormType.Date
+};
+/**
+ * @access public
+ * @constant
+ * @alias Email
+ */
+const Email = {
+    MaxLength: 30,
+    Require: true,
+    FormType: FormType.Input
+};
+/**
+ * @access public
+ * @constant
+ * @alias FirstLastName
+ */
+const FirstLastName = {
+    MaxLength: 30,
+    Require: true,
+    FormType: FormType.Input
+};
+/**
+ * @access public
+ * @constant
+ * @alias FirstName
+ */
+const FirstName = {
+    MaxLength: 30,
+    Require: true,
+    FormType: FormType.Input
+};
+/**
+ * @access public
+ * @constant
+ * @alias Password
+ */
+const Password = {
+    MaxLength: 30,
+    Require: true,
+    FormType: FormType.Input
+};
+/**
+ * @access public
+ * @constant
+ * @alias SecondLastName
+ */
+const SecondLastName = {
+    MaxLength: 30,
+    Require: false,
+    FormType: FormType.Input
+};
+/**
+ * @access public
+ * @constant
+ * @alias SecondName
+ */
+const SecondName = {
+    MaxLength: 30,
+    Require: false,
+    FormType: FormType.Input
 };
 /**
  * @class

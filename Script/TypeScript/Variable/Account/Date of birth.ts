@@ -5,5 +5,6 @@
  */
 const DateOfBirth: IAccountVariable = {
     MaxLength: NaN,
-    Require: true
+    Require: true,
+    FormType: FormType.Date
 };
