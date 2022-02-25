@@ -3,7 +3,7 @@
  * @constant
  * @alias Email
  */
-const Email: AccountVariable = {
+const Email: IAccountVariable = {
     MaxLength: 30,
     Require: true
 };

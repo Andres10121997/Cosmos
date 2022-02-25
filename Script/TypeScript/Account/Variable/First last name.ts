@@ -3,7 +3,7 @@
  * @constant
  * @alias FirstLastName
  */
-const FirstLastName: AccountVariable = {
+const FirstLastName: IAccountVariable = {
     MaxLength: 30,
     Require: true
 };

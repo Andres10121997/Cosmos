@@ -3,7 +3,7 @@
  * @constant
  * @alias Password
  */
-const Password: AccountVariable = {
+const Password: IAccountVariable = {
     MaxLength: 30,
     Require: true
 };

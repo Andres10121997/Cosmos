@@ -3,7 +3,7 @@
  * @constant
  * @alias DateOfBirth
  */
-const DateOfBirth: AccountVariable = {
+const DateOfBirth: IAccountVariable = {
     MaxLength: NaN,
     Require: true
 };
