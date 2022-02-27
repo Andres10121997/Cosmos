@@ -80,7 +80,6 @@ class Search {
         return dict;
     }
 }
-;
 /**
  * @function
  * @name CalculateAge
@@ -164,26 +163,31 @@ var _Person_FirstName, _Person_SecondName, _Person_FirstLastName, _Person_Second
 class Person {
     constructor() {
         _Person_FirstName.set(this, {
+            Value: "",
             MaxLength: 30,
             Require: true,
             FormType: FormType.Input
         });
         _Person_SecondName.set(this, {
+            Value: "",
             MaxLength: 30,
             Require: false,
             FormType: FormType.Input
         });
         _Person_FirstLastName.set(this, {
+            Value: "",
             MaxLength: 30,
             Require: true,
             FormType: FormType.Input
         });
         _Person_SecondLastName.set(this, {
+            Value: "",
             MaxLength: 30,
             Require: false,
             FormType: FormType.Input
         });
         _Person_DateOfBirth.set(this, {
+            Value: Today(),
             MaxLength: NaN,
             Require: true,
             FormType: FormType.Date
@@ -221,6 +225,7 @@ class Person {
     }
 }
 _Person_FirstName = new WeakMap(), _Person_SecondName = new WeakMap(), _Person_FirstLastName = new WeakMap(), _Person_SecondLastName = new WeakMap(), _Person_DateOfBirth = new WeakMap();
+;
 /**
  * @function
  * @name Today
@@ -768,76 +773,6 @@ const FormType = {
     Date: `Date`,
     TextArea: `TextArea`,
     Select: `Select`
-};
-/**
- * @access public
- * @constant
- * @alias DateOfBirth
- */
-const DateOfBirth = {
-    MaxLength: NaN,
-    Require: true,
-    FormType: FormType.Date
-};
-/**
- * @access public
- * @constant
- * @alias Email
- */
-const Email = {
-    MaxLength: 30,
-    Require: true,
-    FormType: FormType.Input
-};
-/**
- * @access public
- * @constant
- * @alias FirstLastName
- */
-const FirstLastName = {
-    MaxLength: 30,
-    Require: true,
-    FormType: FormType.Input
-};
-/**
- * @access public
- * @constant
- * @alias FirstName
- */
-const FirstName = {
-    MaxLength: 30,
-    Require: true,
-    FormType: FormType.Input
-};
-/**
- * @access public
- * @constant
- * @alias Password
- */
-const Password = {
-    MaxLength: 30,
-    Require: true,
-    FormType: FormType.Input
-};
-/**
- * @access public
- * @constant
- * @alias SecondLastName
- */
-const SecondLastName = {
-    MaxLength: 30,
-    Require: false,
-    FormType: FormType.Input
-};
-/**
- * @access public
- * @constant
- * @alias SecondName
- */
-const SecondName = {
-    MaxLength: 30,
-    Require: false,
-    FormType: FormType.Input
 };
 /**
  * @class
