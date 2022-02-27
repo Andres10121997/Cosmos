@@ -11,24 +11,28 @@ class Person
     constructor(FirstName: IAccountVariable = {
                     Value: "",
                     MaxLength: 30,
+                    RegularExpression: new RegExp(`^[A-Za-zÀ-ÿ]{1,30}$`),
                     Require: true,
                     FormType: FormType.Input
                 },
                 SecondName: IAccountVariable = {
                     Value: "",
                     MaxLength: 30,
+                    RegularExpression: new RegExp(`^[A-Za-zÀ-ÿ]{0,30}$`),
                     Require: false,
                     FormType: FormType.Input
                 },
                 FirstLastName: IAccountVariable = {
                     Value: "",
                     MaxLength: 30,
+                    RegularExpression: new RegExp(`^[A-Za-zÀ-ÿ]{1,30}$`),
                     Require: true,
                     FormType: FormType.Input
                 },
                 SecondLastName: IAccountVariable = {
                     Value: "",
                     MaxLength: 30,
+                    RegularExpression: new RegExp(`^[A-Za-zÀ-ÿ]{1,30}$`),
                     Require: false,
                     FormType: FormType.Input
                 },

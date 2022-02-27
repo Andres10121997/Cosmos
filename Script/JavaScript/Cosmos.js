@@ -164,21 +164,25 @@ class Person {
     constructor(FirstName = {
         Value: "",
         MaxLength: 30,
+        RegularExpression: new RegExp(`^[A-Za-zÀ-ÿ]{1,30}$`),
         Require: true,
         FormType: FormType.Input
     }, SecondName = {
         Value: "",
         MaxLength: 30,
+        RegularExpression: new RegExp(`^[A-Za-zÀ-ÿ]{0,30}$`),
         Require: false,
         FormType: FormType.Input
     }, FirstLastName = {
         Value: "",
         MaxLength: 30,
+        RegularExpression: new RegExp(`^[A-Za-zÀ-ÿ]{1,30}$`),
         Require: true,
         FormType: FormType.Input
     }, SecondLastName = {
         Value: "",
         MaxLength: 30,
+        RegularExpression: new RegExp(`^[A-Za-zÀ-ÿ]{1,30}$`),
         Require: false,
         FormType: FormType.Input
     }, DateOfBirth = {
