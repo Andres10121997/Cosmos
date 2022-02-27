@@ -160,7 +160,7 @@ var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (
     if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
     return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
 };
-var _Person_FirstName, _Person_SecondName, _Person_FirstLastName, _Person_SecondLastName;
+var _Person_FirstName, _Person_SecondName, _Person_FirstLastName, _Person_SecondLastName, _Person_DateOfBirth;
 class Person {
     constructor() {
         _Person_FirstName.set(this, {
@@ -182,6 +182,11 @@ class Person {
             MaxLength: 30,
             Require: false,
             FormType: FormType.Input
+        });
+        _Person_DateOfBirth.set(this, {
+            MaxLength: NaN,
+            Require: true,
+            FormType: FormType.Date
         });
     }
     GetFirstName() {
@@ -208,8 +213,14 @@ class Person {
     SetSecondLastName(SecondLastName) {
         __classPrivateFieldSet(this, _Person_SecondLastName, SecondLastName, "f");
     }
+    GetDateOfBirth() {
+        return __classPrivateFieldGet(this, _Person_DateOfBirth, "f");
+    }
+    SetDateOfBirth(DateOfBirth) {
+        __classPrivateFieldSet(this, _Person_DateOfBirth, DateOfBirth, "f");
+    }
 }
-_Person_FirstName = new WeakMap(), _Person_SecondName = new WeakMap(), _Person_FirstLastName = new WeakMap(), _Person_SecondLastName = new WeakMap();
+_Person_FirstName = new WeakMap(), _Person_SecondName = new WeakMap(), _Person_FirstLastName = new WeakMap(), _Person_SecondLastName = new WeakMap(), _Person_DateOfBirth = new WeakMap();
 /**
  * @function
  * @name Today

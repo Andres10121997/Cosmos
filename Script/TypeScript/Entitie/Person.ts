@@ -23,6 +23,12 @@ class Person
         Require: false,
         FormType: FormType.Input
     };
+
+    #DateOfBirth: IAccountVariable = {
+        MaxLength: NaN,
+        Require: true,
+        FormType: FormType.Date
+    }
     
 
 
@@ -70,5 +76,15 @@ class Person
     SetSecondLastName(SecondLastName: IAccountVariable)
     {
         this.#SecondLastName = SecondLastName;
+    }
+
+    GetDateOfBirth(): IAccountVariable
+    {
+        return this.#DateOfBirth;
+    }
+
+    SetDateOfBirth(DateOfBirth: IAccountVariable): void
+    {
+        this.#DateOfBirth = DateOfBirth;
     }
 }
