@@ -164,25 +164,25 @@ class Person {
     constructor(FirstName = {
         Value: "",
         MaxLength: 30,
-        RegularExpression: new RegExp(`^[A-Za-zÀ-ÿ]{1,30}$`),
+        RegularExpression: RegularExpression.NameRequire,
         Require: true,
         FormType: FormType.Input
     }, SecondName = {
         Value: "",
         MaxLength: 30,
-        RegularExpression: new RegExp(`^[A-Za-zÀ-ÿ]{0,30}$`),
+        RegularExpression: RegularExpression.NameNotRequire,
         Require: false,
         FormType: FormType.Input
     }, FirstLastName = {
         Value: "",
         MaxLength: 30,
-        RegularExpression: new RegExp(`^[A-Za-zÀ-ÿ]{1,30}$`),
+        RegularExpression: RegularExpression.NameRequire,
         Require: true,
         FormType: FormType.Input
     }, SecondLastName = {
         Value: "",
         MaxLength: 30,
-        RegularExpression: new RegExp(`^[A-Za-zÀ-ÿ]{1,30}$`),
+        RegularExpression: RegularExpression.NameNotRequire,
         Require: false,
         FormType: FormType.Input
     }, DateOfBirth = {
@@ -782,6 +782,15 @@ const FormType = {
     Date: `Date`,
     TextArea: `TextArea`,
     Select: `Select`
+};
+/**
+ * @access public
+ * @constant
+ * @alias RegularExpression
+ */
+const RegularExpression = {
+    NameRequire: new RegExp(`^[A-Za-zÀ-ÿ]{1,30}$`),
+    NameNotRequire: new RegExp(`^[A-Za-zÀ-ÿ]{0,30}$`)
 };
 /**
  * @class
