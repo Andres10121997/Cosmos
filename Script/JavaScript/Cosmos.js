@@ -148,50 +148,55 @@ class Calculate {
         return Age;
     }
 }
-var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, state, kind, f) {
-    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
-    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
-    return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
-};
 var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (receiver, state, value, kind, f) {
     if (kind === "m") throw new TypeError("Private method is not writable");
     if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
     if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
     return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
 };
+var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, state, kind, f) {
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+    return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
+};
 var _Person_FirstName, _Person_SecondName, _Person_FirstLastName, _Person_SecondLastName, _Person_DateOfBirth;
 class Person {
-    constructor() {
-        _Person_FirstName.set(this, {
-            Value: "",
-            MaxLength: 30,
-            Require: true,
-            FormType: FormType.Input
-        });
-        _Person_SecondName.set(this, {
-            Value: "",
-            MaxLength: 30,
-            Require: false,
-            FormType: FormType.Input
-        });
-        _Person_FirstLastName.set(this, {
-            Value: "",
-            MaxLength: 30,
-            Require: true,
-            FormType: FormType.Input
-        });
-        _Person_SecondLastName.set(this, {
-            Value: "",
-            MaxLength: 30,
-            Require: false,
-            FormType: FormType.Input
-        });
-        _Person_DateOfBirth.set(this, {
-            Value: Today(),
-            MaxLength: NaN,
-            Require: true,
-            FormType: FormType.Date
-        });
+    constructor(FirstName = {
+        Value: "",
+        MaxLength: 30,
+        Require: true,
+        FormType: FormType.Input
+    }, SecondName = {
+        Value: "",
+        MaxLength: 30,
+        Require: false,
+        FormType: FormType.Input
+    }, FirstLastName = {
+        Value: "",
+        MaxLength: 30,
+        Require: true,
+        FormType: FormType.Input
+    }, SecondLastName = {
+        Value: "",
+        MaxLength: 30,
+        Require: false,
+        FormType: FormType.Input
+    }, DateOfBirth = {
+        Value: Today(),
+        MaxLength: NaN,
+        Require: true,
+        FormType: FormType.Date
+    }) {
+        _Person_FirstName.set(this, void 0);
+        _Person_SecondName.set(this, void 0);
+        _Person_FirstLastName.set(this, void 0);
+        _Person_SecondLastName.set(this, void 0);
+        _Person_DateOfBirth.set(this, void 0);
+        __classPrivateFieldSet(this, _Person_FirstName, FirstName, "f");
+        __classPrivateFieldSet(this, _Person_SecondName, SecondName, "f");
+        __classPrivateFieldSet(this, _Person_FirstLastName, FirstLastName, "f");
+        __classPrivateFieldSet(this, _Person_SecondLastName, SecondLastName, "f");
+        __classPrivateFieldSet(this, _Person_DateOfBirth, DateOfBirth, "f");
     }
     GetFirstName() {
         return __classPrivateFieldGet(this, _Person_FirstName, "f");

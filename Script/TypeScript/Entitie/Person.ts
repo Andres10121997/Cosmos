@@ -1,44 +1,49 @@
 class Person
 {
-    #FirstName: IAccountVariable = {
-        Value: "",
-        MaxLength: 30,
-        Require: true,
-        FormType: FormType.Input
-    };
-
-    #SecondName: IAccountVariable = {
-        Value: "",
-        MaxLength: 30,
-        Require: false,
-        FormType: FormType.Input
-    };
-
-    #FirstLastName: IAccountVariable = {
-        Value: "",
-        MaxLength: 30,
-        Require: true,
-        FormType: FormType.Input
-    };
-
-    #SecondLastName: IAccountVariable = {
-        Value: "",
-        MaxLength: 30,
-        Require: false,
-        FormType: FormType.Input
-    };
-
-    #DateOfBirth: IAccountVariable = {
-        Value: Today(),
-        MaxLength: NaN,
-        Require: true,
-        FormType: FormType.Date
-    }
+    #FirstName: IAccountVariable;
+    #SecondName: IAccountVariable;
+    #FirstLastName: IAccountVariable;
+    #SecondLastName: IAccountVariable;
+    #DateOfBirth: IAccountVariable;
     
 
 
-    constructor()
+    constructor(FirstName: IAccountVariable = {
+                    Value: "",
+                    MaxLength: 30,
+                    Require: true,
+                    FormType: FormType.Input
+                },
+                SecondName: IAccountVariable = {
+                    Value: "",
+                    MaxLength: 30,
+                    Require: false,
+                    FormType: FormType.Input
+                },
+                FirstLastName: IAccountVariable = {
+                    Value: "",
+                    MaxLength: 30,
+                    Require: true,
+                    FormType: FormType.Input
+                },
+                SecondLastName: IAccountVariable = {
+                    Value: "",
+                    MaxLength: 30,
+                    Require: false,
+                    FormType: FormType.Input
+                },
+                DateOfBirth: IAccountVariable = {
+                    Value: Today(),
+                    MaxLength: NaN,
+                    Require: true,
+                    FormType: FormType.Date
+                })
     {
+        this.#FirstName = FirstName;
+        this.#SecondName = SecondName;
+        this.#FirstLastName = FirstLastName;
+        this.#SecondLastName = SecondLastName;
+        this.#DateOfBirth = DateOfBirth;
     }
 
 
