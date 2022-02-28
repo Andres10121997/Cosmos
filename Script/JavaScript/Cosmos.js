@@ -20,7 +20,7 @@ class Normalize {
      * @returns {string}
      */
     word(Word) {
-        return Word.toLowerCase().replace(/[-+*/∖∗∓∔=_#π∞Σ√∛∜∫∬∭∮∯∰∱∲∳∀∁∂∃∄∅∆∇∈∉∊∋∌∍∎∏∐∑∘∙∝∟∠∡∢∣∤∥∦∧∨∩∪∴∵∶∷∸∹∺∻∼∽∾∿≀¡!¿?(){}<>:;.'$0-9]/g, "");
+        return Word.toLowerCase().replace(RegularExpression.NotWord, "");
     }
 }
 /**
@@ -148,93 +148,6 @@ class Calculate {
         return Age;
     }
 }
-var __classPrivateFieldSet = (this && this.__classPrivateFieldSet) || function (receiver, state, value, kind, f) {
-    if (kind === "m") throw new TypeError("Private method is not writable");
-    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
-    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
-    return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
-};
-var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (receiver, state, kind, f) {
-    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
-    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
-    return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
-};
-var _Person_FirstName, _Person_SecondName, _Person_FirstLastName, _Person_SecondLastName, _Person_DateOfBirth;
-class Person {
-    constructor(FirstName = {
-        Value: "",
-        MaxLength: 30,
-        RegularExpression: RegularExpression.NameRequire,
-        Require: true,
-        FormType: FormType.Input
-    }, SecondName = {
-        Value: "",
-        MaxLength: 30,
-        RegularExpression: RegularExpression.NameNotRequire,
-        Require: false,
-        FormType: FormType.Input
-    }, FirstLastName = {
-        Value: "",
-        MaxLength: 30,
-        RegularExpression: RegularExpression.NameRequire,
-        Require: true,
-        FormType: FormType.Input
-    }, SecondLastName = {
-        Value: "",
-        MaxLength: 30,
-        RegularExpression: RegularExpression.NameNotRequire,
-        Require: false,
-        FormType: FormType.Input
-    }, DateOfBirth = {
-        Value: Today(),
-        MaxLength: NaN,
-        Require: true,
-        FormType: FormType.Date
-    }) {
-        _Person_FirstName.set(this, void 0);
-        _Person_SecondName.set(this, void 0);
-        _Person_FirstLastName.set(this, void 0);
-        _Person_SecondLastName.set(this, void 0);
-        _Person_DateOfBirth.set(this, void 0);
-        __classPrivateFieldSet(this, _Person_FirstName, FirstName, "f");
-        __classPrivateFieldSet(this, _Person_SecondName, SecondName, "f");
-        __classPrivateFieldSet(this, _Person_FirstLastName, FirstLastName, "f");
-        __classPrivateFieldSet(this, _Person_SecondLastName, SecondLastName, "f");
-        __classPrivateFieldSet(this, _Person_DateOfBirth, DateOfBirth, "f");
-    }
-    GetFirstName() {
-        return __classPrivateFieldGet(this, _Person_FirstName, "f");
-    }
-    SetFirstName(FirstName) {
-        __classPrivateFieldSet(this, _Person_FirstName, FirstName, "f");
-    }
-    GetSecondName() {
-        return __classPrivateFieldGet(this, _Person_SecondName, "f");
-    }
-    SetSecondName(SecondName) {
-        __classPrivateFieldSet(this, _Person_SecondName, SecondName, "f");
-    }
-    GetFirstLastName() {
-        return __classPrivateFieldGet(this, _Person_FirstLastName, "f");
-    }
-    SetFirstLastName(FirstLastName) {
-        __classPrivateFieldSet(this, _Person_FirstLastName, FirstLastName, "f");
-    }
-    GetSecondLastName() {
-        return __classPrivateFieldGet(this, _Person_SecondLastName, "f");
-    }
-    SetSecondLastName(SecondLastName) {
-        __classPrivateFieldSet(this, _Person_SecondLastName, SecondLastName, "f");
-    }
-    GetDateOfBirth() {
-        return __classPrivateFieldGet(this, _Person_DateOfBirth, "f");
-    }
-    SetDateOfBirth(DateOfBirth) {
-        __classPrivateFieldSet(this, _Person_DateOfBirth, DateOfBirth, "f");
-    }
-}
-_Person_FirstName = new WeakMap(), _Person_SecondName = new WeakMap(), _Person_FirstLastName = new WeakMap(), _Person_SecondLastName = new WeakMap(), _Person_DateOfBirth = new WeakMap();
-;
 /**
  * @function
  * @name Today
@@ -790,7 +703,8 @@ const FormType = {
  */
 const RegularExpression = {
     NameRequire: new RegExp(`^[A-Za-zÀ-ÿ]{1,30}$`),
-    NameNotRequire: new RegExp(`^[A-Za-zÀ-ÿ]{0,30}$`)
+    NameNotRequire: new RegExp(`^[A-Za-zÀ-ÿ]{0,30}$`),
+    NotWord: new RegExp(/[-+*/∖∗∓∔=_#π∞Σ√∛∜∫∬∭∮∯∰∱∲∳∀∁∂∃∄∅∆∇∈∉∊∋∌∍∎∏∐∑∘∙∝∟∠∡∢∣∤∥∦∧∨∩∪∴∵∶∷∸∹∺∻∼∽∾∿≀¡!¿?(){}<>:;.'$0-9]/g)
 };
 /**
  * @class

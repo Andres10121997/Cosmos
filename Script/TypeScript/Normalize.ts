@@ -26,6 +26,6 @@ class Normalize
      */
     word(Word: string): string
     {
-        return Word.toLowerCase().replace(/[-+*/∖∗∓∔=_#π∞Σ√∛∜∫∬∭∮∯∰∱∲∳∀∁∂∃∄∅∆∇∈∉∊∋∌∍∎∏∐∑∘∙∝∟∠∡∢∣∤∥∦∧∨∩∪∴∵∶∷∸∹∺∻∼∽∾∿≀¡!¿?(){}<>:;.'$0-9]/g, "");
+        return Word.toLowerCase().replace(RegularExpression.NotWord, "");
     }
 }
