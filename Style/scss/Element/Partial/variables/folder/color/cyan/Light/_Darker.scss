@@ -1,0 +1,35 @@
+$light-cyan-darker-1:   Darker($light-cyan, percentage(1, 16));
+$light-cyan-darker-2:   Darker($light-cyan, percentage(2, 16));
+$light-cyan-darker-3:   Darker($light-cyan, percentage(3, 16));
+$light-cyan-darker-4:   Darker($light-cyan, percentage(4, 16));
+$light-cyan-darker-5:   Darker($light-cyan, percentage(5, 16));
+$light-cyan-darker-6:   Darker($light-cyan, percentage(6, 16));
+$light-cyan-darker-7:   Darker($light-cyan, percentage(7, 16));
+$light-cyan-darker-8:   Darker($light-cyan, percentage(8, 16));
+$light-cyan-darker-9:   Darker($light-cyan, percentage(9, 16));
+$light-cyan-darker-10:  Darker($light-cyan, percentage(10, 16));
+$light-cyan-darker-11:  Darker($light-cyan, percentage(11, 16));
+$light-cyan-darker-12:  Darker($light-cyan, percentage(12, 16));
+$light-cyan-darker-13:  Darker($light-cyan, percentage(13, 16));
+$light-cyan-darker-14:  Darker($light-cyan, percentage(14, 16));
+$light-cyan-darker-15:  Darker($light-cyan, percentage(15, 16));
+
+
+
+$light-cyan-darkers: (
+    "1":    $light-cyan-darker-1,
+    "2":    $light-cyan-darker-2,
+    "3":    $light-cyan-darker-3,
+    "4":    $light-cyan-darker-4,
+    "5":    $light-cyan-darker-5,
+    "6":    $light-cyan-darker-6,
+    "7":    $light-cyan-darker-7,
+    "8":    $light-cyan-darker-8,
+    "9":    $light-cyan-darker-9,
+    "10":   $light-cyan-darker-10,
+    "11":   $light-cyan-darker-11,
+    "12":   $light-cyan-darker-12,
+    "13":   $light-cyan-darker-13,
+    "14":   $light-cyan-darker-14,
+    "15":   $light-cyan-darker-15
+);
