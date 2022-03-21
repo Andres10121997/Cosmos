@@ -1,0 +1,35 @@
+$gold-darker-1: Darker($gold, percentage(1, 16));
+$gold-darker-2: Darker($gold, percentage(2, 16));
+$gold-darker-3: Darker($gold, percentage(3, 16));
+$gold-darker-4: Darker($gold, percentage(4, 16));
+$gold-darker-5: Darker($gold, percentage(5, 16));
+$gold-darker-6: Darker($gold, percentage(6, 16));
+$gold-darker-7: Darker($gold, percentage(7, 16));
+$gold-darker-8: Darker($gold, percentage(8, 16));
+$gold-darker-9: Darker($gold, percentage(9, 16));
+$gold-darker-10:    Darker($gold, percentage(10, 16));
+$gold-darker-11:    Darker($gold, percentage(11, 16));
+$gold-darker-12:    Darker($gold, percentage(12, 16));
+$gold-darker-13:    Darker($gold, percentage(13, 16));
+$gold-darker-14:    Darker($gold, percentage(14, 16));
+$gold-darker-15:    Darker($gold, percentage(15, 16));
+
+
+
+$gold-darkers: (
+    "1":    $gold-darker-1,
+    "2":    $gold-darker-2,
+    "3":    $gold-darker-3,
+    "4":    $gold-darker-4,
+    "5":    $gold-darker-5,
+    "6":    $gold-darker-6,
+    "7":    $gold-darker-7,
+    "8":    $gold-darker-8,
+    "9":    $gold-darker-9,
+    "10":   $gold-darker-10,
+    "11":   $gold-darker-11,
+    "12":   $gold-darker-12,
+    "13":   $gold-darker-13,
+    "14":   $gold-darker-14,
+    "15":   $gold-darker-15
+);

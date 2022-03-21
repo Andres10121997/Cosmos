@@ -1,0 +1,35 @@
+$gold-lighter-1:    Lighter($gold, percentage(1, 16));
+$gold-lighter-2:    Lighter($gold, percentage(2, 16));
+$gold-lighter-3:    Lighter($gold, percentage(3, 16));
+$gold-lighter-4:    Lighter($gold, percentage(4, 16));
+$gold-lighter-5:    Lighter($gold, percentage(5, 16));
+$gold-lighter-6:    Lighter($gold, percentage(6, 16));
+$gold-lighter-7:    Lighter($gold, percentage(7, 16));
+$gold-lighter-8:    Lighter($gold, percentage(8, 16));
+$gold-lighter-9:    Lighter($gold, percentage(9, 16));
+$gold-lighter-10:   Lighter($gold, percentage(10, 16));
+$gold-lighter-11:   Lighter($gold, percentage(11, 16));
+$gold-lighter-12:   Lighter($gold, percentage(12, 16));
+$gold-lighter-13:   Lighter($gold, percentage(13, 16));
+$gold-lighter-14:   Lighter($gold, percentage(14, 16));
+$gold-lighter-15:   Lighter($gold, percentage(15, 16));
+
+
+
+$gold-lighters: (
+    "1":    $gold-lighter-1,
+    "2":    $gold-lighter-2,
+    "3":    $gold-lighter-3,
+    "4":    $gold-lighter-4,
+    "5":    $gold-lighter-5,
+    "6":    $gold-lighter-6,
+    "7":    $gold-lighter-7,
+    "8":    $gold-lighter-8,
+    "9":    $gold-lighter-9,
+    "10":   $gold-lighter-10,
+    "11":   $gold-lighter-11,
+    "12":   $gold-lighter-12,
+    "13":   $gold-lighter-13,
+    "14":   $gold-lighter-14,
+    "15":   $gold-lighter-15
+);
