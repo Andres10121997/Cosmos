@@ -1,0 +1,35 @@
+$dark-goldenrod-lighter-1:  Lighter($dark-goldenrod, percentage(1, 16));
+$dark-goldenrod-lighter-2:  Lighter($dark-goldenrod, percentage(2, 16));
+$dark-goldenrod-lighter-3:  Lighter($dark-goldenrod, percentage(3, 16));
+$dark-goldenrod-lighter-4:  Lighter($dark-goldenrod, percentage(4, 16));
+$dark-goldenrod-lighter-5:  Lighter($dark-goldenrod, percentage(5, 16));
+$dark-goldenrod-lighter-6:  Lighter($dark-goldenrod, percentage(6, 16));
+$dark-goldenrod-lighter-7:  Lighter($dark-goldenrod, percentage(7, 16));
+$dark-goldenrod-lighter-8:  Lighter($dark-goldenrod, percentage(8, 16));
+$dark-goldenrod-lighter-9:  Lighter($dark-goldenrod, percentage(9, 16));
+$dark-goldenrod-lighter-10: Lighter($dark-goldenrod, percentage(10, 16));
+$dark-goldenrod-lighter-11: Lighter($dark-goldenrod, percentage(11, 16));
+$dark-goldenrod-lighter-12: Lighter($dark-goldenrod, percentage(12, 16));
+$dark-goldenrod-lighter-13: Lighter($dark-goldenrod, percentage(13, 16));
+$dark-goldenrod-lighter-14: Lighter($dark-goldenrod, percentage(14, 16));
+$dark-goldenrod-lighter-15: Lighter($dark-goldenrod, percentage(15, 16));
+
+
+
+$dark-goldenrod-lighters: (
+    "1":    $dark-goldenrod-lighter-1,
+    "2":    $dark-goldenrod-lighter-2,
+    "3":    $dark-goldenrod-lighter-3,
+    "4":    $dark-goldenrod-lighter-4,
+    "5":    $dark-goldenrod-lighter-5,
+    "6":    $dark-goldenrod-lighter-6,
+    "7":    $dark-goldenrod-lighter-7,
+    "8":    $dark-goldenrod-lighter-8,
+    "9":    $dark-goldenrod-lighter-9,
+    "10":   $dark-goldenrod-lighter-10,
+    "11":   $dark-goldenrod-lighter-11,
+    "12":   $dark-goldenrod-lighter-12,
+    "13":   $dark-goldenrod-lighter-13,
+    "14":   $dark-goldenrod-lighter-14,
+    "15":   $dark-goldenrod-lighter-15
+);
