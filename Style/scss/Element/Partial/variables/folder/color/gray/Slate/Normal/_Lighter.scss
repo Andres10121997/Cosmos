@@ -1,0 +1,35 @@
+$slate-gray-lighter-1:  Lighter($slate-gray, percentage(1, 16));
+$slate-gray-lighter-2:  Lighter($slate-gray, percentage(2, 16));
+$slate-gray-lighter-3:  Lighter($slate-gray, percentage(3, 16));
+$slate-gray-lighter-4:  Lighter($slate-gray, percentage(4, 16));
+$slate-gray-lighter-5:  Lighter($slate-gray, percentage(5, 16));
+$slate-gray-lighter-6:  Lighter($slate-gray, percentage(6, 16));
+$slate-gray-lighter-7:  Lighter($slate-gray, percentage(7, 16));
+$slate-gray-lighter-8:  Lighter($slate-gray, percentage(8, 16));
+$slate-gray-lighter-9:  Lighter($slate-gray, percentage(9, 16));
+$slate-gray-lighter-10: Lighter($slate-gray, percentage(10, 16));
+$slate-gray-lighter-11: Lighter($slate-gray, percentage(11, 16));
+$slate-gray-lighter-12: Lighter($slate-gray, percentage(12, 16));
+$slate-gray-lighter-13: Lighter($slate-gray, percentage(13, 16));
+$slate-gray-lighter-14: Lighter($slate-gray, percentage(14, 16));
+$slate-gray-lighter-15: Lighter($slate-gray, percentage(15, 16));
+
+
+
+$slate-gray-lighters: (
+    "1":    $slate-gray-lighter-1,
+    "2":    $slate-gray-lighter-2,
+    "3":    $slate-gray-lighter-3,
+    "4":    $slate-gray-lighter-4,
+    "5":    $slate-gray-lighter-5,
+    "6":    $slate-gray-lighter-6,
+    "7":    $slate-gray-lighter-7,
+    "8":    $slate-gray-lighter-8,
+    "9":    $slate-gray-lighter-9,
+    "10":   $slate-gray-lighter-10,
+    "11":   $slate-gray-lighter-11,
+    "12":   $slate-gray-lighter-12,
+    "13":   $slate-gray-lighter-13,
+    "14":   $slate-gray-lighter-14,
+    "15":   $slate-gray-lighter-15
+);
