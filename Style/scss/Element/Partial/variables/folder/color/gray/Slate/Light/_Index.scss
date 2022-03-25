@@ -1,0 +1,5 @@
+@use "sass:string";
+
+$light-slate-gray-name: string.quote("light-slate-gray");
+
+$light-slate-gray:    #778899;
