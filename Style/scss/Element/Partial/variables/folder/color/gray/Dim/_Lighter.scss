@@ -1,0 +1,35 @@
+$dim-gray-lighter-1:    Lighter($dim-gray, percentage(1, 16));
+$dim-gray-lighter-2:    Lighter($dim-gray, percentage(2, 16));
+$dim-gray-lighter-3:    Lighter($dim-gray, percentage(3, 16));
+$dim-gray-lighter-4:    Lighter($dim-gray, percentage(4, 16));
+$dim-gray-lighter-5:    Lighter($dim-gray, percentage(5, 16));
+$dim-gray-lighter-6:    Lighter($dim-gray, percentage(6, 16));
+$dim-gray-lighter-7:    Lighter($dim-gray, percentage(7, 16));
+$dim-gray-lighter-8:    Lighter($dim-gray, percentage(8, 16));
+$dim-gray-lighter-9:    Lighter($dim-gray, percentage(9, 16));
+$dim-gray-lighter-10:   Lighter($dim-gray, percentage(10, 16));
+$dim-gray-lighter-11:   Lighter($dim-gray, percentage(11, 16));
+$dim-gray-lighter-12:   Lighter($dim-gray, percentage(12, 16));
+$dim-gray-lighter-13:   Lighter($dim-gray, percentage(13, 16));
+$dim-gray-lighter-14:   Lighter($dim-gray, percentage(14, 16));
+$dim-gray-lighter-15:   Lighter($dim-gray, percentage(15, 16));
+
+
+
+$dim-gray-lighters: (
+    "1":    $dim-gray-lighter-1,
+    "2":    $dim-gray-lighter-2,
+    "3":    $dim-gray-lighter-3,
+    "4":    $dim-gray-lighter-4,
+    "5":    $dim-gray-lighter-5,
+    "6":    $dim-gray-lighter-6,
+    "7":    $dim-gray-lighter-7,
+    "8":    $dim-gray-lighter-8,
+    "9":    $dim-gray-lighter-9,
+    "10":   $dim-gray-lighter-10,
+    "11":   $dim-gray-lighter-11,
+    "12":   $dim-gray-lighter-12,
+    "13":   $dim-gray-lighter-13,
+    "14":   $dim-gray-lighter-14,
+    "15":   $dim-gray-lighter-15
+);

@@ -1,0 +1,5 @@
+@use "sass:string";
+
+$dim-gray-name: string.quote("dim-gray");
+
+$dim-gray:  #696969;
