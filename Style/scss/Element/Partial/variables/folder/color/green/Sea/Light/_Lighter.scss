@@ -1,0 +1,35 @@
+$light-sea-green-lighter-1:     Lighter($light-sea-green, percentage(1, 16));
+$light-sea-green-lighter-2:     Lighter($light-sea-green, percentage(2, 16));
+$light-sea-green-lighter-3:     Lighter($light-sea-green, percentage(3, 16));
+$light-sea-green-lighter-4:     Lighter($light-sea-green, percentage(4, 16));
+$light-sea-green-lighter-5:     Lighter($light-sea-green, percentage(5, 16));
+$light-sea-green-lighter-6:     Lighter($light-sea-green, percentage(6, 16));
+$light-sea-green-lighter-7:     Lighter($light-sea-green, percentage(7, 16));
+$light-sea-green-lighter-8:     Lighter($light-sea-green, percentage(8, 16));
+$light-sea-green-lighter-9:     Lighter($light-sea-green, percentage(9, 16));
+$light-sea-green-lighter-10:    Lighter($light-sea-green, percentage(10, 16));
+$light-sea-green-lighter-11:    Lighter($light-sea-green, percentage(11, 16));
+$light-sea-green-lighter-12:    Lighter($light-sea-green, percentage(12, 16));
+$light-sea-green-lighter-13:    Lighter($light-sea-green, percentage(13, 16));
+$light-sea-green-lighter-14:    Lighter($light-sea-green, percentage(14, 16));
+$light-sea-green-lighter-15:    Lighter($light-sea-green, percentage(15, 16));
+
+
+
+$light-sea-green-lighters: (
+    "1":    $light-sea-green-lighter-1,
+    "2":    $light-sea-green-lighter-2,
+    "3":    $light-sea-green-lighter-3,
+    "4":    $light-sea-green-lighter-4,
+    "5":    $light-sea-green-lighter-5,
+    "6":    $light-sea-green-lighter-6,
+    "7":    $light-sea-green-lighter-7,
+    "8":    $light-sea-green-lighter-8,
+    "9":    $light-sea-green-lighter-9,
+    "10":   $light-sea-green-lighter-10,
+    "11":   $light-sea-green-lighter-11,
+    "12":   $light-sea-green-lighter-12,
+    "13":   $light-sea-green-lighter-13,
+    "14":   $light-sea-green-lighter-14,
+    "15":   $light-sea-green-lighter-15
+);
