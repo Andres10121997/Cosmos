@@ -1,0 +1,35 @@
+$dark-olive-green-lighter-1:    Lighter($dark-olive-green, percentage(1, 16));
+$dark-olive-green-lighter-2:    Lighter($dark-olive-green, percentage(2, 16));
+$dark-olive-green-lighter-3:    Lighter($dark-olive-green, percentage(3, 16));
+$dark-olive-green-lighter-4:    Lighter($dark-olive-green, percentage(4, 16));
+$dark-olive-green-lighter-5:    Lighter($dark-olive-green, percentage(5, 16));
+$dark-olive-green-lighter-6:    Lighter($dark-olive-green, percentage(6, 16));
+$dark-olive-green-lighter-7:    Lighter($dark-olive-green, percentage(7, 16));
+$dark-olive-green-lighter-8:    Lighter($dark-olive-green, percentage(8, 16));
+$dark-olive-green-lighter-9:    Lighter($dark-olive-green, percentage(9, 16));
+$dark-olive-green-lighter-10:   Lighter($dark-olive-green, percentage(10, 16));
+$dark-olive-green-lighter-11:   Lighter($dark-olive-green, percentage(11, 16));
+$dark-olive-green-lighter-12:   Lighter($dark-olive-green, percentage(12, 16));
+$dark-olive-green-lighter-13:   Lighter($dark-olive-green, percentage(13, 16));
+$dark-olive-green-lighter-14:   Lighter($dark-olive-green, percentage(14, 16));
+$dark-olive-green-lighter-15:   Lighter($dark-olive-green, percentage(15, 16));
+
+
+
+$dark-olive-green-lighters: (
+    "1":    $dark-olive-green-lighter-1,
+    "2":    $dark-olive-green-lighter-2,
+    "3":    $dark-olive-green-lighter-3,
+    "4":    $dark-olive-green-lighter-4,
+    "5":    $dark-olive-green-lighter-5,
+    "6":    $dark-olive-green-lighter-6,
+    "7":    $dark-olive-green-lighter-7,
+    "8":    $dark-olive-green-lighter-8,
+    "9":    $dark-olive-green-lighter-9,
+    "10":   $dark-olive-green-lighter-10,
+    "11":   $dark-olive-green-lighter-11,
+    "12":   $dark-olive-green-lighter-12,
+    "13":   $dark-olive-green-lighter-13,
+    "14":   $dark-olive-green-lighter-14,
+    "15":   $dark-olive-green-lighter-15
+);

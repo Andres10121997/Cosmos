@@ -1,6 +1,6 @@
 # *** Cosmos ***
-Cosmos es un frameword frontend cuya finalidad es tener herramientas para el desarrollo front-end, por ejemplo:
-1. Componentes de diseño (como Bootstrap)
-2. Animaciones.
-3. Íconos.
-4. Entre otros.
+Cosmos is a Frameword Frontend whose purpose is to have tools for Front-End development, for example:
+1. Design: Components (such as Bootstrap) and classes
+2. Animations.
+3. icons.
+4. Among others.
