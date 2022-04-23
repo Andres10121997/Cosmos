@@ -1,0 +1,35 @@
+$dark-sea-green-darker-1:   Darker($dark-sea-green, percentage(1, 16));
+$dark-sea-green-darker-2:   Darker($dark-sea-green, percentage(2, 16));
+$dark-sea-green-darker-3:   Darker($dark-sea-green, percentage(3, 16));
+$dark-sea-green-darker-4:   Darker($dark-sea-green, percentage(4, 16));
+$dark-sea-green-darker-5:   Darker($dark-sea-green, percentage(5, 16));
+$dark-sea-green-darker-6:   Darker($dark-sea-green, percentage(6, 16));
+$dark-sea-green-darker-7:   Darker($dark-sea-green, percentage(7, 16));
+$dark-sea-green-darker-8:   Darker($dark-sea-green, percentage(8, 16));
+$dark-sea-green-darker-9:   Darker($dark-sea-green, percentage(9, 16));
+$dark-sea-green-darker-10:  Darker($dark-sea-green, percentage(10, 16));
+$dark-sea-green-darker-11:  Darker($dark-sea-green, percentage(11, 16));
+$dark-sea-green-darker-12:  Darker($dark-sea-green, percentage(12, 16));
+$dark-sea-green-darker-13:  Darker($dark-sea-green, percentage(13, 16));
+$dark-sea-green-darker-14:  Darker($dark-sea-green, percentage(14, 16));
+$dark-sea-green-darker-15:  Darker($dark-sea-green, percentage(15, 16));
+
+
+
+$dark-sea-green-darkers: (
+    "1":    $dark-sea-green-darker-1,
+    "2":    $dark-sea-green-darker-2,
+    "3":    $dark-sea-green-darker-3,
+    "4":    $dark-sea-green-darker-4,
+    "5":    $dark-sea-green-darker-5,
+    "6":    $dark-sea-green-darker-6,
+    "7":    $dark-sea-green-darker-7,
+    "8":    $dark-sea-green-darker-8,
+    "9":    $dark-sea-green-darker-9,
+    "10":   $dark-sea-green-darker-10,
+    "11":   $dark-sea-green-darker-11,
+    "12":   $dark-sea-green-darker-12,
+    "13":   $dark-sea-green-darker-13,
+    "14":   $dark-sea-green-darker-14,
+    "15":   $dark-sea-green-darker-15
+);
