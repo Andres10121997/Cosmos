@@ -1,0 +1,35 @@
+$medium-spring-green-lighter-1:     Lighter($medium-spring-green, percentage(1, 16));
+$medium-spring-green-lighter-2:     Lighter($medium-spring-green, percentage(2, 16));
+$medium-spring-green-lighter-3:     Lighter($medium-spring-green, percentage(3, 16));
+$medium-spring-green-lighter-4:     Lighter($medium-spring-green, percentage(4, 16));
+$medium-spring-green-lighter-5:     Lighter($medium-spring-green, percentage(5, 16));
+$medium-spring-green-lighter-6:     Lighter($medium-spring-green, percentage(6, 16));
+$medium-spring-green-lighter-7:     Lighter($medium-spring-green, percentage(7, 16));
+$medium-spring-green-lighter-8:     Lighter($medium-spring-green, percentage(8, 16));
+$medium-spring-green-lighter-9:     Lighter($medium-spring-green, percentage(9, 16));
+$medium-spring-green-lighter-10:    Lighter($medium-spring-green, percentage(10, 16));
+$medium-spring-green-lighter-11:    Lighter($medium-spring-green, percentage(11, 16));
+$medium-spring-green-lighter-12:    Lighter($medium-spring-green, percentage(12, 16));
+$medium-spring-green-lighter-13:    Lighter($medium-spring-green, percentage(13, 16));
+$medium-spring-green-lighter-14:    Lighter($medium-spring-green, percentage(14, 16));
+$medium-spring-green-lighter-15:    Lighter($medium-spring-green, percentage(15, 16));
+
+
+
+$medium-spring-green-lighters: (
+    "1":    $medium-spring-green-lighter-1,
+    "2":    $medium-spring-green-lighter-2,
+    "3":    $medium-spring-green-lighter-3,
+    "4":    $medium-spring-green-lighter-4,
+    "5":    $medium-spring-green-lighter-5,
+    "6":    $medium-spring-green-lighter-6,
+    "7":    $medium-spring-green-lighter-7,
+    "8":    $medium-spring-green-lighter-8,
+    "9":    $medium-spring-green-lighter-9,
+    "10":   $medium-spring-green-lighter-10,
+    "11":   $medium-spring-green-lighter-11,
+    "12":   $medium-spring-green-lighter-12,
+    "13":   $medium-spring-green-lighter-13,
+    "14":   $medium-spring-green-lighter-14,
+    "15":   $medium-spring-green-lighter-15
+);
