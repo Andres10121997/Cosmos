@@ -1,0 +1,35 @@
+$spring-green-darker-1:     Darker($spring-green, percentage(1, 16));
+$spring-green-darker-2:     Darker($spring-green, percentage(2, 16));
+$spring-green-darker-3:     Darker($spring-green, percentage(3, 16));
+$spring-green-darker-4:     Darker($spring-green, percentage(4, 16));
+$spring-green-darker-5:     Darker($spring-green, percentage(5, 16));
+$spring-green-darker-6:     Darker($spring-green, percentage(6, 16));
+$spring-green-darker-7:     Darker($spring-green, percentage(7, 16));
+$spring-green-darker-8:     Darker($spring-green, percentage(8, 16));
+$spring-green-darker-9:     Darker($spring-green, percentage(9, 16));
+$spring-green-darker-10:    Darker($spring-green, percentage(10, 16));
+$spring-green-darker-11:    Darker($spring-green, percentage(11, 16));
+$spring-green-darker-12:    Darker($spring-green, percentage(12, 16));
+$spring-green-darker-13:    Darker($spring-green, percentage(13, 16));
+$spring-green-darker-14:    Darker($spring-green, percentage(14, 16));
+$spring-green-darker-15:    Darker($spring-green, percentage(15, 16));
+
+
+
+$spring-green-darkers: (
+    "1":    $spring-green-darker-1,
+    "2":    $spring-green-darker-2,
+    "3":    $spring-green-darker-3,
+    "4":    $spring-green-darker-4,
+    "5":    $spring-green-darker-5,
+    "6":    $spring-green-darker-6,
+    "7":    $spring-green-darker-7,
+    "8":    $spring-green-darker-8,
+    "9":    $spring-green-darker-9,
+    "10":   $spring-green-darker-10,
+    "11":   $spring-green-darker-11,
+    "12":   $spring-green-darker-12,
+    "13":   $spring-green-darker-13,
+    "14":   $spring-green-darker-14,
+    "15":   $spring-green-darker-15
+);
