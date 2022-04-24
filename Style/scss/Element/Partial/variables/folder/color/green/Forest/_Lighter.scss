@@ -1,0 +1,35 @@
+$forest-green-lighter-1:    Lighter($forest-green, percentage(1, 16));
+$forest-green-lighter-2:    Lighter($forest-green, percentage(2, 16));
+$forest-green-lighter-3:    Lighter($forest-green, percentage(3, 16));
+$forest-green-lighter-4:    Lighter($forest-green, percentage(4, 16));
+$forest-green-lighter-5:    Lighter($forest-green, percentage(5, 16));
+$forest-green-lighter-6:    Lighter($forest-green, percentage(6, 16));
+$forest-green-lighter-7:    Lighter($forest-green, percentage(7, 16));
+$forest-green-lighter-8:    Lighter($forest-green, percentage(8, 16));
+$forest-green-lighter-9:    Lighter($forest-green, percentage(9, 16));
+$forest-green-lighter-10:   Lighter($forest-green, percentage(10, 16));
+$forest-green-lighter-11:   Lighter($forest-green, percentage(11, 16));
+$forest-green-lighter-12:   Lighter($forest-green, percentage(12, 16));
+$forest-green-lighter-13:   Lighter($forest-green, percentage(13, 16));
+$forest-green-lighter-14:   Lighter($forest-green, percentage(14, 16));
+$forest-green-lighter-15:   Lighter($forest-green, percentage(15, 16));
+
+
+
+$forest-green-lighters: (
+    "1":    $forest-green-lighter-1,
+    "2":    $forest-green-lighter-2,
+    "3":    $forest-green-lighter-3,
+    "4":    $forest-green-lighter-4,
+    "5":    $forest-green-lighter-5,
+    "6":    $forest-green-lighter-6,
+    "7":    $forest-green-lighter-7,
+    "8":    $forest-green-lighter-8,
+    "9":    $forest-green-lighter-9,
+    "10":   $forest-green-lighter-10,
+    "11":   $forest-green-lighter-11,
+    "12":   $forest-green-lighter-12,
+    "13":   $forest-green-lighter-13,
+    "14":   $forest-green-lighter-14,
+    "15":   $forest-green-lighter-15
+);

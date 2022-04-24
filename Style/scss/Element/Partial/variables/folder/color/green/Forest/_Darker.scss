@@ -1,0 +1,35 @@
+$forest-green-darker-1:     Darker($forest-green, percentage(1, 16));
+$forest-green-darker-2:     Darker($forest-green, percentage(2, 16));
+$forest-green-darker-3:     Darker($forest-green, percentage(3, 16));
+$forest-green-darker-4:     Darker($forest-green, percentage(4, 16));
+$forest-green-darker-5:     Darker($forest-green, percentage(5, 16));
+$forest-green-darker-6:     Darker($forest-green, percentage(6, 16));
+$forest-green-darker-7:     Darker($forest-green, percentage(7, 16));
+$forest-green-darker-8:     Darker($forest-green, percentage(8, 16));
+$forest-green-darker-9:     Darker($forest-green, percentage(9, 16));
+$forest-green-darker-10:    Darker($forest-green, percentage(10, 16));
+$forest-green-darker-11:    Darker($forest-green, percentage(11, 16));
+$forest-green-darker-12:    Darker($forest-green, percentage(12, 16));
+$forest-green-darker-13:    Darker($forest-green, percentage(13, 16));
+$forest-green-darker-14:    Darker($forest-green, percentage(14, 16));
+$forest-green-darker-15:    Darker($forest-green, percentage(15, 16));
+
+
+
+$forest-green-darkers: (
+    "1":    $forest-green-darker-1,
+    "2":    $forest-green-darker-2,
+    "3":    $forest-green-darker-3,
+    "4":    $forest-green-darker-4,
+    "5":    $forest-green-darker-5,
+    "6":    $forest-green-darker-6,
+    "7":    $forest-green-darker-7,
+    "8":    $forest-green-darker-8,
+    "9":    $forest-green-darker-9,
+    "10":   $forest-green-darker-10,
+    "11":   $forest-green-darker-11,
+    "12":   $forest-green-darker-12,
+    "13":   $forest-green-darker-13,
+    "14":   $forest-green-darker-14,
+    "15":   $forest-green-darker-15
+);
