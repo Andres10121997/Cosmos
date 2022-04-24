@@ -173,19 +173,53 @@ class Calculate {
  * @returns {Date}
  */
 function Today() {
-    return new Date();
+    /**
+     * @access private
+     * @constant
+     * @type {Date}
+     * @alias Today
+     */
+    const Today = new Date();
+    return Today;
 }
 /**
  * @class
  * @name Clock
  */
 class Clock {
+    #Size = {
+        Long: `Long`,
+        Short: `Short`
+    };
+    #ClockInsert = {
+        Date: `Date`,
+        Time: `Time`
+    };
     // Constructor.
     /**
      * @hideconstructor
      * @returns {void}
      */
     constructor() {
+    }
+    // Getters and Setters
+    /**
+     * @access public
+     * @method
+     * @alias Clock.GetSize
+     * @returns
+     */
+    GetSize() {
+        return this.#Size;
+    }
+    /**
+     * @access public
+     * @method
+     * @alias Clock.GetClockInsert
+     * @returns
+     */
+    GetClockInsert() {
+        return this.#ClockInsert;
     }
     /**
      * @access public
@@ -217,13 +251,13 @@ class Clock {
         const OValidate = new Validation();
         if (OValidate.IsString(Id) === true &&
             OValidate.IsString(whoInsert) === true) {
-            if (whoInsert === clockInsert.Date) {
+            if (whoInsert === this.#ClockInsert.Date) {
                 setInterval(() => {
                     DocumentElement = document.getElementById(Id);
                     DocumentElement.innerHTML = Today().toLocaleDateString(undefined, Options);
                 }, 0);
             }
-            else if (whoInsert === clockInsert.Time) {
+            else if (whoInsert === this.#ClockInsert.Time) {
                 setInterval(() => {
                     DocumentElement = document.getElementById(Id);
                     DocumentElement.innerHTML = Today().toLocaleTimeString(undefined, Options);
@@ -259,16 +293,16 @@ function InsertDate(Id, Type) {
     const OValidate = new Validation();
     if (OValidate.IsString(Id) &&
         OValidate.IsString(Type) === true) {
-        if (Type === clock.Long) {
-            OClock.Insert(Id, clockInsert.Date, {
+        if (Type === OClock.GetSize().Long) {
+            OClock.Insert(Id, OClock.GetClockInsert().Date, {
                 weekday: `long`,
                 year: `numeric`,
                 month: `long`,
                 day: `numeric`
             });
         }
-        else if (Type === clock.Short) {
-            OClock.Insert(Id, clockInsert.Date, undefined);
+        else if (Type === OClock.GetSize().Short) {
+            OClock.Insert(Id, OClock.GetClockInsert().Date, undefined);
         }
     }
 }
@@ -299,8 +333,8 @@ function InsertTime(Id, Type) {
     const OValidate = new Validation();
     if (OValidate.IsString(Id) === true &&
         OValidate.IsString(Type) === true) {
-        if (Type === clock.Long) {
-            OClock.Insert(Id, clockInsert.Time, {
+        if (Type === OClock.GetSize().Long) {
+            OClock.Insert(Id, OClock.GetClockInsert().Time, {
                 formatMatcher: `best fit`,
                 hour12: undefined,
                 hour: `numeric`,
@@ -308,8 +342,8 @@ function InsertTime(Id, Type) {
                 second: `numeric`
             });
         }
-        else if (Type === clock.Short) {
-            OClock.Insert(Id, clockInsert.Time, {
+        else if (Type === OClock.GetSize().Short) {
+            OClock.Insert(Id, OClock.GetClockInsert().Time, {
                 formatMatcher: `best fit`,
                 hour12: undefined,
                 hour: `numeric`,
@@ -318,14 +352,6 @@ function InsertTime(Id, Type) {
         }
     }
 }
-const clock = {
-    Long: `Long`,
-    Short: `Short`
-};
-const clockInsert = {
-    Date: `Date`,
-    Time: `Time`
-};
 const dateOptions = {
     DateOfBirth: `Date of birth`,
     None: `None`

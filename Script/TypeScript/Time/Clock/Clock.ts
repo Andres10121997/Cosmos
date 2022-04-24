@@ -4,6 +4,18 @@
  */
 class Clock
 {
+    #Size = {
+        Long: `Long`,
+        Short: `Short`
+    }
+
+    #ClockInsert: IClockInsert = {
+        Date: `Date`,
+        Time: `Time`
+    }
+    
+
+
     // Constructor.
     /**
      * @hideconstructor
@@ -12,6 +24,29 @@ class Clock
     constructor()
     {
         
+    }
+
+    // Getters and Setters
+    /**
+     * @access public
+     * @method
+     * @alias Clock.GetSize
+     * @returns 
+     */
+    GetSize()
+    {
+        return this.#Size;
+    }
+
+    /**
+     * @access public
+     * @method
+     * @alias Clock.GetClockInsert
+     * @returns 
+     */
+    GetClockInsert(): IClockInsert
+    {
+        return this.#ClockInsert
     }
 
 
@@ -54,7 +89,7 @@ class Clock
         if (OValidate.IsString(Id) === true &&
             OValidate.IsString(whoInsert) === true)
         {
-            if (whoInsert === clockInsert.Date)
+            if (whoInsert === this.#ClockInsert.Date)
             {
                 setInterval((): void => {
                     DocumentElement = (document.getElementById(Id) as HTMLElement);
@@ -63,7 +98,7 @@ class Clock
                 }, 0);
             }
             else
-            if (whoInsert === clockInsert.Time)
+            if (whoInsert === this.#ClockInsert.Time)
             {
                 setInterval((): void => {
                     DocumentElement = (document.getElementById(Id) as HTMLElement);

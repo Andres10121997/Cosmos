@@ -32,9 +32,9 @@ function InsertTime(Id: string,
     if (OValidate.IsString(Id) === true &&
         OValidate.IsString(Type) === true)
     {
-        if (Type === clock.Long)
+        if (Type === OClock.GetSize().Long)
         {
-            OClock.Insert(Id, clockInsert.Time, {
+            OClock.Insert(Id, OClock.GetClockInsert().Time, {
                 formatMatcher: `best fit`,
                 hour12: undefined,
                 hour: `numeric`,
@@ -43,9 +43,9 @@ function InsertTime(Id: string,
             });
         }
         else
-        if (Type === clock.Short)
+        if (Type === OClock.GetSize().Short)
         {
-            OClock.Insert(Id, clockInsert.Time, {
+            OClock.Insert(Id, OClock.GetClockInsert().Time, {
                 formatMatcher: `best fit`,
                 hour12: undefined,
                 hour: `numeric`,

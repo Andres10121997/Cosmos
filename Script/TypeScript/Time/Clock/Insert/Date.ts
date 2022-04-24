@@ -32,9 +32,9 @@ function InsertDate(Id: string,
     if (OValidate.IsString(Id) &&
         OValidate.IsString(Type) === true)
     {
-        if (Type === clock.Long)
+        if (Type === OClock.GetSize().Long)
         {
-            OClock.Insert(Id, clockInsert.Date, {
+            OClock.Insert(Id, OClock.GetClockInsert().Date, {
                 weekday: `long`,
                 year: `numeric`,
                 month: `long`,
@@ -42,9 +42,9 @@ function InsertDate(Id: string,
             });
         }
         else
-        if (Type === clock.Short)
+        if (Type === OClock.GetSize().Short)
         {
-            OClock.Insert(Id, clockInsert.Date, undefined);
+            OClock.Insert(Id, OClock.GetClockInsert().Date, undefined);
         }
     }
 }
