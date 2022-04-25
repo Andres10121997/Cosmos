@@ -1,0 +1,5 @@
+@use "sass:string";
+
+$highway-green-name: string.quote("highway-green");
+
+$highway-green: #004d33;
