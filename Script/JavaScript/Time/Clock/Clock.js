@@ -1,56 +1,43 @@
-﻿/**
+"use strict";
+/**
  * @class
  * @name Clock
  */
-class Clock
-{
+class Clock {
     #Size = {
         Long: `Long`,
         Short: `Short`
-    }
-
-    #ClockInsert: IClockInsert = {
+    };
+    #ClockInsert = {
         Date: `Date`,
         Time: `Time`
-    }
-    
-
-
+    };
     // Constructor.
     /**
      * @hideconstructor
      * @returns {void}
      */
-    constructor()
-    {
-        
+    constructor() {
     }
-
     // Getters and Setters
     /**
      * @access public
      * @method
      * @alias Clock.GetSize
-     * @returns 
+     * @returns
      */
-    GetSize()
-    {
+    GetSize() {
         return this.#Size;
     }
-
     /**
      * @access public
      * @method
      * @alias Clock.GetClockInsert
-     * @returns 
+     * @returns
      */
-    GetClockInsert(): IClockInsert
-    {
-        return this.#ClockInsert
+    GetClockInsert() {
+        return this.#ClockInsert;
     }
-
-
-
     /**
      * @access public
      * @method
@@ -60,10 +47,7 @@ class Clock
      * @param {Intl.DateTimeFormatOptions | undefined} Options
      * @returns {void}
      */
-    Insert(Id: string,
-           whoInsert: string,
-           Options: (Intl.DateTimeFormatOptions | undefined)): void
-    {
+    Insert(Id, whoInsert, Options) {
         // Variables.
         /**
          * @access private
@@ -72,8 +56,7 @@ class Clock
          * @type {HTMLElement}
          * @alias DocumentElement
          */
-        let DocumentElement: HTMLElement;
-
+        let DocumentElement;
         // Objects.
         /**
          * @access private
@@ -82,28 +65,19 @@ class Clock
          * @type {Validation}
          * @alias OValidate
          */
-        const OValidate: Validation = new Validation();
-
-
-
+        const OValidate = new Validation();
         if (OValidate.IsString(Id) === true &&
-            OValidate.IsString(whoInsert) === true)
-        {
-            if (whoInsert === this.GetClockInsert().Date)
-            {
-                setInterval((): void => {
-                    DocumentElement = (document.getElementById(Id) as HTMLElement);
-
+            OValidate.IsString(whoInsert) === true) {
+            if (whoInsert === this.GetClockInsert().Date) {
+                setInterval(() => {
+                    DocumentElement = document.getElementById(Id);
                     DocumentElement.innerHTML = Today().toLocaleDateString(undefined, Options);
                 }, 0);
             }
-            else
-            if (whoInsert === this.GetClockInsert().Time)
-            {
-                setInterval((): void => {
-                    DocumentElement = (document.getElementById(Id) as HTMLElement);
-
-                    DocumentElement.innerHTML = Today().toLocaleTimeString(undefined, Options)
+            else if (whoInsert === this.GetClockInsert().Time) {
+                setInterval(() => {
+                    DocumentElement = document.getElementById(Id);
+                    DocumentElement.innerHTML = Today().toLocaleTimeString(undefined, Options);
                 }, 0);
             }
         }
