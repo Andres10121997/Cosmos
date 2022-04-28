@@ -141,7 +141,9 @@
 
 @import "folder/color/teal/_normal.scss";
 
-@import "folder/color/green/_normal.scss";
+@import "folder/color/green/Normal/_Index.scss";
+@import "folder/color/green/Normal/_Darker.scss";
+@import "folder/color/green/Normal/_Lighter.scss";
 @import "folder/color/green/Dark/_Index.scss";
 @import "folder/color/green/Dark/_Darker.scss";
 @import "folder/color/green/Dark/_Lighter.scss";

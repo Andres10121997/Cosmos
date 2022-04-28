@@ -1,0 +1,35 @@
+$green-lighter-1:   Lighter($green, percentage(1, 16));
+$green-lighter-2:   Lighter($green, percentage(2, 16));
+$green-lighter-3:   Lighter($green, percentage(3, 16));
+$green-lighter-4:   Lighter($green, percentage(4, 16));
+$green-lighter-5:   Lighter($green, percentage(5, 16));
+$green-lighter-6:   Lighter($green, percentage(6, 16));
+$green-lighter-7:   Lighter($green, percentage(7, 16));
+$green-lighter-8:   Lighter($green, percentage(8, 16));
+$green-lighter-9:   Lighter($green, percentage(9, 16));
+$green-lighter-10:  Lighter($green, percentage(10, 16));
+$green-lighter-11:  Lighter($green, percentage(11, 16));
+$green-lighter-12:  Lighter($green, percentage(12, 16));
+$green-lighter-13:  Lighter($green, percentage(13, 16));
+$green-lighter-14:  Lighter($green, percentage(14, 16));
+$green-lighter-15:  Lighter($green, percentage(15, 16));
+
+
+
+$green-lighters: (
+    "1":    $green-lighter-1,
+    "2":    $green-lighter-2,
+    "3":    $green-lighter-3,
+    "4":    $green-lighter-4,
+    "5":    $green-lighter-5,
+    "6":    $green-lighter-6,
+    "7":    $green-lighter-7,
+    "8":    $green-lighter-8,
+    "9":    $green-lighter-9,
+    "10":   $green-lighter-10,
+    "11":   $green-lighter-11,
+    "12":   $green-lighter-12,
+    "13":   $green-lighter-13,
+    "14":   $green-lighter-14,
+    "15":   $green-lighter-15
+);
