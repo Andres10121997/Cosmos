@@ -1,0 +1,5 @@
+@use "sass:string";
+
+$safety-green-name: string.quote("safety-green");
+
+$safety-green:  #007256;

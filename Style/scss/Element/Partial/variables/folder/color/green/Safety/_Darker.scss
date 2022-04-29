@@ -1,0 +1,35 @@
+$safety-green-darker-1:     Darker($safety-green, percentage(1, 16));
+$safety-green-darker-2:     Darker($safety-green, percentage(2, 16));
+$safety-green-darker-3:     Darker($safety-green, percentage(3, 16));
+$safety-green-darker-4:     Darker($safety-green, percentage(4, 16));
+$safety-green-darker-5:     Darker($safety-green, percentage(5, 16));
+$safety-green-darker-6:     Darker($safety-green, percentage(6, 16));
+$safety-green-darker-7:     Darker($safety-green, percentage(7, 16));
+$safety-green-darker-8:     Darker($safety-green, percentage(8, 16));
+$safety-green-darker-9:     Darker($safety-green, percentage(9, 16));
+$safety-green-darker-10:    Darker($safety-green, percentage(10, 16));
+$safety-green-darker-11:    Darker($safety-green, percentage(11, 16));
+$safety-green-darker-12:    Darker($safety-green, percentage(12, 16));
+$safety-green-darker-13:    Darker($safety-green, percentage(13, 16));
+$safety-green-darker-14:    Darker($safety-green, percentage(14, 16));
+$safety-green-darker-15:    Darker($safety-green, percentage(15, 16));
+
+
+
+$safety-green-darkers: (
+    "1":    $safety-green-darker-1,
+    "2":    $safety-green-darker-2,
+    "3":    $safety-green-darker-3,
+    "4":    $safety-green-darker-4,
+    "5":    $safety-green-darker-5,
+    "6":    $safety-green-darker-6,
+    "7":    $safety-green-darker-7,
+    "8":    $safety-green-darker-8,
+    "9":    $safety-green-darker-9,
+    "10":   $safety-green-darker-10,
+    "11":   $safety-green-darker-11,
+    "12":   $safety-green-darker-12,
+    "13":   $safety-green-darker-13,
+    "14":   $safety-green-darker-14,
+    "15":   $safety-green-darker-15
+);
