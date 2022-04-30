@@ -205,10 +205,12 @@
 @import "folder/color/Gold/_Darker.scss";
 @import "folder/color/Gold/_Lighter.scss";
 
-@import "folder/color/khaki/_normal.scss";
-@import "folder/color/khaki/Dark/Index";
-@import "folder/color/khaki/Dark/Darker";
-@import "folder/color/khaki/Dark/Lighter";
+@import "folder/color/khaki/Normal/_Index.scss";
+@import "folder/color/khaki/Normal/_Darker.scss";
+@import "folder/color/khaki/Normal/_Lighter.scss";
+@import "folder/color/khaki/Dark/_Index.scss";
+@import "folder/color/khaki/Dark/_Darker.scss";
+@import "folder/color/khaki/Dark/_Lighter.scss";
 
 @import "folder/color/amber/_normal.scss";
 @import "folder/color/amber/_Darker.scss";
