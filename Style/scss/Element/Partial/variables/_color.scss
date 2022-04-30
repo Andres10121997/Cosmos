@@ -206,7 +206,9 @@
 @import "folder/color/Gold/_Lighter.scss";
 
 @import "folder/color/khaki/_normal.scss";
-@import "folder/color/khaki/_dark.scss";
+@import "folder/color/khaki/Dark/Index";
+@import "folder/color/khaki/Dark/Darker";
+@import "folder/color/khaki/Dark/Lighter";
 
 @import "folder/color/amber/_normal.scss";
 @import "folder/color/amber/_Darker.scss";
