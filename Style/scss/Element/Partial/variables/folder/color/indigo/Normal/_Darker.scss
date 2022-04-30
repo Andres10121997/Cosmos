@@ -1,0 +1,35 @@
+$indigo-darker-1:   Darker($indigo, percentage(1, 16));
+$indigo-darker-2:   Darker($indigo, percentage(2, 16));
+$indigo-darker-3:   Darker($indigo, percentage(3, 16));
+$indigo-darker-4:   Darker($indigo, percentage(4, 16));
+$indigo-darker-5:   Darker($indigo, percentage(5, 16));
+$indigo-darker-6:   Darker($indigo, percentage(6, 16));
+$indigo-darker-7:   Darker($indigo, percentage(7, 16));
+$indigo-darker-8:   Darker($indigo, percentage(8, 16));
+$indigo-darker-9:   Darker($indigo, percentage(9, 16));
+$indigo-darker-10:  Darker($indigo, percentage(10, 16));
+$indigo-darker-11:  Darker($indigo, percentage(11, 16));
+$indigo-darker-12:  Darker($indigo, percentage(12, 16));
+$indigo-darker-13:  Darker($indigo, percentage(13, 16));
+$indigo-darker-14:  Darker($indigo, percentage(14, 16));
+$indigo-darker-15:  Darker($indigo, percentage(15, 16));
+
+
+
+$indigo-darkers: (
+    "1":    $indigo-darker-1,
+    "2":    $indigo-darker-2,
+    "3":    $indigo-darker-3,
+    "4":    $indigo-darker-4,
+    "5":    $indigo-darker-5,
+    "6":    $indigo-darker-6,
+    "7":    $indigo-darker-7,
+    "8":    $indigo-darker-8,
+    "9":    $indigo-darker-9,
+    "10":   $indigo-darker-10,
+    "11":   $indigo-darker-11,
+    "12":   $indigo-darker-12,
+    "13":   $indigo-darker-13,
+    "14":   $indigo-darker-14,
+    "15":   $indigo-darker-15
+);
