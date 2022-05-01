@@ -1,7 +1,7 @@
 ﻿/**
  * @function
  * @name ValidationForm
- * @param {Array<string>} ElementId It is an Arrays that saves the IDs of the Inputs, TextArea, Select, among others.
+ * @param {Array<string>} Id It is an Arrays that saves the IDs of the Inputs, TextArea, Select, among others.
  * @param {Array<number>} MaxLength
  * @param {Array<string>} HtmlType
  * @param {Array<string>} DateType
@@ -10,7 +10,7 @@
  * @returns {boolean}
  * @summary This function is used to validate any form.
  */
-function ValidationForm(ElementId: Array<string>,
+function ValidationForm(Id: Array<string>,
                         MaxLength: Array<number>,
                         HtmlType: Array<string>,
                         DateType: Array<string>,
@@ -36,10 +36,10 @@ function ValidationForm(ElementId: Array<string>,
      * @alias Comparison
      */
     const Comparison: Array<boolean> = new Array<boolean>(
-        Boolean(ElementId.length !== MaxLength.length),
-        Boolean(ElementId.length !== HtmlType.length),
-        Boolean(ElementId.length !== DateType.length),
-        Boolean(ElementId.length !== Require.length)
+        Boolean(Id.length !== MaxLength.length),
+        Boolean(Id.length !== HtmlType.length),
+        Boolean(Id.length !== DateType.length),
+        Boolean(Id.length !== Require.length)
     );
 
     // Objects.
@@ -53,7 +53,7 @@ function ValidationForm(ElementId: Array<string>,
     const OValidate: Validation = new Validation();
 
     // Initialization.
-    Count = parseInt(String(0));
+    Count = 0;
 
 
 
@@ -66,7 +66,7 @@ function ValidationForm(ElementId: Array<string>,
         }
     });
 
-    ElementId.forEach((value: string, i: number): (boolean | void) => {
+    Id.forEach((value: string, i: number): (boolean | void) => {
         if (OValidate.IsString(value) === false)
         {
             console.error(`The "ID" (${value} | ${(i + 1)}° position) is not a string.`);
@@ -110,21 +110,21 @@ function ValidationForm(ElementId: Array<string>,
 
     HtmlType.forEach((value: string, i: number): void => {
         if (value === FormType.Select &&
-            OValidate.Select(ElementId[i]) === true)
+            OValidate.Select(Id[i]) === true)
         {
             Count++;
         }
         else
         if ((value === FormType.Input ||
              value === FormType.TextArea) &&
-            OValidate.Info(ElementId[i], Require[i], MaxLength[i]) === true)
+            OValidate.Info(Id[i], Require[i], MaxLength[i]) === true)
         {
             Count++;
         }
         else
         if (value === FormType.Date &&
             DateType[i] === dateOptions.DateOfBirth &&
-            OValidate.DateOfBirth(ElementId[i], MinimumAge) === true)
+            OValidate.DateOfBirth(Id[i], MinimumAge) === true)
         {
             Count++;
         }
@@ -132,7 +132,7 @@ function ValidationForm(ElementId: Array<string>,
 
 
 
-    if (Count === ElementId.length)
+    if (Count === Id.length)
     {
         return true;
     }

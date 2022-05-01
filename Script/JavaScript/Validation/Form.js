@@ -2,7 +2,7 @@
 /**
  * @function
  * @name ValidationForm
- * @param {Array<string>} ElementId It is an Arrays that saves the IDs of the Inputs, TextArea, Select, among others.
+ * @param {Array<string>} Id It is an Arrays that saves the IDs of the Inputs, TextArea, Select, among others.
  * @param {Array<number>} MaxLength
  * @param {Array<string>} HtmlType
  * @param {Array<string>} DateType
@@ -11,7 +11,7 @@
  * @returns {boolean}
  * @summary This function is used to validate any form.
  */
-function ValidationForm(ElementId, MaxLength, HtmlType, DateType, Require, MinimumAge = NaN) {
+function ValidationForm(Id, MaxLength, HtmlType, DateType, Require, MinimumAge = NaN) {
     // Variable.
     /**
      * @access private
@@ -29,7 +29,7 @@ function ValidationForm(ElementId, MaxLength, HtmlType, DateType, Require, Minim
      * @type {Array<boolean>}
      * @alias Comparison
      */
-    const Comparison = new Array(Boolean(ElementId.length !== MaxLength.length), Boolean(ElementId.length !== HtmlType.length), Boolean(ElementId.length !== DateType.length), Boolean(ElementId.length !== Require.length));
+    const Comparison = new Array(Boolean(Id.length !== MaxLength.length), Boolean(Id.length !== HtmlType.length), Boolean(Id.length !== DateType.length), Boolean(Id.length !== Require.length));
     // Objects.
     /**
      * @access private
@@ -40,7 +40,7 @@ function ValidationForm(ElementId, MaxLength, HtmlType, DateType, Require, Minim
      */
     const OValidate = new Validation();
     // Initialization.
-    Count = parseInt(String(0));
+    Count = 0;
     // Validation.
     Comparison.forEach((value, i) => {
         if (OValidate.IsBoolean(value) === false) {
@@ -48,7 +48,7 @@ function ValidationForm(ElementId, MaxLength, HtmlType, DateType, Require, Minim
             return false;
         }
     });
-    ElementId.forEach((value, i) => {
+    Id.forEach((value, i) => {
         if (OValidate.IsString(value) === false) {
             console.error(`The "ID" (${value} | ${(i + 1)}° position) is not a string.`);
             return false;
@@ -80,21 +80,21 @@ function ValidationForm(ElementId, MaxLength, HtmlType, DateType, Require, Minim
     });
     HtmlType.forEach((value, i) => {
         if (value === FormType.Select &&
-            OValidate.Select(ElementId[i]) === true) {
+            OValidate.Select(Id[i]) === true) {
             Count++;
         }
         else if ((value === FormType.Input ||
             value === FormType.TextArea) &&
-            OValidate.Info(ElementId[i], Require[i], MaxLength[i]) === true) {
+            OValidate.Info(Id[i], Require[i], MaxLength[i]) === true) {
             Count++;
         }
         else if (value === FormType.Date &&
             DateType[i] === dateOptions.DateOfBirth &&
-            OValidate.DateOfBirth(ElementId[i], MinimumAge) === true) {
+            OValidate.DateOfBirth(Id[i], MinimumAge) === true) {
             Count++;
         }
     });
-    if (Count === ElementId.length) {
+    if (Count === Id.length) {
         return true;
     }
     else {
