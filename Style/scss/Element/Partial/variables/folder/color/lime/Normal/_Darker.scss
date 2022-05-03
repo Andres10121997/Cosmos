@@ -1,0 +1,35 @@
+$lime-darker-1:     Darker($lime, percentage(1, 16));
+$lime-darker-2:     Darker($lime, percentage(2, 16));
+$lime-darker-3:     Darker($lime, percentage(3, 16));
+$lime-darker-4:     Darker($lime, percentage(4, 16));
+$lime-darker-5:     Darker($lime, percentage(5, 16));
+$lime-darker-6:     Darker($lime, percentage(6, 16));
+$lime-darker-7:     Darker($lime, percentage(7, 16));
+$lime-darker-8:     Darker($lime, percentage(8, 16));
+$lime-darker-9:     Darker($lime, percentage(9, 16));
+$lime-darker-10:    Darker($lime, percentage(10, 16));
+$lime-darker-11:    Darker($lime, percentage(11, 16));
+$lime-darker-12:    Darker($lime, percentage(12, 16));
+$lime-darker-13:    Darker($lime, percentage(13, 16));
+$lime-darker-14:    Darker($lime, percentage(14, 16));
+$lime-darker-15:    Darker($lime, percentage(15, 16));
+
+
+
+$lime-darkers: (
+    "1":    $lime-darker-1,
+    "2":    $lime-darker-2,
+    "3":    $lime-darker-3,
+    "4":    $lime-darker-4,
+    "5":    $lime-darker-5,
+    "6":    $lime-darker-6,
+    "7":    $lime-darker-7,
+    "8":    $lime-darker-8,
+    "9":    $lime-darker-9,
+    "10":   $lime-darker-10,
+    "11":   $lime-darker-11,
+    "12":   $lime-darker-12,
+    "13":   $lime-darker-13,
+    "14":   $lime-darker-14,
+    "15":   $lime-darker-15
+);

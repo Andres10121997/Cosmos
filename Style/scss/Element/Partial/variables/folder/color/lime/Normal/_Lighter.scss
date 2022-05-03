@@ -1,0 +1,35 @@
+$lime-lighter-1:    Lighter($lime, percentage(1, 16));
+$lime-lighter-2:    Lighter($lime, percentage(2, 16));
+$lime-lighter-3:    Lighter($lime, percentage(3, 16));
+$lime-lighter-4:    Lighter($lime, percentage(4, 16));
+$lime-lighter-5:    Lighter($lime, percentage(5, 16));
+$lime-lighter-6:    Lighter($lime, percentage(6, 16));
+$lime-lighter-7:    Lighter($lime, percentage(7, 16));
+$lime-lighter-8:    Lighter($lime, percentage(8, 16));
+$lime-lighter-9:    Lighter($lime, percentage(9, 16));
+$lime-lighter-10:   Lighter($lime, percentage(10, 16));
+$lime-lighter-11:   Lighter($lime, percentage(11, 16));
+$lime-lighter-12:   Lighter($lime, percentage(12, 16));
+$lime-lighter-13:   Lighter($lime, percentage(13, 16));
+$lime-lighter-14:   Lighter($lime, percentage(14, 16));
+$lime-lighter-15:   Lighter($lime, percentage(15, 16));
+
+
+
+$lime-lighters: (
+    "1":    $lime-lighter-1,
+    "2":    $lime-lighter-2,
+    "3":    $lime-lighter-3,
+    "4":    $lime-lighter-4,
+    "5":    $lime-lighter-5,
+    "6":    $lime-lighter-6,
+    "7":    $lime-lighter-7,
+    "8":    $lime-lighter-8,
+    "9":    $lime-lighter-9,
+    "10":   $lime-lighter-10,
+    "11":   $lime-lighter-11,
+    "12":   $lime-lighter-12,
+    "13":   $lime-lighter-13,
+    "14":   $lime-lighter-14,
+    "15":   $lime-lighter-15
+);
