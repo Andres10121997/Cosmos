@@ -1,0 +1,35 @@
+$dark-magenta-lighter-1:    Lighter($dark-magenta, percentage(1, 16));
+$dark-magenta-lighter-2:    Lighter($dark-magenta, percentage(2, 16));
+$dark-magenta-lighter-3:    Lighter($dark-magenta, percentage(3, 16));
+$dark-magenta-lighter-4:    Lighter($dark-magenta, percentage(4, 16));
+$dark-magenta-lighter-5:    Lighter($dark-magenta, percentage(5, 16));
+$dark-magenta-lighter-6:    Lighter($dark-magenta, percentage(6, 16));
+$dark-magenta-lighter-7:    Lighter($dark-magenta, percentage(7, 16));
+$dark-magenta-lighter-8:    Lighter($dark-magenta, percentage(8, 16));
+$dark-magenta-lighter-9:    Lighter($dark-magenta, percentage(9, 16));
+$dark-magenta-lighter-10:   Lighter($dark-magenta, percentage(10, 16));
+$dark-magenta-lighter-11:   Lighter($dark-magenta, percentage(11, 16));
+$dark-magenta-lighter-12:   Lighter($dark-magenta, percentage(12, 16));
+$dark-magenta-lighter-13:   Lighter($dark-magenta, percentage(13, 16));
+$dark-magenta-lighter-14:   Lighter($dark-magenta, percentage(14, 16));
+$dark-magenta-lighter-15:   Lighter($dark-magenta, percentage(15, 16));
+
+
+
+$dark-magenta-lighters: (
+    "1":    $dark-magenta-lighter-1,
+    "2":    $dark-magenta-lighter-2,
+    "3":    $dark-magenta-lighter-3,
+    "4":    $dark-magenta-lighter-4,
+    "5":    $dark-magenta-lighter-5,
+    "6":    $dark-magenta-lighter-6,
+    "7":    $dark-magenta-lighter-7,
+    "8":    $dark-magenta-lighter-8,
+    "9":    $dark-magenta-lighter-9,
+    "10":   $dark-magenta-lighter-10,
+    "11":   $dark-magenta-lighter-11,
+    "12":   $dark-magenta-lighter-12,
+    "13":   $dark-magenta-lighter-13,
+    "14":   $dark-magenta-lighter-14,
+    "15":   $dark-magenta-lighter-15
+);

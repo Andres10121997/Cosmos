@@ -1,0 +1,5 @@
+@use "sass:string";
+
+$dark-magenta-name: string.quote("dark-magenta");
+
+$dark-magenta:   #8B008B;
