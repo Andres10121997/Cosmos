@@ -1,0 +1,35 @@
+$olive-lighter-1:   Lighter($olive, percentage(1, 16));
+$olive-lighter-2:   Lighter($olive, percentage(2, 16));
+$olive-lighter-3:   Lighter($olive, percentage(3, 16));
+$olive-lighter-4:   Lighter($olive, percentage(4, 16));
+$olive-lighter-5:   Lighter($olive, percentage(5, 16));
+$olive-lighter-6:   Lighter($olive, percentage(6, 16));
+$olive-lighter-7:   Lighter($olive, percentage(7, 16));
+$olive-lighter-8:   Lighter($olive, percentage(8, 16));
+$olive-lighter-9:   Lighter($olive, percentage(9, 16));
+$olive-lighter-10:  Lighter($olive, percentage(10, 16));
+$olive-lighter-11:  Lighter($olive, percentage(11, 16));
+$olive-lighter-12:  Lighter($olive, percentage(12, 16));
+$olive-lighter-13:  Lighter($olive, percentage(13, 16));
+$olive-lighter-14:  Lighter($olive, percentage(14, 16));
+$olive-lighter-15:  Lighter($olive, percentage(15, 16));
+
+
+
+$olive-lighters: (
+    "1":    $olive-lighter-1,
+    "2":    $olive-lighter-2,
+    "3":    $olive-lighter-3,
+    "4":    $olive-lighter-4,
+    "5":    $olive-lighter-5,
+    "6":    $olive-lighter-6,
+    "7":    $olive-lighter-7,
+    "8":    $olive-lighter-8,
+    "9":    $olive-lighter-9,
+    "10":   $olive-lighter-10,
+    "11":   $olive-lighter-11,
+    "12":   $olive-lighter-12,
+    "13":   $olive-lighter-13,
+    "14":   $olive-lighter-14,
+    "15":   $olive-lighter-15
+);

@@ -1,0 +1,35 @@
+$olive-darker-1:    Darker($olive, percentage(1, 16));
+$olive-darker-2:    Darker($olive, percentage(2, 16));
+$olive-darker-3:    Darker($olive, percentage(3, 16));
+$olive-darker-4:    Darker($olive, percentage(4, 16));
+$olive-darker-5:    Darker($olive, percentage(5, 16));
+$olive-darker-6:    Darker($olive, percentage(6, 16));
+$olive-darker-7:    Darker($olive, percentage(7, 16));
+$olive-darker-8:    Darker($olive, percentage(8, 16));
+$olive-darker-9:    Darker($olive, percentage(9, 16));
+$olive-darker-10:   Darker($olive, percentage(10, 16));
+$olive-darker-11:   Darker($olive, percentage(11, 16));
+$olive-darker-12:   Darker($olive, percentage(12, 16));
+$olive-darker-13:   Darker($olive, percentage(13, 16));
+$olive-darker-14:   Darker($olive, percentage(14, 16));
+$olive-darker-15:   Darker($olive, percentage(15, 16));
+
+
+
+$olive-darkers: (
+    "1":    $olive-darker-1,
+    "2":    $olive-darker-2,
+    "3":    $olive-darker-3,
+    "4":    $olive-darker-4,
+    "5":    $olive-darker-5,
+    "6":    $olive-darker-6,
+    "7":    $olive-darker-7,
+    "8":    $olive-darker-8,
+    "9":    $olive-darker-9,
+    "10":   $olive-darker-10,
+    "11":   $olive-darker-11,
+    "12":   $olive-darker-12,
+    "13":   $olive-darker-13,
+    "14":   $olive-darker-14,
+    "15":   $olive-darker-15
+);
