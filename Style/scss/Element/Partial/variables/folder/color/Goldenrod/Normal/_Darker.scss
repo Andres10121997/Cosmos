@@ -1,18 +1,18 @@
-$goldenrod-darker-1:    Darker($goldenrod, percentage(1, 16));
-$goldenrod-darker-2:    Darker($goldenrod, percentage(2, 16));
-$goldenrod-darker-3:    Darker($goldenrod, percentage(3, 16));
-$goldenrod-darker-4:    Darker($goldenrod, percentage(4, 16));
-$goldenrod-darker-5:    Darker($goldenrod, percentage(5, 16));
-$goldenrod-darker-6:    Darker($goldenrod, percentage(6, 16));
-$goldenrod-darker-7:    Darker($goldenrod, percentage(7, 16));
-$goldenrod-darker-8:    Darker($goldenrod, percentage(8, 16));
-$goldenrod-darker-9:    Darker($goldenrod, percentage(9, 16));
-$goldenrod-darker-10:   Darker($goldenrod, percentage(10, 16));
-$goldenrod-darker-11:   Darker($goldenrod, percentage(11, 16));
-$goldenrod-darker-12:   Darker($goldenrod, percentage(12, 16));
-$goldenrod-darker-13:   Darker($goldenrod, percentage(13, 16));
-$goldenrod-darker-14:   Darker($goldenrod, percentage(14, 16));
-$goldenrod-darker-15:   Darker($goldenrod, percentage(15, 16));
+$goldenrod-darker-1:    Darker($goldenrod, $percentage-small-15);
+$goldenrod-darker-2:    Darker($goldenrod, $percentage-small-14);
+$goldenrod-darker-3:    Darker($goldenrod, $percentage-small-13);
+$goldenrod-darker-4:    Darker($goldenrod, $percentage-small-12);
+$goldenrod-darker-5:    Darker($goldenrod, $percentage-small-11);
+$goldenrod-darker-6:    Darker($goldenrod, $percentage-small-10);
+$goldenrod-darker-7:    Darker($goldenrod, $percentage-small-9);
+$goldenrod-darker-8:    Darker($goldenrod, $percentage-small-8);
+$goldenrod-darker-9:    Darker($goldenrod, $percentage-small-7);
+$goldenrod-darker-10:   Darker($goldenrod, $percentage-small-6);
+$goldenrod-darker-11:   Darker($goldenrod, $percentage-small-5);
+$goldenrod-darker-12:   Darker($goldenrod, $percentage-small-4);
+$goldenrod-darker-13:   Darker($goldenrod, $percentage-small-3);
+$goldenrod-darker-14:   Darker($goldenrod, $percentage-small-2);
+$goldenrod-darker-15:   Darker($goldenrod, $percentage-small-1);
 
 $goldenrod-darkers: (
     "1":    $goldenrod-darker-1,
