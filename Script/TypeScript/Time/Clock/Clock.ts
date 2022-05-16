@@ -13,6 +13,8 @@ class Clock
         Date: `Date`,
         Time: `Time`
     }
+
+    DocumentElement: HTMLElement = (document.getElementById("") as HTMLElement);
     
 
 
@@ -54,6 +56,48 @@ class Clock
 
 
     /**
+     * @access private
+     * @method
+     * @alias UpdateDay
+     * @param {string} Id
+     * @param {(Intl.DateTimeFormatOptions | undefined)} Options
+     * @returns {Promise<unknown>}
+     */
+    #UpdateDay(Id: string,
+               Options: (Intl.DateTimeFormatOptions | undefined)): Promise<unknown>
+    {
+        return new Promise(resolve => {
+            setInterval((): void => {
+                this.DocumentElement = (document.getElementById(Id) as HTMLElement);
+
+                this.DocumentElement.innerHTML = Today().toLocaleDateString(undefined, Options);
+            }, 0);
+        });
+    }
+
+    /**
+     * @access private
+     * @method
+     * @alias UpdateTime
+     * @param {string} Id
+     * @param {(Intl.DateTimeFormatOptions | undefined)} Options
+     * @returns {Promise<unknown>}
+     */
+    #UpdateTime(Id: string,
+                Options: (Intl.DateTimeFormatOptions | undefined)): Promise<unknown>
+    {
+        return new Promise(resolve => {
+            setInterval((): void => {
+                this.DocumentElement = (document.getElementById(Id) as HTMLElement);
+
+                this.DocumentElement.innerHTML = Today().toLocaleTimeString(undefined, Options)
+            }, 0);
+        });
+    }
+
+
+
+    /**
      * @access public
      * @method
      * @alias Clock.Insert
@@ -71,10 +115,10 @@ class Clock
          * @access private
          * @member
          * @var
-         * @type {HTMLElement}
-         * @alias DocumentElement
+         * @type {Promise<unknown>}
+         * @alias Insert
          */
-        let DocumentElement: HTMLElement;
+        let Insert: Promise<unknown>;
 
         // Objects.
         /**
@@ -93,20 +137,12 @@ class Clock
         {
             if (whoInsert === this.GetClockInsert().Date)
             {
-                setInterval((): void => {
-                    DocumentElement = (document.getElementById(Id) as HTMLElement);
-
-                    DocumentElement.innerHTML = Today().toLocaleDateString(undefined, Options);
-                }, 0);
+                Insert = this.#UpdateDay(Id, Options);
             }
             else
             if (whoInsert === this.GetClockInsert().Time)
             {
-                setInterval((): void => {
-                    DocumentElement = (document.getElementById(Id) as HTMLElement);
-
-                    DocumentElement.innerHTML = Today().toLocaleTimeString(undefined, Options)
-                }, 0);
+                Insert = this.#UpdateTime(Id, Options);
             }
         }
     }
