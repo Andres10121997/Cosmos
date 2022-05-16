@@ -14,7 +14,7 @@ class Clock
         Time: `Time`
     }
 
-    DocumentElement: HTMLElement = (document.getElementById("") as HTMLElement);
+    #DocumentElement: HTMLElement = (document.getElementById("") as HTMLElement);
     
 
 
@@ -63,14 +63,14 @@ class Clock
      * @param {(Intl.DateTimeFormatOptions | undefined)} Options
      * @returns {Promise<unknown>}
      */
-    #UpdateDay(Id: string,
-               Options: (Intl.DateTimeFormatOptions | undefined)): Promise<unknown>
+    async #UpdateDay(Id: string,
+                     Options: (Intl.DateTimeFormatOptions | undefined)): Promise<unknown>
     {
-        return new Promise(resolve => {
+        return await new Promise(resolve => {
             setInterval((): void => {
-                this.DocumentElement = (document.getElementById(Id) as HTMLElement);
+                this.#DocumentElement = (document.getElementById(Id) as HTMLElement);
 
-                this.DocumentElement.innerHTML = Today().toLocaleDateString(undefined, Options);
+                this.#DocumentElement.innerHTML = Today().toLocaleDateString(undefined, Options);
             }, 0);
         });
     }
@@ -83,14 +83,14 @@ class Clock
      * @param {(Intl.DateTimeFormatOptions | undefined)} Options
      * @returns {Promise<unknown>}
      */
-    #UpdateTime(Id: string,
-                Options: (Intl.DateTimeFormatOptions | undefined)): Promise<unknown>
+    async #UpdateTime(Id: string,
+                      Options: (Intl.DateTimeFormatOptions | undefined)): Promise<unknown>
     {
-        return new Promise(resolve => {
+        return await new Promise(resolve => {
             setInterval((): void => {
-                this.DocumentElement = (document.getElementById(Id) as HTMLElement);
+                this.#DocumentElement = (document.getElementById(Id) as HTMLElement);
 
-                this.DocumentElement.innerHTML = Today().toLocaleTimeString(undefined, Options)
+                this.#DocumentElement.innerHTML = Today().toLocaleTimeString(undefined, Options)
             }, 0);
         });
     }
