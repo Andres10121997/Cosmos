@@ -12,7 +12,7 @@ class Clock {
         Date: `Date`,
         Time: `Time`
     };
-    DocumentElement = document.getElementById("");
+    #DocumentElement = document.getElementById("");
     // Constructor.
     /**
      * @hideconstructor
@@ -47,11 +47,11 @@ class Clock {
      * @param {(Intl.DateTimeFormatOptions | undefined)} Options
      * @returns {Promise<unknown>}
      */
-    #UpdateDay(Id, Options) {
-        return new Promise(resolve => {
+    async #UpdateDay(Id, Options) {
+        return await new Promise(resolve => {
             setInterval(() => {
-                this.DocumentElement = document.getElementById(Id);
-                this.DocumentElement.innerHTML = Today().toLocaleDateString(undefined, Options);
+                this.#DocumentElement = document.getElementById(Id);
+                this.#DocumentElement.innerHTML = Today().toLocaleDateString(undefined, Options);
             }, 0);
         });
     }
@@ -63,11 +63,11 @@ class Clock {
      * @param {(Intl.DateTimeFormatOptions | undefined)} Options
      * @returns {Promise<unknown>}
      */
-    #UpdateTime(Id, Options) {
-        return new Promise(resolve => {
+    async #UpdateTime(Id, Options) {
+        return await new Promise(resolve => {
             setInterval(() => {
-                this.DocumentElement = document.getElementById(Id);
-                this.DocumentElement.innerHTML = Today().toLocaleTimeString(undefined, Options);
+                this.#DocumentElement = document.getElementById(Id);
+                this.#DocumentElement.innerHTML = Today().toLocaleTimeString(undefined, Options);
             }, 0);
         });
     }
