@@ -137,12 +137,18 @@ class Clock
         {
             if (whoInsert === this.GetClockInsert().Date)
             {
-                Insert = this.#UpdateDay(Id, Options);
+                Insert = this.#UpdateDay(Id, Options).catch((reason: any): void => {
+                    console.error(`Clock day update failed.`);
+                    console.error(`The error was: ${reason}`);
+                });
             }
             else
             if (whoInsert === this.GetClockInsert().Time)
             {
-                Insert = this.#UpdateTime(Id, Options);
+                Insert = this.#UpdateTime(Id, Options).catch((reason: any): void => {
+                    console.error(`Clock time update failed.`);
+                    console.error(`The error was: ${reason}`);
+                });
             }
         }
     }

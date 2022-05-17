@@ -147,7 +147,7 @@ class Validation
      * @returns {boolean}
      */
     DateOfBirth(Id: string,
-                       MinimumAge: number = 0): boolean
+                MinimumAge: number = 0): boolean
     {
         // Constants.
         /**

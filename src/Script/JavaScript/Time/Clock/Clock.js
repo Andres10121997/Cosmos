@@ -102,10 +102,16 @@ class Clock {
         if (OValidate.IsString(Id) === true &&
             OValidate.IsString(whoInsert) === true) {
             if (whoInsert === this.GetClockInsert().Date) {
-                Insert = this.#UpdateDay(Id, Options);
+                Insert = this.#UpdateDay(Id, Options).catch((reason) => {
+                    console.error(`Clock day update failed.`);
+                    console.error(`The error was: ${reason}`);
+                });
             }
             else if (whoInsert === this.GetClockInsert().Time) {
-                Insert = this.#UpdateTime(Id, Options);
+                Insert = this.#UpdateTime(Id, Options).catch((reason) => {
+                    console.error(`Clock time update failed.`);
+                    console.error(`The error was: ${reason}`);
+                });
             }
         }
     }
