@@ -1,9 +1,17 @@
 const path = require('path');
 
 module.exports = {
-    entry: './Script/JavaScript',
+    module: {
+        rules: {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: "babel-loader"
+        }
+    },
+    entry: './src/Script/JavaScript',
     output: {
         path: path.resolve(__dirname, 'dist/assets'),
-        clean: true
+        clean: true,
+        filename: 'Cosmos.js'
     }
 };

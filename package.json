@@ -13,6 +13,8 @@
     "samsung >= 1"
   ],
   "scripts": {
+    "babel": "./node_modules/.bin/babel.cmd ./src/Script/index.js -w -o ./dist/assets/bundle.js",
+    "webpack": "./node_modules/.bin/webpack.cmd -w",
     "jsdoc": "rmdir ./JSDoc/ & npx jsdoc ./src/Script/JavaScript/Cosmos.js out --destination ./JSDoc/",
     "sass": "npx sass --watch --style=compressed ./src/Style/scss/Styles.scss:./src/Style/css/Styles.min.css",
     "postcss": "npx postcss ./src/Style/css/Styles.min.css --output ./src/Style/css/Cosmos.min.css --watch"
@@ -28,7 +30,7 @@
     "postcss-cli": "9.1.0"
   },
   "devDependencies": {
-    "webpack": "^5.72.0",
+    "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2"
   }
 }
