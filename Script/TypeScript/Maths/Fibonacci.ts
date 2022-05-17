@@ -12,12 +12,12 @@ function Fibonacci(num: number): number
      * @type {Array<number>}
      * @alias fib
      */
-    const fib: Array<number> = [0, 1];
+    const fibonacci: Array<number> = [0, 1];
 
     for(let i = 2; i <= num; i++)
     {
-        fib[i] = fib[i - 1] + fib[i - 2];
+        fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
     }
 
-    return fib[num];
+    return fibonacci[num];
 }

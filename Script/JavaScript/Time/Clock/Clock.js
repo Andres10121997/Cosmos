@@ -25,7 +25,7 @@ class Clock {
      * @access public
      * @method
      * @alias Clock.GetSize
-     * @returns
+     * @returns {Clock.#Size}
      */
     GetSize() {
         return this.#Size;
@@ -34,7 +34,7 @@ class Clock {
      * @access public
      * @method
      * @alias Clock.GetClockInsert
-     * @returns
+     * @returns {Clock.#ClockInsert}
      */
     GetClockInsert() {
         return this.#ClockInsert;
@@ -48,7 +48,7 @@ class Clock {
      * @returns {Promise<unknown>}
      */
     async #UpdateDay(Id, Options) {
-        return await new Promise(resolve => {
+        return await new Promise((resolve) => {
             setInterval(() => {
                 this.#DocumentElement = document.getElementById(Id);
                 this.#DocumentElement.innerHTML = Today().toLocaleDateString(undefined, Options);
@@ -64,7 +64,7 @@ class Clock {
      * @returns {Promise<unknown>}
      */
     async #UpdateTime(Id, Options) {
-        return await new Promise(resolve => {
+        return await new Promise((resolve) => {
             setInterval(() => {
                 this.#DocumentElement = document.getElementById(Id);
                 this.#DocumentElement.innerHTML = Today().toLocaleTimeString(undefined, Options);

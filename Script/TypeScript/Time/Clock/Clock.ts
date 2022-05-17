@@ -35,7 +35,7 @@ class Clock
      * @access public
      * @method
      * @alias Clock.GetSize
-     * @returns 
+     * @returns {Clock.#Size}
      */
     GetSize()
     {
@@ -46,7 +46,7 @@ class Clock
      * @access public
      * @method
      * @alias Clock.GetClockInsert
-     * @returns 
+     * @returns {Clock.#ClockInsert}
      */
     GetClockInsert(): IClockInsert
     {
@@ -66,7 +66,7 @@ class Clock
     async #UpdateDay(Id: string,
                      Options: (Intl.DateTimeFormatOptions | undefined)): Promise<unknown>
     {
-        return await new Promise(resolve => {
+        return await new Promise((resolve): void => {
             setInterval((): void => {
                 this.#DocumentElement = (document.getElementById(Id) as HTMLElement);
 
@@ -86,7 +86,7 @@ class Clock
     async #UpdateTime(Id: string,
                       Options: (Intl.DateTimeFormatOptions | undefined)): Promise<unknown>
     {
-        return await new Promise(resolve => {
+        return await new Promise((resolve): void => {
             setInterval((): void => {
                 this.#DocumentElement = (document.getElementById(Id) as HTMLElement);
 
