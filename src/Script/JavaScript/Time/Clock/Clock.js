@@ -47,7 +47,7 @@ class Clock {
      * @param {(Intl.DateTimeFormatOptions | undefined)} Options
      * @returns {Promise<unknown>}
      */
-    async #UpdateDay(Id, Options) {
+    async #UpdateDayAsync(Id, Options) {
         return await new Promise((resolve) => {
             setInterval(() => {
                 this.#DocumentElement = document.getElementById(Id);
@@ -63,7 +63,7 @@ class Clock {
      * @param {(Intl.DateTimeFormatOptions | undefined)} Options
      * @returns {Promise<unknown>}
      */
-    async #UpdateTime(Id, Options) {
+    async #UpdateTimeAsync(Id, Options) {
         return await new Promise((resolve) => {
             setInterval(() => {
                 this.#DocumentElement = document.getElementById(Id);
@@ -102,13 +102,13 @@ class Clock {
         if (OValidate.IsString(Id) === true &&
             OValidate.IsString(whoInsert) === true) {
             if (whoInsert === this.GetClockInsert().Date) {
-                Insert = this.#UpdateDay(Id, Options).catch((reason) => {
+                Insert = this.#UpdateDayAsync(Id, Options).catch((reason) => {
                     console.error(`Clock day update failed.`);
                     console.error(`The error was: ${reason}`);
                 });
             }
             else if (whoInsert === this.GetClockInsert().Time) {
-                Insert = this.#UpdateTime(Id, Options).catch((reason) => {
+                Insert = this.#UpdateTimeAsync(Id, Options).catch((reason) => {
                     console.error(`Clock time update failed.`);
                     console.error(`The error was: ${reason}`);
                 });

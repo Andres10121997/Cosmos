@@ -63,8 +63,8 @@ class Clock
      * @param {(Intl.DateTimeFormatOptions | undefined)} Options
      * @returns {Promise<unknown>}
      */
-    async #UpdateDay(Id: string,
-                     Options: (Intl.DateTimeFormatOptions | undefined)): Promise<unknown>
+    async #UpdateDayAsync(Id: string,
+                          Options: (Intl.DateTimeFormatOptions | undefined)): Promise<unknown>
     {
         return await new Promise((resolve): void => {
             setInterval((): void => {
@@ -83,8 +83,8 @@ class Clock
      * @param {(Intl.DateTimeFormatOptions | undefined)} Options
      * @returns {Promise<unknown>}
      */
-    async #UpdateTime(Id: string,
-                      Options: (Intl.DateTimeFormatOptions | undefined)): Promise<unknown>
+    async #UpdateTimeAsync(Id: string,
+                           Options: (Intl.DateTimeFormatOptions | undefined)): Promise<unknown>
     {
         return await new Promise((resolve): void => {
             setInterval((): void => {
@@ -137,7 +137,7 @@ class Clock
         {
             if (whoInsert === this.GetClockInsert().Date)
             {
-                Insert = this.#UpdateDay(Id, Options).catch((reason: any): void => {
+                Insert = this.#UpdateDayAsync(Id, Options).catch((reason: any): void => {
                     console.error(`Clock day update failed.`);
                     console.error(`The error was: ${reason}`);
                 });
@@ -145,7 +145,7 @@ class Clock
             else
             if (whoInsert === this.GetClockInsert().Time)
             {
-                Insert = this.#UpdateTime(Id, Options).catch((reason: any): void => {
+                Insert = this.#UpdateTimeAsync(Id, Options).catch((reason: any): void => {
                     console.error(`Clock time update failed.`);
                     console.error(`The error was: ${reason}`);
                 });
