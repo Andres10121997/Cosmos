@@ -29,10 +29,10 @@ function InsertDate(Id: string,
 
 
 
-    if (OValidate.IsString(Id) &&
+    if (OValidate.IsString(Id) == true &&
         OValidate.IsString(Type) === true)
     {
-        if (Type === OClock.GetSize().Long)
+        if (Type.toLocaleLowerCase() === OClock.GetSize().Long.toLocaleLowerCase())
         {
             OClock.Insert(Id, OClock.GetClockInsert().Date, {
                 weekday: `long`,
@@ -42,7 +42,7 @@ function InsertDate(Id: string,
             });
         }
         else
-        if (Type === OClock.GetSize().Short)
+        if (Type.toLocaleLowerCase() === OClock.GetSize().Short.toLocaleLowerCase())
         {
             OClock.Insert(Id, OClock.GetClockInsert().Date, undefined);
         }

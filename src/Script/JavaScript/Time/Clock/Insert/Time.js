@@ -26,7 +26,7 @@ function InsertTime(Id, Type) {
     const OValidate = new Validation();
     if (OValidate.IsString(Id) === true &&
         OValidate.IsString(Type) === true) {
-        if (Type === OClock.GetSize().Long) {
+        if (Type.toLocaleLowerCase() === OClock.GetSize().Long.toLocaleLowerCase()) {
             OClock.Insert(Id, OClock.GetClockInsert().Time, {
                 formatMatcher: `best fit`,
                 hour12: undefined,
@@ -35,7 +35,7 @@ function InsertTime(Id, Type) {
                 second: `numeric`
             });
         }
-        else if (Type === OClock.GetSize().Short) {
+        else if (Type.toLocaleLowerCase() === OClock.GetSize().Short.toLocaleLowerCase()) {
             OClock.Insert(Id, OClock.GetClockInsert().Time, {
                 formatMatcher: `best fit`,
                 hour12: undefined,

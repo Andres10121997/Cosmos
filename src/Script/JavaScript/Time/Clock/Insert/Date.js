@@ -24,9 +24,9 @@ function InsertDate(Id, Type) {
      * @alias OValidate
      */
     const OValidate = new Validation();
-    if (OValidate.IsString(Id) &&
+    if (OValidate.IsString(Id) == true &&
         OValidate.IsString(Type) === true) {
-        if (Type === OClock.GetSize().Long) {
+        if (Type.toLocaleLowerCase() === OClock.GetSize().Long.toLocaleLowerCase()) {
             OClock.Insert(Id, OClock.GetClockInsert().Date, {
                 weekday: `long`,
                 year: `numeric`,
@@ -34,7 +34,7 @@ function InsertDate(Id, Type) {
                 day: `numeric`
             });
         }
-        else if (Type === OClock.GetSize().Short) {
+        else if (Type.toLocaleLowerCase() === OClock.GetSize().Short.toLocaleLowerCase()) {
             OClock.Insert(Id, OClock.GetClockInsert().Date, undefined);
         }
     }
