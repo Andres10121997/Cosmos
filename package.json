@@ -13,9 +13,9 @@
     "samsung >= 1"
   ],
   "scripts": {
-    "jsdoc": "npx jsdoc ./Script/JavaScript/Cosmos.js out --destination ./JSDoc/",
-    "sass": "npx sass --watch --style=compressed ./Style/scss/Styles.scss:./Style/css/Styles.min.css",
-    "postcss": "npx postcss ./Style/css/Styles.min.css --output ./Style/css/Cosmos.min.css --watch"
+    "jsdoc": "rmdir ./JSDoc/ & npx jsdoc ./src/Script/JavaScript/Cosmos.js out --destination ./JSDoc/",
+    "sass": "npx sass --watch --style=compressed ./src/Style/scss/Styles.scss:./src/Style/css/Styles.min.css",
+    "postcss": "npx postcss ./src/Style/css/Styles.min.css --output ./src/Style/css/Cosmos.min.css --watch"
   },
   "dependencies": {
     "@babel/cli": "7.17.10",
