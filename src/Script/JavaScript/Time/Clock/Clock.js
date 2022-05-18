@@ -55,8 +55,10 @@ class Clock {
             }, 0);
         })
             .catch((reason) => {
+            console.error(`---`);
             console.error(`Clock day update failed.`);
             console.error(`The error was: ${reason}`);
+            console.error(`---`);
         });
     }
     /**
@@ -75,8 +77,10 @@ class Clock {
             }, 0);
         })
             .catch((reason) => {
+            console.error(`---`);
             console.error(`Clock time update failed.`);
             console.error(`The error was: ${reason}`);
+            console.error(`---`);
         });
     }
     /**

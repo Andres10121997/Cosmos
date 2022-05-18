@@ -39,5 +39,11 @@ async function InsertDate(Id, Type) {
                 OClock.Insert(Id, OClock.GetClockInsert().Date, undefined);
             }
         }
+    })
+        .catch((reason) => {
+        console.error(`---`);
+        console.error(`Error inserting date.`);
+        console.error(`Error: ${reason}`);
+        console.error(`---`);
     });
 }

@@ -45,5 +45,11 @@ async function InsertTime(Id, Type) {
                 });
             }
         }
+    })
+        .catch((reason) => {
+        console.error(`---`);
+        console.error(`Error inserting the time.`);
+        console.error(`Error: ${reason}`);
+        console.error(`---`);
     });
 }
