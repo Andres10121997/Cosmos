@@ -72,6 +72,10 @@ class Clock
 
                 this.#DocumentElement.innerHTML = Today().toLocaleDateString(undefined, Options);
             }, 0);
+        })
+        .catch((reason: any): void => {
+            console.error(`Clock day update failed.`);
+            console.error(`The error was: ${reason}`);
         });
     }
 
@@ -90,8 +94,12 @@ class Clock
             setInterval((): void => {
                 this.#DocumentElement = (document.getElementById(Id) as HTMLElement);
 
-                this.#DocumentElement.innerHTML = Today().toLocaleTimeString(undefined, Options)
+                this.#DocumentElement.innerHTML = Today().toLocaleTimeString(undefined, Options);
             }, 0);
+        })
+        .catch((reason: any): void => {
+            console.error(`Clock time update failed.`);
+            console.error(`The error was: ${reason}`);
         });
     }
 
@@ -137,18 +145,12 @@ class Clock
         {
             if (whoInsert === this.GetClockInsert().Date)
             {
-                Insert = this.#UpdateDayAsync(Id, Options).catch((reason: any): void => {
-                    console.error(`Clock day update failed.`);
-                    console.error(`The error was: ${reason}`);
-                });
+                Insert = this.#UpdateDayAsync(Id, Options);
             }
             else
             if (whoInsert === this.GetClockInsert().Time)
             {
-                Insert = this.#UpdateTimeAsync(Id, Options).catch((reason: any): void => {
-                    console.error(`Clock time update failed.`);
-                    console.error(`The error was: ${reason}`);
-                });
+                Insert = this.#UpdateTimeAsync(Id, Options)
             }
         }
     }

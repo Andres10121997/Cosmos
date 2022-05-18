@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+require("./Maths/Fibonacci.js");
+require("./Maths/Calculation/Age.js");
+require("./Maths/Calculation/Calculate.js");
+require("./Time/Today.js");
+require("./Time/Variable/Date.js");
+require("./Time/Clock/Clock.js");
+require("./Time/Clock/Insert/Date.js");
+require("./Time/Clock/Insert/Time.js");
+require("./Validation/Validation.js");
+require("./Validation/Form.js");
+require("./Variable/Form.js");
+require("./Variable/Regular Expression.js");
+require("./WYSIWYG/Rich text editor.js");
