@@ -1,0 +1,35 @@
+$dark-orange-darker-1:  Darker($dark-orange, $percentage-small-15);
+$dark-orange-darker-2:  Darker($dark-orange, $percentage-small-14);
+$dark-orange-darker-3:  Darker($dark-orange, $percentage-small-13);
+$dark-orange-darker-4:  Darker($dark-orange, $percentage-small-12);
+$dark-orange-darker-5:  Darker($dark-orange, $percentage-small-11);
+$dark-orange-darker-6:  Darker($dark-orange, $percentage-small-10);
+$dark-orange-darker-7:  Darker($dark-orange, $percentage-small-9);
+$dark-orange-darker-8:  Darker($dark-orange, $percentage-small-8);
+$dark-orange-darker-9:  Darker($dark-orange, $percentage-small-7);
+$dark-orange-darker-10: Darker($dark-orange, $percentage-small-6);
+$dark-orange-darker-11: Darker($dark-orange, $percentage-small-5);
+$dark-orange-darker-12: Darker($dark-orange, $percentage-small-4);
+$dark-orange-darker-13: Darker($dark-orange, $percentage-small-3);
+$dark-orange-darker-14: Darker($dark-orange, $percentage-small-2);
+$dark-orange-darker-15: Darker($dark-orange, $percentage-small-1);
+
+
+
+$dark-orange-darkers: (
+    "1":    $dark-orange-darker-1,
+    "2":    $dark-orange-darker-2,
+    "3":    $dark-orange-darker-3,
+    "4":    $dark-orange-darker-4,
+    "5":    $dark-orange-darker-5,
+    "6":    $dark-orange-darker-6,
+    "7":    $dark-orange-darker-7,
+    "8":    $dark-orange-darker-8,
+    "9":    $dark-orange-darker-9,
+    "10":   $dark-orange-darker-10,
+    "11":   $dark-orange-darker-11,
+    "12":   $dark-orange-darker-12,
+    "13":   $dark-orange-darker-13,
+    "14":   $dark-orange-darker-14,
+    "15":   $dark-orange-darker-15
+);
