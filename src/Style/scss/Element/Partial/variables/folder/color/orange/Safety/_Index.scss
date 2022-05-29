@@ -1,0 +1,5 @@
+@use "sass:string";
+
+$safety-orange-name: string.quote("safety-orange");
+
+$safety-orange: #e97600;

@@ -1,0 +1,35 @@
+$safety-orange-lighter-1:   Lighter($safety-orange, $percentage-small-15);
+$safety-orange-lighter-2:   Lighter($safety-orange, $percentage-small-14);
+$safety-orange-lighter-3:   Lighter($safety-orange, $percentage-small-13);
+$safety-orange-lighter-4:   Lighter($safety-orange, $percentage-small-12);
+$safety-orange-lighter-5:   Lighter($safety-orange, $percentage-small-11);
+$safety-orange-lighter-6:   Lighter($safety-orange, $percentage-small-10);
+$safety-orange-lighter-7:   Lighter($safety-orange, $percentage-small-9);
+$safety-orange-lighter-8:   Lighter($safety-orange, $percentage-small-8);
+$safety-orange-lighter-9:   Lighter($safety-orange, $percentage-small-7);
+$safety-orange-lighter-10:  Lighter($safety-orange, $percentage-small-6);
+$safety-orange-lighter-11:  Lighter($safety-orange, $percentage-small-5);
+$safety-orange-lighter-12:  Lighter($safety-orange, $percentage-small-4);
+$safety-orange-lighter-13:  Lighter($safety-orange, $percentage-small-3);
+$safety-orange-lighter-14:  Lighter($safety-orange, $percentage-small-2);
+$safety-orange-lighter-15:  Lighter($safety-orange, $percentage-small-1);
+
+
+
+$safety-orange-lighters: (
+    "1":    $safety-orange-lighter-1,
+    "2":    $safety-orange-lighter-2,
+    "3":    $safety-orange-lighter-3,
+    "4":    $safety-orange-lighter-4,
+    "5":    $safety-orange-lighter-5,
+    "6":    $safety-orange-lighter-6,
+    "7":    $safety-orange-lighter-7,
+    "8":    $safety-orange-lighter-8,
+    "9":    $safety-orange-lighter-9,
+    "10":   $safety-orange-lighter-10,
+    "11":   $safety-orange-lighter-11,
+    "12":   $safety-orange-lighter-12,
+    "13":   $safety-orange-lighter-13,
+    "14":   $safety-orange-lighter-14,
+    "15":   $safety-orange-lighter-15
+);
