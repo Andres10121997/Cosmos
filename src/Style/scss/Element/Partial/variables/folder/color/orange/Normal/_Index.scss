@@ -1,0 +1,5 @@
+@use "sass:string";
+
+$orange-name:   string.quote("orange");
+
+$orange: #FFA500;
