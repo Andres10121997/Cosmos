@@ -1,0 +1,5 @@
+@use "sass:string";
+
+$deep-pink-name: string.quote("deep-pink");
+
+$deep-pink: #FF1493;
