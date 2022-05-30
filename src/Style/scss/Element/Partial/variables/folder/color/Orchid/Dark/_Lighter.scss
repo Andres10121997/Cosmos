@@ -1,0 +1,35 @@
+$dark-orchid-lighter-1:     Lighter($dark-orchid, $percentage-small-15);
+$dark-orchid-lighter-2:     Lighter($dark-orchid, $percentage-small-14);
+$dark-orchid-lighter-3:     Lighter($dark-orchid, $percentage-small-13);
+$dark-orchid-lighter-4:     Lighter($dark-orchid, $percentage-small-12);
+$dark-orchid-lighter-5:     Lighter($dark-orchid, $percentage-small-11);
+$dark-orchid-lighter-6:     Lighter($dark-orchid, $percentage-small-10);
+$dark-orchid-lighter-7:     Lighter($dark-orchid, $percentage-small-9);
+$dark-orchid-lighter-8:     Lighter($dark-orchid, $percentage-small-8);
+$dark-orchid-lighter-9:     Lighter($dark-orchid, $percentage-small-7);
+$dark-orchid-lighter-10:    Lighter($dark-orchid, $percentage-small-6);
+$dark-orchid-lighter-11:    Lighter($dark-orchid, $percentage-small-5);
+$dark-orchid-lighter-12:    Lighter($dark-orchid, $percentage-small-4);
+$dark-orchid-lighter-13:    Lighter($dark-orchid, $percentage-small-3);
+$dark-orchid-lighter-14:    Lighter($dark-orchid, $percentage-small-2);
+$dark-orchid-lighter-15:    Lighter($dark-orchid, $percentage-small-1);
+
+
+
+$dark-orchid-lighters: (
+    "1":    $dark-orchid-lighter-1,
+    "2":    $dark-orchid-lighter-2,
+    "3":    $dark-orchid-lighter-3,
+    "4":    $dark-orchid-lighter-4,
+    "5":    $dark-orchid-lighter-5,
+    "6":    $dark-orchid-lighter-6,
+    "7":    $dark-orchid-lighter-7,
+    "8":    $dark-orchid-lighter-8,
+    "9":    $dark-orchid-lighter-9,
+    "10":   $dark-orchid-lighter-10,
+    "11":   $dark-orchid-lighter-11,
+    "12":   $dark-orchid-lighter-12,
+    "13":   $dark-orchid-lighter-13,
+    "14":   $dark-orchid-lighter-14,
+    "15":   $dark-orchid-lighter-15
+);
