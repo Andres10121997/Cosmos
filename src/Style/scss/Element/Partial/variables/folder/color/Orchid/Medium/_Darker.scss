@@ -1,0 +1,35 @@
+$medium-orchid-darker-1:    Darker($medium-orchid, $percentage-small-15);
+$medium-orchid-darker-2:    Darker($medium-orchid, $percentage-small-14);
+$medium-orchid-darker-3:    Darker($medium-orchid, $percentage-small-13);
+$medium-orchid-darker-4:    Darker($medium-orchid, $percentage-small-12);
+$medium-orchid-darker-5:    Darker($medium-orchid, $percentage-small-11);
+$medium-orchid-darker-6:    Darker($medium-orchid, $percentage-small-10);
+$medium-orchid-darker-7:    Darker($medium-orchid, $percentage-small-9);
+$medium-orchid-darker-8:    Darker($medium-orchid, $percentage-small-8);
+$medium-orchid-darker-9:    Darker($medium-orchid, $percentage-small-7);
+$medium-orchid-darker-10:   Darker($medium-orchid, $percentage-small-6);
+$medium-orchid-darker-11:   Darker($medium-orchid, $percentage-small-5);
+$medium-orchid-darker-12:   Darker($medium-orchid, $percentage-small-4);
+$medium-orchid-darker-13:   Darker($medium-orchid, $percentage-small-3);
+$medium-orchid-darker-14:   Darker($medium-orchid, $percentage-small-2);
+$medium-orchid-darker-15:   Darker($medium-orchid, $percentage-small-1);
+
+
+
+$medium-orchid-darkers: (
+    "1":    $medium-orchid-darker-1,
+    "2":    $medium-orchid-darker-2,
+    "3":    $medium-orchid-darker-3,
+    "4":    $medium-orchid-darker-4,
+    "5":    $medium-orchid-darker-5,
+    "6":    $medium-orchid-darker-6,
+    "7":    $medium-orchid-darker-7,
+    "8":    $medium-orchid-darker-8,
+    "9":    $medium-orchid-darker-9,
+    "10":   $medium-orchid-darker-10,
+    "11":   $medium-orchid-darker-11,
+    "12":   $medium-orchid-darker-12,
+    "13":   $medium-orchid-darker-13,
+    "14":   $medium-orchid-darker-14,
+    "15":   $medium-orchid-darker-15
+);
