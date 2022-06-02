@@ -1,0 +1,5 @@
+@use "sass:string";
+
+$pink-name: string.quote("pink");
+
+$pink: #FFC0CB;

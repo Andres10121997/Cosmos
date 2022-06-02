@@ -1,0 +1,35 @@
+$pink-lighter-1:    Lighter($pink, $percentage-small-15);
+$pink-lighter-2:    Lighter($pink, $percentage-small-14);
+$pink-lighter-3:    Lighter($pink, $percentage-small-13);
+$pink-lighter-4:    Lighter($pink, $percentage-small-12);
+$pink-lighter-5:    Lighter($pink, $percentage-small-11);
+$pink-lighter-6:    Lighter($pink, $percentage-small-10);
+$pink-lighter-7:    Lighter($pink, $percentage-small-9);
+$pink-lighter-8:    Lighter($pink, $percentage-small-8);
+$pink-lighter-9:    Lighter($pink, $percentage-small-7);
+$pink-lighter-10:   Lighter($pink, $percentage-small-6);
+$pink-lighter-11:   Lighter($pink, $percentage-small-5);
+$pink-lighter-12:   Lighter($pink, $percentage-small-4);
+$pink-lighter-13:   Lighter($pink, $percentage-small-3);
+$pink-lighter-14:   Lighter($pink, $percentage-small-2);
+$pink-lighter-15:   Lighter($pink, $percentage-small-1);
+
+
+
+$pink-lighters: (
+    "1":    $pink-lighter-1,
+    "2":    $pink-lighter-2,
+    "3":    $pink-lighter-3,
+    "4":    $pink-lighter-4,
+    "5":    $pink-lighter-5,
+    "6":    $pink-lighter-6,
+    "7":    $pink-lighter-7,
+    "8":    $pink-lighter-8,
+    "9":    $pink-lighter-9,
+    "10":   $pink-lighter-10,
+    "11":   $pink-lighter-11,
+    "12":   $pink-lighter-12,
+    "13":   $pink-lighter-13,
+    "14":   $pink-lighter-14,
+    "15":   $pink-lighter-15
+);
