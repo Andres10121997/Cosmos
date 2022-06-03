@@ -40,7 +40,7 @@ class Calculate {
          */
         const Validation = new Array(Boolean(Today().getMonth() < DateOfBirth.getMonth()), Boolean(Today().getMonth() === DateOfBirth.getMonth()) && Boolean(Today().getDate() < DateOfBirth.getDate()));
         // Initialization.
-        Age = parseInt(String(Today().getFullYear() - DateOfBirth.getFullYear()));
+        Age = Today().getFullYear() - DateOfBirth.getFullYear();
         Validation.forEach((value) => {
             if (value === true) {
                 Age--;
