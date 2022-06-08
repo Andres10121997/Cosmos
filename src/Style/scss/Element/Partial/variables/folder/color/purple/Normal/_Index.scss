@@ -1,0 +1,5 @@
+@use "sass:string";
+
+$purple-name:   string.quote("purple");
+
+$purple: #800080;
