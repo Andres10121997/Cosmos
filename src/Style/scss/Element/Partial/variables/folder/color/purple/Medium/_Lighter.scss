@@ -1,0 +1,35 @@
+$medium-purple-lighter-1:   Lighter($medium-purple, $percentage-small-15);
+$medium-purple-lighter-2:   Lighter($medium-purple, $percentage-small-14);
+$medium-purple-lighter-3:   Lighter($medium-purple, $percentage-small-13);
+$medium-purple-lighter-4:   Lighter($medium-purple, $percentage-small-12);
+$medium-purple-lighter-5:   Lighter($medium-purple, $percentage-small-11);
+$medium-purple-lighter-6:   Lighter($medium-purple, $percentage-small-10);
+$medium-purple-lighter-7:   Lighter($medium-purple, $percentage-small-9);
+$medium-purple-lighter-8:   Lighter($medium-purple, $percentage-small-8);
+$medium-purple-lighter-9:   Lighter($medium-purple, $percentage-small-7);
+$medium-purple-lighter-10:  Lighter($medium-purple, $percentage-small-6);
+$medium-purple-lighter-11:  Lighter($medium-purple, $percentage-small-5);
+$medium-purple-lighter-12:  Lighter($medium-purple, $percentage-small-4);
+$medium-purple-lighter-13:  Lighter($medium-purple, $percentage-small-3);
+$medium-purple-lighter-14:  Lighter($medium-purple, $percentage-small-2);
+$medium-purple-lighter-15:  Lighter($medium-purple, $percentage-small-1);
+
+
+
+$medium-purple-lighters: (
+    "1":    $medium-purple-lighter-1,
+    "2":    $medium-purple-lighter-2,
+    "3":    $medium-purple-lighter-3,
+    "4":    $medium-purple-lighter-4,
+    "5":    $medium-purple-lighter-5,
+    "6":    $medium-purple-lighter-6,
+    "7":    $medium-purple-lighter-7,
+    "8":    $medium-purple-lighter-8,
+    "9":    $medium-purple-lighter-9,
+    "10":   $medium-purple-lighter-10,
+    "11":   $medium-purple-lighter-11,
+    "12":   $medium-purple-lighter-12,
+    "13":   $medium-purple-lighter-13,
+    "14":   $medium-purple-lighter-14,
+    "15":   $medium-purple-lighter-15
+);
