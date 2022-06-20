@@ -1,0 +1,35 @@
+$highway-red-darker-1:  Darker($highway-red, $percentage-small-15);
+$highway-red-darker-2:  Darker($highway-red, $percentage-small-14);
+$highway-red-darker-3:  Darker($highway-red, $percentage-small-13);
+$highway-red-darker-4:  Darker($highway-red, $percentage-small-12);
+$highway-red-darker-5:  Darker($highway-red, $percentage-small-11);
+$highway-red-darker-6:  Darker($highway-red, $percentage-small-10);
+$highway-red-darker-7:  Darker($highway-red, $percentage-small-9);
+$highway-red-darker-8:  Darker($highway-red, $percentage-small-8);
+$highway-red-darker-9:  Darker($highway-red, $percentage-small-7);
+$highway-red-darker-10: Darker($highway-red, $percentage-small-6);
+$highway-red-darker-11: Darker($highway-red, $percentage-small-5);
+$highway-red-darker-12: Darker($highway-red, $percentage-small-4);
+$highway-red-darker-13: Darker($highway-red, $percentage-small-3);
+$highway-red-darker-14: Darker($highway-red, $percentage-small-2);
+$highway-red-darker-15: Darker($highway-red, $percentage-small-1);
+
+
+
+$highway-red-darkers: (
+    "1":    $highway-red-darker-1,
+    "2":    $highway-red-darker-2,
+    "3":    $highway-red-darker-3,
+    "4":    $highway-red-darker-4,
+    "5":    $highway-red-darker-5,
+    "6":    $highway-red-darker-6,
+    "7":    $highway-red-darker-7,
+    "8":    $highway-red-darker-8,
+    "9":    $highway-red-darker-9,
+    "10":   $highway-red-darker-10,
+    "11":   $highway-red-darker-11,
+    "12":   $highway-red-darker-12,
+    "13":   $highway-red-darker-13,
+    "14":   $highway-red-darker-14,
+    "15":   $highway-red-darker-15
+);

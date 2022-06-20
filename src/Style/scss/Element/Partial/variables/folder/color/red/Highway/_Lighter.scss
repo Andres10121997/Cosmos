@@ -1,0 +1,35 @@
+$highway-red-lighter-1:     Lighter($highway-red, $percentage-small-15);
+$highway-red-lighter-2:     Lighter($highway-red, $percentage-small-14);
+$highway-red-lighter-3:     Lighter($highway-red, $percentage-small-13);
+$highway-red-lighter-4:     Lighter($highway-red, $percentage-small-12);
+$highway-red-lighter-5:     Lighter($highway-red, $percentage-small-11);
+$highway-red-lighter-6:     Lighter($highway-red, $percentage-small-10);
+$highway-red-lighter-7:     Lighter($highway-red, $percentage-small-9);
+$highway-red-lighter-8:     Lighter($highway-red, $percentage-small-8);
+$highway-red-lighter-9:     Lighter($highway-red, $percentage-small-7);
+$highway-red-lighter-10:    Lighter($highway-red, $percentage-small-6);
+$highway-red-lighter-11:    Lighter($highway-red, $percentage-small-5);
+$highway-red-lighter-12:    Lighter($highway-red, $percentage-small-4);
+$highway-red-lighter-13:    Lighter($highway-red, $percentage-small-3);
+$highway-red-lighter-14:    Lighter($highway-red, $percentage-small-2);
+$highway-red-lighter-15:    Lighter($highway-red, $percentage-small-1);
+
+
+
+$highway-red-lighters: (
+    "1":    $highway-red-lighter-1,
+    "2":    $highway-red-lighter-2,
+    "3":    $highway-red-lighter-3,
+    "4":    $highway-red-lighter-4,
+    "5":    $highway-red-lighter-5,
+    "6":    $highway-red-lighter-6,
+    "7":    $highway-red-lighter-7,
+    "8":    $highway-red-lighter-8,
+    "9":    $highway-red-lighter-9,
+    "10":   $highway-red-lighter-10,
+    "11":   $highway-red-lighter-11,
+    "12":   $highway-red-lighter-12,
+    "13":   $highway-red-lighter-13,
+    "14":   $highway-red-lighter-14,
+    "15":   $highway-red-lighter-15
+);

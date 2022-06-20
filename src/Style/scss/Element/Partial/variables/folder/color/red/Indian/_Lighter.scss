@@ -1,0 +1,35 @@
+$indian-red-lighter-1:  Lighter($indian-red, $percentage-small-15);
+$indian-red-lighter-2:  Lighter($indian-red, $percentage-small-14);
+$indian-red-lighter-3:  Lighter($indian-red, $percentage-small-13);
+$indian-red-lighter-4:  Lighter($indian-red, $percentage-small-12);
+$indian-red-lighter-5:  Lighter($indian-red, $percentage-small-11);
+$indian-red-lighter-6:  Lighter($indian-red, $percentage-small-10);
+$indian-red-lighter-7:  Lighter($indian-red, $percentage-small-9);
+$indian-red-lighter-8:  Lighter($indian-red, $percentage-small-8);
+$indian-red-lighter-9:  Lighter($indian-red, $percentage-small-7);
+$indian-red-lighter-10: Lighter($indian-red, $percentage-small-6);
+$indian-red-lighter-11: Lighter($indian-red, $percentage-small-5);
+$indian-red-lighter-12: Lighter($indian-red, $percentage-small-4);
+$indian-red-lighter-13: Lighter($indian-red, $percentage-small-3);
+$indian-red-lighter-14: Lighter($indian-red, $percentage-small-2);
+$indian-red-lighter-15: Lighter($indian-red, $percentage-small-1);
+
+
+
+$indian-red-lighters: (
+    "1":    $indian-red-lighter-1,
+    "2":    $indian-red-lighter-2,
+    "3":    $indian-red-lighter-3,
+    "4":    $indian-red-lighter-4,
+    "5":    $indian-red-lighter-5,
+    "6":    $indian-red-lighter-6,
+    "7":    $indian-red-lighter-7,
+    "8":    $indian-red-lighter-8,
+    "9":    $indian-red-lighter-9,
+    "10":   $indian-red-lighter-10,
+    "11":   $indian-red-lighter-11,
+    "12":   $indian-red-lighter-12,
+    "13":   $indian-red-lighter-13,
+    "14":   $indian-red-lighter-14,
+    "15":   $indian-red-lighter-15
+);
