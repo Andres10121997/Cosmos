@@ -1,0 +1,35 @@
+$teal-darker-1:     Darker($teal, $percentage-small-15);
+$teal-darker-2:     Darker($teal, $percentage-small-14);
+$teal-darker-3:     Darker($teal, $percentage-small-13);
+$teal-darker-4:     Darker($teal, $percentage-small-12);
+$teal-darker-5:     Darker($teal, $percentage-small-11);
+$teal-darker-6:     Darker($teal, $percentage-small-10);
+$teal-darker-7:     Darker($teal, $percentage-small-9);
+$teal-darker-8:     Darker($teal, $percentage-small-8);
+$teal-darker-9:     Darker($teal, $percentage-small-7);
+$teal-darker-10:    Darker($teal, $percentage-small-6);
+$teal-darker-11:    Darker($teal, $percentage-small-5);
+$teal-darker-12:    Darker($teal, $percentage-small-4);
+$teal-darker-13:    Darker($teal, $percentage-small-3);
+$teal-darker-14:    Darker($teal, $percentage-small-2);
+$teal-darker-15:    Darker($teal, $percentage-small-1);
+
+
+
+$teal-darkers: (
+    "1":    $teal-darker-1,
+    "2":    $teal-darker-2,
+    "3":    $teal-darker-3,
+    "4":    $teal-darker-4,
+    "5":    $teal-darker-5,
+    "6":    $teal-darker-6,
+    "7":    $teal-darker-7,
+    "8":    $teal-darker-8,
+    "9":    $teal-darker-9,
+    "10":   $teal-darker-10,
+    "11":   $teal-darker-11,
+    "12":   $teal-darker-12,
+    "13":   $teal-darker-13,
+    "14":   $teal-darker-14,
+    "15":   $teal-darker-15
+);
