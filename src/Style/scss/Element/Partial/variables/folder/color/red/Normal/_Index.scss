@@ -1,0 +1,5 @@
+@use "sass:string";
+
+$red-name: string.quote("red");
+
+$red: #FF0000;

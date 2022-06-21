@@ -1,0 +1,35 @@
+$red-darker-1:  Darker($red, $percentage-small-15);
+$red-darker-2:  Darker($red, $percentage-small-14);
+$red-darker-3:  Darker($red, $percentage-small-13);
+$red-darker-4:  Darker($red, $percentage-small-12);
+$red-darker-5:  Darker($red, $percentage-small-11);
+$red-darker-6:  Darker($red, $percentage-small-10);
+$red-darker-7:  Darker($red, $percentage-small-9);
+$red-darker-8:  Darker($red, $percentage-small-8);
+$red-darker-9:  Darker($red, $percentage-small-7);
+$red-darker-10: Darker($red, $percentage-small-6);
+$red-darker-11: Darker($red, $percentage-small-5);
+$red-darker-12: Darker($red, $percentage-small-4);
+$red-darker-13: Darker($red, $percentage-small-3);
+$red-darker-14: Darker($red, $percentage-small-2);
+$red-darker-15: Darker($red, $percentage-small-1);
+
+
+
+$red-darkers: (
+    "1":    $red-darker-1,
+    "2":    $red-darker-2,
+    "3":    $red-darker-3,
+    "4":    $red-darker-4,
+    "5":    $red-darker-5,
+    "6":    $red-darker-6,
+    "7":    $red-darker-7,
+    "8":    $red-darker-8,
+    "9":    $red-darker-9,
+    "10":   $red-darker-10,
+    "11":   $red-darker-11,
+    "12":   $red-darker-12,
+    "13":   $red-darker-13,
+    "14":   $red-darker-14,
+    "15":   $red-darker-15
+);

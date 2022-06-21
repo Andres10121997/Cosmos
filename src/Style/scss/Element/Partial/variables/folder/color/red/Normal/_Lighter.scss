@@ -1,0 +1,35 @@
+$red-lighter-1:     Lighter($red, $percentage-small-15);
+$red-lighter-2:     Lighter($red, $percentage-small-14);
+$red-lighter-3:     Lighter($red, $percentage-small-13);
+$red-lighter-4:     Lighter($red, $percentage-small-12);
+$red-lighter-5:     Lighter($red, $percentage-small-11);
+$red-lighter-6:     Lighter($red, $percentage-small-10);
+$red-lighter-7:     Lighter($red, $percentage-small-9);
+$red-lighter-8:     Lighter($red, $percentage-small-8);
+$red-lighter-9:     Lighter($red, $percentage-small-7);
+$red-lighter-10:    Lighter($red, $percentage-small-6);
+$red-lighter-11:    Lighter($red, $percentage-small-5);
+$red-lighter-12:    Lighter($red, $percentage-small-4);
+$red-lighter-13:    Lighter($red, $percentage-small-3);
+$red-lighter-14:    Lighter($red, $percentage-small-2);
+$red-lighter-15:    Lighter($red, $percentage-small-1);
+
+
+
+$red-lighters: (
+    "1":    $red-lighter-1,
+    "2":    $red-lighter-2,
+    "3":    $red-lighter-3,
+    "4":    $red-lighter-4,
+    "5":    $red-lighter-5,
+    "6":    $red-lighter-6,
+    "7":    $red-lighter-7,
+    "8":    $red-lighter-8,
+    "9":    $red-lighter-9,
+    "10":   $red-lighter-10,
+    "11":   $red-lighter-11,
+    "12":   $red-lighter-12,
+    "13":   $red-lighter-13,
+    "14":   $red-lighter-14,
+    "15":   $red-lighter-15
+);
