@@ -1,0 +1,35 @@
+$medium-turquoise-darker-1:     Darker($medium-turquoise, $percentage-small-15);
+$medium-turquoise-darker-2:     Darker($medium-turquoise, $percentage-small-14);
+$medium-turquoise-darker-3:     Darker($medium-turquoise, $percentage-small-13);
+$medium-turquoise-darker-4:     Darker($medium-turquoise, $percentage-small-12);
+$medium-turquoise-darker-5:     Darker($medium-turquoise, $percentage-small-11);
+$medium-turquoise-darker-6:     Darker($medium-turquoise, $percentage-small-10);
+$medium-turquoise-darker-7:     Darker($medium-turquoise, $percentage-small-9);
+$medium-turquoise-darker-8:     Darker($medium-turquoise, $percentage-small-8);
+$medium-turquoise-darker-9:     Darker($medium-turquoise, $percentage-small-7);
+$medium-turquoise-darker-10:    Darker($medium-turquoise, $percentage-small-6);
+$medium-turquoise-darker-11:    Darker($medium-turquoise, $percentage-small-5);
+$medium-turquoise-darker-12:    Darker($medium-turquoise, $percentage-small-4);
+$medium-turquoise-darker-13:    Darker($medium-turquoise, $percentage-small-3);
+$medium-turquoise-darker-14:    Darker($medium-turquoise, $percentage-small-2);
+$medium-turquoise-darker-15:    Darker($medium-turquoise, $percentage-small-1);
+
+
+
+$medium-turquoise-darkers: (
+    "1":    $medium-turquoise-darker-1,
+    "2":    $medium-turquoise-darker-2,
+    "3":    $medium-turquoise-darker-3,
+    "4":    $medium-turquoise-darker-4,
+    "5":    $medium-turquoise-darker-5,
+    "6":    $medium-turquoise-darker-6,
+    "7":    $medium-turquoise-darker-7,
+    "8":    $medium-turquoise-darker-8,
+    "9":    $medium-turquoise-darker-9,
+    "10":   $medium-turquoise-darker-10,
+    "11":   $medium-turquoise-darker-11,
+    "12":   $medium-turquoise-darker-12,
+    "13":   $medium-turquoise-darker-13,
+    "14":   $medium-turquoise-darker-14,
+    "15":   $medium-turquoise-darker-15
+);
