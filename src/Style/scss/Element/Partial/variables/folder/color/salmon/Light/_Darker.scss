@@ -1,0 +1,35 @@
+$light-salmon-darker-1:     Darker($light-salmon, $percentage-small-15);
+$light-salmon-darker-2:     Darker($light-salmon, $percentage-small-14);
+$light-salmon-darker-3:     Darker($light-salmon, $percentage-small-13);
+$light-salmon-darker-4:     Darker($light-salmon, $percentage-small-12);
+$light-salmon-darker-5:     Darker($light-salmon, $percentage-small-11);
+$light-salmon-darker-6:     Darker($light-salmon, $percentage-small-10);
+$light-salmon-darker-7:     Darker($light-salmon, $percentage-small-9);
+$light-salmon-darker-8:     Darker($light-salmon, $percentage-small-8);
+$light-salmon-darker-9:     Darker($light-salmon, $percentage-small-7);
+$light-salmon-darker-10:    Darker($light-salmon, $percentage-small-6);
+$light-salmon-darker-11:    Darker($light-salmon, $percentage-small-5);
+$light-salmon-darker-12:    Darker($light-salmon, $percentage-small-4);
+$light-salmon-darker-13:    Darker($light-salmon, $percentage-small-3);
+$light-salmon-darker-14:    Darker($light-salmon, $percentage-small-2);
+$light-salmon-darker-15:    Darker($light-salmon, $percentage-small-1);
+
+
+
+$light-salmon-darkers: (
+    "1":    $light-salmon-darker-1,
+    "2":    $light-salmon-darker-2,
+    "3":    $light-salmon-darker-3,
+    "4":    $light-salmon-darker-4,
+    "5":    $light-salmon-darker-5,
+    "6":    $light-salmon-darker-6,
+    "7":    $light-salmon-darker-7,
+    "8":    $light-salmon-darker-8,
+    "9":    $light-salmon-darker-9,
+    "10":   $light-salmon-darker-10,
+    "11":   $light-salmon-darker-11,
+    "12":   $light-salmon-darker-12,
+    "13":   $light-salmon-darker-13,
+    "14":   $light-salmon-darker-14,
+    "15":   $light-salmon-darker-15
+);

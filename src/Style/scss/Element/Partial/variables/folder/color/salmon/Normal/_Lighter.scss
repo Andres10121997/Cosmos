@@ -1,0 +1,35 @@
+$salmon-lighter-1:  Lighter($salmon, $percentage-small-15);
+$salmon-lighter-2:  Lighter($salmon, $percentage-small-14);
+$salmon-lighter-3:  Lighter($salmon, $percentage-small-13);
+$salmon-lighter-4:  Lighter($salmon, $percentage-small-12);
+$salmon-lighter-5:  Lighter($salmon, $percentage-small-11);
+$salmon-lighter-6:  Lighter($salmon, $percentage-small-10);
+$salmon-lighter-7:  Lighter($salmon, $percentage-small-9);
+$salmon-lighter-8:  Lighter($salmon, $percentage-small-8);
+$salmon-lighter-9:  Lighter($salmon, $percentage-small-7);
+$salmon-lighter-10: Lighter($salmon, $percentage-small-6);
+$salmon-lighter-11: Lighter($salmon, $percentage-small-5);
+$salmon-lighter-12: Lighter($salmon, $percentage-small-4);
+$salmon-lighter-13: Lighter($salmon, $percentage-small-3);
+$salmon-lighter-14: Lighter($salmon, $percentage-small-2);
+$salmon-lighter-15: Lighter($salmon, $percentage-small-1);
+
+
+
+$salmon-lighters: (
+    "1":    $salmon-lighter-1,
+    "2":    $salmon-lighter-2,
+    "3":    $salmon-lighter-3,
+    "4":    $salmon-lighter-4,
+    "5":    $salmon-lighter-5,
+    "6":    $salmon-lighter-6,
+    "7":    $salmon-lighter-7,
+    "8":    $salmon-lighter-8,
+    "9":    $salmon-lighter-9,
+    "10":   $salmon-lighter-10,
+    "11":   $salmon-lighter-11,
+    "12":   $salmon-lighter-12,
+    "13":   $salmon-lighter-13,
+    "14":   $salmon-lighter-14,
+    "15":   $salmon-lighter-15
+);
