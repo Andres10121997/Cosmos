@@ -1,0 +1,35 @@
+$medium-violet-red-lighter-1:   Lighter($medium-violet-red, $percentage-small-15);
+$medium-violet-red-lighter-2:   Lighter($medium-violet-red, $percentage-small-14);
+$medium-violet-red-lighter-3:   Lighter($medium-violet-red, $percentage-small-13);
+$medium-violet-red-lighter-4:   Lighter($medium-violet-red, $percentage-small-12);
+$medium-violet-red-lighter-5:   Lighter($medium-violet-red, $percentage-small-11);
+$medium-violet-red-lighter-6:   Lighter($medium-violet-red, $percentage-small-10);
+$medium-violet-red-lighter-7:   Lighter($medium-violet-red, $percentage-small-9);
+$medium-violet-red-lighter-8:   Lighter($medium-violet-red, $percentage-small-8);
+$medium-violet-red-lighter-9:   Lighter($medium-violet-red, $percentage-small-7);
+$medium-violet-red-lighter-10:  Lighter($medium-violet-red, $percentage-small-6);
+$medium-violet-red-lighter-11:  Lighter($medium-violet-red, $percentage-small-5);
+$medium-violet-red-lighter-12:  Lighter($medium-violet-red, $percentage-small-4);
+$medium-violet-red-lighter-13:  Lighter($medium-violet-red, $percentage-small-3);
+$medium-violet-red-lighter-14:  Lighter($medium-violet-red, $percentage-small-2);
+$medium-violet-red-lighter-15:  Lighter($medium-violet-red, $percentage-small-1);
+
+
+
+$medium-violet-red-lighters: (
+    "1":    $medium-violet-red-lighter-1,
+    "2":    $medium-violet-red-lighter-2,
+    "3":    $medium-violet-red-lighter-3,
+    "4":    $medium-violet-red-lighter-4,
+    "5":    $medium-violet-red-lighter-5,
+    "6":    $medium-violet-red-lighter-6,
+    "7":    $medium-violet-red-lighter-7,
+    "8":    $medium-violet-red-lighter-8,
+    "9":    $medium-violet-red-lighter-9,
+    "10":   $medium-violet-red-lighter-10,
+    "11":   $medium-violet-red-lighter-11,
+    "12":   $medium-violet-red-lighter-12,
+    "13":   $medium-violet-red-lighter-13,
+    "14":   $medium-violet-red-lighter-14,
+    "15":   $medium-violet-red-lighter-15
+);

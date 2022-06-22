@@ -1,0 +1,35 @@
+$medium-violet-red-darker-1:    Darker($medium-violet-red, $percentage-small-15);
+$medium-violet-red-darker-2:    Darker($medium-violet-red, $percentage-small-14);
+$medium-violet-red-darker-3:    Darker($medium-violet-red, $percentage-small-13);
+$medium-violet-red-darker-4:    Darker($medium-violet-red, $percentage-small-12);
+$medium-violet-red-darker-5:    Darker($medium-violet-red, $percentage-small-11);
+$medium-violet-red-darker-6:    Darker($medium-violet-red, $percentage-small-10);
+$medium-violet-red-darker-7:    Darker($medium-violet-red, $percentage-small-9);
+$medium-violet-red-darker-8:    Darker($medium-violet-red, $percentage-small-8);
+$medium-violet-red-darker-9:    Darker($medium-violet-red, $percentage-small-7);
+$medium-violet-red-darker-10:   Darker($medium-violet-red, $percentage-small-6);
+$medium-violet-red-darker-11:   Darker($medium-violet-red, $percentage-small-5);
+$medium-violet-red-darker-12:   Darker($medium-violet-red, $percentage-small-4);
+$medium-violet-red-darker-13:   Darker($medium-violet-red, $percentage-small-3);
+$medium-violet-red-darker-14:   Darker($medium-violet-red, $percentage-small-2);
+$medium-violet-red-darker-15:   Darker($medium-violet-red, $percentage-small-1);
+
+
+
+$medium-violet-red-darkers: (
+    "1":    $medium-violet-red-darker-1,
+    "2":    $medium-violet-red-darker-2,
+    "3":    $medium-violet-red-darker-3,
+    "4":    $medium-violet-red-darker-4,
+    "5":    $medium-violet-red-darker-5,
+    "6":    $medium-violet-red-darker-6,
+    "7":    $medium-violet-red-darker-7,
+    "8":    $medium-violet-red-darker-8,
+    "9":    $medium-violet-red-darker-8,
+    "10":   $medium-violet-red-darker-10,
+    "11":   $medium-violet-red-darker-11,
+    "12":   $medium-violet-red-darker-12,
+    "13":   $medium-violet-red-darker-13,
+    "14":   $medium-violet-red-darker-14,
+    "15":   $medium-violet-red-darker-15
+);
