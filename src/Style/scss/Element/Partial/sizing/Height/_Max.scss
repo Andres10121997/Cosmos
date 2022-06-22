@@ -1,10 +1,8 @@
-﻿@use "sass:selector";
-
-@each $unit, $value in $Unit-index
+﻿@each $unit, $value in $Unit-index
 {
     .max-height-#{$unit}
     {
-        max-height: var(selector.append($variable-prefix, $unit)) !important;
+        max-height: UseVariable($unit) !important;
     }
 }
 
@@ -16,7 +14,7 @@
         {
             .max-height-#{$unit}-#{$unit1}-#{$unit2}
             {
-                max-height: var(selector.append($variable-prefix, selector.append(#{$unit}, -#{$unit1}-#{$unit2}))) !important;
+                max-height: UseVariable(#{$unit}-#{$unit1}-#{$unit2}) !important;
             }
         }
     }

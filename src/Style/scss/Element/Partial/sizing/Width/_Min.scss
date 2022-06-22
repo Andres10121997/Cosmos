@@ -4,7 +4,7 @@
 {
     .min-width-#{$unit}
     {
-        min-width: var(selector.append($variable-prefix, $unit)) !important;
+        min-width: UseVariable($unit) !important;
     }
 }
 
@@ -16,7 +16,7 @@
         {
             .min-width-#{$unit}-#{$unit1}-#{$unit2}
             {
-                min-width: var(selector.append($variable-prefix, selector.append(#{$unit}, -#{$unit1}-#{$unit2}))) !important;
+                min-width: UseVariable(#{$unit}-#{$unit1}-#{$unit2}) !important;
             }
         }
     }
