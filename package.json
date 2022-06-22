@@ -16,8 +16,8 @@
     "babel": "./node_modules/.bin/babel.cmd ./src/Script/index.js -w -o ./dist/assets/bundle.js",
     "webpack": "./node_modules/.bin/webpack.cmd -w",
     "jsdoc": "rmdir ./JSDoc/ & npx jsdoc ./src/Script/JavaScript/Cosmos.js out --destination ./JSDoc/",
-    "sass": "npx sass --watch --style=compressed ./src/Style/scss/Styles.scss:./src/Style/css/Styles.min.css",
-    "postcss": "npx postcss ./src/Style/css/Styles.min.css --output ./src/Style/css/Cosmos.min.css --watch"
+    "sass": "npx sass --watch --style=expanded ./src/Style/scss/Styles.scss:./src/Style/css/Styles.css",
+    "postcss": "npx postcss ./src/Style/css/Styles.css --output ./src/Style/css/Cosmos.css --watch"
   },
   "dependencies": {
     "@babel/cli": "7.17.10",
