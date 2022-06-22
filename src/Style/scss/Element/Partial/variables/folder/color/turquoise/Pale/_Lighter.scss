@@ -1,0 +1,35 @@
+$pale-turquoise-lighter-1:  Lighter($pale-turquoise, $percentage-small-15);
+$pale-turquoise-lighter-2:  Lighter($pale-turquoise, $percentage-small-14);
+$pale-turquoise-lighter-3:  Lighter($pale-turquoise, $percentage-small-13);
+$pale-turquoise-lighter-4:  Lighter($pale-turquoise, $percentage-small-12);
+$pale-turquoise-lighter-5:  Lighter($pale-turquoise, $percentage-small-11);
+$pale-turquoise-lighter-6:  Lighter($pale-turquoise, $percentage-small-10);
+$pale-turquoise-lighter-7:  Lighter($pale-turquoise, $percentage-small-9);
+$pale-turquoise-lighter-8:  Lighter($pale-turquoise, $percentage-small-8);
+$pale-turquoise-lighter-9:  Lighter($pale-turquoise, $percentage-small-7);
+$pale-turquoise-lighter-10: Lighter($pale-turquoise, $percentage-small-6);
+$pale-turquoise-lighter-11: Lighter($pale-turquoise, $percentage-small-5);
+$pale-turquoise-lighter-12: Lighter($pale-turquoise, $percentage-small-4);
+$pale-turquoise-lighter-13: Lighter($pale-turquoise, $percentage-small-3);
+$pale-turquoise-lighter-14: Lighter($pale-turquoise, $percentage-small-2);
+$pale-turquoise-lighter-15: Lighter($pale-turquoise, $percentage-small-1);
+
+
+
+$pale-turquoise-lighters: (
+    "1":    $pale-turquoise-lighter-1,
+    "2":    $pale-turquoise-lighter-2,
+    "3":    $pale-turquoise-lighter-3,
+    "4":    $pale-turquoise-lighter-4,
+    "5":    $pale-turquoise-lighter-5,
+    "6":    $pale-turquoise-lighter-6,
+    "7":    $pale-turquoise-lighter-7,
+    "8":    $pale-turquoise-lighter-8,
+    "9":    $pale-turquoise-lighter-9,
+    "10":   $pale-turquoise-lighter-10,
+    "11":   $pale-turquoise-lighter-11,
+    "12":   $pale-turquoise-lighter-12,
+    "13":   $pale-turquoise-lighter-13,
+    "14":   $pale-turquoise-lighter-14,
+    "15":   $pale-turquoise-lighter-15
+);
