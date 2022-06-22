@@ -1,7 +1,21 @@
-﻿@each $translate, $value in $translates
+﻿@each $unit, $value in $Unit-index
 {
-    .translateX-#{$translate}
+    .translateX-#{$unit}
     {
-        transform: translateX(#{$value}) !important;
+        transform: translateX(UseVariable($unit)) !important;
+    }
+}
+
+@each $unit, $value in $Unit
+{
+    @each $unit1, $value1 in $value
+    {
+        @each $unit2, $value2 in $value1
+        {
+            .translateX-#{$unit}-#{$unit1}-#{$unit2}
+            {
+                transform: translateX(UseVariable(#{$unit}-#{$unit1}-#{$unit2})) !important;
+            }
+        }
     }
 }
