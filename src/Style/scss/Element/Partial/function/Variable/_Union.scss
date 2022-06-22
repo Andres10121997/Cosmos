@@ -1,0 +1,6 @@
+@use "sass:selector";
+
+@function UnionVariables($Element1, $Element2)
+{
+    @return selector.append(#{$Element1}, #{$Element2})
+}

@@ -1,0 +1,4 @@
+﻿@function UseVariable($Element)
+{
+    @return var(UnionVariables($variable-prefix, $Element));
+}
