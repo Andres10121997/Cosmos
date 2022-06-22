@@ -1,0 +1,35 @@
+$pale-violet-red-lighter-1:     Lighter($pale-violet-red, $percentage-small-15);
+$pale-violet-red-lighter-2:     Lighter($pale-violet-red, $percentage-small-14);
+$pale-violet-red-lighter-3:     Lighter($pale-violet-red, $percentage-small-13);
+$pale-violet-red-lighter-4:     Lighter($pale-violet-red, $percentage-small-12);
+$pale-violet-red-lighter-5:     Lighter($pale-violet-red, $percentage-small-11);
+$pale-violet-red-lighter-6:     Lighter($pale-violet-red, $percentage-small-10);
+$pale-violet-red-lighter-7:     Lighter($pale-violet-red, $percentage-small-9);
+$pale-violet-red-lighter-8:     Lighter($pale-violet-red, $percentage-small-8);
+$pale-violet-red-lighter-9:     Lighter($pale-violet-red, $percentage-small-7);
+$pale-violet-red-lighter-10:    Lighter($pale-violet-red, $percentage-small-6);
+$pale-violet-red-lighter-11:    Lighter($pale-violet-red, $percentage-small-5);
+$pale-violet-red-lighter-12:    Lighter($pale-violet-red, $percentage-small-4);
+$pale-violet-red-lighter-13:    Lighter($pale-violet-red, $percentage-small-3);
+$pale-violet-red-lighter-14:    Lighter($pale-violet-red, $percentage-small-2);
+$pale-violet-red-lighter-15:    Lighter($pale-violet-red, $percentage-small-1);
+
+
+
+$pale-violet-red-lighters: (
+    "1":    $pale-violet-red-lighter-1,
+    "2":    $pale-violet-red-lighter-2,
+    "3":    $pale-violet-red-lighter-3,
+    "4":    $pale-violet-red-lighter-4,
+    "5":    $pale-violet-red-lighter-5,
+    "6":    $pale-violet-red-lighter-6,
+    "7":    $pale-violet-red-lighter-7,
+    "8":    $pale-violet-red-lighter-8,
+    "9":    $pale-violet-red-lighter-9,
+    "10":   $pale-violet-red-lighter-10,
+    "11":   $pale-violet-red-lighter-11,
+    "12":   $pale-violet-red-lighter-12,
+    "13":   $pale-violet-red-lighter-13,
+    "14":   $pale-violet-red-lighter-14,
+    "15":   $pale-violet-red-lighter-15
+);
