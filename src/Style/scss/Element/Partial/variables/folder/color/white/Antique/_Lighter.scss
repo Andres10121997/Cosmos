@@ -1,0 +1,35 @@
+$antique-white-lighter-1:   Lighter($antique-white, $percentage-small-15);
+$antique-white-lighter-2:   Lighter($antique-white, $percentage-small-14);
+$antique-white-lighter-3:   Lighter($antique-white, $percentage-small-13);
+$antique-white-lighter-4:   Lighter($antique-white, $percentage-small-12);
+$antique-white-lighter-5:   Lighter($antique-white, $percentage-small-11);
+$antique-white-lighter-6:   Lighter($antique-white, $percentage-small-10);
+$antique-white-lighter-7:   Lighter($antique-white, $percentage-small-9);
+$antique-white-lighter-8:   Lighter($antique-white, $percentage-small-8);
+$antique-white-lighter-9:   Lighter($antique-white, $percentage-small-7);
+$antique-white-lighter-10:  Lighter($antique-white, $percentage-small-6);
+$antique-white-lighter-11:  Lighter($antique-white, $percentage-small-5);
+$antique-white-lighter-12:  Lighter($antique-white, $percentage-small-4);
+$antique-white-lighter-13:  Lighter($antique-white, $percentage-small-3);
+$antique-white-lighter-14:  Lighter($antique-white, $percentage-small-2);
+$antique-white-lighter-15:  Lighter($antique-white, $percentage-small-1);
+
+
+
+$antique-white-lighters: (
+    "1":    $antique-white-lighter-1,
+    "2":    $antique-white-lighter-2,
+    "3":    $antique-white-lighter-3,
+    "4":    $antique-white-lighter-4,
+    "5":    $antique-white-lighter-5,
+    "6":    $antique-white-lighter-6,
+    "7":    $antique-white-lighter-7,
+    "8":    $antique-white-lighter-8,
+    "9":    $antique-white-lighter-9,
+    "10":   $antique-white-lighter-10,
+    "11":   $antique-white-lighter-11,
+    "12":   $antique-white-lighter-12,
+    "13":   $antique-white-lighter-13,
+    "14":   $antique-white-lighter-14,
+    "15":   $antique-white-lighter-15
+);
