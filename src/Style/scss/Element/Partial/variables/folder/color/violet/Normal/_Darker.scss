@@ -1,0 +1,35 @@
+$violet-darker-1:   Darker($violet, $percentage-small-15);
+$violet-darker-2:   Darker($violet, $percentage-small-14);
+$violet-darker-3:   Darker($violet, $percentage-small-13);
+$violet-darker-4:   Darker($violet, $percentage-small-12);
+$violet-darker-5:   Darker($violet, $percentage-small-11);
+$violet-darker-6:   Darker($violet, $percentage-small-10);
+$violet-darker-7:   Darker($violet, $percentage-small-9);
+$violet-darker-8:   Darker($violet, $percentage-small-8);
+$violet-darker-9:   Darker($violet, $percentage-small-7);
+$violet-darker-10:  Darker($violet, $percentage-small-6);
+$violet-darker-11:  Darker($violet, $percentage-small-5);
+$violet-darker-12:  Darker($violet, $percentage-small-4);
+$violet-darker-13:  Darker($violet, $percentage-small-3);
+$violet-darker-14:  Darker($violet, $percentage-small-2);
+$violet-darker-15:  Darker($violet, $percentage-small-1);
+
+
+
+$violet-darkers: (
+    "1":    $violet-darker-1,
+    "2":    $violet-darker-2,
+    "3":    $violet-darker-3,
+    "4":    $violet-darker-4,
+    "5":    $violet-darker-5,
+    "6":    $violet-darker-6,
+    "7":    $violet-darker-7,
+    "8":    $violet-darker-8,
+    "9":    $violet-darker-9,
+    "10":   $violet-darker-10,
+    "11":   $violet-darker-11,
+    "12":   $violet-darker-12,
+    "13":   $violet-darker-13,
+    "14":   $violet-darker-14,
+    "15":   $violet-darker-15
+);
