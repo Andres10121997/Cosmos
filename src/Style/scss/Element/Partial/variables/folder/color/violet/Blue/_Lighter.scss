@@ -1,0 +1,35 @@
+$blue-violet-lighter-1:     Lighter($blue-violet, $percentage-small-15);
+$blue-violet-lighter-2:     Lighter($blue-violet, $percentage-small-14);
+$blue-violet-lighter-3:     Lighter($blue-violet, $percentage-small-13);
+$blue-violet-lighter-4:     Lighter($blue-violet, $percentage-small-12);
+$blue-violet-lighter-5:     Lighter($blue-violet, $percentage-small-11);
+$blue-violet-lighter-6:     Lighter($blue-violet, $percentage-small-10);
+$blue-violet-lighter-7:     Lighter($blue-violet, $percentage-small-9);
+$blue-violet-lighter-8:     Lighter($blue-violet, $percentage-small-8);
+$blue-violet-lighter-9:     Lighter($blue-violet, $percentage-small-7);
+$blue-violet-lighter-10:    Lighter($blue-violet, $percentage-small-6);
+$blue-violet-lighter-11:    Lighter($blue-violet, $percentage-small-5);
+$blue-violet-lighter-12:    Lighter($blue-violet, $percentage-small-4);
+$blue-violet-lighter-13:    Lighter($blue-violet, $percentage-small-3);
+$blue-violet-lighter-14:    Lighter($blue-violet, $percentage-small-2);
+$blue-violet-lighter-15:    Lighter($blue-violet, $percentage-small-1);
+
+
+
+$blue-violet-lighters: (
+    "1":    $blue-violet-lighter-1,
+    "2":    $blue-violet-lighter-2,
+    "3":    $blue-violet-lighter-3,
+    "4":    $blue-violet-lighter-4,
+    "5":    $blue-violet-lighter-5,
+    "6":    $blue-violet-lighter-6,
+    "7":    $blue-violet-lighter-7,
+    "8":    $blue-violet-lighter-8,
+    "9":    $blue-violet-lighter-9,
+    "10":   $blue-violet-lighter-10,
+    "11":   $blue-violet-lighter-11,
+    "12":   $blue-violet-lighter-12,
+    "13":   $blue-violet-lighter-13,
+    "14":   $blue-violet-lighter-14,
+    "15":   $blue-violet-lighter-15
+);
