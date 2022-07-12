@@ -4,8 +4,9 @@ package-lock.json
 # ignore node_modules
 node_modules
 
-# Ignore Script/JavaScript/src
+# Ignore src
 src/Script/JavaScript
+src/Style/css
 
 # Ignore JSDoc
 JSDoc
