@@ -5,6 +5,12 @@ class CellularAutomata
     #cells: boolean[][] = [];
     
     // Constructor.
+    /**
+     * @hideconstructor
+     * @param {number} size
+     * @param {CanvasRenderingContext2D} ctx
+     * @returns {void}
+     */
     constructor(size: number,
                 ctx: CanvasRenderingContext2D)
     {
@@ -63,7 +69,7 @@ class CellularAutomata
 
 
 
-    // Cellular Automata
+    // Cellular Automata.
     /**
      * @access public
      * @method
