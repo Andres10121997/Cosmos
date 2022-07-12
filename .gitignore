@@ -5,7 +5,7 @@ package-lock.json
 node_modules
 
 # Ignore Script/JavaScript/src
-Script/JavaScript/src
+src/Script/JavaScript
 
 # Ignore JSDoc
 JSDoc
