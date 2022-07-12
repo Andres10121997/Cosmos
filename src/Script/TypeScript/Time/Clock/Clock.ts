@@ -66,7 +66,7 @@ class Clock
     async #UpdateDayAsync(Id: string,
                           Options: (Intl.DateTimeFormatOptions | undefined)): Promise<unknown>
     {
-        return await new Promise((resolve): void => {
+        return await new Promise((): void => {
             setInterval((): void => {
                 this.#DocumentElement = (document.getElementById(Id) as HTMLElement);
 
@@ -92,7 +92,7 @@ class Clock
     async #UpdateTimeAsync(Id: string,
                            Options: (Intl.DateTimeFormatOptions | undefined)): Promise<unknown>
     {
-        return await new Promise((resolve): void => {
+        return await new Promise((): void => {
             setInterval((): void => {
                 this.#DocumentElement = (document.getElementById(Id) as HTMLElement);
 
@@ -122,16 +122,6 @@ class Clock
            whoInsert: string,
            Options: (Intl.DateTimeFormatOptions | undefined)): void
     {
-        // Variables.
-        /**
-         * @access private
-         * @member
-         * @var
-         * @type {Promise<unknown>}
-         * @alias Insert
-         */
-        let Insert: Promise<unknown>;
-
         // Objects.
         /**
          * @access private
@@ -149,12 +139,12 @@ class Clock
         {
             if (whoInsert === this.GetClockInsert().Date)
             {
-                Insert = this.#UpdateDayAsync(Id, Options);
+                this.#UpdateDayAsync(Id, Options);
             }
             else
             if (whoInsert === this.GetClockInsert().Time)
             {
-                Insert = this.#UpdateTimeAsync(Id, Options)
+                this.#UpdateTimeAsync(Id, Options)
             }
         }
     }
