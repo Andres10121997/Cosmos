@@ -1,7 +1,12 @@
+/**
+ * @class
+ * @name CellularAutomata
+ * @classdesc
+ */
 class CellularAutomata
 {
     #size: number;
-    #ctx: CanvasRenderingContext2D;
+    #ctx: CanvasRenderingContext2D | null;
     #cells: boolean[][] = [];
     
     // Constructor.
@@ -12,7 +17,7 @@ class CellularAutomata
      * @returns {void}
      */
     constructor(size: number,
-                ctx: CanvasRenderingContext2D)
+                ctx: CanvasRenderingContext2D | null)
     {
         this.#size = size;
         this.#ctx = ctx;
@@ -48,9 +53,9 @@ class CellularAutomata
      * @access public
      * @method
      * @alias CellularAutomata.GetCtx
-     * @returns {CanvasRenderingContext2D}
+     * @returns {CanvasRenderingContext2D | null}
      */
-    GetCtx(): CanvasRenderingContext2D
+    GetCtx(): CanvasRenderingContext2D | null
     {
         return this.#ctx;
     }
@@ -59,10 +64,10 @@ class CellularAutomata
      * @access public
      * @method
      * @alias CellularAutomata.SetCtx
-     * @param {CanvasRenderingContext2D} ctx
+     * @param {CanvasRenderingContext2D | null} ctx
      * @returns {void}
      */
-    SetCtx(ctx: CanvasRenderingContext2D): void
+    SetCtx(ctx: CanvasRenderingContext2D | null): void
     {
         this.#ctx = ctx;
     }
@@ -112,22 +117,25 @@ class CellularAutomata
      */
     #Print(): void
     {
-        this.#ctx.clearRect(0, 0, this.#size, this.#size);
-
-        for (let i = 0; i < this.#size; i++)
+        if (this.#ctx !== null)
         {
-            for (let j = 0; j < this.#size; j++)
-            {
-                if (this.#cells[i][j])
-                {
-                    this.#ctx.fillStyle = `black`;
-                }
-                else
-                {
-                    this.#ctx.fillStyle = `white`;
-                }
+            this.#ctx.clearRect(0, 0, this.#size, this.#size);
 
-                this.#ctx.fillRect(i, j, 1, 1);
+            for (let i = 0; i < this.#size; i++)
+            {
+                for (let j = 0; j < this.#size; j++)
+                {
+                    if (this.#cells[i][j])
+                    {
+                        this.#ctx.fillStyle = `black`;
+                    }
+                    else
+                    {
+                        this.#ctx.fillStyle = `white`;
+                    }
+
+                    this.#ctx.fillRect(i, j, 1, 1);
+                }
             }
         }
     }
