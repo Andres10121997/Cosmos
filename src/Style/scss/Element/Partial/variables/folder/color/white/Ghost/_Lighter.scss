@@ -1,0 +1,35 @@
+$ghost-white-lighter-1:     Lighter($ghost-white, $percentage-small-15);
+$ghost-white-lighter-2:     Lighter($ghost-white, $percentage-small-14);
+$ghost-white-lighter-3:     Lighter($ghost-white, $percentage-small-13);
+$ghost-white-lighter-4:     Lighter($ghost-white, $percentage-small-12);
+$ghost-white-lighter-5:     Lighter($ghost-white, $percentage-small-11);
+$ghost-white-lighter-6:     Lighter($ghost-white, $percentage-small-10);
+$ghost-white-lighter-7:     Lighter($ghost-white, $percentage-small-9);
+$ghost-white-lighter-8:     Lighter($ghost-white, $percentage-small-8);
+$ghost-white-lighter-9:     Lighter($ghost-white, $percentage-small-7);
+$ghost-white-lighter-10:    Lighter($ghost-white, $percentage-small-6);
+$ghost-white-lighter-11:    Lighter($ghost-white, $percentage-small-5);
+$ghost-white-lighter-12:    Lighter($ghost-white, $percentage-small-4);
+$ghost-white-lighter-13:    Lighter($ghost-white, $percentage-small-3);
+$ghost-white-lighter-14:    Lighter($ghost-white, $percentage-small-2);
+$ghost-white-lighter-15:    Lighter($ghost-white, $percentage-small-1);
+
+
+
+$ghost-white-lighters: (
+    "1":    $ghost-white-lighter-1,
+    "2":    $ghost-white-lighter-2,
+    "3":    $ghost-white-lighter-3,
+    "4":    $ghost-white-lighter-4,
+    "5":    $ghost-white-lighter-5,
+    "6":    $ghost-white-lighter-6,
+    "7":    $ghost-white-lighter-7,
+    "8":    $ghost-white-lighter-8,
+    "9":    $ghost-white-lighter-9,
+    "10":   $ghost-white-lighter-10,
+    "11":   $ghost-white-lighter-11,
+    "12":   $ghost-white-lighter-12,
+    "13":   $ghost-white-lighter-13,
+    "14":   $ghost-white-lighter-14,
+    "15":   $ghost-white-lighter-15
+);
