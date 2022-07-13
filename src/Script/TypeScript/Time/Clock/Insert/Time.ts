@@ -57,7 +57,7 @@ async function InsertTime(Id: string,
     })
     .catch((reason: any): void => {
         console.error(`---`);
-        console.error(`Error inserting the time.`);
+        console.error(`Error InsertTime function.`);
         console.error(`Error: ${reason}`);
         console.error(`---`);
     });

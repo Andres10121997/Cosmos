@@ -51,7 +51,7 @@ async function InsertDate(Id: string,
     })
     .catch((reason: any): void => {
         console.error(`---`);
-        console.error(`Error inserting date.`);
+        console.error(`Error InsertDate function.`);
         console.error(`Error: ${reason}`);
         console.error(`---`);
     });

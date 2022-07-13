@@ -156,7 +156,7 @@ class CellularAutomata
             {
                 let livingNeighbor: number = 0;
 
-                // 1
+                // 1.
                 if (i > 0 && j > 0)
                 {
                     if (this.#cells[i - 1][j - 1])
@@ -165,7 +165,7 @@ class CellularAutomata
                     }
                 }
                 
-                // 2
+                // 2.
                 if (j > 0)
                 {
                     if (this.#cells[i][j - 1])
@@ -174,7 +174,7 @@ class CellularAutomata
                     }
                 }
                 
-                // 3
+                // 3.
                 if (i < (this.#Size - 1) && j > 0)
                 {
                     if (this.#cells[i + 1][j - 1])
@@ -183,7 +183,7 @@ class CellularAutomata
                     }
                 }
                 
-                // 4
+                // 4.
                 if (i > 0)
                 {
                     if (this.#cells[i - 1][j])
@@ -201,7 +201,7 @@ class CellularAutomata
                     }
                 }
 
-                // 6
+                // 6.
                 if (i > 0 && j < (this.#Size - 1))
                 {
                     if (this.#cells[i - 1][j + 1])
@@ -210,7 +210,7 @@ class CellularAutomata
                     }
                 }
 
-                // 7
+                // 7.
                 if (j < (this.#Size - 1))
                 {
                     if (this.#cells[i][j + 1])
@@ -219,7 +219,7 @@ class CellularAutomata
                     }
                 }
 
-                // 8
+                // 8.
                 if (i < (this.#Size - 1) && j < (this.#Size - 1))
                 {
                     if (this.#cells[i + 1][j + 1])
