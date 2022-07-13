@@ -18,7 +18,8 @@ async function InsertCellularAutomata(CanvasID: string): Promise<void>
          */
         const Canvas: HTMLCanvasElement = (document.getElementById(CanvasID) as HTMLCanvasElement);
 
-        if (Canvas.clientHeight === Canvas.clientWidth) {
+        if (Canvas.clientHeight === Canvas.clientWidth)
+        {
             // Constants.
             /**
              * @access private
@@ -34,9 +35,9 @@ async function InsertCellularAutomata(CanvasID: string): Promise<void>
              * @member
              * @constant
              * @type {CanvasRenderingContext2D | null}
-             * @name ctx
+             * @name Context
              */
-            const ctx: (CanvasRenderingContext2D | null) = Canvas.getContext(`2d`);
+            const Context: (CanvasRenderingContext2D | null) = Canvas.getContext(`2d`);
 
 
 
@@ -48,7 +49,7 @@ async function InsertCellularAutomata(CanvasID: string): Promise<void>
              * @type {CellularAutomata}
              * @name cellularAutomata
              */
-            const cellularAutomata: CellularAutomata = new CellularAutomata(Size, ctx);
+            const cellularAutomata: CellularAutomata = new CellularAutomata(Size, Context);
 
             cellularAutomata.Create();
             setInterval(async (): Promise<void> => await cellularAutomata.Next(), 1000);
@@ -59,5 +60,5 @@ async function InsertCellularAutomata(CanvasID: string): Promise<void>
         console.error(`Error InsertCellularAutomata function.`);
         console.error(`Error: ${reason}`);
         console.error(`---`);
-    })
+    });
 }
