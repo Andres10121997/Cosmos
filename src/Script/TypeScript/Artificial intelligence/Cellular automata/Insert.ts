@@ -56,8 +56,11 @@ async function InsertCellularAutomata(CanvasID: string): Promise<void>
         }
         else
         {
+            console.info(`---`);
+            console.info(`Canvas' id: ${Canvas.id}`);
             console.info(`Canvas Height: ${Canvas.clientHeight}`);
             console.info(`Canvas Width: ${Canvas.clientWidth}`);
+            console.info(`---`);
         }
     })
     .catch((reason: any): void => {

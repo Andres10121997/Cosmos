@@ -171,7 +171,7 @@ class CellularAutomata
          * @type {boolean[][]}
          * @alias cellsAux
          */
-        let cellsAux: boolean[][] = new Array(100).fill(``).map((): boolean[] => new Array(100).fill(false));
+        let cellsAux: boolean[][] = new Array(this.#Size).fill(``).map((): boolean[] => new Array(this.#Size).fill(false));
 
         for (let i: number = 0; i < this.#Size; i++)
         {
