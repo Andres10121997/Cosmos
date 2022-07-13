@@ -1,0 +1,35 @@
+$floral-white-lighter-1:    Lighter($floral-white, $percentage-small-15);
+$floral-white-lighter-2:    Lighter($floral-white, $percentage-small-14);
+$floral-white-lighter-3:    Lighter($floral-white, $percentage-small-13);
+$floral-white-lighter-4:    Lighter($floral-white, $percentage-small-12);
+$floral-white-lighter-5:    Lighter($floral-white, $percentage-small-11);
+$floral-white-lighter-6:    Lighter($floral-white, $percentage-small-10);
+$floral-white-lighter-7:    Lighter($floral-white, $percentage-small-9);
+$floral-white-lighter-8:    Lighter($floral-white, $percentage-small-8);
+$floral-white-lighter-9:    Lighter($floral-white, $percentage-small-7);
+$floral-white-lighter-10:   Lighter($floral-white, $percentage-small-6);
+$floral-white-lighter-11:   Lighter($floral-white, $percentage-small-5);
+$floral-white-lighter-12:   Lighter($floral-white, $percentage-small-4);
+$floral-white-lighter-13:   Lighter($floral-white, $percentage-small-3);
+$floral-white-lighter-14:   Lighter($floral-white, $percentage-small-2);
+$floral-white-lighter-15:   Lighter($floral-white, $percentage-small-1);
+
+
+
+$floral-white-lighters: (
+    "1":    $floral-white-lighter-1,
+    "2":    $floral-white-lighter-2,
+    "3":    $floral-white-lighter-3,
+    "4":    $floral-white-lighter-4,
+    "5":    $floral-white-lighter-5,
+    "6":    $floral-white-lighter-6,
+    "7":    $floral-white-lighter-7,
+    "8":    $floral-white-lighter-8,
+    "9":    $floral-white-lighter-9,
+    "10":   $floral-white-lighter-10,
+    "11":   $floral-white-lighter-11,
+    "12":   $floral-white-lighter-12,
+    "13":   $floral-white-lighter-13,
+    "14":   $floral-white-lighter-14,
+    "15":   $floral-white-lighter-15
+);
