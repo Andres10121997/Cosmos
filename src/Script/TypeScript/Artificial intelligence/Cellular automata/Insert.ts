@@ -52,7 +52,12 @@ async function InsertCellularAutomata(CanvasID: string): Promise<void>
             const cellularAutomata: CellularAutomata = new CellularAutomata(Size, Context);
 
             cellularAutomata.Create();
-            setInterval(async (): Promise<void> => await cellularAutomata.Next(), 1000);
+            setInterval(async (): Promise<void> => await cellularAutomata.Next(), 0);
+        }
+        else
+        {
+            console.info(`Canvas Height: ${Canvas.clientHeight}`);
+            console.info(`Canvas Width: ${Canvas.clientWidth}`);
         }
     })
     .catch((reason: any): void => {

@@ -83,7 +83,7 @@ class CellularAutomata
      */
     Create(): void
     {
-        for (let i = 0; i < this.#Size; i++)
+        for (let i: number = 0; i < this.#Size; i++)
         {
             /**
              * @access private
