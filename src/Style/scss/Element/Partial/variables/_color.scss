@@ -1,8 +1,8 @@
 ﻿@import "folder/color/Black/_Index.scss";
-@import "folder/color/white/_normal.scss";
-@import "folder/color/white/Antique/_Index.scss";
-@import "folder/color/white/Antique/_Darker.scss";
-@import "folder/color/white/Antique/_Lighter.scss";
+@import "folder/color/white/Normal/Index";
+@import "folder/color/white/Antique/Index";
+@import "folder/color/white/Antique/Darker";
+@import "folder/color/white/Antique/Lighter";
 @import "folder/color/white/Floral/Index";
 @import "folder/color/white/Floral/Darker";
 @import "folder/color/white/Floral/Lighter";
@@ -12,7 +12,9 @@
 @import "folder/color/white/Navajo/Index";
 @import "folder/color/white/Navajo/Darker";
 @import "folder/color/white/Navajo/Lighter";
-@import "folder/color/white/_smoke.scss";
+@import "folder/color/white/Smoke/Index";
+@import "folder/color/white/Smoke/Darker";
+@import "folder/color/white/Smoke/Lighter";
 
 
 

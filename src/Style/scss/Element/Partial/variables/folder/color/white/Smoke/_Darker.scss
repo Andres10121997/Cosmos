@@ -1,0 +1,35 @@
+$white-smoke-darker-1:  Darker($white-smoke, $percentage-small-15);
+$white-smoke-darker-2:  Darker($white-smoke, $percentage-small-14);
+$white-smoke-darker-3:  Darker($white-smoke, $percentage-small-13);
+$white-smoke-darker-4:  Darker($white-smoke, $percentage-small-12);
+$white-smoke-darker-5:  Darker($white-smoke, $percentage-small-11);
+$white-smoke-darker-6:  Darker($white-smoke, $percentage-small-10);
+$white-smoke-darker-7:  Darker($white-smoke, $percentage-small-9);
+$white-smoke-darker-8:  Darker($white-smoke, $percentage-small-8);
+$white-smoke-darker-9:  Darker($white-smoke, $percentage-small-7);
+$white-smoke-darker-10: Darker($white-smoke, $percentage-small-6);
+$white-smoke-darker-11: Darker($white-smoke, $percentage-small-5);
+$white-smoke-darker-12: Darker($white-smoke, $percentage-small-4);
+$white-smoke-darker-13: Darker($white-smoke, $percentage-small-3);
+$white-smoke-darker-14: Darker($white-smoke, $percentage-small-2);
+$white-smoke-darker-15: Darker($white-smoke, $percentage-small-1);
+
+
+
+$white-smoke-darkers: (
+    "1":    $white-smoke-darker-1,
+    "2":    $white-smoke-darker-2,
+    "3":    $white-smoke-darker-3,
+    "4":    $white-smoke-darker-4,
+    "5":    $white-smoke-darker-5,
+    "6":    $white-smoke-darker-6,
+    "7":    $white-smoke-darker-7,
+    "8":    $white-smoke-darker-8,
+    "9":    $white-smoke-darker-9,
+    "10":   $white-smoke-darker-10,
+    "11":   $white-smoke-darker-11,
+    "12":   $white-smoke-darker-12,
+    "13":   $white-smoke-darker-13,
+    "14":   $white-smoke-darker-14,
+    "15":   $white-smoke-darker-15
+);
