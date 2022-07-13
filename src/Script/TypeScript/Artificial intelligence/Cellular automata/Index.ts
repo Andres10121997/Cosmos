@@ -5,22 +5,22 @@
  */
 class CellularAutomata
 {
-    #size: number;
-    #ctx: CanvasRenderingContext2D | null;
+    #Size: number;
+    #Context: (CanvasRenderingContext2D | null);
     #cells: boolean[][] = [];
     
     // Constructor.
     /**
      * @hideconstructor
-     * @param {number} size
-     * @param {CanvasRenderingContext2D} ctx
+     * @param {number} Size
+     * @param {(CanvasRenderingContext2D | null)} Context
      * @returns {void}
      */
-    constructor(size: number,
-                ctx: CanvasRenderingContext2D | null)
+    constructor(Size: number,
+                Context: (CanvasRenderingContext2D | null))
     {
-        this.#size = size;
-        this.#ctx = ctx;
+        this.#Size = Size;
+        this.#Context = Context;
     }
 
 
@@ -34,42 +34,42 @@ class CellularAutomata
      */
     GetSize(): number
     {
-        return this.#size;
+        return this.#Size;
     }
 
     /**
      * @access public
      * @method
      * @alias CellularAutomata.SetSize
-     * @param {number} size
+     * @param {number} Size
      * @returns {void}
      */
-    SetSize(size: number): void
+    SetSize(Size: number): void
     {
-        this.#size = size;
+        this.#Size = Size;
     }
 
     /**
      * @access public
      * @method
-     * @alias CellularAutomata.GetCtx
-     * @returns {CanvasRenderingContext2D | null}
+     * @alias CellularAutomata.GetContext
+     * @returns {(CanvasRenderingContext2D | null)}
      */
-    GetCtx(): CanvasRenderingContext2D | null
+    GetContext(): (CanvasRenderingContext2D | null)
     {
-        return this.#ctx;
+        return this.#Context;
     }
 
     /**
      * @access public
      * @method
-     * @alias CellularAutomata.SetCtx
-     * @param {CanvasRenderingContext2D | null} ctx
+     * @alias CellularAutomata.SetContext
+     * @param {(CanvasRenderingContext2D | null)} Context
      * @returns {void}
      */
-    SetCtx(ctx: CanvasRenderingContext2D | null): void
+    SetContext(Context: (CanvasRenderingContext2D | null)): void
     {
-        this.#ctx = ctx;
+        this.#Context = Context;
     }
 
 
@@ -83,11 +83,11 @@ class CellularAutomata
      */
     Create(): void
     {
-        for (let i = 0; i < this.#size; i++)
+        for (let i = 0; i < this.#Size; i++)
         {
             let row: Array<boolean> = [];
 
-            for (let j = 0; j < this.#size; j++)
+            for (let j = 0; j < this.#Size; j++)
             {
                 const alive: boolean = Math.random() < 0.5;
                 row.push(alive);
@@ -117,24 +117,24 @@ class CellularAutomata
      */
     #Print(): void
     {
-        if (this.#ctx !== null)
+        if (this.#Context !== null)
         {
-            this.#ctx.clearRect(0, 0, this.#size, this.#size);
+            this.#Context.clearRect(0, 0, this.#Size, this.#Size);
 
-            for (let i = 0; i < this.#size; i++)
+            for (let i = 0; i < this.#Size; i++)
             {
-                for (let j = 0; j < this.#size; j++)
+                for (let j = 0; j < this.#Size; j++)
                 {
                     if (this.#cells[i][j])
                     {
-                        this.#ctx.fillStyle = `black`;
+                        this.#Context.fillStyle = `black`;
                     }
                     else
                     {
-                        this.#ctx.fillStyle = `white`;
+                        this.#Context.fillStyle = `white`;
                     }
 
-                    this.#ctx.fillRect(i, j, 1, 1);
+                    this.#Context.fillRect(i, j, 1, 1);
                 }
             }
         }
@@ -150,9 +150,9 @@ class CellularAutomata
     {
         let cellsAux: boolean[][] = new Array(100).fill(``).map((): boolean[] => new Array(100).fill(false));
 
-        for (let i = 0; i < this.#size; i++)
+        for (let i = 0; i < this.#Size; i++)
         {
-            for (let j = 0; j < this.#size; j++)
+            for (let j = 0; j < this.#Size; j++)
             {
                 let livingNeighbor: number = 0;
 
@@ -175,7 +175,7 @@ class CellularAutomata
                 }
                 
                 // 3
-                if (i < (this.#size - 1) && j > 0)
+                if (i < (this.#Size - 1) && j > 0)
                 {
                     if (this.#cells[i + 1][j - 1])
                     {
@@ -193,7 +193,7 @@ class CellularAutomata
                 }
                 
                 // 5.
-                if (i < (this.#size - 1))
+                if (i < (this.#Size - 1))
                 {
                     if (this.#cells[i + 1][j])
                     {
@@ -202,7 +202,7 @@ class CellularAutomata
                 }
 
                 // 6
-                if (i > 0 && j < (this.#size - 1))
+                if (i > 0 && j < (this.#Size - 1))
                 {
                     if (this.#cells[i - 1][j + 1])
                     {
@@ -211,7 +211,7 @@ class CellularAutomata
                 }
 
                 // 7
-                if (j < (this.#size - 1))
+                if (j < (this.#Size - 1))
                 {
                     if (this.#cells[i][j + 1])
                     {
@@ -220,7 +220,7 @@ class CellularAutomata
                 }
 
                 // 8
-                if (i < (this.#size - 1) && j < (this.#size - 1))
+                if (i < (this.#Size - 1) && j < (this.#Size - 1))
                 {
                     if (this.#cells[i + 1][j + 1])
                     {
