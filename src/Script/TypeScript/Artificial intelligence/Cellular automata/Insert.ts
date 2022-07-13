@@ -3,6 +3,7 @@
  * @name InsertCellularAutomata
  * @param {string} CanvasID
  * @returns {Promise<void>}
+ * @description This function inserts the Cellular Automata "Artificial Intelligence" into the HTML on a canvas. Warning: the Height and Width must measure the same.
  */
 async function InsertCellularAutomata(CanvasID: string): Promise<void>
 {
@@ -17,38 +18,41 @@ async function InsertCellularAutomata(CanvasID: string): Promise<void>
          */
         const Canvas: HTMLCanvasElement = (document.getElementById(CanvasID) as HTMLCanvasElement);
 
-        /**
-         * @access private
-         * @member
-         * @constant
-         * @type {number}
-         * @alias Size
-         */
-        const Size: number = Canvas.clientHeight;
-        
-        /**
-         * @access private
-         * @member
-         * @constant
-         * @type {CanvasRenderingContext2D | null}
-         * @name ctx
-         */
-        const ctx: (CanvasRenderingContext2D | null) = Canvas.getContext(`2d`);
+        if (Canvas.clientHeight === Canvas.clientWidth) {
+            // Constants.
+            /**
+             * @access private
+             * @member
+             * @constant
+             * @type {number}
+             * @alias Size
+             */
+            const Size: number = Canvas.clientHeight;
+            
+            /**
+             * @access private
+             * @member
+             * @constant
+             * @type {CanvasRenderingContext2D | null}
+             * @name ctx
+             */
+            const ctx: (CanvasRenderingContext2D | null) = Canvas.getContext(`2d`);
 
 
 
-        // Objects.
-        /**
-         * @access private
-         * @member
-         * @constant
-         * @type {CellularAutomata}
-         * @name cellularAutomata
-         */
-        const cellularAutomata: CellularAutomata = new CellularAutomata(Size, ctx);
+            // Objects.
+            /**
+             * @access private
+             * @member
+             * @constant
+             * @type {CellularAutomata}
+             * @name cellularAutomata
+             */
+            const cellularAutomata: CellularAutomata = new CellularAutomata(Size, ctx);
 
-        cellularAutomata.Create();
-        setInterval((): void => cellularAutomata.Next(), 1000);
+            cellularAutomata.Create();
+            setInterval(async (): Promise<void> => await cellularAutomata.Next(), 1000);
+        }
     })
     .catch((reason: any): void => {
         console.error(`---`);

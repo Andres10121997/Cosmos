@@ -101,12 +101,20 @@ class CellularAutomata
      * @access public
      * @method
      * @alias CellularAutomata.Next
-     * @returns {void}
+     * @returns {Promise<void>}
      */
-    Next(): void
+    async Next(): Promise<void>
     {
-        this.#Print();
-        this.#Evaluate();
+        await new Promise((): void => {
+            this.#Print();
+            this.#Evaluate();
+        })
+        .catch((reason: any): void => {
+            console.error(`---`);
+            console.error(`Error CellularAutomata.Next method.`);
+            console.error(`Error: ${reason}`);
+            console.error(`---`);
+        })
     }
 
     /**
