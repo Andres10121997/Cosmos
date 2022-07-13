@@ -7,7 +7,7 @@ class CellularAutomata
 {
     #Size: number;
     #Context: (CanvasRenderingContext2D | null);
-    #cells: boolean[][] = [];
+    #Cells: boolean[][] = [];
     
     // Constructor.
     /**
@@ -85,15 +85,22 @@ class CellularAutomata
     {
         for (let i = 0; i < this.#Size; i++)
         {
+            /**
+             * @access private
+             * @member
+             * @var
+             * @type {Array<boolean>}
+             * @alias row
+             */
             let row: Array<boolean> = [];
 
-            for (let j = 0; j < this.#Size; j++)
+            for (let j: number = 0; j < this.#Size; j++)
             {
                 const alive: boolean = Math.random() < 0.5;
                 row.push(alive);
             }
 
-            this.#cells.push(row);
+            this.#Cells.push(row);
         }
     }
 
@@ -129,11 +136,11 @@ class CellularAutomata
         {
             this.#Context.clearRect(0, 0, this.#Size, this.#Size);
 
-            for (let i = 0; i < this.#Size; i++)
+            for (let i: number = 0; i < this.#Size; i++)
             {
-                for (let j = 0; j < this.#Size; j++)
+                for (let j: number = 0; j < this.#Size; j++)
                 {
-                    if (this.#cells[i][j])
+                    if (this.#Cells[i][j])
                     {
                         this.#Context.fillStyle = `black`;
                     }
@@ -156,18 +163,33 @@ class CellularAutomata
      */
     #Evaluate(): void
     {
+        // Variables.
+        /**
+         * @access private
+         * @member
+         * @var
+         * @type {boolean[][]}
+         * @alias cellsAux
+         */
         let cellsAux: boolean[][] = new Array(100).fill(``).map((): boolean[] => new Array(100).fill(false));
 
-        for (let i = 0; i < this.#Size; i++)
+        for (let i: number = 0; i < this.#Size; i++)
         {
-            for (let j = 0; j < this.#Size; j++)
+            for (let j: number = 0; j < this.#Size; j++)
             {
+                /**
+                 * @access private
+                 * @member
+                 * @var
+                 * @type {number}
+                 * @alias livingNeighbor
+                 */
                 let livingNeighbor: number = 0;
 
                 // 1.
                 if (i > 0 && j > 0)
                 {
-                    if (this.#cells[i - 1][j - 1])
+                    if (this.#Cells[i - 1][j - 1])
                     {
                         livingNeighbor++;
                     }
@@ -176,7 +198,7 @@ class CellularAutomata
                 // 2.
                 if (j > 0)
                 {
-                    if (this.#cells[i][j - 1])
+                    if (this.#Cells[i][j - 1])
                     {
                         livingNeighbor++;
                     }
@@ -185,7 +207,7 @@ class CellularAutomata
                 // 3.
                 if (i < (this.#Size - 1) && j > 0)
                 {
-                    if (this.#cells[i + 1][j - 1])
+                    if (this.#Cells[i + 1][j - 1])
                     {
                         livingNeighbor++;
                     }
@@ -194,7 +216,7 @@ class CellularAutomata
                 // 4.
                 if (i > 0)
                 {
-                    if (this.#cells[i - 1][j])
+                    if (this.#Cells[i - 1][j])
                     {
                         livingNeighbor++;
                     }
@@ -203,7 +225,7 @@ class CellularAutomata
                 // 5.
                 if (i < (this.#Size - 1))
                 {
-                    if (this.#cells[i + 1][j])
+                    if (this.#Cells[i + 1][j])
                     {
                         livingNeighbor++;
                     }
@@ -212,7 +234,7 @@ class CellularAutomata
                 // 6.
                 if (i > 0 && j < (this.#Size - 1))
                 {
-                    if (this.#cells[i - 1][j + 1])
+                    if (this.#Cells[i - 1][j + 1])
                     {
                         livingNeighbor++;
                     }
@@ -221,7 +243,7 @@ class CellularAutomata
                 // 7.
                 if (j < (this.#Size - 1))
                 {
-                    if (this.#cells[i][j + 1])
+                    if (this.#Cells[i][j + 1])
                     {
                         livingNeighbor++;
                     }
@@ -230,13 +252,13 @@ class CellularAutomata
                 // 8.
                 if (i < (this.#Size - 1) && j < (this.#Size - 1))
                 {
-                    if (this.#cells[i + 1][j + 1])
+                    if (this.#Cells[i + 1][j + 1])
                     {
                         livingNeighbor++;
                     }
                 }
 
-                if (this.#cells[i][j])
+                if (this.#Cells[i][j])
                 {
                     cellsAux[i][j] = livingNeighbor == 2 || livingNeighbor == 3 ? true : false;
                 }
@@ -247,6 +269,6 @@ class CellularAutomata
             }
         }
 
-        this.#cells = cellsAux;
+        this.#Cells = cellsAux;
     }
 }
