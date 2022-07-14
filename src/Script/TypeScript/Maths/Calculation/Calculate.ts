@@ -51,7 +51,7 @@ class Calculate
         );
 
         // Initialization.
-        Age = Today().getFullYear() - DateOfBirth.getFullYear();
+        Age = Number(Today().getFullYear() - DateOfBirth.getFullYear());
 
 
 

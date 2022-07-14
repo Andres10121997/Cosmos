@@ -16,7 +16,7 @@ function Fibonacci(num: number): number
 
     for(let i = 2; i <= num; i++)
     {
-        fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+        fibonacci[i] = Number(fibonacci[i - 1] + fibonacci[i - 2]);
     }
 
     return fibonacci[num];
