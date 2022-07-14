@@ -28,7 +28,7 @@ async function InsertCellularAutomata(CanvasID: string): Promise<void>
              * @type {number}
              * @alias Size
              */
-            const Size: number = Canvas.clientHeight;
+            const Size: number = Number(Canvas.clientHeight);
             
             /**
              * @access private
@@ -52,7 +52,7 @@ async function InsertCellularAutomata(CanvasID: string): Promise<void>
             const cellularAutomata: CellularAutomata = new CellularAutomata(Size, Context);
 
             cellularAutomata.Create();
-            setInterval(async (): Promise<void> => await cellularAutomata.Next(), 0);
+            setInterval(async (): Promise<void> => await cellularAutomata.Next(), 1000);
         }
         else
         {

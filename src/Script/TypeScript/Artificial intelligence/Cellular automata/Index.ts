@@ -92,15 +92,15 @@ class CellularAutomata
              * @type {Array<boolean>}
              * @alias row
              */
-            let row: Array<boolean> = [];
+            let Row: Array<boolean> = [];
 
             for (let j: number = 0; j < this.#Size; j++)
             {
                 const alive: boolean = Math.random() < 0.5;
-                row.push(alive);
+                Row.push(alive);
             }
 
-            this.#Cells.push(row);
+            this.#Cells.push(Row);
         }
     }
 
@@ -136,11 +136,11 @@ class CellularAutomata
         {
             this.#Context.clearRect(0, 0, this.#Size, this.#Size);
 
-            for (let i: number = 0; i < this.#Size; i++)
+            for (let x: number = 0; x < this.#Size; x++)
             {
-                for (let j: number = 0; j < this.#Size; j++)
+                for (let y: number = 0; y < this.#Size; y++)
                 {
-                    if (this.#Cells[i][j])
+                    if (this.#Cells[x][y])
                     {
                         this.#Context.fillStyle = `black`;
                     }
@@ -149,7 +149,7 @@ class CellularAutomata
                         this.#Context.fillStyle = `white`;
                     }
 
-                    this.#Context.fillRect(i, j, 1, 1);
+                    this.#Context.fillRect(x, y, 1, 1);
                 }
             }
         }
@@ -173,7 +173,7 @@ class CellularAutomata
          */
         let cellsAux: boolean[][] = new Array(this.#Size).fill(``).map((): boolean[] => new Array(this.#Size).fill(false));
 
-        for (let i: number = 0; i < this.#Size; i++)
+        for (let x: number = 0; x < this.#Size; x++)
         {
             for (let j: number = 0; j < this.#Size; j++)
             {
@@ -187,9 +187,9 @@ class CellularAutomata
                 let livingNeighbor: number = 0;
 
                 // 1.
-                if (i > 0 && j > 0)
+                if (x > 0 && j > 0)
                 {
-                    if (this.#Cells[i - 1][j - 1])
+                    if (this.#Cells[x - 1][j - 1])
                     {
                         livingNeighbor++;
                     }
@@ -198,43 +198,43 @@ class CellularAutomata
                 // 2.
                 if (j > 0)
                 {
-                    if (this.#Cells[i][j - 1])
+                    if (this.#Cells[x][j - 1])
                     {
                         livingNeighbor++;
                     }
                 }
                 
                 // 3.
-                if (i < (this.#Size - 1) && j > 0)
+                if (x < (this.#Size - 1) && j > 0)
                 {
-                    if (this.#Cells[i + 1][j - 1])
+                    if (this.#Cells[x + 1][j - 1])
                     {
                         livingNeighbor++;
                     }
                 }
                 
                 // 4.
-                if (i > 0)
+                if (x > 0)
                 {
-                    if (this.#Cells[i - 1][j])
+                    if (this.#Cells[x - 1][j])
                     {
                         livingNeighbor++;
                     }
                 }
                 
                 // 5.
-                if (i < (this.#Size - 1))
+                if (x < (this.#Size - 1))
                 {
-                    if (this.#Cells[i + 1][j])
+                    if (this.#Cells[x + 1][j])
                     {
                         livingNeighbor++;
                     }
                 }
 
                 // 6.
-                if (i > 0 && j < (this.#Size - 1))
+                if (x > 0 && j < (this.#Size - 1))
                 {
-                    if (this.#Cells[i - 1][j + 1])
+                    if (this.#Cells[x - 1][j + 1])
                     {
                         livingNeighbor++;
                     }
@@ -243,28 +243,28 @@ class CellularAutomata
                 // 7.
                 if (j < (this.#Size - 1))
                 {
-                    if (this.#Cells[i][j + 1])
+                    if (this.#Cells[x][j + 1])
                     {
                         livingNeighbor++;
                     }
                 }
 
                 // 8.
-                if (i < (this.#Size - 1) && j < (this.#Size - 1))
+                if (x < (this.#Size - 1) && j < (this.#Size - 1))
                 {
-                    if (this.#Cells[i + 1][j + 1])
+                    if (this.#Cells[x + 1][j + 1])
                     {
                         livingNeighbor++;
                     }
                 }
 
-                if (this.#Cells[i][j])
+                if (this.#Cells[x][j])
                 {
-                    cellsAux[i][j] = livingNeighbor == 2 || livingNeighbor == 3 ? true : false;
+                    cellsAux[x][j] = livingNeighbor == 2 || livingNeighbor == 3 ? true : false;
                 }
                 else
                 {
-                    cellsAux[i][j] = livingNeighbor == 3 ? true : false;
+                    cellsAux[x][j] = livingNeighbor == 3 ? true : false;
                 }
             }
         }
