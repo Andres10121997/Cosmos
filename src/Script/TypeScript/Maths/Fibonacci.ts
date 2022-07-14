@@ -12,7 +12,7 @@ function Fibonacci(num: number): number
      * @type {Array<number>}
      * @alias fib
      */
-    const fibonacci: Array<number> = [0, 1];
+    const fibonacci: Array<number> = new Array<number>(0, 1);
 
     for(let i = 2; i <= num; i++)
     {

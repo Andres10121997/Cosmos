@@ -47,12 +47,12 @@ async function InsertCellularAutomata(CanvasID: string): Promise<void>
              * @member
              * @constant
              * @type {CellularAutomata}
-             * @name cellularAutomata
+             * @name OCellularAutomata
              */
-            const cellularAutomata: CellularAutomata = new CellularAutomata(Size, Context);
+            const OCellularAutomata: CellularAutomata = new CellularAutomata(Size, Context);
 
-            cellularAutomata.Create();
-            setInterval(async (): Promise<void> => await cellularAutomata.Next(), 1000);
+            OCellularAutomata.Create();
+            setInterval(async (): Promise<void> => await OCellularAutomata.Next(), 1000);
         }
         else
         {

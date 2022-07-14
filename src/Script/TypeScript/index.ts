@@ -1,35 +1,35 @@
 /**
  * Maths.
  */
-import "./Maths/Fibonacci.js";
+import "./Maths/Fibonacci";
 
 // Calculation.
-import "./Maths/Calculation/Calculate.js";
-import "./Maths/Calculation/Age.js";
+import "./Maths/Calculate";
+import "./Maths/Age";
 
 /**
  * Time.
  */
-import "./Time/Today.js";
-import "./Time/Variable/Date.js";
+import "./Time/Today";
+import "./Time/Variable/Date";
 // Clock.
-import "./Time/Clock/Clock.js";
-import "./Time/Clock/Insert/Date.js";
-import "./Time/Clock/Insert/Time.js";
+import "./Time/Clock/Clock";
+import "./Time/Clock/Insert/Date";
+import "./Time/Clock/Insert/Time";
 
 /**
  *  Validation.
  */
-import "./Validation/Validation.js";
-import "./Validation/Form.js";
+import "./Validation/Validation";
+import "./Validation/Form";
 
 /**
  * Variables.
  */
-import "./Variable/Form.js";
-import "./Variable/Regular Expression.js";
+import "./Variable/Form";
+import "./Variable/Regular Expression";
 
 /**
  * WYSIWYG.
  */
-import "./WYSIWYG/Rich text editor.js";
+import "./WYSIWYG/Rich text editor";
