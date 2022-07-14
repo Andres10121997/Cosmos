@@ -175,7 +175,7 @@ class CellularAutomata
 
         for (let x: number = 0; x < this.#Size; x++)
         {
-            for (let j: number = 0; j < this.#Size; j++)
+            for (let y: number = 0; y < this.#Size; y++)
             {
                 /**
                  * @access private
@@ -187,27 +187,27 @@ class CellularAutomata
                 let livingNeighbor: number = 0;
 
                 // 1.
-                if (x > 0 && j > 0)
+                if (x > 0 && y > 0)
                 {
-                    if (this.#Cells[x - 1][j - 1])
+                    if (this.#Cells[x - 1][y - 1])
                     {
                         livingNeighbor++;
                     }
                 }
                 
                 // 2.
-                if (j > 0)
+                if (y > 0)
                 {
-                    if (this.#Cells[x][j - 1])
+                    if (this.#Cells[x][y - 1])
                     {
                         livingNeighbor++;
                     }
                 }
                 
                 // 3.
-                if (x < (this.#Size - 1) && j > 0)
+                if (x < (this.#Size - 1) && y > 0)
                 {
-                    if (this.#Cells[x + 1][j - 1])
+                    if (this.#Cells[x + 1][y - 1])
                     {
                         livingNeighbor++;
                     }
@@ -216,7 +216,7 @@ class CellularAutomata
                 // 4.
                 if (x > 0)
                 {
-                    if (this.#Cells[x - 1][j])
+                    if (this.#Cells[x - 1][y])
                     {
                         livingNeighbor++;
                     }
@@ -225,46 +225,46 @@ class CellularAutomata
                 // 5.
                 if (x < (this.#Size - 1))
                 {
-                    if (this.#Cells[x + 1][j])
+                    if (this.#Cells[x + 1][y])
                     {
                         livingNeighbor++;
                     }
                 }
 
                 // 6.
-                if (x > 0 && j < (this.#Size - 1))
+                if (x > 0 && y < (this.#Size - 1))
                 {
-                    if (this.#Cells[x - 1][j + 1])
+                    if (this.#Cells[x - 1][y + 1])
                     {
                         livingNeighbor++;
                     }
                 }
 
                 // 7.
-                if (j < (this.#Size - 1))
+                if (y < (this.#Size - 1))
                 {
-                    if (this.#Cells[x][j + 1])
+                    if (this.#Cells[x][y + 1])
                     {
                         livingNeighbor++;
                     }
                 }
 
                 // 8.
-                if (x < (this.#Size - 1) && j < (this.#Size - 1))
+                if (x < (this.#Size - 1) && y < (this.#Size - 1))
                 {
-                    if (this.#Cells[x + 1][j + 1])
+                    if (this.#Cells[x + 1][y + 1])
                     {
                         livingNeighbor++;
                     }
                 }
 
-                if (this.#Cells[x][j])
+                if (this.#Cells[x][y])
                 {
-                    cellsAux[x][j] = livingNeighbor == 2 || livingNeighbor == 3 ? true : false;
+                    cellsAux[x][y] = livingNeighbor == 2 || livingNeighbor == 3 ? true : false;
                 }
                 else
                 {
-                    cellsAux[x][j] = livingNeighbor == 3 ? true : false;
+                    cellsAux[x][y] = livingNeighbor == 3 ? true : false;
                 }
             }
         }
