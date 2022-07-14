@@ -2,7 +2,8 @@
 @import "Partial/mixin/Border/Color/_All.scss";
 @import "Partial/mixin/Border/Style/_Index.scss";
 @import "Partial/mixin/Border/Style/_All.scss";
-@import "Partial/mixin/Border/_Width.scss";
+@import "Partial/mixin/Border/Width/Index";
+@import "Partial/mixin/Border/Width/All";
 
 @import "Partial/mixin/Component/_display.scss";
 
