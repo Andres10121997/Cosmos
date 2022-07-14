@@ -2,13 +2,15 @@
 @import "Partial/mixin/Border/Color/_All.scss";
 @import "Partial/mixin/Border/Style/_Index.scss";
 @import "Partial/mixin/Border/Style/_All.scss";
-@import "Partial/mixin/Border/Width/Index";
-@import "Partial/mixin/Border/Width/All";
+@import "Partial/mixin/Border/Width/Pixel/ToRem/Index";
+@import "Partial/mixin/Border/Width/Pixel/ToRem/All";
 
 @import "Partial/mixin/Component/_display.scss";
 
-@import "Partial/mixin/Margin/Side/_Index.scss";
-@import "Partial/mixin/Margin/Side/_Individual.scss";
+@import "Partial/mixin/Margin/Side/Index";
+@import "Partial/mixin/Margin/Side/All";
+@import "Partial/mixin/Margin/Side/Pixel/ToRem/Index";
+@import "Partial/mixin/Margin/Side/Pixel/ToRem/Individual";
 
 @import "Partial/mixin/Padding/Size/_Index.scss";
 @import "Partial/mixin/Padding/Size/_Individual.scss";

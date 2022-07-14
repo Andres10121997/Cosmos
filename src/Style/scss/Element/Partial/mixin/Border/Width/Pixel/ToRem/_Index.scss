@@ -1,4 +1,4 @@
-@mixin BorderWidth($Width)
+@mixin BorderWidth_PixelToRem($Width)
 {
     border-top-width: PixelToRem($Width);
     border-right-width: PixelToRem($Width);

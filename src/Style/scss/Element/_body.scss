@@ -8,10 +8,7 @@ body
     line-height: var(selector.append($variable-prefix, rem-big-16));
     text-align: $text-align-left;
     
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
+    @include MarginSize_PixelToRem(0);
 
     background-color: var(selector.append($variable-prefix, $white-name));
     color: var(selector.append($variable-prefix, $black-name));

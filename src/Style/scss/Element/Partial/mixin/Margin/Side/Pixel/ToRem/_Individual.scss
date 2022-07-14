@@ -1,0 +1,7 @@
+﻿@mixin MarginIndividualSize_PixelToRem($top, $right, $bottom, $left)
+{
+    margin-top: PixelToRem($top);
+    margin-right: PixelToRem($right);
+    margin-bottom: PixelToRem($bottom);
+    margin-left: PixelToRem($left);
+}

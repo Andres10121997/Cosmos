@@ -2,15 +2,9 @@
 
 @mixin GeometricFigureBorder
 {
-    border-width: PixelToRem(3);
+    @include MarginSize_PixelToRem(3);
 
-    border-top-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-left-style: solid;
+    @include BorderStyle(solid);
 
-    border-top-color: var(selector.append($variable-prefix, $black-name));
-    border-right-color: var(selector.append($variable-prefix, $black-name));
-    border-bottom-color: var(selector.append($variable-prefix, $black-name));
-    border-left-color: var(selector.append($variable-prefix, $black-name));
+    @include BorderColor(UseVariable(#{black}));
 }

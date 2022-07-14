@@ -1,4 +1,5 @@
-﻿@mixin BorderAllColors($top, $right, $bottom, $left) {
+﻿@mixin BorderAllColors($top, $right, $bottom, $left)
+{
     border-top-color: $top;
     border-right-color: $right;
     border-bottom-color: $bottom;
