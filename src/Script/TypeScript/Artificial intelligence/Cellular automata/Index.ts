@@ -83,8 +83,9 @@ class CellularAutomata
      */
     Create(): void
     {
-        for (let i: number = 0; i < this.#Size; i++)
+        for (let x: number = 0; x < this.#Size; x++)
         {
+            // Varirables.
             /**
              * @access private
              * @member
@@ -94,10 +95,21 @@ class CellularAutomata
              */
             let Row: Array<boolean> = [];
 
-            for (let j: number = 0; j < this.#Size; j++)
+            for (let y: number = 0; y < this.#Size; y++)
             {
-                const alive: boolean = Math.random() < 0.5;
-                Row.push(alive);
+                // Constant.
+                /**
+                 * @access private
+                 * @member
+                 * @constant
+                 * @type {boolean}
+                 * @alias Alive
+                 */
+                const Alive: boolean = Boolean(Math.random() < 0.5);
+
+
+
+                Row.push(Alive);
             }
 
             this.#Cells.push(Row);
