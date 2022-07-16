@@ -181,9 +181,9 @@ class CellularAutomata
          * @member
          * @var
          * @type {boolean[][]}
-         * @alias cellsAux
+         * @alias CellsAux
          */
-        let cellsAux: boolean[][] = new Array(this.#Size).fill(``).map((): boolean[] => new Array(this.#Size).fill(false));
+        let CellsAux: boolean[][] = new Array(this.#Size).fill(``).map((): boolean[] => new Array(this.#Size).fill(false));
 
         for (let x: number = 0; x < this.#Size; x++)
         {
@@ -272,15 +272,15 @@ class CellularAutomata
 
                 if (this.#Cells[x][y])
                 {
-                    cellsAux[x][y] = livingNeighbor == 2 || livingNeighbor == 3 ? true : false;
+                    CellsAux[x][y] = livingNeighbor == 2 || livingNeighbor == 3 ? true : false;
                 }
                 else
                 {
-                    cellsAux[x][y] = livingNeighbor == 3 ? true : false;
+                    CellsAux[x][y] = livingNeighbor == 3 ? true : false;
                 }
             }
         }
 
-        this.#Cells = cellsAux;
+        this.#Cells = CellsAux;
     }
 }

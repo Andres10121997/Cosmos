@@ -154,10 +154,10 @@ class Validation
          * @access private
          * @member
          * @constant
-         * @type {string}
-         * @alias information
+         * @type {HTMLDataElement}
+         * @alias Element
         */
-        const information: string = (document.getElementById(Id) as HTMLDataElement).value;
+        const Element: HTMLDataElement = (document.getElementById(Id) as HTMLDataElement);
 
         /**
          * @access private
@@ -166,7 +166,7 @@ class Validation
          * @type {Date}
          * @alias DateOfBirth
          */
-        const DateOfBirth: Date = new Date(information);
+        const DateOfBirth: Date = new Date(Element.value);
 
         /**
          * @access private
