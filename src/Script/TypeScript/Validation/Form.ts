@@ -24,6 +24,15 @@ function ValidationForm(Id: Array<string>,
      * @alias Count
      */
     let Count: number;
+    
+    /**
+     * @access private
+     * @member
+     * @var
+     * @type {HTMLElement}
+     * @alias element
+     */
+    let element: HTMLElement;
 
     // Constants.
     /**
@@ -58,17 +67,21 @@ function ValidationForm(Id: Array<string>,
     Comparison.forEach((value: boolean, i: number): (boolean | void) => {
         if (OValidate.IsBoolean(value) === false)
         {
+            console.error(`---`);
             console.error(`The "Comparison" (${value} | ${(i + 1)}° position) is not a boolean.`);
+            console.error(`---`);
             return false;
         }
     });
 
     Id.forEach((value: string, i: number): (boolean | void) => {
-        const element = (document.getElementById(value) as HTMLElement);
+        element = (document.getElementById(value) as HTMLElement);
         
         if (OValidate.IsString(value) === false)
         {
+            console.error(`---`);
             console.error(`The "ID" (${value} | ${(i + 1)}° position) is not a string.`);
+            console.error(`---`);
             return false;
         }
         else
@@ -77,6 +90,9 @@ function ValidationForm(Id: Array<string>,
             element.tagName.toLocaleLowerCase() !== FormType.Select.toLocaleLowerCase() &&
             element.tagName.toLocaleLowerCase() !== FormType.TextArea.toLocaleLowerCase())
         {
+            console.error(`---`);
+            console.error(`The tag with the id id "${value}" (${i + 1}° position of the array) does not match.`);
+            console.error(`---`);
             return false;
         }
     });
@@ -84,7 +100,9 @@ function ValidationForm(Id: Array<string>,
     MaxLength.forEach((value: number, i: number): (boolean | void) => {
         if (OValidate.IsNumber(value) === false)
         {
+            console.error(`---`);
             console.error(`The "MaxLength" (${value} | ${(i + 1)}° position) is not a number.`);
+            console.error(`---`);
             return false;
         }
     });
@@ -92,7 +110,9 @@ function ValidationForm(Id: Array<string>,
     DateType.forEach((value: string, i: number): (boolean | void) => {
         if (OValidate.DateType(value) === false)
         {
+            console.error(`---`);
             console.error(`The "DateType" (${value} | ${(i + 1)}° position) is not a string.`);
+            console.error(`---`);
             return false;
         }
     });
@@ -100,7 +120,9 @@ function ValidationForm(Id: Array<string>,
     Require.forEach((value: boolean, i: number): (boolean | void) => {
         if (OValidate.IsBoolean(value) === false)
         {
+            console.error(`---`);
             console.error(`The "Require" (${value} | ${(i + 1)}° position) is not a boolean.`);
+            console.error(`---`);
             return false;
         }
     });
@@ -108,21 +130,21 @@ function ValidationForm(Id: Array<string>,
 
 
     Id.forEach((value: string, i: number): void => {
-        const element: HTMLElement = (document.getElementById(value) as HTMLElement);
+        element = (document.getElementById(value) as HTMLElement);
 
-        if (element.tagName.toLocaleLowerCase() == FormType.Select.toLocaleLowerCase())
+        if (element.tagName.toLocaleLowerCase() === FormType.Select.toLocaleLowerCase())
         {
             Count++;
         }
         else
-        if ((element.tagName.toLocaleLowerCase() == FormType.Input.toLocaleLowerCase() ||
-             element.tagName.toLocaleLowerCase() == FormType.Input.toLocaleLowerCase()) &&
+        if ((element.tagName.toLocaleLowerCase() === FormType.Input.toLocaleLowerCase() ||
+             element.tagName.toLocaleLowerCase() === FormType.Input.toLocaleLowerCase()) &&
             OValidate.Info(Id[i], Require[i], MaxLength[i]))
         {
             Count++;
         }
         else
-        if (element.tagName.toLocaleLowerCase() == FormType.Date &&
+        if (element.tagName.toLocaleLowerCase() === FormType.Date &&
             DateType[i] === dateOptions.DateOfBirth &&
             OValidate.DateOfBirth(Id[i], MinimumAge))
         {
@@ -130,6 +152,7 @@ function ValidationForm(Id: Array<string>,
         }
     });
 
+    
 
     if (Count === Id.length)
     {
