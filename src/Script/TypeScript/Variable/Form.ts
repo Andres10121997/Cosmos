@@ -1,5 +1,6 @@
 /**
  * @access public
+ * @member
  * @constant
  * @alias FormType
  */
