@@ -54,7 +54,7 @@ async function InsertTime(Id: string,
             }
         }
     })
-    .catch((reason: any): void => {
+    .catch<void>((reason: any): void => {
         console.error(`---`);
         console.error(`Error InsertTime function.`);
         console.error(`Error: ${reason}`);

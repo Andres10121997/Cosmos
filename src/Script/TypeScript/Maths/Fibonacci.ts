@@ -14,10 +14,14 @@ function Fibonacci(num: number): number
      */
     const fibonacci: Array<number> = new Array<number>(0, 1);
 
+
+
     for(let i = 2; i <= num; i++)
     {
         fibonacci[i] = Number(fibonacci[i - 1] + fibonacci[i - 2]);
     }
 
+
+    
     return fibonacci[num];
 }

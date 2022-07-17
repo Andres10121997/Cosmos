@@ -63,7 +63,7 @@ async function InsertCellularAutomata(CanvasID: string): Promise<void>
             console.info(`---`);
         }
     })
-    .catch((reason: any): void => {
+    .catch<void>((reason: any): void => {
         console.error(`---`);
         console.error(`Error InsertCellularAutomata function.`);
         console.error(`Error: ${reason}`);

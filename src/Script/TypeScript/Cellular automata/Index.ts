@@ -128,7 +128,7 @@ class CellularAutomata
             this.#Print();
             this.#Evaluate();
         })
-        .catch((reason: any): void => {
+        .catch<void>((reason: any): void => {
             console.error(`---`);
             console.error(`Error CellularAutomata.Next method.`);
             console.error(`Error: ${reason}`);

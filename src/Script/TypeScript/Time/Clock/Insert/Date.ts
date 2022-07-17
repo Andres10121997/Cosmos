@@ -15,7 +15,7 @@ async function InsertDate(Id: string,
          * @member
          * @constant
          * @type {Clock}
-         * @alias clock
+         * @alias OClock
         */
         const OClock: Clock = new Clock();
 
@@ -49,7 +49,7 @@ async function InsertDate(Id: string,
             }
         }
     })
-    .catch((reason: any): void => {
+    .catch<void>((reason: any): void => {
         console.error(`---`);
         console.error(`Error InsertDate function.`);
         console.error(`Error: ${reason}`);
