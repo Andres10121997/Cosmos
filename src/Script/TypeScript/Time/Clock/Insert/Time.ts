@@ -8,7 +8,7 @@
 async function InsertTime(Id: string,
                           Type: string): Promise<void>
 {
-    await new Promise((): void => {
+    await new Promise<void>((): void => {
         // Object.
         /**
          * @access private
@@ -27,7 +27,6 @@ async function InsertTime(Id: string,
          * @alias OValidate
          */
         const OValidate: Validation = new Validation();
-
 
 
         if (OValidate.IsString(Id) === true &&

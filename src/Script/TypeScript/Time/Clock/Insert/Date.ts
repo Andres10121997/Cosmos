@@ -8,7 +8,7 @@
 async function InsertDate(Id: string,
                           Type: string): Promise<void>
 {
-    await new Promise((): void => {
+    await new Promise<void>((): void => {
         // Object.
         /**
          * @access private

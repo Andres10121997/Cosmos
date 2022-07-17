@@ -66,7 +66,7 @@ class Clock
     async #UpdateDayAsync(Id: string,
                           Options: (Intl.DateTimeFormatOptions | undefined)): Promise<unknown>
     {
-        return await new Promise((): void => {
+        return await new Promise<void>((): void => {
             setInterval((): void => {
                 this.#DocumentElement = (document.getElementById(Id) as HTMLElement);
 
@@ -92,7 +92,7 @@ class Clock
     async #UpdateTimeAsync(Id: string,
                            Options: (Intl.DateTimeFormatOptions | undefined)): Promise<unknown>
     {
-        return await new Promise((): void => {
+        return await new Promise<void>((): void => {
             setInterval((): void => {
                 this.#DocumentElement = (document.getElementById(Id) as HTMLElement);
 

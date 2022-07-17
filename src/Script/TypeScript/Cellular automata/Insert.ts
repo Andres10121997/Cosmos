@@ -7,7 +7,7 @@
  */
 async function InsertCellularAutomata(CanvasID: string): Promise<void>
 {
-    await new Promise((): void => {
+    await new Promise<void>((): void => {
         // Constants.
         /**
          * @access private

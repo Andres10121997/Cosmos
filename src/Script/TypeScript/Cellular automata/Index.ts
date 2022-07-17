@@ -124,7 +124,7 @@ class CellularAutomata
      */
     async Next(): Promise<void>
     {
-        await new Promise((): void => {
+        await new Promise<void>((): void => {
             this.#Print();
             this.#Evaluate();
         })

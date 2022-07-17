@@ -3,7 +3,6 @@
  * @name ValidationForm
  * @param {Array<string>} Id It is an Arrays that saves the IDs of the Inputs, TextArea, Select, among others.
  * @param {Array<number>} MaxLength
- * @param {Array<string>} HtmlType
  * @param {Array<string>} DateType
  * @param {Array<boolean>} Require
  * @param {number} [MinimumAge]
@@ -12,7 +11,6 @@
  */
 function ValidationForm(Id: Array<string>,
                         MaxLength: Array<number>,
-                        HtmlType: Array<string>,
                         DateType: Array<string>,
                         Require: Array<boolean>,
                         MinimumAge: number = NaN): boolean
@@ -37,7 +35,6 @@ function ValidationForm(Id: Array<string>,
      */
     const Comparison: Array<boolean> = new Array<boolean>(
         Boolean(Id.length !== MaxLength.length),
-        Boolean(Id.length !== HtmlType.length),
         Boolean(Id.length !== DateType.length),
         Boolean(Id.length !== Require.length)
     );
@@ -67,9 +64,19 @@ function ValidationForm(Id: Array<string>,
     });
 
     Id.forEach((value: string, i: number): (boolean | void) => {
+        const element = (document.getElementById(value) as HTMLElement);
+        
         if (OValidate.IsString(value) === false)
         {
             console.error(`The "ID" (${value} | ${(i + 1)}° position) is not a string.`);
+            return false;
+        }
+        else
+        if (element.tagName.toLocaleLowerCase() !== FormType.Date.toLocaleLowerCase() &&
+            element.tagName.toLocaleLowerCase() !== FormType.Input.toLocaleLowerCase() &&
+            element.tagName.toLocaleLowerCase() !== FormType.Select.toLocaleLowerCase() &&
+            element.tagName.toLocaleLowerCase() !== FormType.TextArea.toLocaleLowerCase())
+        {
             return false;
         }
     });
@@ -78,14 +85,6 @@ function ValidationForm(Id: Array<string>,
         if (OValidate.IsNumber(value) === false)
         {
             console.error(`The "MaxLength" (${value} | ${(i + 1)}° position) is not a number.`);
-            return false;
-        }
-    });
-
-    HtmlType.forEach((value: string, i: number): (boolean | void) => {
-        if (OValidate.IsString(value) === false)
-        {
-            console.error(`The "HtmlType" (${value} | ${(i + 1)}° position) is not a string.`);
             return false;
         }
     });
@@ -108,28 +107,28 @@ function ValidationForm(Id: Array<string>,
 
 
 
-    HtmlType.forEach((value: string, i: number): void => {
-        if (value === FormType.Select &&
-            OValidate.Select(Id[i]) === true)
+    Id.forEach((value: string, i: number): void => {
+        const element: HTMLElement = (document.getElementById(value) as HTMLElement);
+
+        if (element.tagName.toLocaleLowerCase() == FormType.Select.toLocaleLowerCase())
         {
             Count++;
         }
         else
-        if ((value === FormType.Input ||
-             value === FormType.TextArea) &&
-            OValidate.Info(Id[i], Require[i], MaxLength[i]) === true)
+        if ((element.tagName.toLocaleLowerCase() == FormType.Input.toLocaleLowerCase() ||
+             element.tagName.toLocaleLowerCase() == FormType.Input.toLocaleLowerCase()) &&
+            OValidate.Info(Id[i], Require[i], MaxLength[i]))
         {
             Count++;
         }
         else
-        if (value === FormType.Date &&
+        if (element.tagName.toLocaleLowerCase() == FormType.Date &&
             DateType[i] === dateOptions.DateOfBirth &&
-            OValidate.DateOfBirth(Id[i], MinimumAge) === true)
+            OValidate.DateOfBirth(Id[i], MinimumAge))
         {
             Count++;
         }
     });
-
 
 
     if (Count === Id.length)

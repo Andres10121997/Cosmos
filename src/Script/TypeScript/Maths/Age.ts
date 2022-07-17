@@ -16,5 +16,5 @@ function CalculateAge(DateOfBirth: Date): number
      */
     const OCalculate: Calculate = new Calculate();
     
-    return OCalculate.Age(DateOfBirth)
+    return OCalculate.Age(DateOfBirth);
 }
