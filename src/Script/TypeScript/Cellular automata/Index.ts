@@ -79,41 +79,49 @@ class CellularAutomata
      * @access public
      * @method
      * @alias CellularAutomata.Create
-     * @returns {void}
+     * @returns {Promise<void>}
      */
-    Create(): void
+    async Create(): Promise<void>
     {
-        for (let x: number = 0; x < this.#Size; x++)
-        {
-            // Varirables.
-            /**
-             * @access private
-             * @member
-             * @var
-             * @type {Array<boolean>}
-             * @alias row
-             */
-            let Row: Array<boolean> = [];
-
-            for (let y: number = 0; y < this.#Size; y++)
+        new Promise<void>((): void => {
+            for (let x: number = 0; x < this.#Size; x++)
             {
-                // Constant.
+                // Varirables.
                 /**
                  * @access private
                  * @member
-                 * @constant
-                 * @type {boolean}
-                 * @alias Alive
+                 * @var
+                 * @type {Array<boolean>}
+                 * @alias row
                  */
-                const Alive: boolean = Boolean(Math.random() < 0.5);
+                let Row: Array<boolean> = [];
+
+                for (let y: number = 0; y < this.#Size; y++)
+                {
+                    // Constant.
+                    /**
+                     * @access private
+                     * @member
+                     * @constant
+                     * @type {boolean}
+                     * @alias Alive
+                     */
+                    const Alive: boolean = Boolean(Math.random() < 0.5);
 
 
 
-                Row.push(Alive);
+                    Row.push(Alive);
+                }
+
+                this.#Cells.push(Row);
             }
-
-            this.#Cells.push(Row);
-        }
+        })
+        .catch((reason: any): void => {
+            console.error(`---`);
+            console.error(`Error CellularAutomata.Create method.`);
+            console.error(`Error: ${reason}`);
+            console.error(`---`);
+        });
     }
 
     /**
