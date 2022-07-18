@@ -53,7 +53,7 @@ async function InitCellularAutomata(CanvasID: string): Promise<void>
             const OCellularAutomata: CellularAutomata = new CellularAutomata(Size, Context);
 
             await OCellularAutomata.Create()
-                .then((): NodeJS.Timer => setInterval(async (): Promise<void> => await OCellularAutomata.Next(), 1000))
+                .then((): any => setInterval(async (): Promise<void> => await OCellularAutomata.Next(), 1000))
                 .catch((reason: any): void => {
                     console.error(`---`);
                     console.error(`Error InsertCellularAutomata function.`);

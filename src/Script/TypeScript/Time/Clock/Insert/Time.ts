@@ -41,6 +41,13 @@ async function InsertTime(Id: string,
                     hour: `numeric`,
                     minute: `numeric`,
                     second: `numeric`
+                })
+                .catch((reason: any): void => {
+                    console.error(`---`);
+                    console.error(`Error InsertTime function.`);
+                    console.error(`Error calling method "OClock.Insert".`);
+                    console.error(`Error: ${reason}`);
+                    console.error(`---`);
                 });
             }
             else
@@ -51,6 +58,13 @@ async function InsertTime(Id: string,
                     hour12: undefined,
                     hour: `numeric`,
                     minute: `numeric`
+                })
+                .catch((reason: any): void => {
+                    console.error(`---`);
+                    console.error(`Error InsertTime function.`);
+                    console.error(`Error calling method "OClock.Insert".`);
+                    console.error(`Error: ${reason}`);
+                    console.error(`---`);
                 });
             }
         }

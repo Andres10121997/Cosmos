@@ -41,12 +41,26 @@ async function InsertDate(Id: string,
                     year: `numeric`,
                     month: `long`,
                     day: `numeric`
+                })
+                .catch((reason: any): void => {
+                    console.error(`---`);
+                    console.error(`Error InsertDate function.`);
+                    console.error(`Error calling method "OClock.Insert".`);
+                    console.error(`Error: ${reason}`);
+                    console.error(`---`);
                 });
             }
             else
             if (Type.toLocaleLowerCase() === OClock.GetSize().Short.toLocaleLowerCase())
             {
-                await OClock.Insert(Id, OClock.GetClockInsert().Date, undefined);
+                await OClock.Insert(Id, OClock.GetClockInsert().Date, undefined)
+                .catch((reason: any): void => {
+                    console.error(`---`);
+                    console.error(`Error InsertDate function.`);
+                    console.error(`Error calling method "OClock.Insert".`);
+                    console.error(`Error: ${reason}`);
+                    console.error(`---`);
+                });
             }
         }
     })
