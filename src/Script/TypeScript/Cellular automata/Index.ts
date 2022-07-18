@@ -132,18 +132,14 @@ class CellularAutomata
      */
     async Next(): Promise<void>
     {
-        await new Promise<void>((): void => {
-            this.#Print()
-            .then((): void => {
-                this.#Evaluate();
+        await this.#Print()
+            .then(async (): Promise<void> => await this.#Evaluate())
+            .catch((reason: any): void => {
+                console.error(`---`);
+                console.error(`Error CellularAutomata.Next method.`);
+                console.error(`Error: ${reason}`);
+                console.error(`---`);
             });
-        })
-        .catch<void>((reason: any): void => {
-            console.error(`---`);
-            console.error(`Error CellularAutomata.Next method.`);
-            console.error(`Error: ${reason}`);
-            console.error(`---`);
-        })
     }
 
     /**
@@ -176,6 +172,12 @@ class CellularAutomata
                     }
                 }
             }
+        })
+        .catch((reason: any): void => {
+            console.error(`---`);
+            console.error(`Error CellularAutomata.Print method.`);
+            console.error(`Error: ${reason}`);
+            console.error(`---`);
         });
     }
 
@@ -295,6 +297,12 @@ class CellularAutomata
             }
 
             this.#Cells = CellsAux;
+        })
+        .catch((reason: any): void => {
+            console.error(`---`);
+            console.error(`Error CellularAutomata.Evaluate method.`);
+            console.error(`Error: ${reason}`);
+            console.error(`---`);
         });
     }
 }
