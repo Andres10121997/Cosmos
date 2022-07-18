@@ -76,6 +76,7 @@ class CellularAutomata
 
     // Cellular Automata.
     /**
+     * @async
      * @access public
      * @method
      * @alias CellularAutomata.Create
@@ -125,6 +126,7 @@ class CellularAutomata
     }
 
     /**
+     * @async
      * @access public
      * @method
      * @alias CellularAutomata.Next
@@ -143,6 +145,7 @@ class CellularAutomata
     }
 
     /**
+     * @async
      * @access private
      * @method
      * @alias CellularAutomata.Print
@@ -182,6 +185,7 @@ class CellularAutomata
     }
 
     /**
+     * @async
      * @access private
      * @method
      * @alias CellularAutomata.Evaluate

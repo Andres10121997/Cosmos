@@ -56,6 +56,7 @@ class Clock
 
 
     /**
+     * @async
      * @access private
      * @method
      * @alias UpdateDay
@@ -82,6 +83,7 @@ class Clock
     }
 
     /**
+     * @async
      * @access private
      * @method
      * @alias UpdateTime
@@ -118,34 +120,36 @@ class Clock
      * @param {Intl.DateTimeFormatOptions | undefined} Options
      * @returns {void}
      */
-    Insert(Id: string,
-           whoInsert: string,
-           Options: (Intl.DateTimeFormatOptions | undefined)): void
+    async Insert(Id: string,
+                 whoInsert: string,
+                 Options: (Intl.DateTimeFormatOptions | undefined)): Promise<void>
     {
-        // Objects.
-        /**
-         * @access private
-         * @member
-         * @constant
-         * @type {Validation}
-         * @alias OValidate
-         */
-        const OValidate: Validation = new Validation();
+        await new Promise((): void => {
+            // Objects.
+            /**
+             * @access private
+             * @member
+             * @constant
+             * @type {Validation}
+             * @alias OValidate
+             */
+            const OValidate: Validation = new Validation();
 
 
 
-        if (OValidate.IsString(Id) === true &&
-            OValidate.IsString(whoInsert) === true)
-        {
-            if (whoInsert === this.GetClockInsert().Date)
+            if (OValidate.IsString(Id) === true &&
+                OValidate.IsString(whoInsert) === true)
             {
-                this.#UpdateDayAsync(Id, Options);
+                if (whoInsert === this.GetClockInsert().Date)
+                {
+                    this.#UpdateDayAsync(Id, Options);
+                }
+                else
+                if (whoInsert === this.GetClockInsert().Time)
+                {
+                    this.#UpdateTimeAsync(Id, Options)
+                }
             }
-            else
-            if (whoInsert === this.GetClockInsert().Time)
-            {
-                this.#UpdateTimeAsync(Id, Options)
-            }
-        }
+        });
     }
 }

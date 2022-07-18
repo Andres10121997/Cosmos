@@ -1,4 +1,5 @@
 /**
+ * @async
  * @function
  * @name InsertCellularAutomata
  * @param {string} CanvasID
@@ -52,15 +53,13 @@ async function InitCellularAutomata(CanvasID: string): Promise<void>
             const OCellularAutomata: CellularAutomata = new CellularAutomata(Size, Context);
 
             await OCellularAutomata.Create()
-            .then((): void => {
-                setInterval(async (): Promise<void> => await OCellularAutomata.Next(), 1000);
-            })
-            .catch((reason: any): void => {
-                console.error(`---`);
-                console.error(`Error InsertCellularAutomata function.`);
-                console.error(`Error: ${reason}`);
-                console.error(`---`);
-            });
+                .then((): NodeJS.Timer => setInterval(async (): Promise<void> => await OCellularAutomata.Next(), 1000))
+                .catch((reason: any): void => {
+                    console.error(`---`);
+                    console.error(`Error InsertCellularAutomata function.`);
+                    console.error(`Error: ${reason}`);
+                    console.error(`---`);
+                });
         }
         else
         {
