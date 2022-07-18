@@ -133,8 +133,10 @@ class CellularAutomata
     async Next(): Promise<void>
     {
         await new Promise<void>((): void => {
-            this.#Print();
-            this.#Evaluate();
+            this.#Print()
+            .then((): void => {
+                this.#Evaluate();
+            });
         })
         .catch<void>((reason: any): void => {
             console.error(`---`);
@@ -148,147 +150,151 @@ class CellularAutomata
      * @access private
      * @method
      * @alias CellularAutomata.Print
-     * @returns {void}
+     * @returns {Promise<void>}
      */
-    #Print(): void
+    async #Print(): Promise<void>
     {
-        if (this.#Context !== null)
-        {
-            this.#Context.clearRect(0, 0, this.#Size, this.#Size);
-
-            for (let x: number = 0; x < this.#Size; x++)
+        new Promise<void>((): void => {
+            if (this.#Context !== null)
             {
-                for (let y: number = 0; y < this.#Size; y++)
-                {
-                    if (this.#Cells[x][y])
-                    {
-                        this.#Context.fillStyle = `black`;
-                    }
-                    else
-                    {
-                        this.#Context.fillStyle = `white`;
-                    }
+                this.#Context.clearRect(0, 0, this.#Size, this.#Size);
 
-                    this.#Context.fillRect(x, y, 1, 1);
+                for (let x: number = 0; x < this.#Size; x++)
+                {
+                    for (let y: number = 0; y < this.#Size; y++)
+                    {
+                        if (this.#Cells[x][y])
+                        {
+                            this.#Context.fillStyle = `black`;
+                        }
+                        else
+                        {
+                            this.#Context.fillStyle = `white`;
+                        }
+
+                        this.#Context.fillRect(x, y, 1, 1);
+                    }
                 }
             }
-        }
+        });
     }
 
     /**
      * @access private
      * @method
      * @alias CellularAutomata.Evaluate
-     * @returns {void}
+     * @returns {Promise<void>}
      */
-    #Evaluate(): void
+    async #Evaluate(): Promise<void>
     {
-        // Variables.
-        /**
-         * @access private
-         * @member
-         * @var
-         * @type {boolean[][]}
-         * @alias CellsAux
-         */
-        let CellsAux: boolean[][] = new Array(this.#Size).fill(``).map((): boolean[] => new Array(this.#Size).fill(false));
+        new Promise<void>((): void => {
+            // Variables.
+            /**
+             * @access private
+             * @member
+             * @var
+             * @type {boolean[][]}
+             * @alias CellsAux
+             */
+            let CellsAux: boolean[][] = new Array(this.#Size).fill(``).map((): boolean[] => new Array(this.#Size).fill(false));
 
-        for (let x: number = 0; x < this.#Size; x++)
-        {
-            for (let y: number = 0; y < this.#Size; y++)
+            for (let x: number = 0; x < this.#Size; x++)
             {
-                /**
-                 * @access private
-                 * @member
-                 * @var
-                 * @type {number}
-                 * @alias livingNeighbor
-                 */
-                let livingNeighbor: number = 0;
+                for (let y: number = 0; y < this.#Size; y++)
+                {
+                    /**
+                     * @access private
+                     * @member
+                     * @var
+                     * @type {number}
+                     * @alias livingNeighbor
+                     */
+                    let livingNeighbor: number = 0;
 
-                // 1.
-                if (x > 0 && y > 0)
-                {
-                    if (this.#Cells[x - 1][y - 1])
+                    // 1.
+                    if (x > 0 && y > 0)
                     {
-                        livingNeighbor++;
+                        if (this.#Cells[x - 1][y - 1])
+                        {
+                            livingNeighbor++;
+                        }
                     }
-                }
-                
-                // 2.
-                if (y > 0)
-                {
-                    if (this.#Cells[x][y - 1])
+                    
+                    // 2.
+                    if (y > 0)
                     {
-                        livingNeighbor++;
+                        if (this.#Cells[x][y - 1])
+                        {
+                            livingNeighbor++;
+                        }
                     }
-                }
-                
-                // 3.
-                if (x < (this.#Size - 1) && y > 0)
-                {
-                    if (this.#Cells[x + 1][y - 1])
+                    
+                    // 3.
+                    if (x < (this.#Size - 1) && y > 0)
                     {
-                        livingNeighbor++;
+                        if (this.#Cells[x + 1][y - 1])
+                        {
+                            livingNeighbor++;
+                        }
                     }
-                }
-                
-                // 4.
-                if (x > 0)
-                {
-                    if (this.#Cells[x - 1][y])
+                    
+                    // 4.
+                    if (x > 0)
                     {
-                        livingNeighbor++;
+                        if (this.#Cells[x - 1][y])
+                        {
+                            livingNeighbor++;
+                        }
                     }
-                }
-                
-                // 5.
-                if (x < (this.#Size - 1))
-                {
-                    if (this.#Cells[x + 1][y])
+                    
+                    // 5.
+                    if (x < (this.#Size - 1))
                     {
-                        livingNeighbor++;
+                        if (this.#Cells[x + 1][y])
+                        {
+                            livingNeighbor++;
+                        }
                     }
-                }
 
-                // 6.
-                if (x > 0 && y < (this.#Size - 1))
-                {
-                    if (this.#Cells[x - 1][y + 1])
+                    // 6.
+                    if (x > 0 && y < (this.#Size - 1))
                     {
-                        livingNeighbor++;
+                        if (this.#Cells[x - 1][y + 1])
+                        {
+                            livingNeighbor++;
+                        }
                     }
-                }
 
-                // 7.
-                if (y < (this.#Size - 1))
-                {
-                    if (this.#Cells[x][y + 1])
+                    // 7.
+                    if (y < (this.#Size - 1))
                     {
-                        livingNeighbor++;
+                        if (this.#Cells[x][y + 1])
+                        {
+                            livingNeighbor++;
+                        }
                     }
-                }
 
-                // 8.
-                if (x < (this.#Size - 1) && y < (this.#Size - 1))
-                {
-                    if (this.#Cells[x + 1][y + 1])
+                    // 8.
+                    if (x < (this.#Size - 1) && y < (this.#Size - 1))
                     {
-                        livingNeighbor++;
+                        if (this.#Cells[x + 1][y + 1])
+                        {
+                            livingNeighbor++;
+                        }
                     }
-                }
 
-                if (this.#Cells[x][y])
-                {
-                    CellsAux[x][y] = livingNeighbor == 2 || livingNeighbor == 3 ? true : false;
-                }
-                else
-                {
-                    CellsAux[x][y] = livingNeighbor == 3 ? true : false;
+                    if (this.#Cells[x][y])
+                    {
+                        CellsAux[x][y] = livingNeighbor == 2 || livingNeighbor == 3 ? true : false;
+                    }
+                    else
+                    {
+                        CellsAux[x][y] = livingNeighbor == 3 ? true : false;
+                    }
                 }
             }
-        }
 
-        this.#Cells = CellsAux;
+            this.#Cells = CellsAux;
+        });
     }
 }
