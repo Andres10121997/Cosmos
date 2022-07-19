@@ -13,12 +13,10 @@
     "samsung >= 1"
   ],
   "scripts": {
-    "babel": "./node_modules/.bin/babel.cmd ./src/Script/index.js -w -o ./dist/assets/bundle.js",
-    "webpack": "./node_modules/.bin/webpack.cmd -w",
-    "jsdoc": "rmdir ./JSDoc/ & npx jsdoc ./src/Script/JavaScript/Cosmos.js out --destination ./JSDoc/",
-    
     "sass": "npx sass --style=expanded ./src/Style/scss/Styles.scss:./src/Style/css/Styles.css",
-    "postcss": "npx postcss ./src/Style/css/Styles.css --output ./src/Style/css/Postcss.css"
+    "postcss": "npx postcss ./src/Style/css/Styles.css --output ./src/Style/css/Postcss.css",
+    "jsdoc": "rmdir ./JSDoc/ & npx jsdoc ./src/Script/JavaScript/Cosmos.js out --destination ./JSDoc/",
+    "build": "rimraf dist && webpack"
   },
   "dependencies": {
     "@babel/cli": "7.18.6",
@@ -28,9 +26,11 @@
     "jsdoc": "3.6.10",
     "npm-sass": "3.1.0",
     "postcss": "8.4.14",
-    "postcss-cli": "10.0.0"
+    "postcss-cli": "10.0.0",
+    "save-dev": "^0.0.1-security"
   },
   "devDependencies": {
+    "rimraf": "3.0.2",
     "typescript": "4.7.4",
     "webpack": "5.73.0",
     "webpack-cli": "4.10.0"

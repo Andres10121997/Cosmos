@@ -1,17 +1,17 @@
-const path = require('path');
+const path = require("path");
+const basePath = __dirname;
+const distPath = "dist";
 
 module.exports = {
-    module: {
-        rules: {
-            test: /\.js$/,
-            exclude: /node_modules/,
-            loader: "babel-loader"
-        }
+    // mode.
+    mode: "development",
+    // entry point.
+    entry: {
+        app: './src/Script/JavaScript/index.js'
     },
-    entry: './src/Script/JavaScript',
+    // output point.
     output: {
-        path: path.resolve(__dirname, 'dist/assets'),
-        clean: true,
-        filename: 'Cosmos.js'
+        path: path.join(basePath, distPath),
+        filename: "Cosmos.js"
     }
 };

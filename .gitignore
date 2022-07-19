@@ -10,3 +10,6 @@ src/Style/css
 
 # Ignore JSDoc
 JSDoc
+
+# Ignore dist
+dist
