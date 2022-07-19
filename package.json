@@ -18,10 +18,10 @@
     "jsdoc": "npx rimraf ./docs && npx jsdoc -c jsdoc.json"
   },
   "dependencies": {
-    "autoprefixer": "10.4.7",
-    "jsdoc": "3.6.10"
+    "autoprefixer": "10.4.7"
   },
   "devDependencies": {
+    "jsdoc": "3.6.10",
     "npm-sass": "3.1.0",
     "postcss": "8.4.14",
     "postcss-cli": "10.0.0",
