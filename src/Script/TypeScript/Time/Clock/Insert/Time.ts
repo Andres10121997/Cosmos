@@ -29,7 +29,6 @@ async function InsertClockTime(Id: string,
          */
         const OValidate: Validation = new Validation();
 
-
         if (OValidate.IsString(Id) === true &&
             OValidate.IsString(Type) === true)
         {

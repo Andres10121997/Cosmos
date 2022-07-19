@@ -49,13 +49,13 @@ class Mathematics
          */
         const Validation: Array<boolean> = new Array<boolean>(
             Boolean(Today().getMonth() < DateOfBirth.getMonth()),
-            Boolean(Today().getMonth() === DateOfBirth.getMonth()) && Boolean(Today().getDate() < DateOfBirth.getDate())
+
+            Boolean(Today().getMonth() === DateOfBirth.getMonth()) &&
+            Boolean(Today().getDate() < DateOfBirth.getDate())
         );
 
         // Initialization.
         Age = Number(Today().getFullYear() - DateOfBirth.getFullYear());
- 
- 
  
         Validation.forEach((value: boolean): void => {
             if (value === true)
@@ -86,15 +86,11 @@ class Mathematics
              */
             const fibonacci: Array<number> = new Array<number>(0, 1);
 
-
-
             for(let i = 2; i <= num; i++)
             {
                 fibonacci[i] = Number(fibonacci[i - 1] + fibonacci[i - 2]);
             }
 
-
-            
             return fibonacci[num];
         }
         else

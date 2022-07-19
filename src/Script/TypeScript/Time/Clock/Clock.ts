@@ -5,7 +5,7 @@
 class Clock
 {
     #ID: string;
-    
+
     #Size = {
         Long: `Long`,
         Short: `Short`
@@ -16,7 +16,7 @@ class Clock
         Time: `Time`
     }
 
-    #DocumentElement: HTMLElement = (document.getElementById("") as HTMLElement);
+    #DocumentElement: HTMLElement;
     
 
 
@@ -28,6 +28,7 @@ class Clock
     constructor(ID: string)
     {
         this.#ID = ID;
+        this.#DocumentElement = (document.getElementById(ID) as HTMLElement);
     }
 
 
@@ -76,6 +77,17 @@ class Clock
     GetClockInsert(): IClockInsert
     {
         return this.#ClockInsert
+    }
+
+    /**
+     * @access public
+     * @method
+     * @alias Clock.GetDocumentElement
+     * @returns {HTMLElement}
+     */
+    GetDocumentElement(): HTMLElement
+    {
+        return this.#DocumentElement;
     }
 
 
