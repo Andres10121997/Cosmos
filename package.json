@@ -13,9 +13,9 @@
     "samsung >= 1"
   ],
   "scripts": {
-    "css:d": "npx sass --style=expanded ./src/Style/scss/Styles.scss:./src/Style/css/Styles.css",
-    "css:p": "npx postcss ./src/Style/css/Styles.css --output ./src/Style/css/Postcss.css",
-    "jsdoc": "npx rimraf ./JSDoc & npx jsdoc ./src/Script/JavaScript/Cosmos.js out --destination ./JSDoc/"
+    "css:d": "npx rimraf ./src/Style/css/Styles.css && npx sass --style=expanded ./src/Style/scss/Styles.scss:./src/Style/css/Styles.css",
+    "css:p": "npx rimraf ./build/css/Cosmos.css && npx  npx postcss ./src/Style/css/Styles.css --output ./build/css/Cosmos.css",
+    "jsdoc": "npx rimraf ./docs && npx jsdoc -c jsdoc.json"
   },
   "dependencies": {
     "autoprefixer": "10.4.7",
@@ -25,6 +25,7 @@
     "npm-sass": "3.1.0",
     "postcss": "8.4.14",
     "postcss-cli": "10.0.0",
+    "rimraf": "3.0.2",
     "typescript": "4.7.4"
   }
 }

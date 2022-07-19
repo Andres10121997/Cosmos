@@ -9,7 +9,7 @@ src/Script/JavaScript
 src/Style/css
 
 # Ignore JSDoc
-JSDoc
+docs
 
-# Ignore dist
-dist
+# Ignore build
+build
