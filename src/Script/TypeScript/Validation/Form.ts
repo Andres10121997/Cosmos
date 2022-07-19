@@ -40,9 +40,9 @@ function ValidationForm(Id: Array<string>,
      * @member
      * @constant
      * @type {Array<boolean>}
-     * @alias Comparison
+     * @alias LengthComparison
      */
-    const Comparison: Array<boolean> = new Array<boolean>(
+    const LengthComparison: Array<boolean> = new Array<boolean>(
         Boolean(Id.length !== MaxLength.length),
         Boolean(Id.length !== DateType.length),
         Boolean(Id.length !== Require.length)
@@ -64,12 +64,17 @@ function ValidationForm(Id: Array<string>,
 
 
     // Validation.
-    Comparison.forEach((value: boolean, i: number): (boolean | void) => {
+    LengthComparison.forEach((value: boolean, i: number): (boolean | void) => {
         if (OValidate.IsBoolean(value) === false)
         {
             console.error(`---`);
             console.error(`The "Comparison" (${value} | ${(i + 1)}° position) is not a boolean.`);
             console.error(`---`);
+            return false;
+        }
+        else
+        if (value === false)
+        {
             return false;
         }
     });

@@ -20,7 +20,8 @@
             </button>
         </form>
         <script type="text/javascript">
-            function ValidateForm() {
+            function ValidateForm()
+            {
                 const id = new Array(`Input`);
                 const MaxLength = new Array(30);
                 const DateType = new Array(dateOptions.None);
@@ -28,10 +29,12 @@
 
                 const val = ValidationForm(id, MaxLength, DateType, Require);
 
-                if (val === true) {
+                if (val === true)
+                {
                     return true;
                 }
-                else {
+                else
+                {
                     return false;
                 }
             }

@@ -1,13 +1,13 @@
 ﻿/**
  * @async
  * @function
- * @name InsertTime
+ * @name InsertClockTime
  * @param {string} Id
  * @param {string} Type
  * @returns {Promise<void>}
  */
-async function InsertTime(Id: string,
-                          Type: string): Promise<void>
+async function InsertClockTime(Id: string,
+                               Type: string): Promise<void>
 {
     return await new Promise<void>(async (): Promise<void> => {
         // Object.
@@ -44,7 +44,7 @@ async function InsertTime(Id: string,
                 })
                 .catch((reason: any): void => {
                     console.error(`---`);
-                    console.error(`Error InsertTime function.`);
+                    console.error(`Error InsertClockTime function.`);
                     console.error(`Error calling method "OClock.Insert".`);
                     console.error(`Error: ${reason}`);
                     console.error(`---`);
@@ -61,7 +61,7 @@ async function InsertTime(Id: string,
                 })
                 .catch((reason: any): void => {
                     console.error(`---`);
-                    console.error(`Error InsertTime function.`);
+                    console.error(`Error InsertClockTime function.`);
                     console.error(`Error calling method "OClock.Insert".`);
                     console.error(`Error: ${reason}`);
                     console.error(`---`);
@@ -71,7 +71,7 @@ async function InsertTime(Id: string,
     })
     .catch<void>((reason: any): void => {
         console.error(`---`);
-        console.error(`Error InsertTime function.`);
+        console.error(`Error InsertClockTime function.`);
         console.error(`Error: ${reason}`);
         console.error(`---`);
     });

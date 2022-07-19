@@ -57,6 +57,7 @@ async function InitCellularAutomata(CanvasID: string): Promise<void>
                 .catch((reason: any): void => {
                     console.error(`---`);
                     console.error(`Error InsertCellularAutomata function.`);
+                    console.error(`Error calling method "OCellularAutomata.Create" or "OCellularAutomata.Next".`);
                     console.error(`Error: ${reason}`);
                     console.error(`---`);
                 });
