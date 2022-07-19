@@ -6,5 +6,5 @@
 */
 function CalculateAge(DateOfBirth: Date): number
 {
-    return new Calculate().Age(DateOfBirth);
+    return new Mathematics().Age(DateOfBirth);
 }

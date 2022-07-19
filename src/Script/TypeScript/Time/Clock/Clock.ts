@@ -4,6 +4,8 @@
  */
 class Clock
 {
+    #ID: string;
+    
     #Size = {
         Long: `Long`,
         Short: `Short`
@@ -23,14 +25,37 @@ class Clock
      * @hideconstructor
      * @returns {void}
      */
-    constructor()
+    constructor(ID: string)
     {
-        
+        this.#ID = ID;
     }
 
 
     
-    // Getters and Setters
+    // Getters and Setters.
+    /**
+     * @access public
+     * @method
+     * @alias Clock.GetID
+     * @returns {string}
+     */
+    GetID(): string
+    {
+        return this.#ID;
+    }
+
+    /**
+     * @access public
+     * @method
+     * @alias Clock.SetID
+     * @param {string} ID
+     * @return {string}
+     */
+    SetID(ID: string): void
+    {
+        this.#ID = ID;
+    }
+
     /**
      * @access public
      * @method
@@ -64,12 +89,11 @@ class Clock
      * @param {(Intl.DateTimeFormatOptions | undefined)} Options
      * @returns {Promise<unknown>}
      */
-    async #UpdateDayAsync(Id: string,
-                          Options: (Intl.DateTimeFormatOptions | undefined)): Promise<unknown>
+    async #UpdateDayAsync(Options: (Intl.DateTimeFormatOptions | undefined)): Promise<unknown>
     {
         return await new Promise<void>((): void => {
             setInterval((): void => {
-                this.#DocumentElement = (document.getElementById(Id) as HTMLElement);
+                this.#DocumentElement = (document.getElementById(this.#ID) as HTMLElement);
 
                 this.#DocumentElement.innerHTML = Today().toLocaleDateString(undefined, Options);
             }, 0);
@@ -91,12 +115,11 @@ class Clock
      * @param {(Intl.DateTimeFormatOptions | undefined)} Options
      * @returns {Promise<unknown>}
      */
-    async #UpdateTimeAsync(Id: string,
-                           Options: (Intl.DateTimeFormatOptions | undefined)): Promise<unknown>
+    async #UpdateTimeAsync(Options: (Intl.DateTimeFormatOptions | undefined)): Promise<unknown>
     {
         return await new Promise<void>((): void => {
             setInterval((): void => {
-                this.#DocumentElement = (document.getElementById(Id) as HTMLElement);
+                this.#DocumentElement = (document.getElementById(this.#ID) as HTMLElement);
 
                 this.#DocumentElement.innerHTML = Today().toLocaleTimeString(undefined, Options);
             }, 0);
@@ -142,12 +165,12 @@ class Clock
             {
                 if (whoInsert === this.GetClockInsert().Date)
                 {
-                    this.#UpdateDayAsync(Id, Options);
+                    this.#UpdateDayAsync(Options);
                 }
                 else
                 if (whoInsert === this.GetClockInsert().Time)
                 {
-                    this.#UpdateTimeAsync(Id, Options)
+                    this.#UpdateTimeAsync(Options);
                 }
             }
         });

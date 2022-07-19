@@ -1,26 +1,28 @@
-﻿/**
+/**
  * @class
- * @name Calculation
- * @classdesc Class to perform calculations.
+ * @name Mathematics
+ * @classdesc
  */
-class Calculate
+class Mathematics
 {
+    #OValidation: Validation = new Validation();
+    
     // Constructor.
     /**
      * @hideconstructor
      * @returns {void}
      */
-    constructor()
+    constructor ()
     {
 
     }
 
-
+    
 
     /**
      * @access public
      * @method
-     * @alias Calculation.Age
+     * @alias Mathematics.Age
      * @param {Date} DateOfBirth This parameter receives the date of birth, in date format.
      * @returns {number}
      * @summary This method calculates age.
@@ -52,16 +54,52 @@ class Calculate
 
         // Initialization.
         Age = Number(Today().getFullYear() - DateOfBirth.getFullYear());
-
-
-
+ 
+ 
+ 
         Validation.forEach((value: boolean): void => {
             if (value === true)
             {
                 Age--;
             }
         });
-
+ 
         return Age;
+    }
+
+    /**
+     * @access public
+     * @method
+     * @alias Mathematics.Fibonacci
+     * @param {number} num
+     * @returns {number}
+     */
+    Fibonacci(num: number): number
+    {
+        if (this.#OValidation.IsNumber(num) === true)
+        {
+            /**
+             * @access private
+             * @constant
+             * @type {Array<number>}
+             * @alias fibonacci
+             */
+            const fibonacci: Array<number> = new Array<number>(0, 1);
+
+
+
+            for(let i = 2; i <= num; i++)
+            {
+                fibonacci[i] = Number(fibonacci[i - 1] + fibonacci[i - 2]);
+            }
+
+
+            
+            return fibonacci[num];
+        }
+        else
+        {
+            return NaN;
+        }
     }
 }

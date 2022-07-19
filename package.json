@@ -15,7 +15,7 @@
   "scripts": {
     "css:d": "npx rimraf ./src/Style/css/Styles.css && npx sass --style=expanded ./src/Style/scss/Styles.scss:./src/Style/css/Styles.css",
     "css:p": "npx rimraf ./build/css/Cosmos.css && npx  npx postcss ./src/Style/css/Styles.css --output ./build/css/Cosmos.css",
-    "jsdoc": "npx rimraf ./docs && npx jsdoc -c jsdoc.json"
+    "docs": "npx rimraf ./docs && npx jsdoc -c jsdoc.json"
   },
   "dependencies": {
     "autoprefixer": "10.4.7"

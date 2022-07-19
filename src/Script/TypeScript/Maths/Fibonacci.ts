@@ -6,22 +6,5 @@
  */
 function Fibonacci(num: number): number
 {
-    /**
-     * @access private
-     * @constant
-     * @type {Array<number>}
-     * @alias fib
-     */
-    const fibonacci: Array<number> = new Array<number>(0, 1);
-
-
-
-    for(let i = 2; i <= num; i++)
-    {
-        fibonacci[i] = Number(fibonacci[i - 1] + fibonacci[i - 2]);
-    }
-
-
-    
-    return fibonacci[num];
+    return new Mathematics().Fibonacci(num);
 }

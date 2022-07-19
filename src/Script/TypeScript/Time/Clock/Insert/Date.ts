@@ -18,7 +18,7 @@ async function InsertClockDate(Id: string,
          * @type {Clock}
          * @alias OClock
         */
-        const OClock: Clock = new Clock();
+        const OClock: Clock = new Clock(Id);
 
         /**
          * @access private
