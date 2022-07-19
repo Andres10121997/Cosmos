@@ -13,29 +13,18 @@
     "samsung >= 1"
   ],
   "scripts": {
-    "sass": "npx sass --style=expanded ./src/Style/scss/Styles.scss:./src/Style/css/Styles.css",
-    "postcss": "npx postcss ./src/Style/css/Styles.css --output ./src/Style/css/Postcss.css",
-    "jsdoc": "rmdir ./JSDoc/ & npx jsdoc ./src/Script/JavaScript/Cosmos.js out --destination ./JSDoc/",
-    "build:d": "npx rimraf dist && npx webpack --watch --env mode=development",
-    "build:p": "npx rimraf dist && npx webpack --env mode=production"
+    "css:d": "npx sass --style=expanded ./src/Style/scss/Styles.scss:./src/Style/css/Styles.css",
+    "css:p": "npx postcss ./src/Style/css/Styles.css --output ./src/Style/css/Postcss.css",
+    "jsdoc": "npx rimraf ./JSDoc & npx jsdoc ./src/Script/JavaScript/Cosmos.js out --destination ./JSDoc/"
   },
   "dependencies": {
     "autoprefixer": "10.4.7",
-    "html-webpack-plugin": "5.5.0",
-    "jsdoc": "3.6.10",
-    "npm-sass": "3.1.0",
-    "postcss": "8.4.14",
-    "postcss-cli": "10.0.0"
+    "jsdoc": "3.6.10"
   },
   "devDependencies": {
-    "@babel/core": "7.18.9",
-    "@babel/polyfill": "7.12.1",
-    "@babel/preset-env": "7.18.9",
-    "babel-loader": "8.2.5",
-    "rimraf": "3.0.2",
-    "typescript": "4.7.4",
-    "webpack": "5.73.0",
-    "webpack-cli": "4.10.0",
-    "webpack-dev-server": "4.9.3"
+    "npm-sass": "3.1.0",
+    "postcss": "8.4.14",
+    "postcss-cli": "10.0.0",
+    "typescript": "4.7.4"
   }
 }
