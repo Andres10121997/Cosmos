@@ -19,17 +19,17 @@
     "build": "rimraf dist && webpack"
   },
   "dependencies": {
-    "@babel/cli": "7.18.6",
-    "@babel/core": "7.18.6",
-    "@babel/preset-env": "7.18.6",
     "autoprefixer": "10.4.7",
     "jsdoc": "3.6.10",
     "npm-sass": "3.1.0",
     "postcss": "8.4.14",
-    "postcss-cli": "10.0.0",
-    "save-dev": "^0.0.1-security"
+    "postcss-cli": "10.0.0"
   },
   "devDependencies": {
+    "@babel/core": "7.18.9",
+    "@babel/polyfill": "7.12.1",
+    "@babel/preset-env": "7.18.9",
+    "babel-loader": "8.2.5",
     "rimraf": "3.0.2",
     "typescript": "4.7.4",
     "webpack": "5.73.0",

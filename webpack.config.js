@@ -7,7 +7,19 @@ module.exports = {
     mode: "development",
     // entry point.
     entry: {
-        app: './src/Script/JavaScript/index.js'
+        app: [
+            "@babel/polyfill",
+            "./src/Script/JavaScript/index.js"
+        ],
+    },
+    module: {
+        rules: [
+            {
+                test: /\.js/,
+                exclude: /node_modules/,
+                use: ["babel-loader"],
+            }
+        ]
     },
     // output point.
     output: {
