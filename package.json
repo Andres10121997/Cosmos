@@ -16,10 +16,12 @@
     "sass": "npx sass --style=expanded ./src/Style/scss/Styles.scss:./src/Style/css/Styles.css",
     "postcss": "npx postcss ./src/Style/css/Styles.css --output ./src/Style/css/Postcss.css",
     "jsdoc": "rmdir ./JSDoc/ & npx jsdoc ./src/Script/JavaScript/Cosmos.js out --destination ./JSDoc/",
-    "build": "rimraf dist && webpack"
+    "build:d": "rimraf dist && webpack --watch --env mode=development",
+    "build:p": "rimraf dist && webpack --env mode=production"
   },
   "dependencies": {
     "autoprefixer": "10.4.7",
+    "html-webpack-plugin": "5.5.0",
     "jsdoc": "3.6.10",
     "npm-sass": "3.1.0",
     "postcss": "8.4.14",
