@@ -1,6 +1,8 @@
 const path = require("path");
 const basePath = __dirname;
 const distPath = "dist";
+
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
@@ -10,8 +12,17 @@ module.exports = {
     entry: {
         app: [
             "@babel/polyfill",
-            "./src/Script/JavaScript/index.js"
-        ],
+            "./src/Script/JavaScript/index.js",
+            /*"./src/Script/JavaScript/Cellular automata/Index.js",
+            "./src/Script/JavaScript/Cellular automata/Init.js",
+
+            "./src/Script/JavaScript/Time/Today.js",
+            "./src/Script/JavaScript/Time/Clock/Clock.js",
+            "./src/Script/JavaScript/Time/Clock/Insert/Date.js",
+            "./src/Script/JavaScript/Time/Clock/Insert/Time.js",
+            "./src/Script/JavaScript/Time/Clock/Insert/Clock.js",
+            "./src/Script/JavaScript/Time/Variable/Date.js",*/
+        ]
     },
     module: {
         rules: [
@@ -32,20 +43,20 @@ module.exports = {
     // output point.
     output: {
         path: path.join(basePath, distPath),
-        filename: "JavaScript/Cosmos.js"
+        filename: "JavaScript/[name].js"
     },
     // plugins
     plugins: [
-        new HtmlWebpackPlugin({
+        /*new HtmlWebpackPlugin({
             template: "./View/Clock.html"
-        })
+        })*/
     ],
     optimization: {
-        chunkIds: "size",
+        /*chunkIds: "size",*/
         // method of generating ids for chunks
-        moduleIds: "size",
+        /*moduleIds: "size",*/
         // method of generating ids for modules
-        mangleExports: "size",
+        /*mangleExports: "size",*/
         // rename export names to shorter names
         minimize: false,
         // minimize the output files

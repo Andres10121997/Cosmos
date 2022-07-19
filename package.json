@@ -16,8 +16,8 @@
     "sass": "npx sass --style=expanded ./src/Style/scss/Styles.scss:./src/Style/css/Styles.css",
     "postcss": "npx postcss ./src/Style/css/Styles.css --output ./src/Style/css/Postcss.css",
     "jsdoc": "rmdir ./JSDoc/ & npx jsdoc ./src/Script/JavaScript/Cosmos.js out --destination ./JSDoc/",
-    "build:d": "rimraf dist && webpack --watch --env mode=development",
-    "build:p": "rimraf dist && webpack --env mode=production"
+    "build:d": "npx rimraf dist && npx webpack --watch --env mode=development",
+    "build:p": "npx rimraf dist && npx webpack --env mode=production"
   },
   "dependencies": {
     "autoprefixer": "10.4.7",
@@ -35,6 +35,7 @@
     "rimraf": "3.0.2",
     "typescript": "4.7.4",
     "webpack": "5.73.0",
-    "webpack-cli": "4.10.0"
+    "webpack-cli": "4.10.0",
+    "webpack-dev-server": "4.9.3"
   }
 }
