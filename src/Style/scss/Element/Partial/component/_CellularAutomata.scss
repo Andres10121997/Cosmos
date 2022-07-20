@@ -1,6 +1,6 @@
 .CellularAutomata {
-    width: 300px;
-    height: 300px;
+    width: PixelToRem(300);
+    height: PixelToRem(300);
     @include BorderWidth_PixelToRem(1);
     @include BorderStyle(solid);
     @include BorderColor(UseVariable("black"));
