@@ -213,16 +213,16 @@ class CellularAutomata
                      * @member
                      * @var
                      * @type {number}
-                     * @alias livingNeighbor
+                     * @alias LivingNeighbor
                      */
-                    let livingNeighbor: number = 0;
+                    let LivingNeighbor: number = 0;
 
                     // 1.
                     if (x > 0 && y > 0)
                     {
                         if (this.#Cells[x - 1][y - 1])
                         {
-                            livingNeighbor++;
+                            LivingNeighbor++;
                         }
                     }
                     
@@ -231,7 +231,7 @@ class CellularAutomata
                     {
                         if (this.#Cells[x][y - 1])
                         {
-                            livingNeighbor++;
+                            LivingNeighbor++;
                         }
                     }
                     
@@ -240,7 +240,7 @@ class CellularAutomata
                     {
                         if (this.#Cells[x + 1][y - 1])
                         {
-                            livingNeighbor++;
+                            LivingNeighbor++;
                         }
                     }
                     
@@ -249,7 +249,7 @@ class CellularAutomata
                     {
                         if (this.#Cells[x - 1][y])
                         {
-                            livingNeighbor++;
+                            LivingNeighbor++;
                         }
                     }
                     
@@ -258,7 +258,7 @@ class CellularAutomata
                     {
                         if (this.#Cells[x + 1][y])
                         {
-                            livingNeighbor++;
+                            LivingNeighbor++;
                         }
                     }
 
@@ -267,7 +267,7 @@ class CellularAutomata
                     {
                         if (this.#Cells[x - 1][y + 1])
                         {
-                            livingNeighbor++;
+                            LivingNeighbor++;
                         }
                     }
 
@@ -276,7 +276,7 @@ class CellularAutomata
                     {
                         if (this.#Cells[x][y + 1])
                         {
-                            livingNeighbor++;
+                            LivingNeighbor++;
                         }
                     }
 
@@ -285,17 +285,17 @@ class CellularAutomata
                     {
                         if (this.#Cells[x + 1][y + 1])
                         {
-                            livingNeighbor++;
+                            LivingNeighbor++;
                         }
                     }
 
                     if (this.#Cells[x][y])
                     {
-                        CellsAux[x][y] = livingNeighbor == 2 || livingNeighbor == 3 ? true : false;
+                        CellsAux[x][y] = LivingNeighbor == 2 || LivingNeighbor == 3 ? true : false;
                     }
                     else
                     {
-                        CellsAux[x][y] = livingNeighbor == 3 ? true : false;
+                        CellsAux[x][y] = LivingNeighbor == 3 ? true : false;
                     }
                 }
             }

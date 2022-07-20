@@ -1,10 +1,10 @@
 /**
  * @function
  * @name Fibonacci
- * @param {number} num 
+ * @param {number} Number 
  * @returns {number}
  */
-function Fibonacci(num: number): number
+function Fibonacci(Number: number): number
 {
-    return new Mathematics().Fibonacci(num);
+    return new Mathematics().Fibonacci(Number);
 }

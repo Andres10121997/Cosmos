@@ -20,11 +20,11 @@ class Normalize
     /**
      * @access public
      * @method
-     * @alias Normalize.word
+     * @alias Normalize.Word
      * @param {string} Word
      * @returns {string}
      */
-    word(Word: string): string
+    Word(Word: string): string
     {
         return Word.toLowerCase().replace(RegularExpression.NotWord, "");
     }

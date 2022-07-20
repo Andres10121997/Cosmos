@@ -57,13 +57,13 @@ class Search
 
         for (const word of separateWords)
         {
-            if (ONormalize.word(word) in dict)
+            if (ONormalize.Word(word) in dict)
             {
-                ++dict[ONormalize.word(word)];
+                ++dict[ONormalize.Word(word)];
             }
             else
             {
-                dict[ONormalize.word(word)] = 1;
+                dict[ONormalize.Word(word)] = 1;
             }
         }
 
