@@ -132,7 +132,7 @@ class Clock
                 this.#DocumentElement.innerHTML = Today().toLocaleTimeString(undefined, Options);
             }, 0);
         })
-        .catch((reason: any): void => {
+        .catch<void>((reason: any): void => {
             console.error(`---`);
             console.error(`Clock time update failed.`);
             console.error(`The error was: ${reason}`);

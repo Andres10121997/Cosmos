@@ -7,7 +7,7 @@ class CellularAutomata
 {
     #Size: number;
     #Context: (CanvasRenderingContext2D | null);
-    #Cells: boolean[][] = [];
+    #Cells: Array<Array<boolean>> = Array<Array<boolean>>();
     
     // Constructor.
     /**
@@ -95,7 +95,7 @@ class CellularAutomata
                  * @type {Array<boolean>}
                  * @alias row
                  */
-                let Row: Array<boolean> = [];
+                let Row: Array<boolean> = new Array<boolean>();
 
                 for (let y: number = 0; y < this.#Size; y++)
                 {
@@ -117,7 +117,7 @@ class CellularAutomata
                 this.#Cells.push(Row);
             }
         })
-        .catch((reason: any): void => {
+        .catch<void>((reason: any): void => {
             console.error(`---`);
             console.error(`Error CellularAutomata.Create method.`);
             console.error(`Error: ${reason}`);
@@ -135,8 +135,8 @@ class CellularAutomata
     async NextAsync(): Promise<void>
     {
         await this.#PrintAsync()
-            .then(async (): Promise<void> => await this.#EvaluateAsync())
-            .catch((reason: any): void => {
+            .then<void, never>(async (): Promise<void> => await this.#EvaluateAsync())
+            .catch<void>((reason: any): void => {
                 console.error(`---`);
                 console.error(`Error CellularAutomata.Next method.`);
                 console.error(`Error: ${reason}`);
@@ -176,7 +176,7 @@ class CellularAutomata
                 }
             }
         })
-        .catch((reason: any): void => {
+        .catch<void>((reason: any): void => {
             console.error(`---`);
             console.error(`Error CellularAutomata.Print method.`);
             console.error(`Error: ${reason}`);
@@ -199,10 +199,10 @@ class CellularAutomata
              * @access private
              * @member
              * @var
-             * @type {boolean[][]}
+             * @type {Array<Array<boolean>>}
              * @alias CellsAux
              */
-            let CellsAux: boolean[][] = new Array(this.#Size).fill(``).map((): boolean[] => new Array(this.#Size).fill(false));
+            let CellsAux: Array<Array<boolean>> = new Array(this.#Size).fill(``).map((): boolean[] => new Array(this.#Size).fill(false));
 
             for (let x: number = 0; x < this.#Size; x++)
             {
@@ -302,7 +302,7 @@ class CellularAutomata
 
             this.#Cells = CellsAux;
         })
-        .catch((reason: any): void => {
+        .catch<void>((reason: any): void => {
             console.error(`---`);
             console.error(`Error CellularAutomata.Evaluate method.`);
             console.error(`Error: ${reason}`);

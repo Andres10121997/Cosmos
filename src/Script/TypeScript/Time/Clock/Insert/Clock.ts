@@ -13,13 +13,13 @@ async function InsertClockAsync(DateID: string,
                                 TimeID: string,
                                 TimeType: string): Promise<void>
 {
-    await Promise.all(
+    await Promise.all<[Promise<void>, Promise<void>]>(
         [
             InsertClockDateAsync(DateID, DateType),
             InsertClockTimeAsync(TimeID, TimeType)
         ]
     )
-    .catch((reason: any): void => {
+    .catch<void>((reason: any): void => {
         console.error(`---`);
         console.error(`Error InsertClockDate function.`);
         console.error(`Error: ${reason}`);

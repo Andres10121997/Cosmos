@@ -53,8 +53,8 @@ async function InitCellularAutomataAsync(CanvasID: string): Promise<void>
             const OCellularAutomata: CellularAutomata = new CellularAutomata(Size, Context);
 
             await OCellularAutomata.CreateAsync()
-                .then((): any => setInterval(async (): Promise<void> => await OCellularAutomata.NextAsync(), 1000))
-                .catch((reason: any): void => {
+                .then<any, never>((): any => setInterval(async (): Promise<void> => await OCellularAutomata.NextAsync(), 1000))
+                .catch<void>((reason: any): void => {
                     console.error(`---`);
                     console.error(`Error InsertCellularAutomata function.`);
                     console.error(`Error calling method "OCellularAutomata.Create" or "OCellularAutomata.Next".`);
