@@ -79,10 +79,10 @@ class CellularAutomata
      * @async
      * @access public
      * @method
-     * @alias CellularAutomata.Create
+     * @alias CellularAutomata.CreateAsync
      * @returns {Promise<void>}
      */
-    async Create(): Promise<void>
+    async CreateAsync(): Promise<void>
     {
         new Promise<void>((): void => {
             for (let x: number = 0; x < this.#Size; x++)
@@ -129,13 +129,13 @@ class CellularAutomata
      * @async
      * @access public
      * @method
-     * @alias CellularAutomata.Next
+     * @alias CellularAutomata.NextAsync
      * @returns {Promise<void>}
      */
-    async Next(): Promise<void>
+    async NextAsync(): Promise<void>
     {
-        await this.#Print()
-            .then(async (): Promise<void> => await this.#Evaluate())
+        await this.#PrintAsync()
+            .then(async (): Promise<void> => await this.#EvaluateAsync())
             .catch((reason: any): void => {
                 console.error(`---`);
                 console.error(`Error CellularAutomata.Next method.`);
@@ -148,10 +148,10 @@ class CellularAutomata
      * @async
      * @access private
      * @method
-     * @alias CellularAutomata.Print
+     * @alias CellularAutomata.PrintAsync
      * @returns {Promise<void>}
      */
-    async #Print(): Promise<void>
+    async #PrintAsync(): Promise<void>
     {
         new Promise<void>((): void => {
             if (this.#Context !== null)
@@ -188,10 +188,10 @@ class CellularAutomata
      * @async
      * @access private
      * @method
-     * @alias CellularAutomata.Evaluate
+     * @alias CellularAutomata.EvaluateAsync
      * @returns {Promise<void>}
      */
-    async #Evaluate(): Promise<void>
+    async #EvaluateAsync(): Promise<void>
     {
         new Promise<void>((): void => {
             // Variables.

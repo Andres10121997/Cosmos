@@ -1,12 +1,12 @@
 ﻿/**
  * @async
  * @function
- * @name InsertClockDate
+ * @name InsertClockDateAsync
  * @param {string} Id
  * @param {string} Type
  * @returns {Promise<void>}
  */
-async function InsertClockDate(Id: string,
+async function InsertClockDateAsync(Id: string,
                                Type: string): Promise<void>
 {
     return await new Promise<void>(async (): Promise<void> => {
@@ -34,7 +34,7 @@ async function InsertClockDate(Id: string,
         {
             if (Type.toLocaleLowerCase() === OClock.GetSize().Long.toLocaleLowerCase())
             {
-                await OClock.Insert(Id, OClock.GetClockInsert().Date, {
+                await OClock.Insert(OClock.GetClockInsert().Date, {
                     weekday: `long`,
                     year: `numeric`,
                     month: `long`,
@@ -51,7 +51,7 @@ async function InsertClockDate(Id: string,
             else
             if (Type.toLocaleLowerCase() === OClock.GetSize().Short.toLocaleLowerCase())
             {
-                await OClock.Insert(Id, OClock.GetClockInsert().Date, undefined)
+                await OClock.Insert(OClock.GetClockInsert().Date, undefined)
                 .catch((reason: any): void => {
                     console.error(`---`);
                     console.error(`Error InsertClockDate function.`);

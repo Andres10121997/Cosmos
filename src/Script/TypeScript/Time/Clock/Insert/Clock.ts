@@ -1,22 +1,22 @@
 /**
  * @async
  * @function
- * @name InsertClock
+ * @name InsertClockAsync
  * @param {string} DateID
  * @param {string} DateType
  * @param {string} TimeID
  * @param {string} TimeType
  * @returns {Promise<void>}
  */
-async function InsertClock(DateID: string,
-                           DateType: string,
-                           TimeID: string,
-                           TimeType: string): Promise<void>
+async function InsertClockAsync(DateID: string,
+                                DateType: string,
+                                TimeID: string,
+                                TimeType: string): Promise<void>
 {
     await Promise.all(
         [
-            InsertClockDate(DateID, DateType),
-            InsertClockTime(TimeID, TimeType)
+            InsertClockDateAsync(DateID, DateType),
+            InsertClockTimeAsync(TimeID, TimeType)
         ]
     )
     .catch((reason: any): void => {

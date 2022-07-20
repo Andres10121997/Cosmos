@@ -23,6 +23,7 @@ class Clock
     // Constructor.
     /**
      * @hideconstructor
+     * @param {string} ID
      * @returns {void}
      */
     constructor(ID: string)
@@ -96,8 +97,7 @@ class Clock
      * @async
      * @access private
      * @method
-     * @alias UpdateDay
-     * @param {string} Id
+     * @alias Clock.UpdateDayAsync
      * @param {(Intl.DateTimeFormatOptions | undefined)} Options
      * @returns {Promise<unknown>}
      */
@@ -122,8 +122,7 @@ class Clock
      * @async
      * @access private
      * @method
-     * @alias UpdateTime
-     * @param {string} Id
+     * @alias Clock.UpdateTimeAsync
      * @param {(Intl.DateTimeFormatOptions | undefined)} Options
      * @returns {Promise<unknown>}
      */
@@ -150,13 +149,11 @@ class Clock
      * @access public
      * @method
      * @alias Clock.Insert
-     * @param {string} Id
      * @param {string} whoInsert
      * @param {Intl.DateTimeFormatOptions | undefined} Options
      * @returns {void}
      */
-    async Insert(Id: string,
-                 whoInsert: string,
+    async Insert(whoInsert: string,
                  Options: (Intl.DateTimeFormatOptions | undefined)): Promise<void>
     {
         await new Promise((): void => {
@@ -172,7 +169,7 @@ class Clock
 
 
 
-            if (OValidate.IsString(Id) === true &&
+            if (OValidate.IsString(this.#ID) === true &&
                 OValidate.IsString(whoInsert) === true)
             {
                 if (whoInsert === this.GetClockInsert().Date)

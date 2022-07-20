@@ -1,13 +1,13 @@
 ﻿/**
  * @async
  * @function
- * @name InsertClockTime
+ * @name InsertClockTimeAsync
  * @param {string} Id
  * @param {string} Type
  * @returns {Promise<void>}
  */
-async function InsertClockTime(Id: string,
-                               Type: string): Promise<void>
+async function InsertClockTimeAsync(Id: string,
+                                    Type: string): Promise<void>
 {
     return await new Promise<void>(async (): Promise<void> => {
         // Object.
@@ -34,7 +34,7 @@ async function InsertClockTime(Id: string,
         {
             if (Type.toLocaleLowerCase() === OClock.GetSize().Long.toLocaleLowerCase())
             {
-                await OClock.Insert(Id, OClock.GetClockInsert().Time, {
+                await OClock.Insert(OClock.GetClockInsert().Time, {
                     formatMatcher: `best fit`,
                     hour12: undefined,
                     hour: `numeric`,
@@ -52,7 +52,7 @@ async function InsertClockTime(Id: string,
             else
             if (Type.toLocaleLowerCase() === OClock.GetSize().Short.toLocaleLowerCase())
             {
-                await OClock.Insert(Id, OClock.GetClockInsert().Time, {
+                await OClock.Insert(OClock.GetClockInsert().Time, {
                     formatMatcher: `best fit`,
                     hour12: undefined,
                     hour: `numeric`,

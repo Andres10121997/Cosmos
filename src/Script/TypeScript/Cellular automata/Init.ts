@@ -1,12 +1,12 @@
 /**
  * @async
  * @function
- * @name InsertCellularAutomata
+ * @name InitCellularAutomataAsync
  * @param {string} CanvasID
  * @returns {Promise<void>}
  * @description This function inserts the Cellular Automata "Artificial Intelligence" into the HTML on a canvas. Warning: the Height and Width must measure the same.
  */
-async function InitCellularAutomata(CanvasID: string): Promise<void>
+async function InitCellularAutomataAsync(CanvasID: string): Promise<void>
 {
     await new Promise<void>(async (): Promise<void> => {
         // Constants.
@@ -52,8 +52,8 @@ async function InitCellularAutomata(CanvasID: string): Promise<void>
              */
             const OCellularAutomata: CellularAutomata = new CellularAutomata(Size, Context);
 
-            await OCellularAutomata.Create()
-                .then((): any => setInterval(async (): Promise<void> => await OCellularAutomata.Next(), 1000))
+            await OCellularAutomata.CreateAsync()
+                .then((): any => setInterval(async (): Promise<void> => await OCellularAutomata.NextAsync(), 1000))
                 .catch((reason: any): void => {
                     console.error(`---`);
                     console.error(`Error InsertCellularAutomata function.`);
