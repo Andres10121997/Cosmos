@@ -29,7 +29,7 @@ async function InsertClockDateAsync(Id: string,
          */
         const OValidate: Validation = new Validation();
 
-        if (OValidate.IsString(Id) == true &&
+        if (OValidate.IsString(Id) === true &&
             OValidate.IsString(Type) === true)
         {
             if (Type.toLocaleLowerCase() === OClock.GetSize().Long.toLocaleLowerCase())

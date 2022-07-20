@@ -1,7 +1,7 @@
 ﻿/**
  * @function
  * @name ValidationForm
- * @param {Array<string>} Id It is an Arrays that saves the IDs of the Inputs, TextArea, Select, among others.
+ * @param {Array<string>} ID It is an Arrays that saves the IDs of the Inputs, TextArea, Select, among others.
  * @param {Array<number>} MaxLength
  * @param {Array<string>} DateType
  * @param {Array<boolean>} Require
@@ -9,7 +9,7 @@
  * @returns {boolean}
  * @summary This function is used to validate any form.
  */
-function ValidationForm(Id: Array<string>,
+function ValidationForm(ID: Array<string>,
                         MaxLength: Array<number>,
                         DateType: Array<string>,
                         Require: Array<boolean>,
@@ -43,9 +43,9 @@ function ValidationForm(Id: Array<string>,
      * @alias LengthComparison
      */
     const LengthComparison: Array<boolean> = new Array<boolean>(
-        Boolean(Id.length !== MaxLength.length),
-        Boolean(Id.length !== DateType.length),
-        Boolean(Id.length !== Require.length)
+        Boolean(ID.length !== MaxLength.length),
+        Boolean(ID.length !== DateType.length),
+        Boolean(ID.length !== Require.length)
     );
 
     // Objects.
@@ -79,7 +79,7 @@ function ValidationForm(Id: Array<string>,
         }
     });
 
-    Id.forEach((value: string, i: number): (boolean | void) => {
+    ID.forEach((value: string, i: number): (boolean | void) => {
         element = (document.getElementById(value) as HTMLElement);
         
         if (OValidate.IsString(value) === false)
@@ -134,7 +134,7 @@ function ValidationForm(Id: Array<string>,
 
 
 
-    Id.forEach((value: string, i: number): void => {
+    ID.forEach((value: string, i: number): void => {
         element = (document.getElementById(value) as HTMLElement);
 
         if (element.tagName.toLocaleLowerCase() === FormType.Select.toLocaleLowerCase())
@@ -144,14 +144,14 @@ function ValidationForm(Id: Array<string>,
         else
         if ((element.tagName.toLocaleLowerCase() === FormType.Input.toLocaleLowerCase() ||
              element.tagName.toLocaleLowerCase() === FormType.Input.toLocaleLowerCase()) &&
-            OValidate.Info(Id[i], Require[i], MaxLength[i]))
+            OValidate.Info(value, Require[i], MaxLength[i]))
         {
             Count++;
         }
         else
         if (element.tagName.toLocaleLowerCase() === FormType.Date &&
             DateType[i] === dateOptions.DateOfBirth &&
-            OValidate.DateOfBirth(Id[i], MinimumAge))
+            OValidate.DateOfBirth(value, MinimumAge))
         {
             Count++;
         }
@@ -159,7 +159,7 @@ function ValidationForm(Id: Array<string>,
 
     
 
-    if (Count === Id.length)
+    if (Count === ID.length)
     {
         return true;
     }

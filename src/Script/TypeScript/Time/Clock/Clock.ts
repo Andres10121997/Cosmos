@@ -5,17 +5,14 @@
 class Clock
 {
     #ID: string;
-
     #Size = {
         Long: `Long`,
         Short: `Short`
     }
-
     #ClockInsert: IClockInsert = {
         Date: `Date`,
         Time: `Time`
     }
-
     #DocumentElement: HTMLElement;
     
 
